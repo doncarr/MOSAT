@@ -1657,7 +1657,7 @@ void react_t::wait_connections(void)
   my_addr.sin_family = AF_INET; 
   my_addr.sin_port = htons(the_port);
   my_addr.sin_addr.s_addr = INADDR_ANY;
-  memset(&(my_addr.sin_zero), 8, 0); 
+  memset(&(my_addr.sin_zero), 0, 8); 
 
   retv = bind(sockfd, (struct sockaddr *)&my_addr, sizeof(struct sockaddr));
   if (retv != 0)

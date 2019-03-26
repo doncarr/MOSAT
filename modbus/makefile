@@ -57,7 +57,7 @@ install:
 
 
 clean:	
-	rm -fv *.o modsim myconnect librtmodbus.so librtmodbus.a tst_serial_slave tst_serial_master 
+	rm -fv *.o modsim myconnect librtmodbus.so librtmodbus.a tst_serial_slave tst_serial_master tst_radio_master tst_radio_slave
 
 ppcall:
 	make -f makefile.ppc

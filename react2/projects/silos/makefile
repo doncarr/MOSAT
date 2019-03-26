@@ -45,5 +45,5 @@ control_loop: control_loop.cpp
 	g++ -o control_loop control_loop.cpp
 
 clean:
-	rm -vf temp weblogger divide webbackground gen_graph read_sim_file gen_react test control_loop
+	rm -vf temp weblogger divide webbackground gen_graph read_sim_file gen_react test control_loop temp_graph col_graph dump_dat
 

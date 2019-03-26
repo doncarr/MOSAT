@@ -69,7 +69,7 @@ rtmodbus_t *rt_create_modbus_tcpip(const char *device, int port, int timeout, in
   dest_addr.sin_port = htons(temp); /* short, network byte order */
   dest_addr.sin_addr.s_addr = inet_addr(dest_ip);
   printf("Using %s\n", dest_ip);
-  memset(&(dest_addr.sin_zero), 8, 0);       /* zero the rest of the struct */
+  memset(&(dest_addr.sin_zero), 0, 8);       /* zero the rest of the struct */
 
   printf("Connecting on %d\n", port);
   int n = connect(sockfd, (struct sockaddr *)&dest_addr,

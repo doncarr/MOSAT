@@ -789,7 +789,7 @@ fprintf(fp, "}\n");
   r_prom = r_prom/total_departures;
   for(int g=0;g<total_departures-2;g++)
   {
-   if((int)tms[g]>-117&&(int)tms<160)
+   if((int)tms[g]>-117&&(int)tms[g]<160)
     sum += pow((tms[g]-r_prom),2);
    else
     sum += pow((0-r_prom),2);

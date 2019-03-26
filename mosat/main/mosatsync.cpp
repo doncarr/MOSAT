@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
   my_addr.sin_family = AF_INET;         /* host byte order */
   my_addr.sin_port = htons(MYPORT);     /* short, network byte order */
   my_addr.sin_addr.s_addr = INADDR_ANY; /* auto-fill with my IP */
-  memset(&(my_addr.sin_zero), 8, 0);        /* zero the rest of the struct */
+  memset(&(my_addr.sin_zero), 0, 8);        /* zero the rest of the struct */
 
   bind(sockfd, (struct sockaddr *)&my_addr, sizeof(struct sockaddr));
 

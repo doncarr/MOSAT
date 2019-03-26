@@ -94,7 +94,7 @@ int main()
     dest_addr.sin_family = AF_INET;        /* host byte order */
     dest_addr.sin_port = htons(DEST_PORT); /* short, network byte order */
     dest_addr.sin_addr.s_addr = inet_addr(ip[a]);
-    memset(&(dest_addr.sin_zero), 8, 0);       /* zero the rest of the struct */
+    memset(&(dest_addr.sin_zero), 0, 8);       /* zero the rest of the struct */
      /* don't forget to error check the connect()! */
     connect(sockfd, (struct sockaddr *)&dest_addr, sizeof(struct sockaddr));
     char buf[300];

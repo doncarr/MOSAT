@@ -183,7 +183,7 @@ void *maintain_log(void *data)
   dest_addr.sin_port = htons(log_data->dest_port); /* short, network byte order */
   dest_addr.sin_addr.s_addr = inet_addr(log_data->dest_ip);
   printf("Using %s\n", log_data->dest_ip);
-  memset(&(dest_addr.sin_zero), 8, 0);       /* zero the rest of the struct */
+  memset(&(dest_addr.sin_zero), 0, 8);       /* zero the rest of the struct */
 
   printf("Connecting on %hu\n", log_data->dest_port); 
   int n = connect(sockfd, (struct sockaddr *)&dest_addr, 
@@ -379,7 +379,7 @@ int main2(int argc, char *argv[])
   dest_addr.sin_port = htons(DEST_PORT); /* short, network byte order */
   dest_addr.sin_addr.s_addr = inet_addr(DEST_IP);
   printf("Using %s\n", DEST_IP);
-  memset(&(dest_addr.sin_zero), 8, 0);       /* zero the rest of the struct */
+  memset(&(dest_addr.sin_zero), 0, 8);       /* zero the rest of the struct */
 
   printf("Connecting on %d\n", DEST_PORT); 
   int n = connect(sockfd, (struct sockaddr *)&dest_addr, 
