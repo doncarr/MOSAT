@@ -1,0 +1,46 @@
+TEMP_COLD_AC1|Temp cold on AC unit 1|degC|0|0|0|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC2|Temp cold on AC unit 1|degC|0|0|1|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC3|Temp cold on AC unit 1|degC|0|0|2|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC4|Temp cold on AC unit 1|degC|0|0|3|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC5|Temp cold on AC unit 1|degC|0|0|4|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC6|Temp cold on AC unit 1|degC|0|0|5|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC7|Temp cold on AC unit 1|degC|0|0|6|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC8|Temp cold on AC unit 1|degC|0|0|7|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC9|Temp cold on AC unit 1|degC|0|0|8|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC10|Temp cold on AC unit 1|degC|0|0|9|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC11|Temp cold on AC unit 1|degC|0|0|10|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_COLD_AC12|Temp cold on AC unit 1|degC|0|0|11|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+#
+TEMP_HOT_AC1|Temp hot on AC unit 1|degC|0|0|12|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC2|Temp hot on AC unit 2|degC|0|0|13|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC3|Temp hot on AC unit 1|degC|0|0|14|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC4|Temp hot on AC unit 1|degC|0|0|15|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC5|Temp hot on AC unit 1|degC|0|0|16|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC6|Temp hot on AC unit 1|degC|0|0|17|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC7|Temp hot on AC unit 1|degC|0|0|18|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC8|Temp hot on AC unit 1|degC|0|0|19|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC9|Temp hot on AC unit 1|degC|0|0|20|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC10|Temp hot on AC unit 1|degC|0|0|21|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC11|Temp hot on AC unit 1|degC|0|0|22|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_HOT_AC12|Temp hot on AC unit 1|degC|0|0|23|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+#    Tag
+#    Description
+#    Engineering Units Label
+#    Driver Number
+#    Card
+#    Channel
+#    Engineering Units Low
+#    Engineering Units High
+#    Raw Value Low
+#    Raw Value High
+#    Decimal Places
+#    Zero Cutoff
+#    Alarm Low
+#    Caution Low
+#    Caution High
+#    Alarm High
+#    Alarm Deadband
+#    Alarm Low Enable
+#    Caution Low Enable
+#    Caution High Enable
+#    Alarm High Enable

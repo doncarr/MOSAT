@@ -1,0 +1,450 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%" height="100%" viewBox="0 0 300 150" onload="load()">
+
+<title>Train Simulation</title>
+<metadata>author: Don Carr</metadata>
+
+<script type="text/ecmascript"><![CDATA[
+
+function Trains()
+{
+  this.trains = new Array();
+};
+
+function add_train_f(enter_time, tid, driver)
+{
+};
+Trains.prototype.add = add_train_f;
+
+function remove_train_f()
+{
+};
+Trains.prototype.remove = remove_train_f;
+
+function Train(enter_time, tid, driver)
+{
+  this.enter_time = enter_time;  
+  this.train_id = tid;
+  this.driver = driver;
+};
+
+    var angle = 45;
+    var needle_obj;
+    var bneedle_obj;
+    var bar_obj;
+    var pv_text_obj;
+    var bpv_text_obj;
+    var tcount=0;
+    var xReq;
+    var hrf;
+    var up=true;
+    var next_departure=0;
+    var trains=[];
+    var departures=
+    [
+     {"trainID":"A01","time":"5:00:00"},
+     {"trainID":"A04","time":"5:15:00"},
+     {"trainID":"A07","time":"5:30:00"},
+     {"trainID":"A10","time":"5:45:00"},
+     {"trainID":"B01","time":"6:00:00"},
+     {"trainID":"B02","time":"6:05:15"},
+     {"trainID":"B03","time":"6:10:30"},
+     {"trainID":"B04","time":"6:15:45"},
+     {"trainID":"B05","time":"6:21:00"},
+     {"trainID":"B06","time":"6:26:15"},
+     {"trainID":"B07","time":"6:31:30"},
+     {"trainID":"B08","time":"6:36:45"},
+     {"trainID":"B09","time":"6:42:00"},
+     {"trainID":"B10","time":"6:47:15"},
+     {"trainID":"B11","time":"6:52:30"},
+     {"trainID":"B12","time":"6:57:45"},
+     {"trainID":"C01","time":"7:03:00"},
+     {"trainID":"C02","time":"7:08:15"},
+     {"trainID":"C03","time":"7:13:30"},
+     {"trainID":"C04","time":"7:18:45"},
+     {"trainID":"C05","time":"7:24:00"},
+     {"trainID":"C06","time":"7:29:15"},
+     {"trainID":"C07","time":"7:34:30"},
+     {"trainID":"C08","time":"7:39:45"},
+     {"trainID":"C09","time":"7:45:00"},
+     {"trainID":"C10","time":"7:50:15"},
+     {"trainID":"C11","time":"7:55:30"},
+     {"trainID":"C12","time":"8:00:45"},
+     {"trainID":"D01","time":"8:06:00"},
+     {"trainID":"D02","time":"8:11:15"},
+     {"trainID":"D03","time":"8:16:30"},
+     {"trainID":"D04","time":"8:21:45"},
+     {"trainID":"D05","time":"8:27:00"},
+     {"trainID":"D06","time":"8:32:15"},
+     {"trainID":"D07","time":"8:37:30"},
+     {"trainID":"D08","time":"8:42:45"},
+     {"trainID":"D09","time":"8:48:00"},
+     {"trainID":"D10","time":"8:53:15"},
+     {"trainID":"D11","time":"8:58:30"},
+     {"trainID":"D12","time":"9:03:45"},
+     {"trainID":"E01","time":"9:09:00"},
+     {"trainID":"E02","time":"9:14:15"},
+     {"trainID":"E03","time":"9:19:30"},
+     {"trainID":"E04","time":"9:24:45"},
+     {"trainID":"E05","time":"9:30:00"},
+     {"trainID":"E06","time":"9:39:00"},
+     {"trainID":"E08","time":"9:48:00"},
+     {"trainID":"E10","time":"9:57:00"},
+     {"trainID":"E11","time":"10:06:00"},
+     {"trainID":"F01","time":"10:15:00"},
+     {"trainID":"F03","time":"10:24:00"},
+     {"trainID":"F05","time":"10:33:00"},
+     {"trainID":"F06","time":"10:42:00"},
+     {"trainID":"F08","time":"10:51:00"},
+     {"trainID":"F10","time":"11:00:00"},
+     {"trainID":"F11","time":"11:09:00"},
+     {"trainID":"G1","time":"11:18:00"},
+     {"trainID":"G3","time":"11:27:00"},
+     {"trainID":"G5","time":"11:36:00"},
+     {"trainID":"G6","time":"11:45:00"},
+     {"trainID":"G8","time":"11:54:00"},
+     {"trainID":"G10","time":"12:03:00"},
+     {"trainID":"G11","time":"12:10:00"},
+     {"trainID":"G12","time":"12:17:00"},
+     {"trainID":"H1","time":"12:24:00"},
+     {"trainID":"H3","time":"12:31:00"},
+     {"trainID":"H4","time":"12:38:00"},
+     {"trainID":"H5","time":"12:45:00"},
+     {"trainID":"H6","time":"12:52:00"},
+     {"trainID":"H8","time":"12:59:00"},
+     {"trainID":"H10","time":"13:06:00"},
+     {"trainID":"H11","time":"13:13:00"},
+     {"trainID":"H12","time":"13:20:00"},
+     {"trainID":"I1","time":"13:27:00"},
+     {"trainID":"I3","time":"13:34:00"},
+     {"trainID":"I4","time":"13:41:00"},
+     {"trainID":"I5","time":"13:48:00"},
+     {"trainID":"I6","time":"13:55:00"},
+     {"trainID":"I8","time":"14:02:00"},
+     {"trainID":"I10","time":"14:09:00"},
+     {"trainID":"I11","time":"14:16:00"},
+     {"trainID":"I12","time":"14:23:00"},
+     {"trainID":"J1","time":"14:30:00"},
+     {"trainID":"J3","time":"14:37:00"},
+     {"trainID":"J4","time":"14:44:00"},
+     {"trainID":"J5","time":"14:51:00"},
+     {"trainID":"J6","time":"14:58:00"},
+     {"trainID":"J8","time":"15:05:00"},
+     {"trainID":"J10","time":"15:12:00"},
+     {"trainID":"J11","time":"15:19:00"},
+     {"trainID":"J12","time":"15:26:00"},
+     {"trainID":"K1","time":"15:33:00"},
+     {"trainID":"K3","time":"15:40:00"},
+     {"trainID":"K4","time":"15:47:00"},
+     {"trainID":"K5","time":"15:54:00"},
+     {"trainID":"K6","time":"16:01:00"},
+     {"trainID":"K8","time":"16:08:00"},
+     {"trainID":"K10","time":"16:15:00"},
+     {"trainID":"K11","time":"16:22:00"},
+     {"trainID":"K12","time":"16:29:00"},
+     {"trainID":"L1","time":"16:36:00"},
+     {"trainID":"L3","time":"16:43:00"},
+     {"trainID":"L4","time":"16:50:00"},
+     {"trainID":"L5","time":"16:57:00"},
+     {"trainID":"L6","time":"17:04:00"},
+     {"trainID":"L7","time":"17:09:15"},
+     {"trainID":"L8","time":"17:14:30"},
+     {"trainID":"L9","time":"17:19:45"},
+     {"trainID":"L10","time":"17:25:00"},
+     {"trainID":"L11","time":"17:30:15"},
+     {"trainID":"L12","time":"17:35:30"},
+     {"trainID":"M1","time":"17:40:45"},
+     {"trainID":"M2","time":"17:46:00"},
+     {"trainID":"M3","time":"17:51:15"},
+     {"trainID":"M4","time":"17:56:30"},
+     {"trainID":"M5","time":"18:01:45"},
+     {"trainID":"M6","time":"18:07:00"},
+     {"trainID":"M7","time":"18:12:15"},
+     {"trainID":"M8","time":"18:17:30"},
+     {"trainID":"M9","time":"18:22:45"},
+     {"trainID":"M10","time":"18:28:00"},
+     {"trainID":"M11","time":"18:33:15"},
+     {"trainID":"M12","time":"18:38:30"},
+     {"trainID":"N1","time":"18:43:45"},
+     {"trainID":"N2","time":"18:49:00"},
+     {"trainID":"N3","time":"18:54:15"},
+     {"trainID":"N4","time":"18:59:30"},
+     {"trainID":"N5","time":"19:04:45"},
+     {"trainID":"N6","time":"19:10:00"},
+     {"trainID":"N7","time":"19:15:15"},
+     {"trainID":"N8","time":"19:20:30"},
+     {"trainID":"N9","time":"19:25:45"},
+     {"trainID":"N10","time":"19:31:00"},
+     {"trainID":"N11","time":"19:36:15"},
+     {"trainID":"N12","time":"19:41:30"},
+     {"trainID":"O1","time":"19:46:45"},
+     {"trainID":"O2","time":"19:52:00"},
+     {"trainID":"O3","time":"19:57:15"},
+     {"trainID":"O4","time":"20:02:30"},
+     {"trainID":"O5","time":"20:07:45"},
+     {"trainID":"O6","time":"20:13:00"},
+     {"trainID":"O7","time":"20:18:15"},
+     {"trainID":"O8","time":"20:23:30"},
+     {"trainID":"O9","time":"20:28:45"},
+     {"trainID":"O10","time":"20:34:00"},
+     {"trainID":"O12","time":"20:44:30"},
+     {"trainID":"P2","time":"20:55:00"},
+     {"trainID":"P4","time":"21:05:30"},
+     {"trainID":"P6","time":"21:16:00"},
+     {"trainID":"P8","time":"21:26:30"},
+     {"trainID":"P10","time":"21:37:00"},
+     {"trainID":"P12","time":"21:47:30"},
+     {"trainID":"Q2","time":"21:58:00"},
+     {"trainID":"Q4","time":"22:08:30"},
+     {"trainID":"Q6","time":"22:20:00"},
+     {"trainID":"Q8","time":"22:32:00"},
+   ];
+
+   function time_to_date(the_time) // Colon separated
+   {
+     temp=the_time.split(":");
+     var d = new Date();
+     if (temp.length > 0) d.setHours(parseInt(temp[0]));
+     else d.setHours(0);
+     if (temp.length > 1) d.setMinutes(parseInt(temp[1]));
+     else d.setMinutes(0);
+     if (temp.length > 2) d.setSeconds(parseInt(temp[2]));
+     else d.setSeconds(0);
+     console.log( d );
+     return d;
+   }
+
+    function intervalHandler()
+    {
+    };
+
+
+    function load()
+    {
+      needle_obj = document.getElementById("red_needle");
+      bneedle_obj = document.getElementById("blue_needle");
+      pv_text_obj = document.getElementById("pv_text");
+      bpv_text_obj = document.getElementById("bpv_text");
+      alert(departures[20].trainID + "  " + departures[20].time);
+      for (i=0; i < departures.length; i++)
+      {
+        departures[i].time = time_to_date(departures[i].time);
+      }
+      var interval = setInterval("intervalHandler()", 1000);
+    };
+
+    function do_rotate()
+    {
+    };
+
+  ]]></script>
+
+
+<path fill="none" stroke="red" stroke-width="5.000000"
+   d="M141.474523,63.278748 A67.500000,67.500000 0 0,1 122.729708,122.729708"/>
+
+
+  <circle cx="75" cy="75" r="65" fill="cornsilk"
+         style="stroke:rgb(30,30,30);stroke-width:1"/>
+
+  <circle cx="15" cy="15" r="3" stroke="none" stroke-width="0" fill="black"/>
+  <line x1="13" y1="15" x2="17" y2="15" transform="rotate(20 15 15)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <line x1="13" y1="15" x2="17" y2="15" transform="rotate(110 15 15)"
+
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <circle cx="135" cy="15" r="3" stroke="none" stroke-width="0" fill="black"/>
+  <line x1="133" y1="15" x2="137" y2="15" transform="rotate(-10 135 15)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <line x1="133" y1="15" x2="137" y2="15" transform="rotate(80 135 15)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+
+  <circle cx="15" cy="135" r="3" stroke="none" stroke-width="0" fill="black"/>
+  <line x1="13" y1="135" x2="17" y2="135" transform="rotate(3 15 135)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <line x1="13" y1="135" x2="17" y2="135" transform="rotate(93 15 135)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+
+  <circle cx="135" cy="135" r="3" stroke="none" stroke-width="0" fill="black"/>
+  <line x1="133" y1="135" x2="137" y2="135" transform="rotate(17 135 135)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <line x1="133" y1="135" x2="137" y2="135" transform="rotate(107 135 135)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+
+
+<!--
+  <line id="red_needle" x1="75" y1="75" x2="75" y2="145"
+  style="stroke:rgb(255,0,0);stroke-width:2"/>
+-->
+
+<defs>
+<filter id='dropShadow' x='0%' y='-10%' height='140%'><feGaussianBlur in='SourceAlpha' stdDeviation='3' /><feOffset dx='5px' dy='5px' result='offsetBlur'/><feMerge><feMergeNode in='offsetBlur'/><feMergeNode in='SourceGraphic'/></feMerge></filter>
+</defs>
+
+
+  <path fill="red" id="red_needle" 
+      d="M69,75 A6,6 0 1,1 81,75 L75,140 Z M70,72 L75,64 L80,72 Z" />
+
+  <path fill="blue" id="blue_needle" 
+      d="M69,75 A6,6 0 1,1 81,75 L75,140 Z" style="fill-opacity:0.3"/>
+
+
+<!-- A125,50 0 1,1 250,50 -->
+
+
+
+<!-- Angle = 45 sin = -0.71, cos = 0.71-->
+<text x="37.876894" y="112.123106" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle" style="filter:url(#dropShadow);">0</text>
+<!-- Angle = 90 sin = 0.00, cos = 1.00-->
+<text x="22.500000" y="75.000000" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">45</text>
+<!-- Angle = 135 sin = 0.71, cos = 0.71-->
+<text x="37.876894" y="37.876894" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">90</text>
+<!-- Angle = 180 sin = 1.00, cos = 0.00-->
+<text x="75.000000" y="22.500000" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">135</text>
+<!-- Angle = 225 sin = 0.71, cos = -0.71-->
+<text x="112.123106" y="37.876894" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">180</text>
+<!-- Angle = 270 sin = 0.00, cos = -1.00-->
+<text x="127.500000" y="75.000000" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">225</text>
+<!-- Angle = 315 sin = -0.71, cos = -0.71-->
+<text x="112.123106" y="112.123106" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">270</text>
+
+
+  <path fill="black" transform="rotate(45 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(50 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(55 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(60 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(65 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(70 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(75 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(80 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(85 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(90 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(95 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(100 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(105 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(110 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(115 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(120 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(125 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(130 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(135 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(140 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(145 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(150 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(155 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(160 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(165 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(170 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(175 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(180 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(185 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(190 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(195 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(200 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(205 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(210 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(215 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(220 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(225 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(230 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(235 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(240 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(245 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(250 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(255 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(260 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(265 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(270 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(275 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(280 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(285 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(290 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(295 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(300 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(305 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(310 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(315 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+
+  <circle cx="75" cy="75" r="4" stroke="none" stroke-width="0" fill="black"/>
+
+  <text id="pv_text" x="75" y="100" font-size="20" style="fill:red;" 
+       alignment-baseline="middle" text-anchor="middle">300</text>
+
+  <text id="bpv_text" x="75" y="120" font-size="20" style="fill:blue;" 
+       alignment-baseline="middle" text-anchor="middle">300</text>
+
+  <text id="eulabel_text" x="75" y="132" font-size="12" 
+       alignment-baseline="middle" text-anchor="middle">cm</text>
+
+
+</svg>

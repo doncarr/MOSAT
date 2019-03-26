@@ -1,0 +1,11 @@
+DI|1|16|0|0|
+AI|3|16|0|0|
+AO|0|0|0|0|
+AO|0|0|0|0|
+# io type (DI, AI, DO, AO)
+# if AO or DO, just set to alternate opcode (other paramaters are ignored)
+# opcode 1=DO, 2=DI, 3=Register, 4=AI
+# number of io points
+# modbus offset
+# channel offset
+

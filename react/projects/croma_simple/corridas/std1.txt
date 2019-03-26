@@ -1,0 +1,6 @@
+sys.print("Make sure you have enough fluids")
+sys.print("When you are ready to start data acquisition, ")
+sys.print("Hit <return> to start")
+sys.get_key();
+run.std_run.txt(00:05)
+sys.print("Done running test, Exiting . . . ")

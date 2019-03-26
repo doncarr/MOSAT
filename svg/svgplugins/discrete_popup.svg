@@ -1,0 +1,46 @@
+  <defs>
+    <radialGradient id="pcloseRadial" cx="50%" cy="50%" r="50%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="rgb(255,150,150)" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="rgb(255,0,0)" stop-opacity="0.7"/>
+    </radialGradient>
+    <radialGradient id="pcloseRadial2" cx="50%" cy="50%" r="50%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="rgb(255,175,175)" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="rgb(255,50,50)" stop-opacity="0.7"/>
+    </radialGradient>
+  </defs>
+<g id="discrete_popup">
+<rect fill="lightgray" x="0" y="0" width="60" height="30" rx="3" ry="3" stroke="black" stroke-width="0.75" filter="url(#filter1)" opacity="0.86"/>
+
+<circle id="popup_close" cx="4.5" cy="4.5" r="3.5" fill="url(#pcloseRadial)" stroke="black" stroke-width="0.2" filter="url(#filter1)"/>
+<line x1="3.5" y1="3.5" x2="5.5" y2="5.5" stroke="black" stroke-width="0.5"/>
+<line x1="5.5" y1="3.5" x2="3.5" y2="5.5" stroke="black" stroke-width="0.5"/>
+<circle cx="4.5"  cy="4.5" r="4" onclick="show_main()"
+    visibility="hidden" pointer-events="all" onmouseover="this.style.cursor='pointer';
+                 document.getElementById('popup_close').setAttribute('fill', 'url(#pcloseRadial2)');"
+                 onmouseout="document.getElementById('popup_close').setAttribute('fill', 'url(#pcloseRadial)');"/>
+
+<text x="30" y="6"  font-size="5" fill="black" text-anchor="middle">- Tag -</text>
+<text x="30" y="12"  font-size="4" fill="black" text-anchor="middle"><tspan id="popup_tag">the tag</tspan></text>
+
+<rect id="popup_bg_on" x="2" y="17" width="27" height="10" rx="3" ry="3" 
+      fill="cornsilk" stroke="black" stroke-width="0.5" filter="url(#filter1)" opacity="0.5"/>
+<text id="popup_on" x="15.5" y="24"  font-size="4" fill="black" text-anchor="middle">On</text>
+<rect x="2"  y="17" width="27" height="10" 
+  onclick="send_output(document.getElementById('popup_tag').textContent, true);
+           document.getElementById('popup_bg_on').setAttribute('fill','gray');
+           setTimeout('popup_on_timeout()', 100);" 
+  visibility="hidden" pointer-events="all" onmouseover="this.style.cursor='pointer';
+           document.getElementById('popup_bg_on').setAttribute('fill', 'yellow');" 
+           onmouseout="document.getElementById('popup_bg_on').setAttribute('fill', 'cornsilk');"/>
+
+<rect id="popup_bg_off" x="31" y="17" width="27" height="10" rx="3" ry="3" 
+      fill="cornsilk" stroke="black" stroke-width="0.5" filter="url(#filter1)" opacity="0.5"/>
+<text id="popup_off" x="44.5" y="24"  font-size="4" fill="black" text-anchor="middle">Off</text>
+<rect x="31"  y="17" width="27" height="10" 
+  onclick="send_output(document.getElementById('popup_tag').textContent, false);
+           document.getElementById('popup_bg_off').setAttribute('fill','gray');
+           setTimeout('popup_off_timeout()', 100);" 
+  visibility="hidden" pointer-events="all" onmouseover="this.style.cursor='pointer';
+             document.getElementById('popup_bg_off').setAttribute('fill', 'yellow');" 
+             onmouseout="document.getElementById('popup_bg_off').setAttribute('fill', 'cornsilk');"/>
+</g>

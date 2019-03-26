@@ -1,0 +1,192 @@
+Tue Nov 15 12:22:24 2011
+React PID: 6341
+SampleRate set to: 1.000000
+Loading db point factory from: ../../../ai.so
+Reading AI ........
+Temp_1|Temperature|degC|0|0|0|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Temp_2|Temperature|degC|0|0|1|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Temp_3|Temperature|degC|0|0|2|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Temp_4|Temperature|degC|0|0|3|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Temp_5|Temperature|degC|0|0|4|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Temp_6|Temperature|degC|0|0|5|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Temp_7|Temperature|degC|0|0|6|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Temp_8|Temperature|degC|0|0|7|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Reading ao ........
+AO1|Motor Control|%|0|0|1|0|10|0|10|1|0|500|
+Reading di ........
+Reading do ........
+Reading pci ........
+PCI|Pulse Count 1|RPM|0|0|0|0.0083333333|20|65535|60.0|5|0|10|20|80|90|5|1|1|1|1|
+PCI[0].tag = 'PCI'
+Reading calc ........
+Reading discrete calc ........
+0 discrete calcs read
+Reading dcalc ........
+Reading timer ........
+Timer1|My Timer|sec|1|T|
+
+num_timer = 1
+Reading analog values ........
+PV|analog val|degC|1|32.7|
+SP|analog val|degC|1|31.3|
+MV|analog val|degC|1|28.3|
+TV|analog val|degC|1|21.4|
+num analog values = 4
+Reading discrete values ........
+num discrete values = 0
+Reading int ........
+Reading pid ........
+Reading pump ........
+Reading ac ........
+Reading level ........
+Reading data ........
+Reading file logger ........
+silo_logger_1|My silo logger|silo_logger|300|100|1|1|1|0|0|Temp_1|Temp_2|Temp_3|Temp_4|Temp_5|Temp_6|Temp_7|Temp_8|
+collection is on for silo_logger_1
+Tag = Temp_1
+analog point 0: Temp_1
+Tag = Temp_2
+analog point 1: Temp_2
+Tag = Temp_3
+analog point 2: Temp_3
+Tag = Temp_4
+analog point 3: Temp_4
+Tag = Temp_5
+analog point 4: Temp_5
+Tag = Temp_6
+analog point 5: Temp_6
+Tag = Temp_7
+analog point 6: Temp_7
+Tag = Temp_8
+analog point 7: Temp_8
+Reading web logger ........
+Reading discrete logger ........
+Line: #dlogger_1|My dlogger|dlogger|1|PUMP1_ON|B|PUMP2_ON|B|LO_LEVEL|F|HI_HI_LEVEL|R|HI_LEVEL|B|
+Line: #dlogger_1|My dlogger|silo_d_logger|1|PUMP1_ON|B|PUMP2_ON|B|LO_LEVEL|F|HI_HI_LEVEL|R|HI_LEVEL|B|
+Line: #    Tag
+Line: #    Description
+Line: #    Base File Name (actual name is base + YYYYMMDD) (can include path)
+Line: #    Tag 1
+Line: #    Tag 2
+Line: #    . . . .
+Line: #    Tag N
+Reading scan ........
+Reading web points ........
+tempweb|Temp Web Page|1.0|temp_template.html|temp.html|
+TEMP_1)
+Args for AI = 1
+TEMP_2)
+Args for AI = 1
+TEMP_3)
+Args for AI = 1
+TEMP_4)
+Args for AI = 1
+TEMP_5)
+Args for AI = 1
+TEMP_6)
+Args for AI = 1
+TEMP_7)
+Args for AI = 1
+TEMP_8)
+Args for AI = 1
+TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+TEMP_1)
+Args for AI = 1
+TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+TEMP_2)
+Args for AI = 1
+TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+TEMP_3)
+Args for AI = 1
+TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+TEMP_4)
+Args for AI = 1
+TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+TEMP_5)
+Args for AI = 1
+TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+TEMP_6)
+Args for AI = 1
+TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+TEMP_7)
+Args for AI = 1
+TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+TEMP_8)
+Args for AI = 1
+pidweb|PID Web Page|5.0|pid_template.html|pid.html|
+PV|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+PV| °C|20|100|420|300|0|50|5                                                                                                                                                                                                                                                                              Args for SCALE = 9
+label PV, eu  °C, txt_h 20, stop 100, slft 420, sbot 300, smin 0, smax 50, ndiv 5
+0, current_top = 90, scale_current = 50, dif = 10, eu = ' °C'
+1, current_top = 130, scale_current = 40, dif = 10, eu = ' °C'
+2, current_top = 170, scale_current = 30, dif = 10, eu = ' °C'
+3, current_top = 210, scale_current = 20, dif = 10, eu = ' °C'
+4, current_top = 250, scale_current = 10, dif = 10, eu = ' °C'
+5, current_top = 290, scale_current = 0, dif = 10, eu = ' °C'
+Writing label: PV
+PV)
+Args for AI = 1
+SP|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+SP)
+Args for AI = 1
+MV|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|100                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 100
+MV)
+Args for AI = 1
+MV|%|20|100|570|300|0|100|5                                                                                                                                                                                                                                                                                Args for SCALE = 9
+label MV, eu %, txt_h 20, stop 100, slft 570, sbot 300, smin 0, smax 100, ndiv 5
+0, current_top = 90, scale_current = 100, dif = 20, eu = '%'
+1, current_top = 130, scale_current = 80, dif = 20, eu = '%'
+2, current_top = 170, scale_current = 60, dif = 20, eu = '%'
+3, current_top = 210, scale_current = 40, dif = 20, eu = '%'
+4, current_top = 250, scale_current = 20, dif = 20, eu = '%'
+5, current_top = 290, scale_current = 0, dif = 20, eu = '%'
+Writing label: MV
+aiweb|AI Web Page|5.0|ai_template.html|ai.html|
+TV|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+TV)
+Args for AI = 1
+Parsing 0 Analog Expressions ......
+Parsing 0 Discrete Expressions ......
+-- Reading background scripts: .//dbfiles/background.dat
+Loading iodrivers from: .//dbfiles/drivers.dat
+sim1|sim|T|/home/carr/trunk/react/drivers/sim_pump/libsimpumpdrv.so|new_simpumpdrv|||
+Loading iodriver from: /home/carr/trunk/react/drivers/sim_pump/libsimpumpdrv.so
+Class factory function is: new_simpumpdrv
+Tue Nov 15 12:22:24 2011
+No foreground script executing, use "kill -1 6341" or <CTRL-C> to stop

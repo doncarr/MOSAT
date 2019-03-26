@@ -1,0 +1,16 @@
+#weblogger1|Log to pablasso.com|1|http://adaptivertc.pablasso.com/api/|examplesilokey|temp_amb|temp_amb|float|hum_rel|hum_rel|float|S100_FAN1|ventilador|bool|S100_FANS_ON_OFF|MAN_ON_OFF|bool|S100_FANS_AUTO|MAN_AUTO|bool|
+#
+weblogger_corr_1|Log to pablasso.com|1|http://adaptivertc.pablasso.com/api/|correrpekey101|U1_temp_amb|temp_amb|float|U1_hum_rel|hum_rel|float|U1_S1_FAN1_IS_ON|ventilador|bool|U1_S1_ON_OFF|MAN_ON_OFF|bool|U1_S1_AUTO_MAN|MAN_AUTO|bool|
+#
+weblogger_riofuerte_1|Log to pablasso.com|1|http://adaptivertc.pablasso.com/api/|riofuertekey101|U2_temp_amb|temp_amb|float|U2_hum_rel|hum_rel|float|U2_S1_FAN1_IS_ON|ventilador|bool|U2_S1_ON_OFF|MAN_ON_OFF|bool|U2_S1_AUTO_MAN|MAN_AUTO|bool|
+#
+weblogger_riofuerte_2|Log to pablasso.com|1|http://adaptivertc.pablasso.com/api/|riofuertekey102|U2_temp_amb|temp_amb|float|U2_hum_rel|hum_rel|float|U2_S2_FAN1_IS_ON|ventilador|bool|U2_S2_ON_OFF|MAN_ON_OFF|bool|U2_S2_AUTO_MAN|MAN_AUTO|bool|
+# Tag
+# Description
+# Interval (minutes)
+# Website
+# Key
+## React Tag
+## Website Tag 
+## Value Type (bool, float)
+# Repeaat as desired: (ReactTag, WebsiteTag, ValueType)

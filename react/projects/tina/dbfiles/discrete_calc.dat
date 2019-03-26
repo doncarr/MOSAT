@@ -1,0 +1,12 @@
+#Dcalc1|Discrete Calc 1|(TEMP_COLD_AC1 < 0.0) or (TEMP_HOT_AC1 > 200)|Alarm|ok|N|N|
+changing_filter_1|Discrete Calc 1|hydraulic_1a or hydraulic_1b|Alarm|ok|N|N|
+changing_filter_2|Discrete Calc 2|hydraulic_2a or hydraulic_2b|Alarm|ok|N|N|
+mid_level|Discrete Calc 3|low level and (not hi_level)|LoLevel|-|N|N|
+#
+# Tag
+# Description
+# calc expression
+# Low Description
+# High Description
+# Alarm State (High, Low, None)
+# Shutdown State (High, Low, None)

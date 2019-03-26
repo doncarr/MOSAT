@@ -1,0 +1,29 @@
+
+CPP=  arm-unknown-linux-gnu-g++ -mcpu=arm9
+
+export CPATH=../../../include:../../
+
+RTMODBUS=../../../modbus/arm/librtmodbus.a 
+
+RTCOMMON=../../../librtcommon/arm/librtcommon.a
+
+%.o:    %.cpp $(INCLUDES)
+	$(CPP) -c -Wall -o $@ $<
+
+all: dallas_1wire_main libdallas_1wire_drv.so
+
+libdallas_1wire_drv.so: dallas_1wire.o dallas_1wire_read.o  
+	$(CPP) -Wall -o libdallas_1wire_drv.so -shared dallas_1wire.o dallas_1wire_read.o -lrt
+
+
+
+dallas_1wire.o:	dallas_1wire.cpp dallas_1wire.h
+	$(CPP) -fpic -c dallas_1wire.cpp 
+
+dallas_1wire_main: dallas_1wire_main.cpp dallas_1wire_read.cpp 
+	$(CPP) -o dallas_1wire_main dallas_1wire_main.cpp dallas_1wire_read.cpp -lrt $(RTCOMMON) $(RTMODBUS)
+
+clean:
+	rm *.o *.so dallas_1wire_main
+
+

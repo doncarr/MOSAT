@@ -1,0 +1,37 @@
+#Name|TotalTime(secs)|DistanceFromStart(meters)|Entrance?|TimeToEntrance(secs)|IsForward?|Elect.Subst|accel end|
+Periferico Sur|109|9.5|T|35|T|1|5.0|
+Tesoro|121|910.5|F|0|T|1|5.0|
+Espana|98|1984.5|F|0|T|2|5.0|
+Patria Sur|103|2734.5|F|0|T|2|5.0|
+Isla Raza|84|3544.5|F|0|T|3|5.0|
+18 de Marzo|105|4239.5|F|0|T|3|5.0|
+Urdaneta|77|4945.5|F|0|T|4|5.0|
+Unidad Deportivo|113|5541.5|F|0|T|4|5.0|
+Santa Filomena|117|6498.5|F|0|T|5|5.0|
+Washington|84|7508.5|F|0|T|5|5.0|
+Mexicaltzingo|98|8203.5|F|0|T|6|5.0|
+Juarez|94|9087.5|F|0|T|6|5.0|
+El Refugio|107|9919.5|F|0|T|7|5.0|
+Mezquitan|92|10935.5|F|0|T|7|5.0|
+Avila Comacho|110|11743.5|F|0|T|8|5.0|
+Division Norte|112|12798.5|F|0|T|8|5.0|
+Atemajac|84|13738.5|F|0|T|9|5.0|
+Dermatologico|132|14289.5|F|0|T|10|5.0|
+Periferico Norte|120|15344.5|F|0|F|10|5.0|
+Dermatologico|84|14289.5|F|0|F|10|5.0|
+Atemajac|112|13738.5|F|0|F|9|5.0|
+Division del Norte|110|12798.5|F|0|F|9|5.0|
+Avila Comacho|92|11743.5|F|0|F|8|5.0|
+Mezquitan|107|10935.5|F|0|F|7|5.0|
+El Refugio|94|9919.5|F|0|F|7|5.0|
+Juarez|98|9087.5|F|0|F|6|5.0|
+Mexicaltzingo|84|8203.5|F|0|F|6|5.0|
+Washington|117|7508.5|F|0|F|5|5.0|
+Santa Filomena|113|6498.5|F|0|F|5|5.0|
+Unidad Deportivo|77|5541.5|F|0|F|4|5.0|
+Urdaneta|105|4945.5|F|0|F|4|5.0|
+18 de Marzo|84|4239.5|F|0|F|3|5.0|
+Isla Raza|103|3544.5|F|0|F|3|5.0|
+Patria Sur|98|2734.5|F|0|F|2|5.0|
+Espana|121|1984.5|F|0|F|2|5.0|
+Tesoro|121|910.5|F|0|F|1|5.0|

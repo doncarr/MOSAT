@@ -1,0 +1,22 @@
+Design issues.
+
+1) Implementation API. This is the API that the modus code calls after parsing the message to either read inputs or write outputs for each opcode type. What is the best API for simplicity and efficiency? For opcodes that have multiple parameters, should we call once with an array of bits or registers for the argument, or one call for each bit or register?
+
+2) What offsets should we use for all of the inputs/outpus? Should we do like Sixnet (and others) and always map the opcode addresses starting at zero, as well as another location? Should registers and analog inputs be mapped the same? Should all discrete inputs and outputs be mapped continously so that all discrete inputs and outputs can be read with a single call using either read input or read output (Phoenix Contact)?
+
+3) Method to veriy the range of bits or registers for each opcode? What API and/or data structure?
+
+4) How do we clear the input buffer for a completely unknown opcode? What is an appropriate timeout before clearing the input buffer, returning an error message, and then waiting for the next message? Should it be configurable?
+
+5) What are the opcodes we should support?
+
+6) What is the timeout that is appropriate for waiting for the complete message, after at least receiving a parcial message, and how should we implement it on a microcontroller.
+
+7) How do we dynamically map input and output addresses based on user configuration? Note that this configuration would imply we also need to change the configuration of the pins on the micro.
+
+8) This is only the modus slave (server side) code so far. Should we also implement pass-through? Should we implement the scanning of remote devices on another serial, where recent values are maintained in local memory and returned directly. How should the mapping for this be done?
+
+9) How can we at least specify the outputs that shouuld be sent on loss of communications.
+
+
+

@@ -1,0 +1,31 @@
+# sequence to test motor 
+AO2.ramp(80,1);
+do01.send(F);
+do05.send(F);
+sys.print("----------- start ----------")
+#sys.get_key()
+do01.send(T);
+run.s(00:03,00:01)
+EV1.send(F)
+#Empezar Adquisicion de Datos|2|dataoutx.txt|AI1|
+sys.mark()
+sys.wait_until(2 > 3, 2.0)
+sys.wait(0:10)
+sys.print("------- ramp to 1000 over 5 seconds ------")
+#pid1.change_setpoint(1000,1);
+#AO1.send(88);
+BOMBA1.send(F);
+sys.wait(0:02)
+do05.send(T)
+sys.print("------- ramp to 2000 over 5 seconds ------")
+pid1.change_setpoint(20,0);
+sys.wait(0:02)
+#pid1.stop_control
+#AO1.send(0);
+#Parar Adquisicion de Datos|3|dataoutx.txt|
+run.s(00:02,00:01)
+EV1.send(F)
+sys.mark()
+do01.send(F)
+do05.send(F)
+sys.print("----------- Fin ----------")

@@ -1,0 +1,9 @@
+silodlogger_1|My dlogger  |silo_dlogger|0|DI_02|B|DI_03|B|DI_04|B|DI_05|B|DI_06|B|DI_07|B|temp_lt_10|B|DO_15|B|
+silodlogger_2|My dlogger|silo_dlogger2_|0|DOX_00|B|DOX_01|B|DOX_02|B|DOX_03|B|DOX_04|B|DOX_05|B|DOX_06|B|DOX_07|B|DOX_08|B|DOX_09|B|DOX_10|B|DOX_11|B|
+#    Tag
+#    Description
+#    Base File Name (actual name is base + YYYYMMDD) (can include path) 
+#    Tag 1 
+#    Tag 2 
+#    . . . . 
+#    Tag N 

@@ -1,0 +1,9 @@
+svg_header|My Title|0|0|300|150|
+background|thistle|
+switch|POWER_ON|lime|red|10|115|30|
+switch|COLLECT_ON|lime|red|50|115|30|
+rect_light|POWER_ON|lime|gray|23|76|12|12|B|
+rect_light|COLLECT_ON|yellow|gray|63|76|12|12|B|
+rgauge|0|COUNT|blue|95|30|85|
+analog_pv|RAW_COUNT|firebrick|137.5|140|15|
+bar|FORCE|orange|220|15|115|

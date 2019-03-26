@@ -1,0 +1,6 @@
+LogHome|./log/
+HtmlHome|./html/
+TemplateHome|./template/
+SampleRate|1|
+SMS_ENABLED|F|
+SMS_SO|./librtsms.so|

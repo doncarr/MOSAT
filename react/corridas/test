@@ -1,0 +1,29 @@
+#sys.get_key();
+AO0.send(40.0);
+AO1.send(10.0);
+AO2.send(25.0);
+data1.start()
+AO0.ramp(50.0, 3.0);
+sys.wait(0:01)
+AO1.ramp(20.0,1.0);
+scan1.scan();
+sys.wait(0:04)
+#AO0.send(10.0);
+#AO0.ramp(20.0, 3.0);
+pid1.change_setpoint(30,0);
+sys.wait(0:04)
+scan1.scan();
+AO1.ramp(60.0, 1.0);
+sys.wait(0:04)
+AO2.ramp(20.0, 1.0);
+sys.wait(0:02)
+scan1.scan();
+sys.wait(0:01)
+scan1.scan();
+pid1.stop_control();
+sys.wait(1.0);
+AO0.send(0.0);
+scan1.scan();
+data1.stop();
+sys.mark()
+sys.print("----------- Fin ----------")

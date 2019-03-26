@@ -1,0 +1,33 @@
+
+AR=arm-unknown-linux-gnu-ar
+
+OBJS=  $(DIR)arg.o $(DIR)common.o $(DIR)safestr.o $(DIR)utimer.o $(DIR)memfail.o $(DIR)numbered_file.o $(DIR)ap_config.o $(DIR)separator.o $(DIR)log_functions.o
+
+
+
+export CPATH=../include
+#export PATH=/opt/crosstool/gcc-4.0.1-glibc-2.3.5/arm-unknown-linux-gnu/bin:$${PATH}
+#export PATH=/opt/crosstool/gcc-4.0.1-glibc-2.3.5/arm-unknown-linux-gnu/bin/:$PATH
+
+CC= arm-unknown-linux-gnu-g++ -mcpu=arm9 
+#CC= powerpc-linux-g++ -I/usr/local/include
+
+DIR=arm/
+
+all: $(DIR)librtcommon.so $(DIR)librtcommon.a
+
+$(DIR)%.o:      %.cpp $(INCLUDES)
+	$(CC) -c -fpic -o $@ -Wall $<
+
+$(DIR)librtcommon.so: $(OBJS)
+	$(CC) -shared -o $(DIR)librtcommon.so $(OBJS)
+
+$(DIR)librtcommon.a:  $(OBJS) 
+	$(AR) r $(DIR)librtcommon.a  $(OBJS) 
+
+install:
+	cp $(DIR)librtcommon.so /opt/sixnet/lib/gcc-lib/powerpc-linux/2.95.3/
+
+clean:
+	rm -fv $(DIR)*.o $(DIR)*.so
+

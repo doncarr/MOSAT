@@ -1,0 +1,16 @@
+set auto x
+set yrange [25:55]
+unset log
+unset label
+set xtic auto
+set ytic auto
+set grid
+set xlabel "fecha-tiempo"
+set ylabel "temperatura C"
+set title "Temperature Column"
+set terminal png size 1000,720
+set output
+
+set xdata time
+set timefmt "%H:%M:%S"
+plot "columns.txt" using 2:3 with lines lw 2 title "Sensor 1", "columns.txt" using 2:4 with lines lw 2 title "Sensor 2", "columns.txt" using 2:5 with lines lw 2 title "Sensor 3", "columns.txt" using 2:6 with lines lw 2 title "Sensor 4", "columns.txt" using 2:7 with lines lw 2 title "Sensor 5", "columns.txt" using 2:8 with lines lw 2 title "Sensor 6", "columns.txt" using 2:9 with lines lw 2 title "Sensor 7", "columns.txt" using 2:10 with lines lw 2 title "Sensor 8", "columns.txt" using 2:11 with lines lw 2 title "Sensor 9", "columns.txt" using 2:12 with lines lw 2 title "Sensor 10"

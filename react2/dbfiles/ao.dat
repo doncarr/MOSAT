@@ -1,0 +1,23 @@
+AO_0|Motor Control|%|0|0|0|0|10|0|10|1|0|500|0|100|
+AO_8|Motor Control|%|0|0|8|0|10|0|10|1|0|500|0|100|
+AO_16|Motor Control|%|0|0|16|0|10|0|10|1|0|500|0|100|
+AO_24|Motor Control|%|0|0|24|0|10|0|10|1|0|500|0|100|
+AO_32|Motor Control|%|0|0|32|0|10|0|10|1|0|500|0|100|
+#AO2|Motor Control|%|0|0|2|0|10|0|10|1|0|500|0|100|
+#AO3|Motor Control|%|0|0|3|0|10|0|10|1|0|500|0|100|
+#    AO1|Analog Output 1|PSI|0|0|0|0|100|0|10|1|0|10|0|100|
+#    Tag
+#    Description
+#    Engineering Units Label
+#    Driver Number
+#    Card
+#    Channel
+#    Engineering Units Low
+#    Engineering Units High
+#    Raw Value Low
+#    Raw Value High
+#    Decimal Places
+#    Output Limit Low
+#    Output Limit High
+#    Scale Low
+#    Scale High

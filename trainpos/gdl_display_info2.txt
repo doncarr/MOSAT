@@ -1,0 +1,2 @@
+dia/Line2_1024.png,dia/square20x20.png,dia/square_unexpected.png,Line1.html,24,979,108,165,-33,35,18
+dia/Line2_1280.png,dia/square22x22.png,dia/square_unexpected.png,LineW.html,44,1208,112,183,-35,40,18

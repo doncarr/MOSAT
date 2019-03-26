@@ -1,0 +1,21 @@
+green_do_1|Green Light 1|0|0|0|ON|OFF|
+yellow_do_1|Yellow Light 1|0|0|1|ON|OFF|
+red_do_1|Red Light 1|0|0|2|ON|OFF|
+buzzer_1|First Buzzer|0|0|3|ON|OFF|
+green_do_2|Green Light 2|0|0|4|ON|OFF|
+yellow_do_2|Yellow Light 2|0|0|5|ON|OFF|
+red_do_2|Red Light 2|0|0|6|ON|OFF|
+buzzer_2|Second Buzzer|0|0|7|ON|OFF|
+valve_1|Valve 1|0|0|8|ON|OFF|
+valve_2|Valve 2|0|0|9|ON|OFF|
+#changing_filter_1|ch f1|0|0|10|ON|OFF|
+#changing_filter_2|ch f2|0|0|11|ON|OFF|
+#lo_level|Low Level|0|0|12|ON|OFF|
+#hi_level|High Level|0|0|13|ON|OFF|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description

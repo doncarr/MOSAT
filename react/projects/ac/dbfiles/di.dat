@@ -1,0 +1,22 @@
+#    Tag (string max 25)
+#    Description (string max 50)
+#    Driver Number (char max 25)
+#    Card (char max 25)
+#    Channel (char max 25)
+#    Low Description (string max 12)
+#    High Description (string max 12)
+#    Alarm State (drop down {high, low, none})
+#    Shutdown State  (drop down {high, low, none})
+ON_AC1|AC unit one is on|0|0|0|ON|OFF|N|N|
+ON_AC2|AC unit one is on|0|0|1|ON|OFF|N|N|
+ON_AC3|AC unit one is on|0|0|2|ON|OFF|N|N|
+ON_AC4|AC unit one is on|0|0|3|ON|OFF|N|N|
+ON_AC5|AC unit one is on|0|0|4|ON|OFF|N|N|
+ON_AC6|AC unit one is on|0|0|5|ON|OFF|N|N|
+ON_AC7|AC unit one is on|0|0|6|ON|OFF|N|N|
+ON_AC8|AC unit one is on|0|0|7|ON|OFF|N|N|
+ON_AC9|AC unit one is on|0|0|8|ON|OFF|N|N|
+ON_AC10|AC unit one is on|0|0|9|ON|OFF|N|N|
+ON_AC11|AC unit one is on|0|0|10|ON|OFF|N|N|
+ON_AC12|AC unit one is on|0|0|11|ON|OFF|N|N|
+COM_FAILED|Communications Failed|0|0|16|ON|OFF|N|N|

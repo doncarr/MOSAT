@@ -1,0 +1,8 @@
+#DCALC1|Discrete Calc 1|(pump1_amp < 0.0) or (pump2_amp > 200) and pump1_on|Alarm|ok|N|N|
+# Tag
+# Description
+# calc expression
+# Low Description
+# High Description
+# Alarm State (High, Low, None)
+# Shutdown State (High, Low, None)

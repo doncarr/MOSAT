@@ -1,0 +1,14 @@
+PUMP1_ON|Bomba 1 ON|0|0|0|OFF|ON|N|N|
+PUMP2_ON|Bomba 1 ON|0|0|1|OFF|ON|N|N|
+PUMP3_ON|Bomba 1 ON|0|0|2|OFF|ON|N|N|
+PUMP4_ON|Bomba 1 ON|0|0|3|OFF|ON|N|N|
+COM_FAILED|Communications Failed|0|0|16|ALARM|OK|N|N|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description
+#    Alarm State
+#    Shutdown State

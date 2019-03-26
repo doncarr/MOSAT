@@ -1,0 +1,7 @@
+#127.0.0.1|../public_html/log/periferico_norte|
+172.16.110.99|../public_html/log/periferico_norte|
+172.16.115.38|../public_html/log/juarez2|
+172.16.115.30|../public_html/log/tetlan|
+172.16.115.31|../public_html/log/periferico_sur|
+#172.16.115.36|../public_html/log/rtu_prueba|
+#10.25.50.35|../public_html/log/juarez|

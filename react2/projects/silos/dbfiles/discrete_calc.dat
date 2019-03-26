@@ -1,0 +1,9 @@
+#dallas_2_fail|Dallas 2 Failed|(temp_2 < 5) or (temp_2 > 99)|Ok|Failed|N|N|
+#
+# Tag
+# Description
+# calc expression
+# Low Description
+# High Description
+# Alarm State (High, Low, None)
+# Shutdown State (High, Low, None)

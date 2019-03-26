@@ -1,0 +1,8 @@
+#PRESSURE|Pump Pressure|PSI|1|0.0|0|160|
+#    tag
+#    description
+#    engineering units
+#    decimals
+#    initial_value 
+#    scale low 
+#    scale high 

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%" height="100%" viewBox="0 0 300 150" onload="load()">
+
+  <title>Simple SVG Bar Graph Animation</title>
+  <metadata>author: Don Carr</metadata>
+
+  <script type="text/ecmascript"><![CDATA[
+    var going_down = true;
+    var bar_fill = 50;
+    var bar_obj;
+    var text_obj;
+    var pv_text_obj;
+
+    function intervalHandler()
+    {
+      do_animation();
+    }
+
+    function load()
+    {
+      bar_obj = document.getElementById("my_rect");
+      text_obj = document.getElementById("my_text");
+      pv_text_obj = document.getElementById("pv_text");
+      var interval = setInterval("intervalHandler()", 1000);
+    };
+
+    function do_animation()
+    {
+      if (going_down)
+      {
+        bar_fill = bar_fill + 1;
+        if (bar_fill >= 100)
+        {
+          going_down = false;
+          text_obj.textContent="Hit Bottom";
+        }
+      }  
+      else
+      {
+        bar_fill = bar_fill - 1;
+        if (bar_fill <= 0)
+        {
+          going_down = true;
+          text_obj.textContent="Hit Top";
+        }
+      }
+      bar_obj.setAttribute("height", bar_fill);
+      bar_obj.setAttribute("x", 5+(bar_fill/2));
+      bar_obj.setAttribute("y", 5+(bar_fill/4));
+      pv_text_obj.textContent=(bar_fill);
+    };
+  ]]></script>
+
+
+  
+ <text id="my_text" x="100" y="20" 
+        font-family="Verdana" font-size="20" fill="blue" >
+    starting 
+  </text>
+
+
+  <rect fill="blue" id="my_rect" x="20" y="10" width="20" height="80" stroke="black" stroke-width="1"/>
+
+
+  <text id="pv_text" x="20" y="125" font-family="Verdana" font-size="10" fill="black" >0</text>
+
+</svg>

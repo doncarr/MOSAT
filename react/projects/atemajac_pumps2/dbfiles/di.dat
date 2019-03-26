@@ -1,0 +1,21 @@
+LO_LEVEL|Nivel Bajo|0|1|0|BELOW|ABOVE|H|N|
+HI_LEVEL|Nivel Alto|0|1|1|BELOW|ABOVE|H|N|
+HI_HI_LEVEL|Nivel Muy Alto|0|1|2|BELOW|ABOVE|H|N|
+ULT_SON_ALM|Nivel Muy Alto|0|1|3|OK|ALARM|H|N|
+CFE_SUPPLY|Falla de alimentacion CFE|0|1|8|ALARM|OK|H|N|
+MIXER|Mescladora ON|0|1|10|ON|OFF|H|N|
+VPUMP1_ON|Bomba V1 ON|0|0|6|ON|OFF|H|N|
+VPUMP2_ON|Bomba V2 ON|0|0|7|ON|OFF|H|N|
+PUMP1_ON|Bomba 1 ON|0|0|8|ON|OFF|H|N|
+PUMP2_ON|Bomba 1 ON|0|0|9|ON|OFF|H|N|
+PUMP3_ON|Bomba 1 ON|0|0|10|ON|OFF|H|N|
+COM_FAILED|Communications Failed|0|1|16|ALARM|OK|N|N|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description
+#    Alarm State
+#    Shutdown State

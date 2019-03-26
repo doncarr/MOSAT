@@ -1,0 +1,18 @@
+#CALC1|Calculation 1|Dogs|TEMP_COLD_AC1 + (2.0 * exp(1.0))|1|10|20|80|90|5|0|0|0|0|
+VTemp|Temp Volts|volts|(RAW_TEMP / 1023) * 4.94|1|10|20|80|90|5|0|0|0|0|
+VHum_1|Hum 1 Volts|volts|(RAW_HUM_1 / 1023) * 4.94|1|10|20|80|90|5|0|0|0|0|
+VHum_2|Hum 2 Volts|volts|(RAW_HUM_2 / 1023) * 4.94|1|10|20|80|90|5|0|0|0|0|
+# tag
+# description
+# engineering units
+# calc expression
+# decimals
+# low alarm
+# low caution
+# high caution
+# high alarm
+# deadband
+# low alarm enable
+# low caution enable
+# high caution enable
+# high alarm enable

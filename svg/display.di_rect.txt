@@ -1,0 +1,5 @@
+svg_header|DI Faceplate|0|0|300|150|
+background|thistle|
+#link_params|15|10|7|firebrick|start|airound.svg|Round|aineedle.svg|Needle|
+rect_light|$1|lime|gray|35|50|30|25|B|
+attrs|$1|firebrick|100|10|7|

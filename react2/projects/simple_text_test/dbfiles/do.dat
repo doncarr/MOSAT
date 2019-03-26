@@ -1,0 +1,17 @@
+#DO00|DO 00|0|0|0|OFF|ON|1|
+#DO01|DO 01|0|0|1|OFF|ON|1|
+#DO02|DO 02|0|0|2|OFF|ON|1|
+#DO03|DO 03|0|0|3|OFF|ON|1|
+#DO04|DO 04|0|0|4|OFF|ON|1|
+#DO05|DO 05|0|0|5|OFF|ON|1|
+#DO06|DO 06|0|0|6|OFF|ON|1|
+#DO07|DO 07|0|0|7|OFF|ON|1|
+DO13|DO 13|0|0|13|OFF|ON|0|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description
+#    Invert PV?

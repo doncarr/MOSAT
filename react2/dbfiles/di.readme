@@ -1,0 +1,19 @@
+A discrete input is an imput that can be represented by two values (true/fales), (0,1), etc, and has a description for each state. For example, a valve open/closed, motor on/off, actuator extended/retracted, level above/below, pressure high/ok, temperature high/ok, etc.
+
+A discrete input has the following attributes:
+
+Tag: text string that is a unique identifier
+
+Description: a short description of the input
+
+Driver, card channel: The method to identify where this input comes from.
+
+Low Description: The string to indicate the value when the input is false/low/zero
+
+High Description: The string to indicate the value when the input is true/high/one
+
+Alarm State: Indicates in which state we consider an alarm, or 'N' for none.
+
+Shutdown State: Indicates in which state we should shutdown the system, or 'N' for none.
+
+Invert PV?: is a boolean to indicate that we should invert the signal on input. This is for drivers or systems that use reverse logic, where, for instance, a low voltage is recieved when a device is in the "on" state, or the state normally considered as 1/true/high. This is to have a consistent system, such that we can always consider a state of 1/true/high to be "open" for all valves, for instance. This also helps imensly when creating real-time displays where we want a brilliant color such as lime green, yellow, or bright red, to indicate "ON", and gray or some dim color to indicate "OFF".

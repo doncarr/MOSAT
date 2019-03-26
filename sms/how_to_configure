@@ -1,0 +1,24 @@
+How to configure the sms
+
+1.- Install mysql server 5
+2.- Establish the root password, its recommended that the password its "root"
+3.- Connect to mysql "mysql -u root -p"
+4.- Within mysql create a database called gammu "create database gammu;", and the exit whit "quit"
+5.- Create the database estructure with the file gammumysql.sql that is in the svn, in command line enter "mysql -u root -p gammu < gammumysql.sql"
+6.- Edit the gammurc file that is in the svn, so that the port parameter points to the phone, usually "port=/dev/ttyACM0" on a pc and "port=/dev/usb/acm/0" on a sbc
+7.- Copy the gammurc file to the user home directory as a hidden file ".gammurc"
+8.- Edit the gammusmsdrc.conf file that is in the svn, so that the port parameter points to the phone, usually "port=/dev/ttyACM0" on a pc and "port=/dev/usb/acm/0" on a sbc
+9.- Edit the gammusmsdrc.conf file that is in the svn, so that in th MYSQL configuration section the parameter user will be "root", the password parameter tis the same you established
+10.- Edit the send.conf and receive.conf files with the cellphone number you want, the format its:
+[group1]
+12345|name1|
+6789|name2|
+
+[group2]
+4237|name3|
+
+a given number can be present only once
+
+11.- Make sure mysqld its running, if not run it
+12.- Make sure the gammu daemon its running, if not run it like this "gammu --smsd MYSQL gammusmsdrc.conf &"
+13.- You are done, any doubts fell free to ask

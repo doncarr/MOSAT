@@ -1,0 +1,11 @@
+PUMP1|First Pump|PUMP1_ON|PUMP1_AMP|LEVEL|10|30|1.0|
+PUMP2|Second Pump|PUMP2_ON|PUMP2_AMP|LEVEL|10|30|1.0|
+PUMP3|Third Pump|PUMP3_ON|PUMP3_AMP|LEVEL|10|30|1.0|
+# tag
+# description
+# di_point (pump on/off)
+# amps_point (AI)
+# level_point (AI)
+# amps min
+# amps max
+# delay

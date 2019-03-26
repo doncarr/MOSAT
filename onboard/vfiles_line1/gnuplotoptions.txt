@@ -1,0 +1,13 @@
+set   autoscale
+unset log
+unset label
+set xtic auto
+set ytic auto
+set grid
+set xlabel " "
+set ylabel "km/h"
+set title "Tesoro-PerifericoSur"
+set terminal png small color
+set output
+
+plot "Tesoro-PerifericoSur.txt" with linespoints pt 0

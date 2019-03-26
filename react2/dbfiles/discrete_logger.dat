@@ -1,0 +1,12 @@
+dlogger_1|My dlogger|silo_d_logger|1|PUMP1_ON,B,PUMP2_ON,B,LO_LEVEL,F,HI_HI_LEVEL,R,HI_LEVEL,B|
+#    Tag
+#    Description
+#    Base File Name (actual name is base + YYYYMMDD) (can include path) 
+#    Log hour totals? (T/F)
+#    Tag 1 
+#    Log Rising, Falling, or Both? (R/F/B)
+#    Tag 2 
+#    Log Rising, Falling, or Both? (R/F/B)
+#    . . . . 
+#    Tag N 
+#    Log Rising, Falling, or Both? (R/F/B)

@@ -1,0 +1,364 @@
+Init done, 0, 0
+Reading config file: .//dbfiles/config.dat
+key: LogHome, val: /mnt/rd/tina/log/
+key: HtmlHome, val: /mnt/rd/tina/html/
+key: TemplateHome, val: ./template/
+key: SampleRate, val: 1
+key: SMS_ENABLED, val: 0
+Found: SampleRate, using 1
+Loading db point factory from: ./ai.so
+Reading AI ........
+avg_temp|Tank Temp 1|degC|0|0|0|0.0|10.0|0.0|100.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_1|Tank Temp 1|degC|0|0|0|0.0|10.0|0.0|100.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_2|Tank Temp 2|degC|0|0|1|0.0|10.0|0.0|100.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+Reading ao ........
+lo_temp|avg_temp|degC|0|0|4|0|10|0|10|1|0|500|
+hi_temp|avg_temp|degC|0|0|5|0|10|0|10|1|0|500|
+Reading di ........
+hydraulic_1a|hydraulic switch 1a|0|0|0|ON|OFF|N|N|
+hydraulic_1b|hydraulic switch 1b|0|0|1|ON|OFF|N|N|
+hydraulic_2a|hydraulic switch 2a|0|0|2|ON|OFF|N|N|
+hydraulic_2b|hydraulic switch 2b|0|0|3|ON|OFF|N|N|
+use_5_min|Use 5 Minutes|0|0|5|ON|OFF|N|N|
+lo_level|Above low Level|0|0|6|ON|OFF|N|N|
+hi_level|Above high Level|0|0|7|ON|OFF|N|N|
+plastic_running|Plastic Running|0|0|8|ON|OFF|N|N|
+Reading do ........
+green_do_1|Green Light 1|0|0|0|ON|OFF|
+yellow_do_1|Yellow Light 1|0|0|1|ON|OFF|
+red_do_1|Red Light 1|0|0|2|ON|OFF|
+buzzer_1|First Buzzer|0|0|3|ON|OFF|
+green_do_2|Green Light 2|0|0|4|ON|OFF|
+yellow_do_2|Yellow Light 2|0|0|5|ON|OFF|
+red_do_2|Red Light 2|0|0|6|ON|OFF|
+buzzer_2|Second Buzzer|0|0|7|ON|OFF|
+valve_1|Valve 1|0|0|8|ON|OFF|
+valve_2|Valve 2|0|0|9|ON|OFF|
+waited_5|Waited 5|0|0|99|ON|OFF|
+Reading pci ........
+Reading calc ........
+avg_temp|Average Temperature|degC|TEMP_1|1|10|20|80|90|5|0|0|0|0|
+
+Expression: TEMP_1
+Reading discrete calc ........
+changing_filter_1|Discrete Calc 1|(not hydraulic_1a) or (not hydraulic_1b)|Alarm|ok|N|N|
+Expression: (not hydraulic_1a) or (not hydraulic_1b)
+changing_filter_2|Discrete Calc 2|(not hydraulic_2a) or (not hydraulic_2b)|Alarm|ok|N|N|
+Expression: (not hydraulic_2a) or (not hydraulic_2b)
+changing_filter_2|Discrete Calc 2|(not hydraulic_2a) or (not hydraulic_2b)|Alarm|ok|N|N|
+Expression: (not hydraulic_2a) or (not hydraulic_2b)
+mid_level|Discrete Calc 3|low level and (not hi_level)|LoLevel|-|N|N|
+Expression: low level and (not hi_level)
+4 discrete calcs readnReading dcalc ........
+Reading int ........
+Reading pid ........
+Reading pump ........
+Reading ac ........
+Reading level ........
+Reading data ........
+Reading file logger ........
+Reading discrete logger ........
+Reading scan ........
+Reading web points ........
+Found: htmlhome, using /mnt/rd/tina/html/
+Found: templatehome, using ./template/
+AVG_TEMP|../images/bar_small.png|../images/small_half_off.png|../images/small_half_on.png|100|100|200|45|65                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: ../images/bar_small.png, ../images/small_half_off.png, ../images/small_half_on.png, 100, 100, 200, 45, 65
+AVG_TEMP)
+Args for AI = 1
+Parsing 1 Analog Expressions ......
+avg_temp Parsing "TEMP_1"
+Got ptr: TEMP_1
+Parsing 4 Discrete Expressions ......
+Good tag for expression: hydraulic_1a
+Good tag for expression: hydraulic_1b
+Good tag for expression: hydraulic_2a
+Good tag for expression: hydraulic_2b
+Good tag for expression: hydraulic_2a
+Good tag for expression: hydraulic_2b
+Discrete calc mid_level: Bad Expression: low level and (not hi_level)
+Found: SMS_ENABLED, using 0
+SMS is not Enabled - skipping initialization
+No foreground script executing, use "kill -1 626" or <CTRL-C> to stop
+----- reading .//corridas//control_level.txt -----
+valve_2.send(F)
+sys.wait(00:15)
+sys.wait_until("hi_level", 03:00)
+expr: 'hi_level'
+Good tag for expression: hi_level
+valve_2.send(T)
+sys.wait(00:15)
+sys.wait_until("not lo_level", 03:00)
+expr: 'not lo_level'
+Good tag for expression: lo_level
+sys.loop()
+----- done reading .//corridas//control_level.txt -----
+----- reading .//corridas//control_temp.txt -----
+lo_temp.send(54.1);
+hi_temp.send(55.9);
+sys.wait(00:05)
+valve_1.send(F)
+sys.wait_until("avg_temp > hi_temp", 59:59)
+expr: 'avg_temp > hi_temp'
+Got ptr: avg_temp
+Got ptr: hi_temp
+valve_1.send(T)
+sys.wait(00:05)
+sys.wait_until("avg_temp < lo_temp", 59:59)
+expr: 'avg_temp < lo_temp'
+Got ptr: avg_temp
+Got ptr: lo_temp
+sys.loop()
+----- done reading .//corridas//control_temp.txt -----
+----- reading .//corridas//control1.txt -----
+buzzer_1.send(F)
+red_DO_1.send(F)
+yellow_DO_1.send(F)
+green_DO_1.send(T)
+sys.wait(00:30)
+waited_5.send(F)
+sys.if(use_5_min)
+Good tag for expression: use_5_min
+waited_5.send(T)
+sys.wait_until_min("changing_filter_1", 03:30, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+sys.endif()
+sys.if("(not use_5_min) and (not waited_5)")
+Good tag for expression: use_5_min
+Good tag for expression: waited_5
+sys.wait_until_min("changing_filter_1", 07:30, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+sys.endif()
+green_DO_1.send(F)
+yellow_DO_1.send(T)
+sys.wait_until_min("changing_filter_1", 00:30, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+yellow_DO_1.blink(1.0)
+sys.wait_until_min("changing_filter_1", 0:30, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+yellow_DO_1.send(F)
+red_DO_1.blink(1.0)
+buzzer_1.send(T)
+sys.wait_until_min("changing_filter_1", 99:00, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+buzzer_1.send(F)
+red_DO_1.send(T)
+yellow_DO_1.send(T)
+green_DO_1.send(T)
+sys.wait(00:05)
+sys.loop()
+----- done reading .//corridas//control1.txt -----
+----- reading .//corridas//control2.txt -----
+buzzer_2.send(F)
+red_DO_2.send(F)
+yellow_DO_2.send(F)
+green_DO_2.send(T)
+sys.wait(00:30)
+sys.wait_until_min("changing_filter_2", 27:30, 3)
+expr: 'changing_filter_2'
+Good tag for expression: changing_filter_2
+green_DO_2.send(F)
+yellow_DO_2.send(T)
+sys.wait_until_min("changing_filter_2", 01:30, 3)
+expr: 'changing_filter_2'
+Good tag for expression: changing_filter_2
+yellow_DO_2.blink(1.0)
+sys.wait_until_min("changing_filter_2", 0:30, 3)
+expr: 'changing_filter_2'
+Good tag for expression: changing_filter_2
+yellow_DO_2.send(F)
+red_DO_2.blink(1.0)
+buzzer_2.send(T)
+sys.wait_until_min("changing_filter_2", 59:59, 3)
+expr: 'changing_filter_2'
+Good tag for expression: changing_filter_2
+buzzer_2.send(F)
+red_DO_2.send(T)
+yellow_DO_2.send(T)
+green_DO_2.send(T)
+sys.wait(00:05)
+sys.loop()
+----- done reading .//corridas//control2.txt -----
+Loading other driver: ./librtmodbus.so
+Loading iodriver from: ./libsimple_ascii_drv.so
+Class factory function is: new_simple_ascii
+Creating new simple_ascii iodriver
+Initializing simple ascii
+Opening device /dev/ttyT8S2 . . . 
+This is a tty device
+serial port ok:
+device name   /dev/ttyT8S2
+speed         9600
+data bits     8
+stop bits     1
+parity        0
+timeout:      1.000000
+Serial fd: 28 
+DONE initializing simple ascii
+Num tests = 0
+Sat Jan 31 10:53:21 2009
+/home/carr/tina
+Sending 'R' to micro
+Got: 01
+There are 1 analog values
+12 AI value: got: +000000560
+Got: 111100000000
+Got: 100000000000
+----------- The message was complete
+valve_2.send(F)
+4 bytes written: W090
+4 bytes read: OK
+
+Sat Jan 31 10:53:23 2009
+Start wait at: 0.000000
+sys.wait(00:15)
+lo_temp.send(54.10)
+hi_temp.send(55.90)
+Sat Jan 31 10:53:23 2009
+Start wait at: 0.000000
+sys.wait(00:05)
+buzzer_1.send(F)
+4 bytes written: W030
+4 bytes read: OK
+
+red_DO_1.send(F)
+4 bytes written: W020
+4 bytes read: OK
+
+yellow_DO_1.send(F)
+4 bytes written: W010
+4 bytes read: OK
+
+green_DO_1.send(T)
+4 bytes written: W001
+4 bytes read: OK
+
+Sat Jan 31 10:53:23 2009
+Start wait at: 0.000000
+sys.wait(00:30)
+buzzer_2.send(F)
+4 bytes written: W070
+4 bytes read: OK
+
+red_DO_2.send(F)
+4 bytes written: W060
+4 bytes read: OK
+
+yellow_DO_2.send(F)
+4 bytes written: W050
+4 bytes read: OK
+
+green_DO_2.send(T)
+4 bytes written: W041
+4 bytes read: OK
+
+Sat Jan 31 10:53:23 2009
+Start wait at: 0.000000
+sys.wait(00:30)
+Sending 'R' to micro
+Got: 01
+There are 1 analog values
+12 AI value: got: +000000565
+Got: 111100000000
+Got: 100010000000
+----------- The message was complete
+Sending 'R' to micro
+Got: 01
+There are 1 analog values
+12 AI value: got: +000000570
+Got: 111100000000
+Got: 100010000000
+----------- The message was complete
+Sending 'R' to micro
+Got: 01
+There are 1 analog values
+12 AI value: got: +000000570
+Got: 111100000000
+Got: 100010000000
+----------- The message was complete
+Sending 'R' to micro
+Got: 01
+There are 1 analog values
+12 AI value: got: +000000570
+Got: 111100000000
+Got: 100010000000
+----------- The message was complete
+Sending 'R' to micro
+Got: 01
+There are 1 analog values
+12 AI value: got: +000000570
+Got: 111100000000
+Got: 100010000000
+----------- The message was complete
+End wait at: 5.000000
+End wait: Sat Jan 31 10:53:28 2009
+valve_1.send(F)
+4 bytes written: W080
+4 bytes read: OK
+
+Sat Jan 31 10:53:28 2009
+Start wait until at: 5.000000
+sys.wait_until(avg_temp > hi_temp, 3599.00)
+wait_until condition TRUE at start: 5.000000
+TRUE: Sat Jan 31 10:53:28 2009
+valve_1.send(T)
+4 bytes written: W081
+4 bytes read: OK
+
+Sat Jan 31 10:53:28 2009
+Start wait at: 5.000000
+sys.wait(00:05)
+Got a signal: 2
+Turning off 11 discrete outputs:
+	green_do_1
+4 bytes written: W000
+4 bytes read: OK
+
+	yellow_do_1
+4 bytes written: W010
+4 bytes read: OK
+
+	red_do_1
+4 bytes written: W020
+4 bytes read: OK
+
+	buzzer_1
+4 bytes written: W030
+4 bytes read: OK
+
+	green_do_2
+4 bytes written: W040
+4 bytes read: OK
+
+	yellow_do_2
+4 bytes written: W050
+4 bytes read: OK
+
+	red_do_2
+4 bytes written: W060
+4 bytes read: OK
+
+	buzzer_2
+4 bytes written: W070
+4 bytes read: OK
+
+	valve_1
+4 bytes written: W080
+4 bytes read: OK
+
+	valve_2
+4 bytes written: W090
+4 bytes read: OK
+
+	waited_5
+Zeroing 2 analog outputs:
+	lo_temp
+	hi_temp
+End of program. Hit <enter> to exit . . .

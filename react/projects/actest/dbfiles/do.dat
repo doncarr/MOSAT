@@ -1,0 +1,9 @@
+SHUTOFF_AC1|Output to shutoff AC1|0|0|0|ON|OFF|
+SHUTOFF_AC2|Output to shutoff AC1|0|0|1|ON|OFF|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description

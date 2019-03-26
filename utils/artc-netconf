@@ -1,0 +1,32 @@
+#!/bin/sh
+function usage {
+       echo "$0 [address=<ip addr>] [gateway=<ip addr>] [netmask=<ip addr>]
+               [network=<ip addr>] [broadcast=<ip addr>] [mode=dhcp|static]
+       "
+       exit 0
+}
+
+if [ "$1" == "--help" ] || [ "$1" == "-h" ] || [ $# -eq 0 ]
+then
+        usage
+fi
+
+awk -f changeInterface.awk /etc/network/interfaces device=eth0 $@ > /tmp/interfaces
+
+# if ip change is successful
+if [ $? -eq 0 ]
+then
+        # if the change was not dhcp
+        # write dns at /etc/resolv.conf
+        if [ -z "$(echo $@ | grep dhcp)" ]
+        then
+            echo "nameserver 8.8.8.8" > /etc/resolv.conf
+        fi
+        mv /tmp/interfaces /etc/network/interfaces
+	   echo "Changes apply successfully"
+        echo $@
+else
+        echo "Network changes not valid.."
+        echo $@
+        usage
+fi

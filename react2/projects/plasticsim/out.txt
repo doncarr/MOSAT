@@ -1,0 +1,751 @@
+Init done, 0, 0
+Reading config file: .//dbfiles/config.dat
+key: LogHome, val: /mnt/rd/tina/log/
+key: HtmlHome, val: /mnt/rd/tina/html/
+key: TemplateHome, val: ./template/
+key: SampleRate, val: 1
+key: SMS_ENABLED, val: 0
+Found: SampleRate, using 1
+Loading db point factory from: /usr/local/lib/ai.so
+Reading AI ........
+TEMP_1|Tank Temp 1|degC|0|0|0|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_2|Tank Temp 2|degC|0|0|1|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+Reading ao ........
+lo_temp|avg_temp|degC|0|0|4|0|10|0|10|1|0|500|
+hi_temp|avg_temp|degC|0|0|5|0|10|0|10|1|0|500|
+time_1|Malla 1 time|sec|0|0|4|0|10|0|10|1|0|7200|
+time_2|Malla 2 time|sec|0|0|5|0|10|0|10|1|0|7200|
+Reading di ........
+hydraulic_1a|hydraulic switch 1a|0|0|0|ON|OFF|N|N|
+hydraulic_1b|hydraulic switch 1b|0|0|1|ON|OFF|N|N|
+hydraulic_2a|hydraulic switch 2a|0|0|2|ON|OFF|N|N|
+hydraulic_2b|hydraulic switch 2b|0|0|3|ON|OFF|N|N|
+motor_on|Motor On|0|0|6|ON|OFF|N|N|
+use_5_min|Use 5 Minutes|0|0|7|ON|OFF|N|N|
+switch_1|Switch 1|0|0|7|ON|OFF|N|N|
+switch_2|Switch 2|0|0|10|ON|OFF|N|N|
+switch_3|Switch 3|0|0|11|ON|OFF|N|N|
+switch_4|Switch 4|0|0|12|ON|OFF|N|N|
+lo_level|Above low Level|0|0|8|ON|OFF|N|N|
+hi_level|Above high Level|0|0|9|ON|OFF|N|N|
+plastic_running|Plastic Running|0|0|8|ON|OFF|N|N|
+Reading do ........
+green_do_1|Green Light 1|0|0|0|ON|OFF|
+yellow_do_1|Yellow Light 1|0|0|1|ON|OFF|
+red_do_1|Red Light 1|0|0|2|ON|OFF|
+buzzer_1|First Buzzer|0|0|3|ON|OFF|
+green_do_2|Green Light 2|0|0|4|ON|OFF|
+yellow_do_2|Yellow Light 2|0|0|5|ON|OFF|
+red_do_2|Red Light 2|0|0|6|ON|OFF|
+buzzer_2|Second Buzzer|0|0|7|ON|OFF|
+valve_1|Valve 1|0|0|8|ON|OFF|
+valve_2|Valve 2|0|0|9|ON|OFF|
+waited_5|Waited 5|0|0|99|ON|OFF|
+Reading pci ........
+Reading calc ........
+avg_temp|Average Temperature|degC|TEMP_2|1|10|20|80|90|5|0|0|0|0|
+
+Expression: TEMP_2
+time_1_min|malla 1 time minutes|Min|time_1 / 60|1|10|20|80|90|5|0|0|0|0|
+
+Expression: time_1 / 60
+time_2_min|malla 2 time minutes|Min|time_2 / 60|1|10|20|80|90|5|0|0|0|0|
+
+Expression: time_2 / 60
+Reading discrete calc ........
+changing_filter_1|Discrete Calc 1|((not hydraulic_1a) or (not hydraulic_1b)) and motor_on|no|yes|N|N|
+Expression: ((not hydraulic_1a) or (not hydraulic_1b)) and motor_on
+changing_filter_2|Discrete Calc 2|((not hydraulic_2a) or (not hydraulic_2b)) and motor_on|no|yes|N|N|
+Expression: ((not hydraulic_2a) or (not hydraulic_2b)) and motor_on
+mid_level|Discrete Calc 4|lo_level and (not hi_level)|LoLevel|-|N|N|
+Expression: lo_level and (not hi_level)
+malla_1_detect|Change detected malla 1|green_do_1 and yellow_do_1 and red_do_1||Detect|N|N|
+Expression: green_do_1 and yellow_do_1 and red_do_1
+malla_2_detect|Change detected malla 2|green_do_2 and yellow_do_2 and red_do_2||Detect|N|N|
+Expression: green_do_2 and yellow_do_2 and red_do_2
+5 discrete calcs readnReading dcalc ........
+Reading timer ........
+num_timer = 0
+Reading int ........
+Reading pid ........
+Reading pump ........
+Reading ac ........
+Reading level ........
+Reading data ........
+Reading file logger ........
+Reading discrete logger ........
+malla_log|Log de Mallas|malla_log|1|malla_1_detect|R|malla_2_detect|R|
+Logging hour totals
+Found: LogHome, using /mnt/rd/tina/log/
+Found: LogHome, using /mnt/rd/tina/log/
+collection is on for malla_log
+discrete point [0]: malla_1_detect, rising only
+discrete point [1]: malla_2_detect, rising only
+Reading scan ........
+Reading web points ........
+Found: htmlhome, using /mnt/rd/tina/html/
+Found: templatehome, using ./template/
+TEMP_1)
+Args for AI = 1
+TEMP_2)
+Args for AI = 1
+AVG_TEMP|../images/bar_small.png|../images/small_half_off.png|../images/small_half_on.png|100|100|200|45|65                                                                                                                                                                                )
+Args for AI = 9
+-- 9 parameter bar
+Bar: ../images/bar_small.png, ../images/small_half_off.png, ../images/small_half_on.png, 100, 100, 200, 45, 65
+AVG_TEMP)
+Args for AI = 1
+Found: htmlhome, using /mnt/rd/tina/html/
+Found: templatehome, using ./template/
+AVG_TEMP)
+Args for AI = 1
+TEMP_1)
+Args for AI = 1
+TEMP_2)
+Args for AI = 1
+TIME_1_MIN)
+Args for AI = 1
+TIME_1)
+Args for AI = 1
+TIME_2_MIN)
+Args for AI = 1
+TIME_2)
+Args for AI = 1
+Parsing 3 Analog Expressions ......
+avg_temp Parsing "TEMP_2"
+Got ptr: TEMP_2
+time_1_min Parsing "time_1 / 60"
+Got ptr: time_1
+time_2_min Parsing "time_2 / 60"
+Got ptr: time_2
+Parsing 5 Discrete Expressions ......
+Good tag for expression: hydraulic_1a
+Good tag for expression: hydraulic_1b
+Good tag for expression: motor_on
+Good tag for expression: hydraulic_2a
+Good tag for expression: hydraulic_2b
+Good tag for expression: motor_on
+Good tag for expression: lo_level
+Good tag for expression: hi_level
+Good tag for expression: green_do_1
+Good tag for expression: yellow_do_1
+Good tag for expression: red_do_1
+Good tag for expression: green_do_2
+Good tag for expression: yellow_do_2
+Good tag for expression: red_do_2
+Found: SMS_ENABLED, using 0
+SMS is not Enabled - skipping initialization
+----- reading .//corridas//control_level.txt -----
+valve_2.send(F)
+sys.wait(00:15)
+sys.wait_until("hi_level", 03:00)
+expr: 'hi_level'
+Good tag for expression: hi_level
+valve_2.send(T)
+sys.wait(00:15)
+sys.wait_until("not lo_level", 03:00)
+expr: 'not lo_level'
+Good tag for expression: lo_level
+sys.loop()
+----- done reading .//corridas//control_level.txt -----
+----- reading .//corridas//control_temp.txt -----
+lo_temp.send(54.1);
+hi_temp.send(55.9);
+sys.wait(00:05)
+valve_1.send(F)
+sys.wait_until("avg_temp > hi_temp", 59:59)
+expr: 'avg_temp > hi_temp'
+Got ptr: avg_temp
+Got ptr: hi_temp
+valve_1.send(T)
+sys.wait(00:05)
+sys.wait_until("avg_temp < lo_temp", 59:59)
+expr: 'avg_temp < lo_temp'
+Got ptr: avg_temp
+Got ptr: lo_temp
+sys.loop()
+----- done reading .//corridas//control_temp.txt -----
+----- reading .//corridas//control1.txt -----
+buzzer_1.send(F)
+red_DO_1.send(F)
+yellow_DO_1.send(F)
+green_DO_1.send(T)
+sys.wait(00:30)
+waited_5.send(F)
+sys.if(use_5_min)
+Good tag for expression: use_5_min
+waited_5.send(T)
+sys.wait_until_min("changing_filter_1", 03:30, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+sys.endif()
+sys.if("(not use_5_min) and (not waited_5)")
+Good tag for expression: use_5_min
+Good tag for expression: waited_5
+sys.wait_until_min("changing_filter_1", 07:30, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+sys.endif()
+green_DO_1.send(F)
+yellow_DO_1.send(T)
+sys.wait_until_min("changing_filter_1", 00:30, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+yellow_DO_1.blink(1.0)
+sys.wait_until_min("changing_filter_1", 0:30, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+yellow_DO_1.send(F)
+red_DO_1.blink(1.0)
+buzzer_1.send(T)
+sys.wait_until_min("changing_filter_1", 99:00, 3)
+expr: 'changing_filter_1'
+Good tag for expression: changing_filter_1
+buzzer_1.send(F)
+red_DO_1.send(T)
+yellow_DO_1.send(T)
+green_DO_1.send(T)
+sys.wait(00:05)
+sys.loop()
+----- done reading .//corridas//control1.txt -----
+----- reading .//corridas//control2.txt -----
+buzzer_2.send(F)
+red_DO_2.send(F)
+yellow_DO_2.send(F)
+green_DO_2.send(T)
+sys.wait(00:30)
+sys.wait_until_min("changing_filter_2", 27:30, 3)
+expr: 'changing_filter_2'
+Good tag for expression: changing_filter_2
+green_DO_2.send(F)
+yellow_DO_2.send(T)
+sys.wait_until_min("changing_filter_2", 01:30, 3)
+expr: 'changing_filter_2'
+Good tag for expression: changing_filter_2
+yellow_DO_2.blink(1.0)
+sys.wait_until_min("changing_filter_2", 0:30, 3)
+expr: 'changing_filter_2'
+Good tag for expression: changing_filter_2
+yellow_DO_2.send(F)
+red_DO_2.blink(1.0)
+buzzer_2.send(T)
+sys.wait_until_min("changing_filter_2", 59:59, 3)
+expr: 'changing_filter_2'
+Good tag for expression: changing_filter_2
+buzzer_2.send(F)
+red_DO_2.send(T)
+yellow_DO_2.send(T)
+green_DO_2.send(T)
+sys.wait(00:05)
+sys.loop()
+----- done reading .//corridas//control2.txt -----
+----- reading .//corridas//malla_time.txt -----
+sys.if("(not switch_1) and (not switch_3)")
+Good tag for expression: switch_1
+Good tag for expression: switch_3
+time_1.send(600)
+sys.endif()
+sys.if("(switch_1) and (not switch_3)")
+Good tag for expression: switch_1
+Good tag for expression: switch_3
+time_1.send(300)
+sys.endif()
+sys.if("(not switch_1) and (switch_3)")
+Good tag for expression: switch_1
+Good tag for expression: switch_3
+time_1.send(1200)
+sys.endif()
+sys.if("(switch_1) and (switch_3)")
+Good tag for expression: switch_1
+Good tag for expression: switch_3
+time_1.send(900)
+sys.endif()
+sys.if("(not switch_2) and (not switch_4)")
+Good tag for expression: switch_2
+Good tag for expression: switch_4
+time_2.send(1800)
+sys.endif()
+sys.if("(switch_2) and (not switch_4)")
+Good tag for expression: switch_2
+Good tag for expression: switch_4
+time_2.send(1200)
+sys.endif()
+sys.if("(not switch_2) and (switch_4)")
+Good tag for expression: switch_2
+Good tag for expression: switch_4
+time_2.send(4200)
+sys.endif()
+sys.if("(switch_2) and (switch_4)")
+Good tag for expression: switch_2
+Good tag for expression: switch_4
+time_2.send(3000)
+sys.endif()
+sys.wait(00:02)
+sys.loop()
+----- done reading .//corridas//malla_time.txt -----
+Loading other driver: /usr/local/lib/librtmodbus.so
+Loading iodriver from: /usr/local/lib/libsimple_ascii_drv.so
+Class factory function is: new_simple_ascii
+Creating new simple_ascii iodriver
+Initializing simple ascii
+Opening device /dev/ttyT8S2 . . . 
+This is a tty device
+serial port ok:
+device name   /dev/ttyT8S2
+speed         9600
+data bits     8
+stop bits     1
+parity        0
+timeout:      1.000000
+Serial fd: 31 
+DONE initializing simple ascii
+Num tests = 0
+Sat Feb 14 15:55:52 2009
+No foreground script executing, use "kill -1 773" or <CTRL-C> to stop
+/home/artc/tina
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000055
+Got: 1111000010000
+Got: 000000000000
+----------- The message was complete
+valve_2.send(F)
+4 bytes written: W090
+4 bytes read: OK
+
+Sat Feb 14 15:55:53 2009
+sys.wait(00:15)
+lo_temp.send(54.10)
+hi_temp.send(55.90)
+Sat Feb 14 15:55:53 2009
+sys.wait(00:05)
+buzzer_1.send(F)
+4 bytes written: W030
+4 bytes read: OK
+
+red_DO_1.send(F)
+4 bytes written: W020
+4 bytes read: OK
+
+yellow_DO_1.send(F)
+4 bytes written: W010
+4 bytes read: OK
+
+green_DO_1.send(T)
+4 bytes written: W001
+4 bytes read: OK
+
+Sat Feb 14 15:55:53 2009
+sys.wait(00:30)
+buzzer_2.send(F)
+4 bytes written: W070
+4 bytes read: OK
+
+red_DO_2.send(F)
+4 bytes written: W060
+4 bytes read: OK
+
+yellow_DO_2.send(F)
+4 bytes written: W050
+4 bytes read: OK
+
+green_DO_2.send(T)
+4 bytes written: W041
+4 bytes read: OK
+
+Sat Feb 14 15:55:53 2009
+sys.wait(00:30)
+sys.if((not switch_1) and (not switch_3))
+time_1.send(600.00)
+sys.endif()
+sys.if((switch_1) and (not switch_3))
+sys.endif()
+sys.if((not switch_1) and (switch_3))
+sys.endif()
+sys.if((switch_1) and (switch_3))
+sys.endif()
+sys.if((not switch_2) and (not switch_4))
+time_2.send(1800.00)
+sys.endif()
+sys.if((switch_2) and (not switch_4))
+sys.endif()
+sys.if((not switch_2) and (switch_4))
+sys.endif()
+sys.if((switch_2) and (switch_4))
+sys.endif()
+Sat Feb 14 15:55:53 2009
+sys.wait(00:02)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000055
+Got: 1111000010000
+Got: 100010000000
+----------- The message was complete
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000055
+Got: 1111000010000
+Got: 100010000000
+----------- The message was complete
+End wait: Sat Feb 14 15:55:55 2009
+-------- Loop --------
+sys.if((not switch_1) and (not switch_3))
+time_1.send(600.00)
+sys.endif()
+sys.if((switch_1) and (not switch_3))
+sys.endif()
+sys.if((not switch_1) and (switch_3))
+sys.endif()
+sys.if((switch_1) and (switch_3))
+sys.endif()
+sys.if((not switch_2) and (not switch_4))
+time_2.send(1800.00)
+sys.endif()
+sys.if((switch_2) and (not switch_4))
+sys.endif()
+sys.if((not switch_2) and (switch_4))
+sys.endif()
+sys.if((switch_2) and (switch_4))
+sys.endif()
+Sat Feb 14 15:55:55 2009
+sys.wait(00:02)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010000000
+----------- The message was complete
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010000000
+----------- The message was complete
+End wait: Sat Feb 14 15:55:57 2009
+-------- Loop --------
+sys.if((not switch_1) and (not switch_3))
+time_1.send(600.00)
+sys.endif()
+sys.if((switch_1) and (not switch_3))
+sys.endif()
+sys.if((not switch_1) and (switch_3))
+sys.endif()
+sys.if((switch_1) and (switch_3))
+sys.endif()
+sys.if((not switch_2) and (not switch_4))
+time_2.send(1800.00)
+sys.endif()
+sys.if((switch_2) and (not switch_4))
+sys.endif()
+sys.if((not switch_2) and (switch_4))
+sys.endif()
+sys.if((switch_2) and (switch_4))
+sys.endif()
+Sat Feb 14 15:55:57 2009
+sys.wait(00:02)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010000000
+----------- The message was complete
+End wait: Sat Feb 14 15:55:58 2009
+valve_1.send(F)
+4 bytes written: W080
+4 bytes read: OK
+
+Sat Feb 14 15:55:58 2009
+sys.wait_until(avg_temp > hi_temp, 3599.00)
+valve_1.send(T)
+4 bytes written: W081
+4 bytes read: OK
+
+Sat Feb 14 15:55:58 2009
+sys.wait(00:05)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+End wait: Sat Feb 14 15:55:59 2009
+-------- Loop --------
+sys.if((not switch_1) and (not switch_3))
+time_1.send(600.00)
+sys.endif()
+sys.if((switch_1) and (not switch_3))
+sys.endif()
+sys.if((not switch_1) and (switch_3))
+sys.endif()
+sys.if((switch_1) and (switch_3))
+sys.endif()
+sys.if((not switch_2) and (not switch_4))
+time_2.send(1800.00)
+sys.endif()
+sys.if((switch_2) and (not switch_4))
+sys.endif()
+sys.if((not switch_2) and (switch_4))
+sys.endif()
+sys.if((switch_2) and (switch_4))
+sys.endif()
+Sat Feb 14 15:55:59 2009
+sys.wait(00:02)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+End wait: Sat Feb 14 15:56:01 2009
+-------- Loop --------
+sys.if((not switch_1) and (not switch_3))
+time_1.send(600.00)
+sys.endif()
+sys.if((switch_1) and (not switch_3))
+sys.endif()
+sys.if((not switch_1) and (switch_3))
+sys.endif()
+sys.if((switch_1) and (switch_3))
+sys.endif()
+sys.if((not switch_2) and (not switch_4))
+time_2.send(1800.00)
+sys.endif()
+sys.if((switch_2) and (not switch_4))
+sys.endif()
+sys.if((not switch_2) and (switch_4))
+sys.endif()
+sys.if((switch_2) and (switch_4))
+sys.endif()
+Sat Feb 14 15:56:01 2009
+sys.wait(00:02)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+End wait: Sat Feb 14 15:56:03 2009
+Sat Feb 14 15:56:03 2009
+sys.wait_until(avg_temp < lo_temp, 3599.00)
+End wait: Sat Feb 14 15:56:03 2009
+-------- Loop --------
+sys.if((not switch_1) and (not switch_3))
+time_1.send(600.00)
+sys.endif()
+sys.if((switch_1) and (not switch_3))
+sys.endif()
+sys.if((not switch_1) and (switch_3))
+sys.endif()
+sys.if((switch_1) and (switch_3))
+sys.endif()
+sys.if((not switch_2) and (not switch_4))
+time_2.send(1800.00)
+sys.endif()
+sys.if((switch_2) and (not switch_4))
+sys.endif()
+sys.if((not switch_2) and (switch_4))
+sys.endif()
+sys.if((switch_2) and (switch_4))
+sys.endif()
+Sat Feb 14 15:56:03 2009
+sys.wait(00:02)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+End wait: Sat Feb 14 15:56:05 2009
+-------- Loop --------
+sys.if((not switch_1) and (not switch_3))
+time_1.send(600.00)
+sys.endif()
+sys.if((switch_1) and (not switch_3))
+sys.endif()
+sys.if((not switch_1) and (switch_3))
+sys.endif()
+sys.if((switch_1) and (switch_3))
+sys.endif()
+sys.if((not switch_2) and (not switch_4))
+time_2.send(1800.00)
+sys.endif()
+sys.if((switch_2) and (not switch_4))
+sys.endif()
+sys.if((not switch_2) and (switch_4))
+sys.endif()
+sys.if((switch_2) and (switch_4))
+sys.endif()
+Sat Feb 14 15:56:05 2009
+sys.wait(00:02)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+End wait: Sat Feb 14 15:56:07 2009
+-------- Loop --------
+sys.if((not switch_1) and (not switch_3))
+time_1.send(600.00)
+sys.endif()
+sys.if((switch_1) and (not switch_3))
+sys.endif()
+sys.if((not switch_1) and (switch_3))
+sys.endif()
+sys.if((switch_1) and (switch_3))
+sys.endif()
+sys.if((not switch_2) and (not switch_4))
+time_2.send(1800.00)
+sys.endif()
+sys.if((switch_2) and (not switch_4))
+sys.endif()
+sys.if((not switch_2) and (switch_4))
+sys.endif()
+sys.if((switch_2) and (switch_4))
+sys.endif()
+Sat Feb 14 15:56:07 2009
+sys.wait(00:02)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+End wait: Sat Feb 14 15:56:08 2009
+Sat Feb 14 15:56:08 2009
+sys.wait_until(hi_level, 180.00)
+Sending 'R' to micro
+Got: 02
+There are 2 analog values
+12 AI value: got: +000000057
+12 AI value: got: +000000056
+Got: 1111000010000
+Got: 100010001000
+----------- The message was complete
+End wait: Sat Feb 14 15:56:09 2009
+-------- Loop --------
+sys.if((not switch_1) and (not switch_3))
+time_1.send(600.00)
+sys.endif()
+sys.if((switch_1) and (not switch_3))
+sys.endif()
+sys.if((not switch_1) and (switch_3))
+sys.endif()
+sys.if((switch_1) and (switch_3))
+sys.endif()
+sys.if((not switch_2) and (not switch_4))
+time_2.send(1800.00)
+sys.endif()
+sys.if((switch_2) and (not switch_4))
+sys.endif()
+sys.if((not switch_2) and (switch_4))
+sys.endif()
+sys.if((switch_2) and (switch_4))
+sys.endif()
+Sat Feb 14 15:56:09 2009
+sys.wait(00:02)
+Got a signal: 15
+Turning off 11 discrete outputs:
+	green_do_1
+4 bytes written: W000
+4 bytes read: OK
+
+	yellow_do_1
+4 bytes written: W010
+4 bytes read: OK
+
+	red_do_1
+4 bytes written: W020
+4 bytes read: OK
+
+	buzzer_1
+4 bytes written: W030
+4 bytes read: OK
+
+	green_do_2
+4 bytes written: W040
+4 bytes read: OK
+
+	yellow_do_2
+4 bytes written: W050
+4 bytes read: OK
+
+	red_do_2
+4 bytes written: W060
+4 bytes read: OK
+
+	buzzer_2
+4 bytes written: W070
+4 bytes read: OK
+
+	valve_1
+4 bytes written: W080
+4 bytes read: OK
+
+	valve_2
+4 bytes written: W090
+4 bytes read: OK
+
+	waited_5
+Zeroing 4 analog outputs:
+	lo_temp
+	hi_temp
+	time_1
+	time_2
+End of program. Hit <enter> to exit . . .

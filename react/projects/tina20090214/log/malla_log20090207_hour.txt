@@ -1,0 +1,14 @@
+	malla_1_detect	malla_2_detect
+	malla_1_detect	malla_2_detect
+17	0	4
+	malla_1_detect	malla_2_detect
+	malla_1_detect	malla_2_detect
+	malla_1_detect	malla_2_detect
+18	4	4
+19	12	8
+20	18	8
+21	16	8
+22	32	6
+23	16	6
+--------------
+total	98	40

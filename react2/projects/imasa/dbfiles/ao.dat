@@ -1,0 +1,118 @@
+#AO0|Motor Control|%|7|0|0|0|10|0|10|1|0|100|
+#AO1|Motor Control|%|7|0|1|0|10|0|10|1|0|500|
+#AO2|Motor Control|%|7|0|2|0|10|0|10|1|0|500|
+#AO3|Motor Control|%|7|0|3|0|10|0|10|1|0|500|
+#    AO1|Analog Output 1|PSI|0|0|0|0|100|0|10|1|0|10|
+#    Tag
+#    Description
+#    Engineering Units Label
+#    Driver Number
+#    Card
+#    Channel
+#    Engineering Units Low
+#    Engineering Units High
+#    Raw Value Low
+#    Raw Value High
+#    Decimal Places
+#    Output Limit Low
+#    Output Limit High
+AO_000|Analong Output 000|%|0|0|0|0|10|0|10|1|0|100|
+AO_001|Analong Output 001|%|0|0|1|0|10|0|10|1|0|100|
+AO_002|Analong Output 002|%|0|0|2|0|10|0|10|1|0|100|
+AO_003|Analong Output 003|%|0|0|3|0|10|0|10|1|0|100|
+AO_004|Analong Output 004|%|0|0|4|0|10|0|10|1|0|100|
+AO_005|Analong Output 005|%|0|0|5|0|10|0|10|1|0|100|
+AO_006|Analong Output 006|%|0|0|6|0|10|0|10|1|0|100|
+AO_007|Analong Output 007|%|0|0|7|0|10|0|10|1|0|100|
+AO_008|Analong Output 008|%|0|0|8|0|10|0|10|1|0|100|
+AO_009|Analong Output 009|%|0|0|9|0|10|0|10|1|0|100|
+AO_010|Analong Output 010|%|0|0|10|0|10|0|10|1|0|100|
+AO_011|Analong Output 011|%|0|0|11|0|10|0|10|1|0|100|
+AO_012|Analong Output 012|%|0|0|12|0|10|0|10|1|0|100|
+AO_013|Analong Output 013|%|0|0|13|0|10|0|10|1|0|100|
+AO_014|Analong Output 014|%|0|0|14|0|10|0|10|1|0|100|
+AO_015|Analong Output 015|%|0|0|15|0|10|0|10|1|0|100|
+AO_016|Analong Output 016|%|0|0|16|0|10|0|10|1|0|100|
+AO_017|Analong Output 017|%|0|0|17|0|10|0|10|1|0|100|
+AO_018|Analong Output 018|%|0|0|18|0|10|0|10|1|0|100|
+AO_019|Analong Output 019|%|0|0|19|0|10|0|10|1|0|100|
+AO_020|Analong Output 020|%|0|0|20|0|10|0|10|1|0|100|
+AO_021|Analong Output 021|%|0|0|21|0|10|0|10|1|0|100|
+AO_022|Analong Output 022|%|0|0|22|0|10|0|10|1|0|100|
+AO_023|Analong Output 023|%|0|0|23|0|10|0|10|1|0|100|
+AO_024|Analong Output 024|%|0|0|24|0|10|0|10|1|0|100|
+AO_025|Analong Output 025|%|0|0|25|0|10|0|10|1|0|100|
+AO_026|Analong Output 026|%|0|0|26|0|10|0|10|1|0|100|
+AO_027|Analong Output 027|%|0|0|27|0|10|0|10|1|0|100|
+AO_028|Analong Output 028|%|0|0|28|0|10|0|10|1|0|100|
+AO_029|Analong Output 029|%|0|0|29|0|10|0|10|1|0|100|
+AO_030|Analong Output 030|%|0|0|30|0|10|0|10|1|0|100|
+AO_031|Analong Output 031|%|0|0|31|0|10|0|10|1|0|100|
+AO_032|Analong Output 032|%|0|0|32|0|10|0|10|1|0|100|
+AO_033|Analong Output 033|%|0|0|33|0|10|0|10|1|0|100|
+AO_034|Analong Output 034|%|0|0|34|0|10|0|10|1|0|100|
+AO_035|Analong Output 035|%|0|0|35|0|10|0|10|1|0|100|
+AO_036|Analong Output 036|%|0|0|36|0|10|0|10|1|0|100|
+AO_037|Analong Output 037|%|0|0|37|0|10|0|10|1|0|100|
+AO_038|Analong Output 038|%|0|0|38|0|10|0|10|1|0|100|
+AO_039|Analong Output 039|%|0|0|39|0|10|0|10|1|0|100|
+AO_040|Analong Output 040|%|0|0|40|0|10|0|10|1|0|100|
+AO_041|Analong Output 041|%|0|0|41|0|10|0|10|1|0|100|
+AO_042|Analong Output 042|%|0|0|42|0|10|0|10|1|0|100|
+AO_043|Analong Output 043|%|0|0|43|0|10|0|10|1|0|100|
+AO_044|Analong Output 044|%|0|0|44|0|10|0|10|1|0|100|
+AO_045|Analong Output 045|%|0|0|45|0|10|0|10|1|0|100|
+AO_046|Analong Output 046|%|0|0|46|0|10|0|10|1|0|100|
+AO_047|Analong Output 047|%|0|0|47|0|10|0|10|1|0|100|
+AO_048|Analong Output 048|%|0|0|48|0|10|0|10|1|0|100|
+AO_049|Analong Output 049|%|0|0|49|0|10|0|10|1|0|100|
+AO_050|Analong Output 050|%|0|0|50|0|10|0|10|1|0|100|
+AO_051|Analong Output 051|%|0|0|51|0|10|0|10|1|0|100|
+AO_052|Analong Output 052|%|0|0|52|0|10|0|10|1|0|100|
+AO_053|Analong Output 053|%|0|0|53|0|10|0|10|1|0|100|
+AO_054|Analong Output 054|%|0|0|54|0|10|0|10|1|0|100|
+AO_055|Analong Output 055|%|0|0|55|0|10|0|10|1|0|100|
+AO_056|Analong Output 056|%|0|0|56|0|10|0|10|1|0|100|
+AO_057|Analong Output 057|%|0|0|57|0|10|0|10|1|0|100|
+AO_058|Analong Output 058|%|0|0|58|0|10|0|10|1|0|100|
+AO_059|Analong Output 059|%|0|0|59|0|10|0|10|1|0|100|
+AO_060|Analong Output 060|%|0|0|60|0|10|0|10|1|0|100|
+AO_061|Analong Output 061|%|0|0|61|0|10|0|10|1|0|100|
+AO_062|Analong Output 062|%|0|0|62|0|10|0|10|1|0|100|
+AO_063|Analong Output 063|%|0|0|63|0|10|0|10|1|0|100|
+AO_064|Analong Output 064|%|0|0|64|0|10|0|10|1|0|100|
+AO_065|Analong Output 065|%|0|0|65|0|10|0|10|1|0|100|
+AO_066|Analong Output 066|%|0|0|66|0|10|0|10|1|0|100|
+AO_067|Analong Output 067|%|0|0|67|0|10|0|10|1|0|100|
+AO_068|Analong Output 068|%|0|0|68|0|10|0|10|1|0|100|
+AO_069|Analong Output 069|%|0|0|69|0|10|0|10|1|0|100|
+AO_070|Analong Output 070|%|0|0|70|0|10|0|10|1|0|100|
+AO_071|Analong Output 071|%|0|0|71|0|10|0|10|1|0|100|
+AO_072|Analong Output 072|%|0|0|72|0|10|0|10|1|0|100|
+AO_073|Analong Output 073|%|0|0|73|0|10|0|10|1|0|100|
+AO_074|Analong Output 074|%|0|0|74|0|10|0|10|1|0|100|
+AO_075|Analong Output 075|%|0|0|75|0|10|0|10|1|0|100|
+AO_076|Analong Output 076|%|0|0|76|0|10|0|10|1|0|100|
+AO_077|Analong Output 077|%|0|0|77|0|10|0|10|1|0|100|
+AO_078|Analong Output 078|%|0|0|78|0|10|0|10|1|0|100|
+AO_079|Analong Output 079|%|0|0|79|0|10|0|10|1|0|100|
+AO_080|Analong Output 080|%|0|0|80|0|10|0|10|1|0|100|
+AO_081|Analong Output 081|%|0|0|81|0|10|0|10|1|0|100|
+AO_082|Analong Output 082|%|0|0|82|0|10|0|10|1|0|100|
+AO_083|Analong Output 083|%|0|0|83|0|10|0|10|1|0|100|
+AO_084|Analong Output 084|%|0|0|84|0|10|0|10|1|0|100|
+AO_085|Analong Output 085|%|0|0|85|0|10|0|10|1|0|100|
+AO_086|Analong Output 086|%|0|0|86|0|10|0|10|1|0|100|
+AO_087|Analong Output 087|%|0|0|87|0|10|0|10|1|0|100|
+AO_088|Analong Output 088|%|0|0|88|0|10|0|10|1|0|100|
+AO_089|Analong Output 089|%|0|0|89|0|10|0|10|1|0|100|
+AO_090|Analong Output 090|%|0|0|90|0|10|0|10|1|0|100|
+AO_091|Analong Output 091|%|0|0|91|0|10|0|10|1|0|100|
+AO_092|Analong Output 092|%|0|0|92|0|10|0|10|1|0|100|
+AO_093|Analong Output 093|%|0|0|93|0|10|0|10|1|0|100|
+AO_094|Analong Output 094|%|0|0|94|0|10|0|10|1|0|100|
+AO_095|Analong Output 095|%|0|0|95|0|10|0|10|1|0|100|
+AO_096|Analong Output 096|%|0|0|96|0|10|0|10|1|0|100|
+AO_097|Analong Output 097|%|0|0|97|0|10|0|10|1|0|100|
+AO_098|Analong Output 098|%|0|0|98|0|10|0|10|1|0|100|
+AO_099|Analong Output 099|%|0|0|99|0|10|0|10|1|0|100|

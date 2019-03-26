@@ -1,0 +1,2 @@
+wget --output-document=tmphum.txt http://adaptivertc.no-ip.org/root/log/U1_U2_tmp_hum$(date +%Y%m%d).txt 
+./temp_graph tmphum 

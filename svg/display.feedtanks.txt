@@ -1,0 +1,95 @@
+svg_header|Feed Tanks|0|0|300|150|
+background|thistle|
+#imasa_logo|0|0|20|
+
+link|5|145|5|firebrick|start|cool.svg|Cooling Tower|switch.svg|Main Switching|spray.svg|Spray|tina.svg|Tina|transfer.svg|Transfer|gauge.svg|Gauges|pipes.svg|Pipes|pipes2d.svg|Pipes 2D|
+
+text|120|12|15|firebrick|middle|Feed Tanks|
+
+text|260|22|5|firebrick|start|Oil Feed|To Cryst.|COV-Ax-D,-E,-F|
+
+text|118|22|5|firebrick|start|Olein Tank|From PF1082B|
+text|118|37|5|firebrick|start|OV Tank|From PF1082OV|
+
+valve3way|COV_810_A|orange|gray|70|35|8|2|0|1|3|1|
+text|70|28|4|black|middle|COV-810-A|
+pipe2d|null|orange|orange|2|74|35|h|110|
+triangle|116|35|5|black|-90|
+pipe2d|null|orange|orange|2|110|21|h|100|v|34|b|2|
+triangle|116|21|5|black|-90|
+pipe2d|COV_810_A|lightgrey|orange|2|70|39|v|45|h|103|v|52|
+pipe2d|COV_810_A|orange|lightgrey|2|66|35|h|33|v|52|
+
+text|225|18|4|black|middle|COV 21A,B|
+valve|PUMP2_ON|lime|gray|225|25|8|2|0|1|
+
+text|207|26|5|grey|end|Nitrogen|
+pipe2d|null|lightgrey|lightgrey|2|210|25|h|221|
+pipe2d|null|lightgrey|lightgrey|2|229|25|h|252|
+triangle|252|25|5|black|90|
+
+pipe2d|null|lightgrey|lightgrey|2|202|68|h|240|v|26|b|2|
+text|200|69|5|grey|end|Conds.|
+
+pipe2d|null|lightgrey|lightgrey|2|209|81|h|241|v|106|
+
+valve|PUMP3_ON|lime|gray|240|50|8|2|270|1|
+text|246|50|4|black|start|COV-21A,A|
+heatex|215|65|15|0|
+
+pump|PUMP1_ON|magenta|gray|238|110|8|2|0|1|
+text|238|120|4|black|middle|P-810|
+valve3way|PUMP2_ON|magenta|gray|241|90|8|2|-90|2|3|1|
+text|243|85|4|black|start|COV-811-A|
+pipe2d|null|lightgrey|lightgrey|2|245|90|h|255|
+triangle|261|90|5|black|-90|
+
+text|263|92|5|firebrick|start|BC Oil Feed|From P-574|
+
+#moved up
+pipe2d|null|lightgrey|lightgrey|2|59|110|h|234|
+
+valve|PUMP2_ON|magenta|gray|216|101|8|2|0|1|
+text|216|95|4|black|middle|MOV-810-N|
+pipe2d|null|lightgrey|lightgrey|2|212|101|h|190|v|109|b|2|
+pipe2d|null|lightgrey|lightgrey|2|220|101|h|240|b|2|
+
+simple_tank|p|black|20|50|15|40|1.5|
+text|27.5|55|4|white|middle|T810|
+simple_rect|LEVEL|mediumslateblue|15|51.5|37|5|
+simple_tank|p|black|100|50|15|40|1.5|
+text|107.5|55|4|white|middle|T811|
+simple_rect|LEVEL|mediumslateblue|95|51.5|37|5|
+
+blades|PUMP1_ON|30|60|9|10|0|lime|gray|
+motor|PUMP1_ON|lime|grey|38|60|12|0|1|
+text|44|54|5|black|middle|A810|
+
+blades|PUMP2_ON|110|60|8|10|0|lime|gray|
+motor|PUMP2_ON|lime|grey|118|60|12|0|1|
+text|124|54|5|black|middle|A811|
+
+text|55|103|4|black|middle|MOV-899-H|
+valve|PUMP3_ON|cyan|gray|55|110|8|2|0|1|
+
+#moved up
+#pipe2d|null|lightgrey|lightgrey|2|59|110|h|234|
+pipe2d|null|lightgrey|lightgrey|2|51|110|h|40|
+pipe2d|null|lightgrey|lightgrey|2|54|88|h|70|v|109|b|2|
+
+text|35|111|5|grey|end|Nitrogen|
+
+text|50|80|4|black|middle|MOV-810-C|
+valve|PUMP1_ON|magenta|gray|50|88|8|2|0|1|
+pipe2d|null|lightgrey|lightgrey|2|46|88|h|35|
+
+text|130|80|4|black|middle|MOV-811-C|
+valve|PUMP2_ON|lime|gray|130|88|8|2|0|1|
+pipe2d|null|lightgrey|lightgrey|2|126|88|h|115|
+pipe2d|PUMP2_ON|orange|lightgrey|2|134|88|h|150|v|109|b|2|
+
+valve|PUMP3_ON|yellow|gray|205|81|8|1|0|1|
+text|208|74.5|4|black|end|TCV-21-A|
+pipe2d|null|lightgrey|lightgrey|2|201|81|h|180|
+text|178|82|5|grey|end|Steam|
+

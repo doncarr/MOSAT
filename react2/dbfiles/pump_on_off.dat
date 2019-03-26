@@ -1,0 +1,8 @@
+#    Tag (string max 25)
+#    Description (string max 50)
+#    Output Tag (string max 25)
+#    Open Tag (string max 25)
+#    Closed Tag (string max 25)
+#    Open Time Seconds (float)
+vlave1|valve1_do|valve1_open|valve1_closed|5|
+vlave2|valve2_do|valve2_open|valve2_closed|5|

@@ -1,0 +1,27 @@
+svg_header|My Title|0|0|300|150|
+background|thistle|
+imasa_logo|0|0|35|
+# Paste the following, after the url for the svg file (including th '?')
+#?LEVEL+PUMP1_AMP+PUMP2_AMP+PUMP3_AMP+PUMP1_ON+PUMP2_ON+PUMP3_ON+HI_HI_LEVEL+HI_LEVEL+LO_LEVEL
+#bar|$1|mediumslateblue|36|20|100|
+#bar|$2|darkturquoise|80|30|60|
+#bar|$3|crimson|120|30|60|
+#bar|$4|mediumspringgreen|160|30|60|
+simple_rect|$1|mediumslateblue|38|20|100|
+simple_rect|$2|darkturquoise|80|30|60|
+simple_rect|$3|crimson|120|30|60|
+simple_rect|$4|mediumspringgreen|160|30|60|
+simple_panel|$5|gray|yellow|86|109|8|
+simple_panel|$6|gray|yellow|126|109|8|
+simple_panel|$7|gray|yellow|166|109|8|
+only_text|IMASA|blue|125|18|25|middle|
+insert_svg|<text x="100" y="145" font-size="10" fill="green">Pure Simple SVG</text>
+simple_tank|c|200|10|40|110|1.5|25|7|
+simple_tank|p|260|20|35|100|8|
+simple_pipe|gray|7|0|145|h|70|v|130|h|220|v|120|
+simple_pipe|gray|7|220|130|v|144|h|247|v|4|h|190|v|25|h|75|v|12|h|45|v|0|
+simple_contact|$8|yellow|gray|27|40|9|
+simple_contact|$9|yellow|gray|27|63|9|
+simple_contact|$9|yellow|gray|7|63|9|
+simple_contact|$10|yellow|gray|27|98|9|
+simple_contact|$10|yellow|gray|7|98|9|

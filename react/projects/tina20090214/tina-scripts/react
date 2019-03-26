@@ -1,0 +1,74 @@
+#!/bin/sh
+#
+# /etc/init.d/wu-ftpd  --  start/stop the wu-ftpd FTP daemon.
+
+PATH=/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin
+
+unset LANG
+trap "" 1 15
+test -x /usr/local/bin/react || exit 0
+
+RUN_DAEMON=yes
+WU_OPTIONS="-d /home/artc/tina"
+if [ -f /etc/default/react ]; then
+    . /etc/default/react
+fi
+
+WU_OPTIONS="-x $WU_OPTIONS "
+
+run_wu="1"
+
+if [ "x$RUN_DAEMON" = "xno" ]; then
+    run_wu=0
+fi
+
+# check that the FTP service isn't already enabled in inetd
+if [ -f /etc/inetd.conf ] && egrep '^react[[:space:]][[:space:]]*' /etc/inetd.conf >/dev/null; then
+    run_wu=0
+fi
+
+for FILE in /etc/xinetd.d/*netd.d; do
+    if [ -f $FILE ] && egrep 'server[[:space:]]*=.*react' $FILE > /dev/null; then
+        run_wu=0                                                              
+    fi
+done
+
+case "$1" in
+    start)
+        if [ "$run_wu" = "1" ]; then
+            echo -n "Starting react server: react"
+            start-stop-daemon --start --background --quiet --pidfile /var/run/react.pid \
+                --exec /usr/local/bin/react -- $WU_OPTIONS && echo "."
+        fi
+        ;;
+    stop)
+        #if [ -f /var/run/react.pid ] && kill -0 `cat /var/run/react.pid` 2>/dev/null; then
+        #    echo -n "Stopping react server: react"
+        #    kill -3 `cat /var/run/react.pid` >/dev/null 2>&1 && echo "."
+        #fi
+        killall react
+        echo -n "Stopping react "
+        isrunning=$(pidof react) 
+        while [ ! -z "$isrunning" ]
+        do 
+          echo -n "." 
+          sleep 1 
+          isrunning=$(pidof react) 
+        done 
+        echo "done"
+        ;;
+    restart|force-reload)
+        if [ "$run_wu" = "1" ]; then
+            echo -n "Restarting react server: react"
+            $0 stop >/dev/null && echo -n "."
+            sleep 2 && echo -n "."
+            $0 start >/dev/null && echo ".done."
+        fi
+        ;;
+    *)
+        echo "Usage: /etc/init.d/rtc {start|stop|restart|force-reload}"
+        exit 1
+        ;;
+esac
+
+exit 0

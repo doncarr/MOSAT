@@ -1,0 +1,16 @@
+<defs>
+<filter id="pipeshadow" filterUnits="userSpaceOnUse" width="200%" height="200%">
+  <feColorMatrix type="matrix" in="SourceAlpha" result="lightened"
+       values="0   0   0   0   0
+               0   0   0   0   0
+               0   0   0   0   0
+               0   0   0 0.6   0"/>
+  <feGaussianBlur in="lightened" stdDeviation="1.5" result="blurred"/>
+  <feMorphology operator="erode" in="blurred" radius="2" result="eroded"/>
+  <feOffset in="eroded" dx="1.5" dy="1.5" result="moved"/>
+  <feMerge>
+    <feMergeNode in="moved"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+</defs>

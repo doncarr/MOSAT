@@ -1,0 +1,5 @@
+do03.blink(2.0)
+sys.wait(59:59)
+do03.send(F)
+sys.wait(01:30)
+sys.loop()

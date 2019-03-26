@@ -1,0 +1,13 @@
+changing_filter_1|Discrete Calc 1|((not hydraulic_1a) or (not hydraulic_1b)) and motor_on|no|yes|N|N|
+changing_filter_2|Discrete Calc 2|((not hydraulic_2a) or (not hydraulic_2b)) and motor_on|no|yes|N|N|
+mid_level|Discrete Calc 4|lo_level and (not hi_level)|LoLevel|-|N|N|
+malla_1_detect|Change detected malla 1|green_do_1 and yellow_do_1 and red_do_1||Detect|N|N|
+malla_2_detect|Change detected malla 2|green_do_2 and yellow_do_2 and red_do_2||Detect|N|N|
+#
+# Tag
+# Description
+# calc expression
+# Low Description
+# High Description
+# Alarm State (High, Low, None)
+# Shutdown State (High, Low, None)

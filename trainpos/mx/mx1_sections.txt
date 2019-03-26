@@ -1,0 +1,38 @@
+Observatorio	118	5	113
+Tacubaya	104	5	99
+Juanacatlán	77	5	72
+Chapultepec	89	5	84
+Sevilla	72	5	67
+Insurgentes	86	5	81
+Cuauhtémoc	70	5	65
+Balderas	91	5	86
+Salto del Auga	101	5	96
+Isabel la Católica	72	5	67
+Pino Suarez	80	5	75
+Merced	87	5	82
+Candelaria	92	5	87
+San Lazaro	80	5	75
+Moctezuma	98	5	93
+Balbuena	103	5	98
+Blvd Puerto Aéreo	81	5	76
+Gómez Fraias	130	5	125
+Zaragoza	119	5	114
+Pantitlán	119	5	114
+Zaragoza	130	5	125
+Gómez Fraias	81	5	76
+Blvd Puerto Aéreo	103	5	98
+Balbuena	98	5	93
+Moctezuma	80	5	75
+San Lazaro	92	5	87
+Candelaria	87	5	82
+Merced	80	5	75
+Pino Suarez	72	5	67
+Isabel la Católica	101	5	96
+Salto del Auga	91	5	86
+Balderas	70	5	65
+Cuauhtémoc	86	5	81
+Insurgentes	72	5	67
+Sevilla	89	5	84
+Chapultepec	77	5	72
+Juanacatlán	104	5	99
+Tacubaya	118	5	113

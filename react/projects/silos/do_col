@@ -1,0 +1,34 @@
+echo "$# parameter(s)"
+echo "The parameter(s) are: $@"
+
+myday="$(date +%-d)"
+mymonth="$(date +%-m)"
+myyear="$(date +%-Y)"
+echo $myday
+echo $mymonth
+echo $myyear
+printf "%04d" $myyear 
+printf "%02d" $mymonth 
+printf "%02d" $myday
+printf "\n"
+myday="$(($myday - 1))"
+echo $myday
+mydate="$(printf "%04d" $myyear)$(printf "%02d" $mymonth)$(printf "%02d" $myday)"
+echo "my date = $mydate"
+v1="wget --output-document=columns.txt http://adaptivertc.no-ip.org/root/log/old/U2_S2_C2"
+v2=".txt"
+v3="$v1$mydate$v2"
+echo $v3
+#$v3
+
+#wget --output-document=columns.txt http://adaptivertc.no-ip.org/root/log/U2_S2_C2$(date +%Y%m%d).txt
+wget --output-document=columns.txt http://adaptivertc.no-ip.org/root/log/old/U2_S2_C220100915.txt
+
+
+if [ $# -lt  1 ]; then
+  echo "defaulting number of columns to 12"
+  ./col_graph columns 12 
+else
+  echo "using comand line arg for number of columns"
+  ./col_graph columns $@ 
+fi

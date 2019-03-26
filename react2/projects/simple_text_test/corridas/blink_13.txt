@@ -1,0 +1,5 @@
+sys.wait(00:05)
+do13.send(T)
+sys.wait(00:05)
+do13.send(F)
+sys.loop()

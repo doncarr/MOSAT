@@ -1,0 +1,2 @@
+2011-03-09	14:47:42	U2_S2_DISABLE	Disabled --> Enabled	4054:10
+2011-03-09	15:10:02	U2_S2_DISABLE	Enabled --> Disabled	22:20

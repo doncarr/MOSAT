@@ -1,0 +1,2 @@
+Line1_1024.png,square10x10.png,square_unexpected.png,Line1.html, 26, 967, 45, 72, -26, 19, 36
+Line1_1024.png,square_unexpected.png,square10x10.png,xLine1.html, 26, 967, 45, 72, -26, 19, 36

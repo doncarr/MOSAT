@@ -1,0 +1,4 @@
+#! /bin/sh
+gnome-terminal --command="../react2/react2 -x -d ../react2/projects/atemajac_pumps/"
+sleep 5
+gnome-terminal --command="node ../node/webserver.js 8888" 

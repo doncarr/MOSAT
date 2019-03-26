@@ -1,0 +1,38 @@
+Modbus TCP/IP notes:
+
+The normal modbus protocol is encapsulated inside of TCP/IP.
+
+A modbus server must listen on port 502.
+
+Here is the format of the message for TCP/IP:
+-------------------------------------------------
+The header: 7 bytes (this is different for TCP/IP)
+
+Transaction identifier: 2 bytes, identifies the request / response pair. The server must just blindly re-copy this to the response header.
+
+Protocol identifier: 2 bytes, identifies the protocol. Modbus = 0 appears to be the only option.
+
+Length: 2 bytes, The total number of bytes following the header. It appears from the documentation that this is the size excluding the header.
+
+Unit Identifier: 1 byte, identifies the unit ths transaction is for since there could be multiple serial line devices, or other types of devices, attached to each modbus TCP/IP server.
+A TCP/IP to serial bridge must allow a configuration to know which serial device each message is for in
+case that there is more than one serial port. Of course this means that Unit ID must be unique across
+serial devices, or you must have a mapping. If you wanted to connect existing serial devices to a bridge,
+and some unit IDs were the same, this would cause problems if not re-configured.
+-------------------------------------------------
+Opcode: 1 byte (Same for TCP/IP as for serial)
+-------------------------------------------------
+Data: variable number of bytes depending on opcode (ESACTLY the same for TCP/IP as for serial)
+-------------------------------------------------
+No CRC: 0 bytes (With serial, there is a CRC)
+-------------------------------------------------
+
+Also, you can use datagrams (UDP) in place of TCP/IP if you wish.
+I would assume that most vendors support this.
+This is actually recommended by Sixnet, since it is faster with less
+overhead. Also, as far as I can tell, most Sixnet devices only support
+two simultaneous modbus TCP/IP connections, so if you need to have
+many devices talking to each I/O module, it would be best. This would
+especially be true for local area networks that are very reliable.
+
+

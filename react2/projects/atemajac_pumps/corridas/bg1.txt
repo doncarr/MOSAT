@@ -1,0 +1,4 @@
+sys.wait(00:01)
+sys.wait_until("PUMP1_ON", 59:59)
+sys.wait_until("not PUMP1_ON", 59:59)
+sys.loop()

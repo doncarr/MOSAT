@@ -1,0 +1,18 @@
+#CALC1|Calculation 1|Dogs|TEMP_COLD_AC1 + (2.0 * exp(1.0))|1|10|20|80|90|5|0|0|0|0|
+avg_temp|Average Temperature|degC|TEMP_2|1|10|20|80|90|5|0|0|0|0|
+time_1_min|malla 1 time minutes|Min|time_1 / 60|1|10|20|80|90|5|0|0|0|0|
+time_2_min|malla 2 time minutes|Min|time_2 / 60|1|10|20|80|90|5|0|0|0|0|
+# tag
+# description
+# engineering units
+# calc expression
+# decimals
+# low alarm
+# low caution
+# high caution
+# high alarm
+# deadband
+# low alarm enable
+# low caution enable
+# high caution enable
+# high alarm enable

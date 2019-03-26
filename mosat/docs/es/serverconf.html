@@ -1,0 +1,35 @@
+<html>
+  <title>CONFIGURANDO EL SERVIDOR</title>
+    <body>
+      <table width ="100%">
+        <tr>
+          <td>
+            <h1>CONFIGURANDO EL SERVIDOR</h1>
+          </td>
+          <td>
+            <h2><a href="../en/serverconf.html"><div align="right">English</div></a></h2>
+          </td>
+        </tr>
+      </table>
+      <hr size="10" NOSHADE/>
+      <p align="justify"><font face="sans" size="4">En esta pagina describiremos como puede configurarse el servidor para correr los programas de mosat correctamente.</p>
+      <ol type="i">
+        <li><font face="sans" size="4"></font>Es necesario asegurarse de que gcc, g&#43;&#43; y make est&aacute;n instalados en el sistema.</li>
+        <li><font face="sans" size="4"></font>Despu&eacute;s creamos un usuario react en el directorio home <font face="monospace" size="5">/home/react</font>, tambi&eacute;n podemos ejecutar el script <font face="monospace" size="5">reactAddUser.sh</font> que esta en el directorio script.</li>
+        <li><font face="sans" size="4"></font>Creamos un directorio en el html de root &#40;com&uacute;nmente <font face="monospace" size="5">&frasl;var&frasl;www&frasl;html</font>&#41; llamado react.</li>
+        <li><font face="sans" size="4"></font>Creamos una liga simb&oacute;lica desde <font face="monospace" size="5">&frasl;home&frasl;react&frasl;public_html</font> a <font face="monospace" size="5">&laquo;html-root&raquo;&frasl;react</font>.</li>
+        <li><font face="sans" size="4"></font>Instalamos el c&oacute;digo fuente <font face="monospace" size="5">&frasl;home&frasl;react&frasl;source</font> usando &#40;subversion de sourceforge&#41; <br />
+        Debemos tener 4 directorios en el directorio <font face="monospace" size="5">mosat</font>&#58; <font face="monospace" size="5">config_files</font>, <font face="monospace" size="5">docs</font>, <font face="monospace" size="5">main</font> y <font face="monospace" size="5">script</font> <br />
+        adem&aacute;s debemos tener <font face="monospace" size="5">lib</font> e <font face="monospace" size="5">include</font> en el directorio <font face="monospace" size="5">trunk</font>, que esta un nivel mas abajo.</li>
+        <li><font face="sans" size="4"></font>Instalamos el compilador cruzado Sixnet PowerPC usando el script <font face="monospace" size="5">installppc.sh</font>, es necesario hacer esto desde root y copiar todos los archivos <font face="monospace" size="5">.tar </font> y <font face="monospace" size="5">.gz</font> al mismo directorio.</li>
+      </ol>
+     <table width="100%">
+        <tr>
+          <td><div align="left"><a href="instalando.html"><big>Atr&aacute;s</big></a></div></td>
+          <td><div align="right"><a href="../README_ES.html"><big>Inicio</big></a></div></td>
+        </tr>
+      </table>
+      <hr />
+      <h4> Preguntas, comentarios y reportes de errores a <a href="mailto:ga.poncec@gmail.com">ga.poncec@gmail.com</a></h4>
+    </body>
+<html>

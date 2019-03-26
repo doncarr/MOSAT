@@ -1,0 +1,8 @@
+web1|Substation Web Page|1.0|template.html|out.html|
+web2|Schematic Web Page|1.0|schematic.html|sout.html|
+web3|Schematic Web Page|1.0|all.html|aout.html|
+#Tag
+#Description
+#update interval
+#Template file
+#Output file

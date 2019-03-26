@@ -1,0 +1,19 @@
+svg_header|Round Gauge|0|0|300|150|
+background|thistle|
+link|5|146|5|firebrick|start|feed.svg|Feed Tanks|switch.svg|Main Switching|spray.svg|Spray|tina.svg|Tina|transfer.svg|Transfer|cool.svg|Cooling Tower|pipes.svg|Pipes|pipes2d.svg|Pipes 2D|
+bar|level|blue|36|5|120|
+gauge|2|pump2_amp|orange|151|10|73|
+gauge|1|pump3_amp|green|226|10|73|
+rgauge|1|pump1_amp|blue|74|10|73|
+only_text|Pump 1|green|112|95|10|middle|
+only_text|Pump 2|darkred|187|95|10|middle|
+only_text|Pump 3|blue|262|95|10|middle|
+simple_contact|HI_HI_LEVEL|yellow|gray|20|20|9|
+simple_contact|HI_LEVEL|yellow|gray|20|52|9|
+simple_contact|LO_LEVEL|yellow|gray|20|100|9|
+#pump|PUMP1_ON|gray|lime|110|118|25|1|0|
+#pump|PUMP2_ON|gray|lime|187|118|25|1|0|
+#pump|PUMP3_ON|gray|lime|264|118|25|1|0|
+rect_light|PUMP1_ON|gray|lime|102|112|16|16|A|0|
+rect_light|PUMP2_ON|gray|lime|177|112|16|16|A|0|
+rect_light|PUMP3_ON|gray|lime|252|112|16|16|A|0|

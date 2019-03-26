@@ -1,0 +1,10 @@
+DOOR_OPEN|Door Open|1|1|0|OPEN|CLOSED|N|N|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description
+#    Alarm State
+#    Shutdown State

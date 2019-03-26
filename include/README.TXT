@@ -1,0 +1,1 @@
+These are the common include files for many AdaptiveRTC programs. As root, you should copy them to /usr/local/include. This is the recommended directory, but, you can use any directory where you compiler can find them.

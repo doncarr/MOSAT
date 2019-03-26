@@ -1,0 +1,7 @@
+# sequence to test motor 
+sys.print("----------- start ----------")
+pid1.auto_tune(40, 80, 10)
+sys.wait(0:25)
+#AO1.send(88);
+sys.mark()
+sys.print("----------- Fin ----------")

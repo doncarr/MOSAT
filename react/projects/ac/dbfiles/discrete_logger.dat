@@ -1,0 +1,8 @@
+#dlogger_1|My dlogger|dlogger|PUMP1_ON|PUMP2_ON|LO_LEVEL|HI_HI_LEVEL|HI_LEVEL|
+#    Tag
+#    Description
+#    Base File Name (actual name is base + YYYYMMDD) (can include path) 
+#    Tag 1 
+#    Tag 2 
+#    . . . . 
+#    Tag N 

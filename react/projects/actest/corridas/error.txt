@@ -1,0 +1,9 @@
+sys.wait(00:10);
+diff_error.send(1);
+sys.wait(00:600);
+diff_error.send(0);
+sys.wait(00:10);
+cold_error.send(1);
+sys.wait(00:600);
+cold_error.send(0);
+sys.loop();

@@ -1,0 +1,29 @@
+#!/bin/sh
+function showusage() {
+        echo "Autostart artc-wrap on boot..."
+        echo "Usage:"
+        echo "$1 <on|off|status>" 
+        echo 
+}
+
+if [ $# -eq 0 ]
+then 
+    showusage $0
+elif [ $1 == "on" ]
+then
+    update-rc.d artc-wrap defaults
+elif [ $1 == "off" ] 
+then
+    update-rc.d -f artc-wrap remove
+elif [ $1 == "status" ]
+then
+    status=$(update-rc.d -n artc-wrap defaults | tail -1 | grep exist)
+    if [ -z "$status" ] 
+    then
+        echo "artc-wrap autostart Off" 
+    else
+        echo "artc-wrap autostart On"
+    fi
+else
+    showusage $0
+fi

@@ -1,0 +1,37 @@
+The analog input is a basic point for analog inputs abbreviated "ai". Analog inputs are for inputs that can be represented as analog values, or, a floating point number if you prefer. The typical inputs are for: temperature, pressure, flow rate, level, actuator position, valve position, etc.
+
+The attributes are as follows:
+
+Tag: a character string that acts as a unique identifier everywhere we need to refer to this input.
+Description: a simple text description of the input.
+Engineering Units Label: The engineering units for this input: PSI, cm, degC, degF, m^3/minute, kg/cm^2, etc.
+Driver/card/channel: Identifies where this value comes from by first identifying the driver, then card and channel.
+
+EU Low, EU High, Raw Low, Raw High: are to convert the value read from the driver to engineering units assuming a linear transformation, using the two point formula for a straight line.
+
+slope = (y2 - y1) / (x2 - x1)
+
+y - y1 = slope * (x - x1)
+
+y = y1 + (slope * (x - x1)) 
+
+EU Low = y1
+Eu High = y2
+Raw Low = x1
+Raw High = x2
+
+We do not currently support piecewise liner, square root, log, etc, as almost all transducers these days are linearized in hardware or the driver, though, it would be reasonably simple to add support later if there is demand.
+
+Decimal Places: Only used for formating the numbers to print for a real-time display or report, has no other effect.
+
+Zero cutoff: The value below which we consider the input to be zero. This is to avoid customer complaints and make sure that values on real-time screens read solid zero when a system is turned off, avoiding small changes in the least significant digits displayed, or needles on meters that "twitch".
+
+Alarm Low, Caution Low, Caution High, Alarm High: The alarm limits for a standard 5 state alarm.
+ 
+Alarm Deadband: The amount that the point value must rise or fall to clear an alarm after it has tripped, in order to avoid repeated tripping and clearing of an alarm when the point value is close to an alarm limit and there is a little noise in the signal.
+
+Alarm Low Enable, Caution Low Enable, Caution High Enable, Alarm High Enable: The true/false values to enable / disable each alarm, as, all of the 5 state alarms to not apply to every input. For example, for temperature, typically, only high caution and high alarm apply, thus, low caution and low alarm would be disabled.
+
+Scale Low, Scale High: Only used for determining the minimum and maximum values for a meter on a real-time display. For example, a 500 PSI pressure transducer would have 0 for scale low, and 500 for scale high. We introduced these numbers as attributes, since EU Hi and EU Lo are often used for calibration, and calibration would not take place at 0 and 500. For example, a 500 PSI gauge might be calibrated at 50 and 450 PSI, thus, we need separate attributes to indicate how a gauge should be scaled.
+
+

@@ -1,0 +1,11 @@
+#PUMP3_ON|Bomba 1 ON|0|0|10|off|ON|H|N|0|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description
+#    Alarm State
+#    Shutdown State
+#    invert PV?

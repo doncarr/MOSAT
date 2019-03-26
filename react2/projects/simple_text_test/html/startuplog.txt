@@ -1,0 +1,95 @@
+Sat Jun  9 10:00:40 2012
+React PID: 14931
+SampleRate set to: 2.000000
+Loading db point factory from: ../../ai.so
+Reading AI ........
+Reading ao ........
+Reading di ........
+DI00|DI 00|0|0|0|OFF|ON|N|N|1|
+DI01|DI 01|0|0|1|OFF|ON|N|N|1|
+DI02|DI 02|0|0|2|OFF|ON|N|N|1|
+DI03|DI 03|0|0|3|OFF|ON|N|N|1|
+DI04|DI 04|0|0|4|OFF|ON|N|N|1|
+DI05|DI 05|0|0|5|OFF|ON|N|N|1|
+DI06|DI 06|0|0|6|OFF|ON|N|N|1|
+DI07|DI 07|0|0|7|OFF|ON|N|N|1|
+DI08|DI 08|0|0|8|OFF|ON|N|N|1|
+DI09|DI 09|0|0|9|OFF|ON|N|N|1|
+DI10|DI 10|0|0|10|OFF|ON|N|N|1|
+DI11|DI 11|0|0|11|OFF|ON|N|N|1|
+DI12|DI 12|0|0|12|OFF|ON|N|N|0|
+DI13|DI 13|0|0|13|OFF|ON|N|N|0|
+DI14|DI 14|0|0|14|OFF|ON|N|N|0|
+DI15|DI 15|0|0|15|OFF|ON|N|N|0|
+DI16|DI 16|0|0|16|OFF|ON|N|N|0|
+DI17|DI 17|0|0|17|OFF|ON|N|N|0|
+DI18|DI 18|0|0|18|OFF|ON|N|N|0|
+DI19|DI 19|0|0|19|OFF|ON|N|N|0|
+DI20|DI 20|0|0|20|OFF|ON|N|N|0|
+DI21|DI 21|0|0|21|OFF|ON|N|N|0|
+DI22|DI 22|0|0|22|OFF|ON|N|N|0|
+Reading do ........
+DO13|DO 13|0|0|13|OFF|ON|0|
+Reading pci ........
+Reading calc ........
+Reading discrete calc ........
+0 discrete calcs read
+Reading dcalc ........
+Reading timer ........
+.//dbfiles/timer.dat: No such file or directory
+Can't open file: .//dbfiles/timer.dat
+num_timer = 0
+Reading analog values ........
+.//dbfiles/analog_value.dat: No such file or directory
+Can't open file: .//dbfiles/analog_value.dat
+num analog values = 0
+Reading discrete values ........
+.//dbfiles/discrete_value.dat: No such file or directory
+Can't open file: .//dbfiles/discrete_value.dat
+num discrete values = 0
+Reading int ........
+Reading pid ........
+Reading remote pid ........
+.//dbfiles/remote_pid.dat: No such file or directory
+Can't open .//dbfiles/remote_pid.dat
+Reading pump ........
+Reading ac ........
+Reading level ........
+Reading data ........
+Reading file logger ........
+Reading web logger ........
+.//dbfiles/web_logger.dat: No such file or directory
+Can't open: .//dbfiles/web_logger.dat
+Reading discrete logger ........
+Reading scan ........
+Reading web points ........
+Parsing 0 Analog Expressions ......
+Parsing 0 Discrete Expressions ......
+Creating thread to wait on connections . . . 
+-- Reading background scripts: .//dbfiles/background.dat
+blink_13.txt
+----- reading .//corridas//blink_13.txt -----
+sys.wait(00:05)
+sys.wait(00:05)
+
+do13.send(T)
+do13.send(T)
+
+sys.wait(00:05)
+sys.wait(00:05)
+
+do13.send(F)
+do13.send(F)
+
+sys.loop()
+sys.loop()
+
+----- done reading .//corridas//blink_13.txt -----
+Loading iodrivers from: .//dbfiles/drivers.dat
+../../drivers/simple_text/libsimple_text_drv.so|new_simple_text||/dev/ttyACM0|
+Loading iodriver from: ../../drivers/simple_text/libsimple_text_drv.so
+Class factory function is: new_simple_text
+In react_t::wait_connections()
+react_t::wait_connections(), All OK, waiting for connections
+Sat Jun  9 10:00:40 2012
+No foreground script executing, use "kill -1 14931" or <CTRL-C> to stop

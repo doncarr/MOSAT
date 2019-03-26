@@ -1,0 +1,22 @@
+svg_header|IMASA Demo|0|0|300|150|
+background|thistle|
+imasa_logo|0|0|35|
+simple_rect|LEVEL|mediumslateblue|38|20|100|
+simple_rect|PUMP1_AMP|darkturquoise|80|30|60|
+simple_rect|PUMP2_AMP|crimson|120|30|60|
+simple_rect|PUMP3_AMP|mediumspringgreen|160|30|60|
+simple_panel|PUMP1_ON|gray|darkturquoise|86|109|8|
+simple_panel|PUMP2_ON|rgb(115,115,115)|crimson|126|109|8|
+simple_panel|PUMP3_ON|#A0A0A0|mediumspringgreen|166|109|8|
+only_text|IMASA|blue|125|18|25|middle|
+insert_svg|<text x="100" y="145" font-size="10" fill="green">Pure Simple SVG</text>
+simple_tank|c|gray|200|10|40|110|1.5|25|7|
+simple_tank|p|gray|260|20|35|100|8|
+simple_pipe|gray|7|220|120|v|144|h|247|v|4|h|190|v|25|h|72|v|12|h|45|v|0|
+simple_pipe|gray|7|0|145|h|70|v|130|h|216.5|b|7|
+simple_pipe|black|6|180|0|v|21.5|b|7|
+simple_pipe|black|12|85|150|v|133.5|b|7|
+simple_pipe|black|6|300|135|h|250.5|b|7|
+simple_contact|HI_HI_LEVEL|yellow|gray|27|37|9|
+simple_contact|HI_LEVEL|yellow|gray|27|57|9|
+simple_contact|LO_LEVEL|yellow|gray|27|98|9|

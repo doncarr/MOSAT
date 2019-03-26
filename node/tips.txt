@@ -1,0 +1,26 @@
+
+Ryan Dahl is the creater
+
+use Apache Bench to test the node webserver
+
+ab -n 100 -c 100 http://127.0.0.1:8000/
+
+use telnet or netcat to test the node tcpip server
+
+ telnet localhost 8000
+
+  nc localhost 8000
+
+has debugging like gdb
+
+node debug hello-world.js
+
+you then have to type 'run'
+
+backtrace works when you hit a break point.
+
+see the node package manager http://npmjs.org
+
+popular frameworks for node
+
+express.js, moustache, socketio, angular.js, 

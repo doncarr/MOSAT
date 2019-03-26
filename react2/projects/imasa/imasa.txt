@@ -1,0 +1,14 @@
+
+Motores en total: 46
+
+Motores con variador de velocidad: 8 
+  Tratamos como control remoto que no podemos cambiar las ganancias.
+
+10 PIDs de temperatura.
+
+-------------------
+
+25 degC
+
+Three temperatures:
+6, 18, 25 degC

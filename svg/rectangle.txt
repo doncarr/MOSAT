@@ -1,0 +1,5 @@
+svg_header|My Title|0|0|300|150|
+background|thistle|
+rect_light|PUMP1_ON|gray|red|100|20|10|5|N|
+rect_light|PUMP2_ON|gray|yellow|100|25|10|5|N|
+rect_light|PUMP3_ON|gray|green|100|30|10|5|N|

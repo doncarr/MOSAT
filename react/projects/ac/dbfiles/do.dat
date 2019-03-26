@@ -1,0 +1,22 @@
+SHUTOFF_AC1|Output to shutoff AC1|0|0|0|ON|OFF|
+SHUTOFF_AC2|Output to shutoff AC1|0|0|1|ON|OFF|
+SHUTOFF_AC3|Output to shutoff AC1|0|0|2|ON|OFF|
+SHUTOFF_AC4|Output to shutoff AC1|0|0|3|ON|OFF|
+SHUTOFF_AC5|Output to shutoff AC1|0|0|4|ON|OFF|
+SHUTOFF_AC6|Output to shutoff AC1|0|0|5|ON|OFF|
+SHUTOFF_AC7|Output to shutoff AC1|0|0|6|ON|OFF|
+SHUTOFF_AC8|Output to shutoff AC1|0|0|7|ON|OFF|
+SHUTOFF_AC9|Output to shutoff AC1|0|0|8|ON|OFF|
+SHUTOFF_AC10|Output to shutoff AC1|0|0|9|ON|OFF|
+SHUTOFF_AC11|Output to shutoff AC1|0|0|10|ON|OFF|
+SHUTOFF_AC12|Output to shutoff AC1|0|0|11|ON|OFF|
+diff_error|Create Diff Error|0|0|30|ON|OFF|
+cold_error|Create Cold Error|0|0|31|ON|OFF|
+
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description

@@ -1,0 +1,25 @@
+PUMP3_AMP|BOMBA 3|amps|1|1|3|0.0|50.0|6400|32000|3|-12.50|0|0|0|0|0|0|0|0|0|
+PUMP2_AMP|BOMBA 2|amps|1|1|4|0.0|50.0|6400|32000|3|-12.50|0|0|0|0|0|0|0|0|0|
+PUMP1_AMP|BOMBA 1|amps|1|1|5|0.0|50.0|6400|32000|3|-12.50|0|0|0|0|0|0|0|0|0|
+LEVEL|NIVEL|cm|1|1|2|500.0|0.0|6400|32000|1|-125.0|0|0|0|0|0|0|0|0|0|
+#    Tag
+#    Description
+#    Engineering Units Label
+#    Driver Number
+#    Card
+#    Channel
+#    Engineering Units Low
+#    Engineering Units High
+#    Raw Value Low
+#    Raw Value High
+#    Decimal Places
+#    Zero Cutoff
+#    Alarm Low
+#    Caution Low
+#    Caution High
+#    Alarm High
+#    Alarm Deadband
+#    Alarm Low Enable
+#    Caution Low Enable
+#    Caution High Enable
+#    Alarm High Enable

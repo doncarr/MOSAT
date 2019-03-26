@@ -1,0 +1,66 @@
+#!/bin/sh
+# This wrap will create/clean a ramdisk 
+# and will be set to be used by cherokee web server
+#
+TODAY=$(date +%Y%m%d)
+if [ "$1" == "start" ]
+then
+    # starting creating the ramdisk
+    # Formats, mounts, and sets permissions on my 16MB ramdisk
+    echo "Creating the ramdisk..." 
+    /sbin/mke2fs -q -m 0 /dev/ram0
+    /bin/mount /dev/ram0 /mnt/rd
+    # Creating cherokee log directory 
+    echo "Creating cherokee log directory on ramdisk.."
+    mkdir /mnt/rd/cherokee 
+    # Starting cherokee web server 
+    /etc/init.d/cherokee start
+    # Creating tina tree
+    echo "Creating tina tree on ramdisk.."
+    mkdir /mnt/rd/tina
+    ln -s /home/artc/tina/images /mnt/rd/tina/images 
+    mkdir /mnt/rd/tina/html
+    mkdir /mnt/rd/tina/log
+    ln -s /home/artc/tina/log /mnt/rd/tina/log/old
+    echo "<h1>adpativeRTC Tina Index</h1>" > /var/www/index.html
+    echo "<img src=images/adaptivertc_logo.png>" >> /var/www/index.html
+    echo "<br>" >>/var/www/index.html
+    echo "<a href=tina_diagram.html> Tina diagram </a>" >> /var/www/index.html
+    echo "<a href=log>Tina logs </a>" >> /var/www/index.html
+    echo "<br>" >> /var/www/index.html
+    echo "<a href=log/old>Old logs</a>" >> /var/www/index.html
+    # Copying existent log files for today
+    echo "Copying existent log files for today"
+    cp /home/artc/tina/log/*$TODAY.txt /mnt/rd/tina/log/
+    # Starting react
+    /etc/init.d/react start
+elif [ "$1" == "stop" ]
+then
+    # Stop react
+    /etc/init.d/react stop
+    echo "Backing up the log files to flashcard..."
+    cp /mnt/rd/tina/log/*$TODAY.txt /home/artc/tina/log/
+    # Remove tina directory 
+    echo "Removing tina directory"
+    rm -rf /mnt/rd/tina
+    # Stop cherokee
+    /etc/init.d/cherokee stop
+    cherokee=$(pidof cherokee)
+    while [ ! -z "$cherokee" ]
+    do
+       sleep 1 
+       cherokee=$(pidof cherokee)
+    done
+    # Remove cherokee directory 
+    echo "Removing cherokee directory"
+    rm -rf /mnt/rd/cherokee
+    echo "Umounting ramdisk..."
+    # Umount ramdisk
+    umount /mnt/rd    
+elif [ "$1" == "restart" ]
+then
+    $0 stop
+    $0 start
+else
+    echo "Usage: $0 {start|stop|restart}"
+fi

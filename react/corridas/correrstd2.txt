@@ -1,0 +1,14 @@
+HOLD.send(T);
+sys.print("Estar seguro de tener 2 muestras cargadas")
+sys.print("Checar que tengas suficientes fluidos")
+sys.print("Seleccionar prueba para 2 muestras")
+sys.print("Pulsar el boton para correr")
+sys.get_key();
+run.corridastd.txt(00:10,00:30,00:40,00:11)
+run.corridastd.txt(00:11,00:31,00:41,00:12)
+EV1.send(F)
+EV2.send(F)
+EV3.send(F)
+BOMBA1.send(F)
+BOMBA2.send(F)
+sys.wait(00:05)

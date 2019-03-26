@@ -1,0 +1,40 @@
+# Estado inicial de las luzes
+buzzer_1.send(F)
+red_DO_1.send(F)
+yellow_DO_1.send(F)
+green_DO_1.send(T)
+# Que el cambio detectado va a ser activo varias segundos,
+# esperemos 30 segundos primero.
+sys.wait(00:30)
+# Esperar 7 minutos 30 segundos mas, o hasta que detectamos un cambio
+waited_5.send(F)
+sys.if(use_5_min)
+waited_5.send(T)
+sys.wait_until_min("changing_filter_1", 03:30, 3)
+sys.endif()
+sys.if("(not use_5_min) and (not waited_5)")
+sys.wait_until_min("changing_filter_1", 07:30, 3)
+sys.endif()
+# Poner luz amarillo
+green_DO_1.send(F)
+yellow_DO_1.send(T)
+# Esperar 1 minutos 30 segundos para que cambian el filtro
+sys.wait_until_min("changing_filter_1", 00:30, 3)
+# Empezar blinking cada segundo el amarillo
+yellow_DO_1.blink(1.0)
+# Esperar 30 seguandos mas
+sys.wait_until_min("changing_filter_1", 0:30, 3)
+# Si NO cambiaron el filtro en los primeros dos minutos, poner el rojo blinking
+yellow_DO_1.send(F)
+red_DO_1.blink(1.0)
+buzzer_1.send(T)
+# Esparamos que cambien el filtro, SIN timeout.
+sys.wait_until_min("changing_filter_1", 99:00, 3)
+# Ok, cambiaron el filtro!!
+buzzer_1.send(F)
+# Ok, aprender rojo, verde, amarillo para 5 segundos para indicar cambio
+red_DO_1.send(T)
+yellow_DO_1.send(T)
+green_DO_1.send(T)
+sys.wait(00:05)
+sys.loop()

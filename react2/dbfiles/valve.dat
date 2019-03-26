@@ -1,0 +1,7 @@
+valve1|My valve point|valve_do|valve_closed|valve_open|5|
+# tag
+# description
+# do_point
+# closed_point
+# open_point
+# delay (seconds) before alarm

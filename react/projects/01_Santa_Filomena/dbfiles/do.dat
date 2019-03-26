@@ -1,0 +1,18 @@
+PUMP1_DO|Bomba 1|1|1|1|Off|On|
+PUMP2_DO|Bomba 2|1|1|2|Off|On|
+PUMP3_DO|Bomba 3|1|1|3|Off|On|
+VPUMP1_DO|VBomba 1|1|4|1|Off|On|
+VPUMP2_DO|VBomba 2|1|5|1|Off|On|
+#EV1|Electrovalvula 1|1|1|0|Off|On|
+#EV2|Electrovalvula 2|1|1|1|Off|On|
+#EV3|Electrovalvula 3|1|1|2|Off|On|
+#HOLD|Hold Signal|1|1|5|Off|On|
+#DOSpare2|Spare 2|1|1|6|Off|On|
+#DOSpare3|Spare 3|1|1|7|Off|On|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description

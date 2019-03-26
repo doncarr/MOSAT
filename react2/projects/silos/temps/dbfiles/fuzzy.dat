@@ -1,0 +1,18 @@
+#fuzzy1|My fuzzy point|RPM|1|500.0|0.0|[-90,-45,0,45,90]|[-45,-22.5,0,22.5,45]|5.0|AI0|AO0|0.0|0.0|0.0|0|0|0|
+# tag
+# description
+# eu
+# decimal
+# setpoint_limit_hi
+# setpoint_limit_lo
+# p_gain 
+# i_time
+# d_time
+# ai_point
+# ao_point
+# deviation_alarm
+# deviation_caution
+# deviation_delay
+# dev_alarm_enable
+# dev_alarm_shutdown
+# dev_caution_enable

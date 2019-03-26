@@ -1,0 +1,20 @@
+svg_header|Spray Demo|0|0|300|150|
+background|thistle|
+link|5|145|5|firebrick|start|feed.svg|cool.svg|Cooling Tower|Feed Tanks|switch.svg|Main Switching|tina.svg|Tina|gauge.svg|Gauges|
+simple_tank|c|black|30|10|40|110|1.5|25|3|
+simple_pipe|gray|3|50|120|v|130|h|65|
+simple_pipe|red|3|70|126|h|88|
+pump|SPRAY_PUMP_ON|yellow|gray|65|130|12|1|90|
+simple_rect|PRESSURE|mediumslateblue|115|60|55|
+simple_pipe|gray|3|90|126|v|15|h|70|
+simple_pipe|gray|3|92|126|h|140|v|10|h|280|
+pvalve3way|PVALVE|orange|gray|90|126|10|1|180|
+analog_pv|PVALVE|firebrick|90|137|5|
+simple_pipe|gray|3|180|15|v|11.5|b|3|
+simple_pipe|gray|3|250|15|v|11.5|b|3|
+spray|PRESSURE|180|15|20|1|4|70|80|
+spray|PRESSURE|250|15|19|1|10|90|135|
+text|270|118|8|black|middle|Pump|
+switch|SPRAY_PUMP_ON|yellow|red|260|120|20|
+text|240|118|8|black|middle|25-75|
+switch|PVALVE_ON|yellow|red|230|120|30|

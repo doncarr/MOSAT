@@ -1,0 +1,193 @@
+#!/bin/bash
+# This script will detect the last JFS or EXT3 partition of an SD card image
+# provided by Technologic Systems and expand it to the end of the disk.
+# It depends on tools such as sfdisk, which is part of core utilities
+# of Linux.  If working with the JFS filesystem, jfsutils is another
+# dependency.  In order to use the script, you will need to insert the SD
+# card into the USB SD card reader and then use the 'fdisk -l' command
+# to find the device node.  The device node is typically enumerated as
+# /dev/sdX, where X is what Linux decided.  Example usage is:  './grow_sd
+# /dev/sdb'.
+#
+# Since this deals with modifying the partition table of the SD card and
+# data may be lost.  For this reason, you will be prompted for input before
+# the script proceeds.
+#
+# Please understand that this script is only provided in the hopes that
+# it will be useful to Technologic Systems customers and does not have
+# any guarantees or warranties or support of any kind.  If you require
+# additional assistance, custom engineering is available.  Take care and
+# understand what you are doing!  If you're not comfortable in running
+# this script, then perhaps 'gparted' is right for you.
+#
+# This script was tested by writing a factory 512MB SD image for the TS-7350
+# to both a 2GB and 16GB SD card in both JFS and EXT3 filesystem formats.
+
+#Uncomment to DEBUG
+#set -x 
+
+# CHECK FOR ROOT ACCESS
+if [ `id -u` -ne 0 ]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+fi
+
+# CHECK FOR COMMAND LINE ARGUMENT
+if [ $# -lt 1 ]; then
+   echo "Example Usage: $0 /dev/sdb"
+   exit 1
+fi
+
+# INITIALIZE VARIABLES
+TYPE=none
+
+# CHECK DISK AND PARTITIONS
+if [ -e $1 ]; then
+	DISK=$1
+	NUMBER=`fdisk -l $DISK | grep 83 | tail -1 | awk '{print $1}' | sed "s,$DISK,,g"`
+	if [ ! -e ${DISK}$NUMBER ]; then
+		echo "Valid TS partition not found!"
+		echo "Exiting"
+		exit 1
+	fi
+
+	mount | grep $DISK > /dev/null
+	if [ $? -eq 0 ]; then
+		echo "Please unmount $DISK and re-run $0."
+		exit 1
+	fi
+
+	mount | grep "/mnt/tmp" > /dev/null
+	if [ $? -eq 0 ]; then
+		echo "This script plans on using /mnt/tmp as mount point for SD card,"
+		echo "but /mnt/tmp is a mount point for something else currently."
+		echo "Please unmount it and re-run $0."
+		exit 1
+	fi
+	mkdir /mnt/tmp
+	mount ${DISK}$NUMBER /mnt/tmp 2> /dev/null
+	TYPE=`df -T /mnt/tmp | tail -n 1 | awk '{print $2}'`
+	umount ${DISK}$NUMBER 2> /dev/null
+	rmdir /mnt/tmp 2> /dev/null
+
+else
+	echo "No disk found at ${1}!"
+	echo "Exiting"
+	exit 1
+fi
+
+#########################################
+# Final Check and Messages
+#########################################
+goodbye(){
+	echo -n "Running filesystem check on ${DISK}$NUMBER..."
+	fsck -f ${DISK}$NUMBER >/dev/null 2>&1 </dev/null
+	echo "done"
+
+	sync
+	echo "It is now safe to remove and use the SD card. Enjoy!" 
+	exit 0
+}
+
+#########################################
+# STEP 1 of 2:
+#  Move partition boundary to end of disk
+#########################################
+move_part_bound(){
+	ORIG=`fdisk -l $DISK | grep ${DISK}$NUMBER | awk '{print $3}'`
+	TOTAL_CYLINDERS=`fdisk -lu $DISK | grep total | awk '{print $5}'`
+	START_CYLINDER=`fdisk -l $DISK | grep ${DISK}$NUMBER | awk '{print $2}'`
+	END=`echo "$TOTAL_CYLINDERS-$START_CYLINDER" | bc`
+
+	if [ $ORIG -gt $END ]; then
+		echo "Warning: Original ($ORIG) is larger than end goal ($END)!"
+		echo "   Chances are, this disk is already as large as it can be,"
+		echo "   but this script will continue anyways."
+	fi
+
+echo -n "Moving partition boundary of ${DISK}$NUMBER from $ORIG to $END (# cylinders)... "
+(
+sfdisk -i --force -f $DISK -N $NUMBER << EOF
+,$END,0x83,-
+EOF
+) >/dev/null 2>&1 </dev/null
+		echo "done"
+}
+
+#########################################
+# STEP 2 of 2:
+#  Expand filesystem to end of partition
+#########################################
+expand_fs(){
+	if [ $TYPE == "jfs" ]; then
+		# CHECK DEPENDENCIES
+		which jfs_mkfs >/dev/null 2>&1 </dev/null
+		jfsutils=$?
+
+		if [ $jfsutils -eq 1 ]; then
+			echo "Missing dependency jfsutils!"
+			echo "You may be able to install them using 'apt-get install jfsutils'"
+			echo "Exiting"
+			exit 1
+		fi
+
+		echo -n "Resizing JFS disk ${DISK}$NUMBER to fill new size of the partition... "
+		(
+			mkdir /mnt/tmp
+			mount ${DISK}$NUMBER /mnt/tmp
+			mount -o remount,resize /mnt/tmp
+			umount ${DISK}$NUMBER
+			rmdir /mnt/tmp
+		) >/dev/null 2>&1 </dev/null
+		echo "done"
+		goodbye
+
+	elif [ $TYPE == "ext3" ]; then
+		echo -n "Resizing EXT3 disk ${DISK}$NUMBER to fill new size of the partition... "
+	        (
+	                e2fsck -f ${DISK}$NUMBER
+	                resize2fs ${DISK}$NUMBER
+	        ) >/dev/null 2>&1 </dev/null
+	        echo "done"
+		goodbye
+
+	elif [ $TYPE == "none" ]; then
+		echo "Valid partition not found!"
+		echo "Exiting"
+		exit 1
+
+	else
+		echo "Only JFS and EXT3 filesystem types are supported!"
+		echo "Exiting"
+		exit 1
+	fi
+}
+
+echo
+echo "This program was created in hopes that it will be useful to Technologic "
+echo "Systems customers.  There are no guarantees or warranties.  Please backup"
+echo "your data before running this."
+
+if [ $TYPE == "jfs" ]; then
+	echo
+	echo "Also, keep in mind that the JFS filesystem can grow, but cannot shrink."
+	echo
+fi
+
+echo -n "Do you wish to proceed? Type \"yes\" or \"no\" "
+read WISH
+
+case "$WISH" in
+	"no")
+		echo "Exiting"
+		exit 1
+		;;
+	"yes")
+		move_part_bound
+		expand_fs
+		;;
+	*)
+		echo "Exiting"
+		exit 1
+		;;
+esac

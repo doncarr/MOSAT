@@ -1,0 +1,5 @@
+LogHome|/mnt/rd/tina/log/
+HtmlHome|/mnt/rd/tina/html/
+TemplateHome|./template/
+SampleRate|1|
+SMS_ENABLED|0|

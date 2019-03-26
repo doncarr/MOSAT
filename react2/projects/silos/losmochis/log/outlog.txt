@@ -1,0 +1,4073 @@
+----- Sending 0 AOs ---------
+----- Sending 0 DOs ---------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 28 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 0 DOs ---------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 4 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+----- Sending 0 AOs ---------
+----- Sending 2 DOs ---------
+sending DO to 3, ch 15
+sending DO to 1, ch 15
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 2, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 2, channel: 50, retval: -1, wrote ERROR to channel 50
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 4, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 4, channel: 52, retval: -1, wrote ERROR to channel 52
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 200
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 5, mod offset: 300
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 5, channel: 53, retval: -1, wrote ERROR to channel 53
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit id: 1, mod offset: 100
+ 0 0 0 0 0 0 0 0 0 0 0 0 
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51
+Com error: YES, unit id: 1, channel: 49, retval: -1, wrote ERROR to channel 49
+Com error: YES, unit id: 3, channel: 51, retval: -1, wrote ERROR to channel 51

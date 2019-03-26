@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=UTF-8">
+  <title>AC Statusc</title>
+  <meta http-equiv="refresh" content="1">
+  <meta http-equiv="pragma" content="no-cache">
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(128, 128, 128);"
+ link="#000099" vlink="#990099" alink="#000099">
+<h1></h1>
+
+<div style="position: absolute; top: 220px; left: 440px;"> 
+-- Satus 
+</div>
+
+<div style="position: absolute; top: 155px; left: 40px;"> 
+Compressor
+</div>
+
+<div style="position: absolute; top: 180px; left: 20px;"> 
+<!--<img src="encendido.png">-->
+<img src=$$$$DI(ON_AC1|"encendido.png"|"apagado.png")>
+</div>
+
+<div style="position: absolute; top: 155px; left: 190px;"> 
+Disabled
+</div>
+
+<div style="position: absolute; top: 180px; left: 170px;"> 
+<!--<img src="apagado.png">-->
+<img src=$$$$DI(SHUTOFF_AC1|"encendido.png"|"apagado.png")>
+</div>
+
+<div style="position: absolute; top: 320px; left: 20px;"> 
+<!--<img src="apagado.png">-->
+<img src=$$$$DI(DRIP_PAN_AC1|"encendido.png"|"apagado.png")>
+</div>
+
+<div style="position: absolute; top: 360px; left: 240px;"> 
+-- Drip Pan 
+</div>
+
+
+<div style="position: absolute; top: 450px; left: 635px;"> 
+$$$$AI(TEMP_COLD_AC1) °C 
+</div>
+$$$$AI(TEMP_COLD_AC1|bar.png|half_off.png|half_on.png|30|660|400|0|100                                                                                                                                                  )
+<div style="position: absolute; top: 450px; left: 785px;"> 
+$$$$AI(TEMP_HOT_AC1) °C 
+</div>
+$$$$AI(TEMP_HOT_AC1|red_bar.png|half_off.png|red_half_on.png|30|810|400|0|100                                                                                                                                                  )
+
+
+<big><strong>Ultima Actualizaci&oacute;n: $$$$TIME(                                                                              )</big></strong>
+</body>
+</html>

@@ -1,0 +1,410 @@
+#!/bin/sh
+# $Id: pl,v 1.9 2001/10/19 11:50:43 stern Exp $
+#
+# pl:	general wrapper script for plotting with gnuplot from shell cmdline
+#
+# usage: pl [file ...]
+#
+# Michael Sternberg <sternberg@physik.tu-chemnitz.de>
+#	initial version sometime 1995
+#
+# $Log: pl,v $
+# Revision 1.9  2001/10/19 11:50:43  stern
+# redirect /dev/tty only when interactive
+#
+# Revision 1.8  2000/09/07 19:15:08  stern
+# preserve data files on '-dump'
+# rename OWD to QWD ('Q'), re-use OWD "properly".
+#
+# Revision 1.7  2000/04/20 22:49:12  stern
+# allow "-" for stdin anywhere among data files
+# fix option parsing, e.g. "pl -title -Foo du.dat"
+#
+# Revision 1.6  2000/04/20 14:45:51  stern
+# improved -u handling
+# added -date
+#
+# Revision 1.5  1999/10/23 05:57:45  stern
+# Wed Oct 20 17:49:31 CDT 1999
+# -u implemented (really awkward, due to lack of portable $arrays)
+# inline doc updated
+#
+# Revision 1.4  1999/10/23 05:49:49  stern
+# simpler stdin handling
+# added column commands
+# -f, [-u], -pwd<n>
+# major cleanup in option processing (no longer screws with DISPLAY)
+#
+# Revision 1.3  1999/10/23 05:42:00  stern
+# minor cleanups
+# startup handling re-sorted
+#
+# Pre-RCS:
+# Mon Nov 18 21:56:13 EST 1996
+# Fri Jun 20 09:09:22 METDST 1997
+#	added basic option support (-ps, -tty, -term, -dump)
+# Tue Jun 24 11:48:17 METDST 1997
+#	added -last (moved over from plot script for O(N) output)
+# Tue Jul 13 1999
+#	improved -dif handling (boxes)
+#
+
+OWD=`pwd`
+DIR=/tmp
+DATA=pl$$			# files to place data columns in
+CODE=$DIR/gnuplot.$$		# commands fed into gnuplot
+trap 'rm -f $DIR/$DATA.* $CODE' 0 1 2 15
+
+# awk command sequence used to collect data files;
+# picks last column if there is explanatory text; otherwise, works like cat(1) 
+AWKDATA='{val=$NF; if ($1 !~ /^[-+0-9#]/) print val; else print}'
+# extension to AWKDATA to put last data value as numeric xlabel
+AWKLAST='END{print "#@ set xlabel \"last value: " val "\""}'
+
+COLUMN_OPERATOR=cat
+GNUPLOT="gnuplot -geometry +100+100"
+LOCAL_RCFILE=.plrc
+HOME_RCFILE=$HOME/.plrc
+
+# init this.gnuplot.commands file; first: hard-coded defaults
+if [ -f $CODE ]; then rm $CODE; fi
+cat				> $CODE << EOT
+    # defaults
+    set data style lines
+    set grid
+EOT
+
+# default term setting
+case "$DISPLAY" in
+  *:*)	# X11 - let gnuplot auto-recognise term
+	;;
+  "")	# even if DISPLAY is not set, "x11" is default term - bug?
+	SETTERM="set term dumb $COLUMNS $LINES" ;;
+esac
+
+# process args
+while :
+do
+    case "$1" in
+      -h*|--help)
+	    PROGNAME=`basename $0`
+	    cat << EOT
+$PROGNAME - gnuplot frontent for plotting data files
+Usage: $PROGNAME [-tty] [-[e|c]ps] [-term 'termspec']
+    [-u 'usingspec' [-u ...]] [-seq] [-last] [-diff]
+    [-ignorerc] [-pwd[n]] [-title 'title'] [-dump] [-f rcfile] [datafile ...]
+
+    Reads data from stdin or specified file[s] and feeds them to the
+    gnuplot "plot" command, either simultaneously or in sequence [-seq].
+
+    Data file interpretation:
+    - may contain "y" only, "x y", "x y1 y2 .."; (to interprete an n-column
+      file as n y-columns, pipe through nl(1) or use multiple '-u' options)
+    - comments ("#" first on line) and empty lines permitted.
+    - if column 1 does not start with a number, uses last column as single y
+	(eg. "grep 'energy = ' file | $PROGNAME")
+    - embedded lines starting with "#@" are used as gnuplot commands
+      just prior to plotting current file
+    - optional embedded column labels as "# columns: label1 | label2 ..."
+
+    Gnuplot commands are merged (in this order) from:
+    internal defaults, ~/$LOCAL_RCFILE, $LOCAL_RCFILE, command line, data files
+
+Default term: X11 if \$DISPLAY is set (waits for enter), otherwise dumb tty.
+Author:  Michael Sternberg <sternberg@phys.uni-paderborn.de>, 1995-1999
+EOT
+	    exit 0 ;;
+
+      # terminal types
+      -tty|-tt*)
+	    # force tty, regardless of DISPLAY
+	    # use std 80x24 if vars are unset
+	    SETTERM="set term dumb $COLUMNS $LINES"
+	    shift ;;
+      -ps)  # PostScript output to stdout; various incarnations:
+	    SETTERM="set term post"
+	    shift ;;
+      -cps) SETTERM="set term post color"
+	    shift ;;
+      -eps) SETTERM="set term post eps"
+	    shift ;;
+      -term|-te*)
+	    # set term explicitly by user spec; clear accumulated SETSTYLE
+	    SETTERM="set term $2"
+	    SETSTYLE=""
+	    shift 2 ;;
+
+      # rc-file processing
+      -ih)
+	    IGNORE_HOMERC=1
+	    shift ;;
+      -il)
+	    IGNORE_LOCALRC=1
+	    shift ;;
+      -i*)
+	    IGNORE_HOMERC=1
+	    IGNORE_LOCALRC=1
+	    shift ;;
+      -f)   # override local rc-file
+	    LOCAL_RCFILE=$2
+	    shift 2 ;;
+      -dump|-du*)
+	    # turn the precious gnuplot command sequence into cat food
+	    GNUPLOT=cat
+	    DUMP=1
+	    shift ;;
+
+      # column operations
+      -seq*|-s*)
+	    # issue one plot cmd per column or file
+	    SEQUENTIAL=1
+	    shift ;;
+      -diff|-di*)
+	    COLUMN_OPERATOR=numdif
+	    SETSTYLE="set data style boxes"
+	    shift ;;
+
+      # labels and keys
+      -title|-ti*)
+      	    TITLE="set title \"$2\""
+	    shift 2 ;;
+      -last|-l*)
+	    # print last data value as xlabel
+	    AWKDATA=${AWKDATA}${AWKLAST}
+	    shift ;;
+      -date)
+	    TIME="set time"
+	    shift ;;
+      -pwd*)
+	    # Allow various numbers of trailing path components.
+	    # old style was:  split each component using \(.*/\) + reassemble:
+	    #	pwd | sed 's,.*/\(.*/\)\(.*/\),\1\2,'
+	    # new style:  have \1 include as many "/" as needed.
+	    # (not the same generality as eg: "basename /one/two/")
+	    case "$1" in
+	      -pwd1)	QWD=`pwd | sed 's,.*/,,'` ;;
+	      -pwd2)	QWD=`pwd | sed 's,.*/\(.*/\),\1,'` ;;
+	      -pwd3)	QWD=`pwd | sed 's,.*/\(.*/.*/\),\1,'` ;;
+	      -pwd4)	QWD=`pwd | sed 's,.*/\(.*/.*/.*/\),\1,'` ;;
+	      -pwd5)	QWD=`pwd | sed 's,.*/\(.*/.*/.*/.*/\),\1,'` ;;
+	      -pwd6)	QWD=`pwd | sed 's,.*/\(.*/.*/.*/.*/.*/\),\1,'` ;;
+	      -pwd*)	QWD=`pwd` ;;	# 0 or > n
+	    esac
+
+      	    DIRLABEL="set label '$QWD' at screen 0.97,0.03 right"
+	    shift ;;
+      -using|-us*|-u)
+	    # build pseudo-array $USING<n>; here: optarg separated by space
+      	    ucount=`expr ${ucount-0} + 1`	# dup code!
+      	    USING="${USING} USING$ucount='$2'"
+	    shift 2 ;;
+      -u*)  # also using; optarg sticking next to "-u"
+      	    ucount=`expr ${ucount-0} + 1`	# dup code!
+	    UARG=`echo $1 | sed s/..//`		# chop opt flag
+      	    USING="${USING} USING$ucount='$UARG'"
+	    shift ;;
+      -x)   set -x ; shift ;;
+
+      # loop administrativa
+      --)   # stop interpreting
+	    shift; break ;;
+      -)    break ;;		# use "-" for stdin
+      -*)   echo $0: unknown option: $1\;  try -help 1>&2
+	    exit 1 ;;
+      *)    break ;;		# file arg; stop interpreting
+    esac
+done
+
+# import using<n> pseudo-array; quote- and backslash processing is flaky.
+eval "$USING"
+
+# append global dotfile to this.gnuplot.commands
+if [ -f $HOME_RCFILE -a -z "$IGNORE_HOMERC" ]
+then
+	echo "# $HOME_RCFILE"	>> $CODE
+	cat $HOME_RCFILE	>> $CODE
+fi
+
+# append local dotfile to this.gnuplot.commands
+if [ -f $LOCAL_RCFILE -a -z "$IGNORE_LOCALRC" ]
+then
+	echo "# $LOCAL_RCFILE"	>> $CODE
+	cat $LOCAL_RCFILE	>> $CODE
+fi
+
+# append command line settings to this.gnuplot.commands
+# TODO:  Should these be AFTER "#@" entries to override file settings?
+cat				>> $CODE << EOT
+# options
+$SETTERM
+$SETSTYLE
+$TITLE
+$DIRLABEL
+$TIME
+EOT
+
+# if tty is default [X11], wait for <enter> after plotting
+case "$SETTERM" in
+  "")	PAUSE="pause -1" ;;
+  *)	PAUSE="# pause -1" ;;
+esac
+
+# allow stdin
+case $# in
+  0) set -- - ;;
+esac
+
+# preprocess input data files
+FILENO=1
+for i
+do
+    # generate .nnn suffix
+    # IRIX printf(1) is useless for anything but %s; thus use awk
+    FILENNN=`awk 'BEGIN{printf "%03d", '$FILENO'; exit}'`
+
+    echo "# file: $i - $FILENO of $#" > $DIR/$DATA.$FILENNN	# used for key
+    awk "$AWKDATA" $i | $COLUMN_OPERATOR >> $DIR/$DATA.$FILENNN || {
+	echo skipping $i\; 1>&2 ; continue;
+    }
+    FILENO=`expr $FILENO + 1`
+done
+
+# change dir so the filenames for the plot cmd get shorter
+cd $DIR
+
+# construct plot command, append cyclic to $PLOTSTR
+PLOTSTR="plot"
+SEP=""			# separator for multiple files
+for i in $DATA.*	# handle preprocessed files
+do
+    # extract "#@" lines and column headings [flaky] for gnuplot
+    sed -n \
+    	-e '/^# col.*: /{
+		s//set xlabel "/
+		s/ *|.*/"/p
+	    }' \
+    	-e '/^#@/s/#@[	 ]*//p' \
+	$i >> $CODE
+
+    case "$USING1" in
+    '')	# no -using given; plot all columns (traditional)
+    COLPLOT=`awk '
+    BEGIN { DATANAME="'$i'" }
+
+    #NR==1 { FNAME="'\''" $3 "'\''" }	# put '' around file name in key
+    NR==1 { FNAME=$3 }			# put unadorned file name
+
+    # find max number of columns
+    ! /^#/ && NF>ncol { ncol = NF }
+
+    # get column labels from special line
+    /^# col.*: / {
+    	$1 = $2 = "";
+    	split($0, columntitles, / *\| */ );
+    }
+
+    END {
+	#sep=""		# separator for multiple columns in one file
+	sep="\t"	# separator for multiple columns in one file
+
+	if (ncol > 2) {		# multiple columns in this line
+	    for (col = 2; col <= ncol; ++col) {
+	    	coltitle = FNAME ", y" col-1
+	    	if (columntitles[col] ~ /./) coltitle = columntitles[col]
+
+		## for pre-gnuplot-3.6beta:
+		#printf "%s\"%s\"u 1:%d t\"%s\"", \
+		#    sep, DATANAME, col, coltitle
+		#sep=","
+
+		## from gnuplot-3.6beta:
+		printf "%s\"%s\" us 1:%d ti \"%s\"", \
+		    sep, DATANAME, col, coltitle
+		sep=", \\\\\n\t"
+	    }
+	} else {		# single column
+	    	coltitle = FNAME
+	    	if (columntitles[1] ~ /./) coltitle = columntitles[2]
+
+		printf "%s\"%s\" t\"%s\"", \
+		    sep, DATANAME, coltitle
+	}
+    }
+    ' $i`	# end COLPLOT=``
+    	;;
+    *)	# -using was set; apply all(?) using-specs on each file
+    	FNAME=`awk 'NR==1 {print $3; exit;}' $i`
+    	COLPLOT="	'$i' us $USING1 ti '$FNAME $USING1'"
+    	;;
+    esac	# on $USING1
+    case "$USING2" in ?*) COLPLOT="$COLPLOT, \\
+	'$i' us $USING2 ti '$FNAME $USING2'" ;;
+    esac
+    case "$USING3" in ?*) COLPLOT="$COLPLOT, \\
+	'$i' us $USING3 ti '$FNAME $USING3'" ;;
+    esac
+    case "$USING4" in ?*) COLPLOT="$COLPLOT, \\
+	'$i' us $USING4 ti '$FNAME $USING4'" ;;
+    esac
+    case "$USING5" in ?*) COLPLOT="$COLPLOT, \\
+	'$i' us $USING5 ti '$FNAME $USING5'" ;;
+    esac
+    case "$USING6" in ?*) COLPLOT="$COLPLOT, \\
+	'$i' us $USING6 ti '$FNAME $USING6'" ;;
+    esac
+    case "$USING7" in ?*) COLPLOT="$COLPLOT, \\
+	'$i' us $USING7 ti '$FNAME $USING7'" ;;
+    esac
+    case "$USING8" in ?*) COLPLOT="$COLPLOT, \\
+	'$i' us $USING8 ti '$FNAME $USING8'" ;;
+    esac
+    case "$USING9" in ?*) COLPLOT="$COLPLOT, \\
+	'$i' us $USING9 ti '$FNAME $USING9'" ;;
+    esac
+    case "$USING10" in ?*) COLPLOT="$COLPLOT, \\
+	'$i' us $USING10 ti '$FNAME $USING10'" ;;
+    esac
+
+    PLOTSTR="${PLOTSTR}${SEP}$COLPLOT"
+
+    case "$SEQUENTIAL" in
+      1)
+	# issue plot commands one per file
+	cat >> $CODE << EOT
+$PLOTSTR
+$PAUSE
+EOT
+	PLOTSTR="plot"
+	SEP=""
+	;;
+      *)
+	# append plot request to single plot command for all files
+	# NB: is "\" a gnuplot-3.7-ism??
+	SEP=", \\
+"
+    esac
+done
+
+case "$SEQUENTIAL" in
+    0|"")
+	# put complete plot command into cmd file
+	cat >> $CODE << EOT
+$PLOTSTR
+$PAUSE
+EOT
+	;;
+esac
+
+# run gnuplot; force kbd read from tty (needed if stdin was a data file)
+# redirect only when interactive - noted by <Francois.Isabelle@ca.kontron.com> 
+if [ -t 2 ]; then
+    $GNUPLOT $CODE < /dev/tty
+else
+    $GNUPLOT $CODE
+fi
+
+case "$DUMP" in
+    1) mv $DATA.* $OWD ;;	# preserve data files
+esac
+
+# done; trap does cleanup [of preprocessed files]

@@ -1,0 +1,6 @@
+svg_header|My Title|0|0|300|150|
+background|tan|
+pendulo|level|hotpink|40|40|70|
+pendulo|PUMP1_AMP|fuchsia|180|45|60|
+simple_panel|PUMP1_ON|gray|darkturquoise|270|75|8|
+

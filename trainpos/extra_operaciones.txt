@@ -1,0 +1,46 @@
+
+Más detalles de operaciones
+
+Linea 1:
+===============
+
+Donde pueden salir servico
+
+Trenes pueden salir servicio en periférico sur, periférico norte, y Juárez (Via1 y Via2). Es automático en per. Sur y per. Norte, en Juárez es opcional.
+
+  a) En Periferico norte es muy probable que van a volover a entrar a servico inmediatemente con los mismos vagones invertidos y posible diferente conductor. 
+      - administrado por el despachador de Periférico Norte
+      - la salida de servicio es automático, no hay pantalla para programarla.
+  b) En Periferioc sur probable que van a volver a entrar servico, pero SIEMPRE con diferente númer economico unico, posible diferente conductor y vagones.
+      - administrado por el despachador de Periférico Sur, 
+      - la salida de servicio es automático, noi hay pantalla para programarla.
+  c) En Juárez (Via1, Via2), tiene que ser programado la salida en avance, y damos una alarma que detectamos salida cuando no era programado.
+      - administrado en el centro de control, pantalla especial para programarla (ambos Vias)
+
+========================================
+
+Donde pueden entrar servicio
+
+Trenes pueden entrar servicio en Per. Sur, Per. Norte, Juárez (Via1 y Via2). No es automático en ningún caso.
+
+  a)  Periférico Sur
+      - administrado por despachadore en Periférico Sur.
+      - hay pantalla para programarla y debe de ser programada o va a dar una alarma.
+  b) Periférico Norte
+      - administrada por el despachador en Periférico Norte.
+      - hay pantalla para programarla, y debe de ser programada o va a dar una alarma.
+  c) En Juárez (Via1 y Via2), debe ser programada,
+      - administrada por centro de control, pantalla especial para programarla (ambos Vias)
+      - se va a dar alarama si es dectada y no programada. 
+  
+========================================
+
+Trenes extras van a tener los números de 
+  a) SUP1, SUP2, SUP3, . . . SUPN para trenes sumpementarios. 
+  b) PRU1, PRU2, PRU3, . . . PRUN para trenes de prueba.
+
+Todos de éstes números asignadas en el centro del control. Solo el centro de control puede programar estas trenes extras.
+
+=========================================
+
+

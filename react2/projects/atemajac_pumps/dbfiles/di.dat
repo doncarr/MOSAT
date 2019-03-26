@@ -1,0 +1,22 @@
+LO_LEVEL|Nivel Bajo|0|1|0|BELOW|ABOVE|H|N|0|
+HI_LEVEL|Nivel Alto|0|1|1|BELOW|ABOVE|H|N|0|
+HI_HI_LEVEL|Nivel Muy Alto|0|1|2|BELOW|ABOVE|H|N|0|
+ULT_SON_ALM|Nivel Muy Alto|0|1|3|OK|ALARM|H|N|0|
+CFE_SUPPLY|Falla de alimentacion CFE|0|1|8|ALARM|OK|H|N|0|
+MIXER|Mescladora ON|0|1|10|ON|OFF|H|N|0|
+VPUMP1_ON|Bomba V1 ON|0|0|6|ON|OFF|H|N|0|
+VPUMP2_ON|Bomba V2 ON|0|0|7|ON|OFF|H|N|0|
+PUMP1_ON|Bomba 1 ON|0|0|8|off|ON|H|N|0|
+PUMP2_ON|Bomba 1 ON|0|0|9|off|ON|H|N|0|
+PUMP3_ON|Bomba 1 ON|0|0|10|off|ON|H|N|0|
+COM_FAILED|Communications Failed|0|1|16|ALARM|OK|N|N|0|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description
+#    Alarm State
+#    Shutdown State
+#    invert PV?

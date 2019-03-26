@@ -1,0 +1,2 @@
+dia/CHENNAIBEACH_VELACHERY.png,dia/square12x12.png,dia/square12x12.png,Line1.html,24,968,63,94,-26,19,32
+dia/CHENNAIBEACH_VELACHERY.png,square_unexpected.png,dia/square12x12.png,xline1.html,24,968,63,94,-26,19,32

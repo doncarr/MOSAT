@@ -1,0 +1,62 @@
+Delete Log
+keeping 5 days of history
+Checking file: ./log//silo_logger20100628.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100628_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100627.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100627_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100626.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100626_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100625.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100625_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100624.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100624_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100623.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100623_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100622.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100622_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100621.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100621_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100620.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100620_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100619.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20100619_hour.txt
+ DOES NOT EXIST
+

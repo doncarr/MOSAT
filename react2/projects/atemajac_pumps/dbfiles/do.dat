@@ -1,0 +1,19 @@
+PUMP1_DO|Bomba 1|0|0|1|Off|On|0|
+PUMP2_DO|Bomba 2|0|0|2|Off|On|0|
+PUMP3_DO|Bomba 3|0|0|3|Off|On|0|
+PUMP1V_DO|Bomba 1|0|0|4|Off|On|0|
+PUMP2V_DO|Bomba 2|0|0|5|Off|On|0|
+#XVPUMP1_DO|VBomba 1|0|0|7|Off|On|0|
+#XVPUMP2_DO|VBomba 2|0|0|9|Off|On|0|
+#YPUMP1_DO|Bomba 1|0|0|12|Off|On|0|
+#YPUMP2_DO|Bomba 2|0|0|13|Off|On|0|
+#YPUMP3_DO|Bomba 3|0|0|14|Off|On|0|
+#YVPUMP1_DO|VBomba 1|0|0|15|Off|On|0|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description
+#    Invert PV?

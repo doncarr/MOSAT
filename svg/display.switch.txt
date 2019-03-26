@@ -1,0 +1,74 @@
+svg_header|Main Switching|0|0|300|150|
+background|burlywood|
+
+link|5|145|5|firebrick|start|cool.svg|Cooling Tower|feed.svg|Feed Tanks|spray.svg|Spray|tina.svg|Tina|transfer.svg|Transfer|gauge.svg|Gauges|pipes.svg|Pipes|pipes2d.svg|Pipes 2D|
+only_text|Main Switching|blue|125|10|12|middle|
+# Start Time 
+groupbox|5|5|70|30|2|0.5|lightsalmon|
+#panel|5|5|70|30|0.3|
+#panel|5|5|70|30|0.3|
+only_text|Start Time|black|50|12|8|middle|
+switch|PUMP1_ON|lime|red|10|11|20|
+
+# System Control 
+#groupbox|215|5|80|35|2|0.5|lightgray|
+panel|215|5|80|35|0.3|
+text|275|14|8|black|middle|System|Control|
+switch|PUMP2_ON|lime|red|225|7|30|
+
+# Crystalizers 1,2
+groupbox|5|40|55|90|2|0.5|lightgray|
+#panel|5|36|60|90|0.3|
+groupbox|8|42|46|29|2|0.5|mistyrose|
+#panel|8|42|46|29|0.3|
+only_text|Crystylizer Mode|black|27|49|5|middle|
+switch|PUMP3_ON|lime|red|12|52|17|
+groupbox|8|72|22|56|2|0.5|palegreen|
+#panel|8|72|22|56|0.3|
+text|19|77|5|black|middle|Cryst. 1|Select|
+switch|PUMP1_ON|lime|red|10|84|16|
+only_text|Product|black|19|106|5|middle|
+switch|PUMP2_ON|lime|red|10|108|16|
+groupbox|32|72|22|56|2|0.5|lightskyblue|
+#panel|32|72|22|56|0.3|
+text|43|77|5|black|middle|Cryst. 2|Select|
+switch|PUMP3_ON|lime|red|34|84|16|
+only_text|Product|black|43|106|5|middle|
+switch|PUMP1_ON|lime|red|34|108|16|
+
+# Crystalizers 3,4
+groupbox|67|40|55|90|2|0.5|lightgray|
+#panel|67|36|60|90|0.5|
+groupbox|70|42|46|29|2|0.5|lightgray|
+#panel|70|42|46|29|0.3|
+only_text|Crystylizer Mode|black|89|49|5|middle|
+switch|PUMP2_ON|lime|red|74|52|17|
+groupbox|70|72|22|56|2|0.5|lightgray|
+#panel|70|72|22|56|0.3|
+text|81|77|5|black|middle|Cryst. 3|Select|
+switch|PUMP3_ON|lime|red|72|84|16|
+only_text|Product|black|81|106|5|middle|
+switch|PUMP1_ON|lime|red|72|108|16|
+groupbox|94|72|22|56|2|0.5|lightgray|
+#panel|94|72|22|56|0.3|
+text|105|77|5|black|middle|Cryst. 4|Select|
+switch|PUMP2_ON|lime|red|96|84|16|
+only_text|Product|black|105|106|5|middle|
+switch|PUMP3_ON|lime|red|96|108|16|
+
+# Crystalizers 5,6
+#groupbox|129|40|55|90|2|0.5|lightgray|
+panel|129|40|60|90|0.5|
+panel|132|42|46|29|0.3|
+only_text|Crystylizer Mode|black|151|49|5|middle|
+switch|PUMP1_ON|lime|red|136|52|17|
+panel|132|72|22|56|0.3|
+text|143|77|5|black|middle|Cryst. 5|Select|
+switch|PUMP2_ON|lime|red|134|84|16|
+only_text|Product|black|143|106|5|middle|
+switch|PUMP3_ON|lime|red|134|108|16|
+panel|156|72|22|56|0.3|
+text|167|77|5|black|middle|Cryst. 6|Select|
+switch|PUMP1_ON|lime|red|158|84|16|
+only_text|Product|black|167|106|5|middle|
+switch|PUMP2_ON|lime|red|158|108|16|

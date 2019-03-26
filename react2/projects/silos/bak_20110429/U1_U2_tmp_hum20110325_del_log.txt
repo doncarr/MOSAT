@@ -1,0 +1,62 @@
+Delete Log
+keeping 100 days of history
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101214.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101214_hour.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101213.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101213_hour.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101212.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101212_hour.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101211.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101211_hour.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101210.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101210_hour.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101209.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101209_hour.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101208.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101208_hour.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101207.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101207_hour.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101206.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101206_hour.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101205.txt
+ DOES NOT EXIST
+
+Checking file: /mnt/rd/silo/log//U1_U2_tmp_hum20101205_hour.txt
+ DOES NOT EXIST
+

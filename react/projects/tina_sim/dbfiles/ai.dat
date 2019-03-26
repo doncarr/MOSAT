@@ -1,0 +1,25 @@
+#avg_temp|Tank Temp 1|degC|0|0|0|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_1|Tank Temp 1|degC|0|0|0|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+TEMP_2|Tank Temp 2|degC|0|0|1|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+LEVEL|Tank Level|cm|0|0|2|0.0|10.0|0.0|10.0|1|-5000.0|0|0|0|0|0|0|0|0|0|
+#    Tag
+#    Description
+#    Engineering Units Label
+#    Driver Number
+#    Card
+#    Channel
+#    Engineering Units Low
+#    Engineering Units High
+#    Raw Value Low
+#    Raw Value High
+#    Decimal Places
+#    Zero Cutoff
+#    Alarm Low
+#    Caution Low
+#    Caution High
+#    Alarm High
+#    Alarm Deadband
+#    Alarm Low Enable
+#    Caution Low Enable
+#    Caution High Enable
+#    Alarm High Enable

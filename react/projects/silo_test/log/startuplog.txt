@@ -1,0 +1,276 @@
+Thu Dec 24 20:26:48 2009
+React PID: 5251
+SampleRate set to: 1.000000
+Loading db point factory from: ../../ai.so
+Reading AI ........
+RAW_HUM_1|Relative Humidity 1|%|0|0|0|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+HUM_1|Relative Humidity 1|%|0|0|1|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+RAW_HUM_2|Relative Humidity 2|%|0|0|2|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+HUM_2|Relative Humidity 2|%|0|0|3|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+RAW_Temp|Temperature|%|0|0|4|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Temp|Temperature|%|0|0|5|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+minutes|Minutes from Midnight|min|0|0|12|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+HUM_LO|Minimum Humidity for fans|%|0|0|8|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+HUM_HI|Maximum Humidity for fans|%|0|0|9|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Reading ao ........
+HUM_LO_AO|Low Humiditiy for fans|%|0|0|25|0|10|0|10|1|0|100|
+HUM_HI_AO|Hight Humiditiy for fans|%|0|0|24|0|10|0|10|1|0|100|
+Reading di ........
+DI_00|Discrete Input 00|0|0|0|OFF|ON|N|N|
+DI_01|Discrete Input 01|0|0|1|OFF|ON|N|N|
+DI_02|Discrete Input 02|0|0|2|OFF|ON|N|N|
+DI_03|Discrete Input 03|0|0|3|OFF|ON|N|N|
+DI_04|Discrete Input 04|0|0|4|OFF|ON|N|N|
+DI_05|Discrete Input 05|0|0|5|OFF|ON|N|N|
+DI_06|Discrete Input 06|0|0|6|OFF|ON|N|N|
+DI_07|Discrete Input 07|0|0|7|OFF|ON|N|N|
+DI_08|Discrete Input 08|0|0|8|OFF|ON|N|N|
+DI_09|Discrete Input 09|0|0|9|OFF|ON|N|N|
+DI_10|Discrete Input 10|0|0|10|OFF|ON|N|N|
+DI_11|Discrete Input 11|0|0|11|OFF|ON|N|N|
+DI_12|Discrete Input 12|0|0|12|OFF|ON|N|N|
+DI_13|Discrete Input 13|0|0|13|OFF|ON|N|N|
+DI_14|Discrete Input 14|0|0|14|OFF|ON|N|N|
+DI_15|Discrete Input 15|0|0|15|OFF|ON|N|N|
+DOX_00|Discrete Output 00|0|0|32|OFF|ON|N|N|
+DOX_01|Discrete Output 01|0|0|33|OFF|ON|N|N|
+DOX_02|Discrete Output 02|0|0|34|OFF|ON|N|N|
+DOX_03|Discrete Output 03|0|0|35|OFF|ON|N|N|
+DOX_04|Discrete Output 04|0|0|36|OFF|ON|N|N|
+DOX_05|Discrete Output 05|0|0|37|OFF|ON|N|N|
+DOX_06|Discrete Output 06|0|0|38|OFF|ON|N|N|
+DOX_07|Discrete Output 07|0|0|39|OFF|ON|N|N|
+DOX_08|Discrete Output 08|0|0|40|OFF|ON|N|N|
+DOX_09|Discrete Output 09|0|0|41|OFF|ON|N|N|
+DOX_10|Discrete Output 10|0|0|42|OFF|ON|N|N|
+DOX_11|Discrete Output 11|0|0|43|OFF|ON|N|N|
+DOX_12|Discrete Output 12|0|0|44|OFF|ON|N|N|
+DOX_13|Discrete Output 13|0|0|45|OFF|ON|N|N|
+DOX_14|Discrete Output 14|0|0|46|OFF|ON|N|N|
+DOX_15|Discrete Output 15|0|0|47|OFF|ON|N|N|
+Reading do ........
+DO_00|DO 00|0|0|0|OFF|ON|
+DO_01|DO 01|0|0|1|OFF|ON|
+DO_02|DO 02|0|0|2|OFF|ON|
+DO_03|DO 03|0|0|3|OFF|ON|
+DO_04|DO 04|0|0|4|OFF|ON|
+DO_05|DO 05|0|0|5|OFF|ON|
+DO_06|DO 06|0|0|6|OFF|ON|
+DO_07|DO 07|0|0|7|OFF|ON|
+DO_08|DO 08|0|0|8|OFF|ON|
+DO_09|DO 09|0|0|9|OFF|ON|
+DO_10|DO 10|0|0|10|OFF|ON|
+DO_11|DO 11|0|0|11|OFF|ON|
+DO_12|DO 12|0|0|12|OFF|ON|
+DO_13|DO 13|0|0|13|OFF|ON|
+DO_14|DO 14|0|0|14|OFF|ON|
+DO_15|DO 15|0|0|15|OFF|ON|
+Reading pci ........
+Reading calc ........
+VTemp|Temp Volts|volts|(RAW_TEMP / 1023) * 4.94|1|10|20|80|90|5|0|0|0|0|
+Expression: (RAW_TEMP / 1023) * 4.94
+VHum_1|Hum 1 Volts|volts|(RAW_HUM_1 / 1023) * 4.94|1|10|20|80|90|5|0|0|0|0|
+Expression: (RAW_HUM_1 / 1023) * 4.94
+VHum_2|Hum 2 Volts|volts|(RAW_HUM_2 / 1023) * 4.94|1|10|20|80|90|5|0|0|0|0|
+Expression: (RAW_HUM_2 / 1023) * 4.94
+Reading discrete calc ........
+temp_lt_10|Discrete Calc 1|(TEMP < 10.0)|ok|bad|N|N|
+Expression: (TEMP < 10.0)
+1 discrete calcs read
+Reading dcalc ........
+Reading timer ........
+num_timer = 0
+Reading analog values ........
+aval1|analog val 1|dogs|1|0.0|
+aval2|analog val 2|cats|1|0.0|
+num analog values = 2
+Reading discrete values ........
+dval1|discrete val 1|Lo|Hi|T|
+dval2|discrete val 2|Lo|Hi|T|
+num discrete values = 2
+Reading int ........
+Reading pid ........
+Reading pump ........
+Reading ac ........
+Reading level ........
+Reading data ........
+Reading file logger ........
+silo_logger_1|My temp logger|silo_logger|300|5|1|1|0|0|0|RAW_HUM_1|HUM_1|RAW_HUM_2|HUM_2|RAW_TEMP|TEMP|MINUTES|
+collection is on for silo_logger_1
+Tag = RAW_HUM_1
+analog point 0: RAW_HUM_1
+Tag = HUM_1
+analog point 1: HUM_1
+Tag = RAW_HUM_2
+analog point 2: RAW_HUM_2
+Tag = HUM_2
+analog point 3: HUM_2
+Tag = RAW_TEMP
+analog point 4: RAW_TEMP
+Tag = TEMP
+analog point 5: TEMP
+Tag = MINUTES
+analog point 6: MINUTES
+Reading web logger ........
+weblogger1|Log to pablasso.com|15|http://adaptivertc.pablasso.com/api/|key|temp_amb|temp_amb|float|hum_rel|hum_rel|float|S100_FAN1|ventilador|bool|
+2 analog points
+1 discrete points
+web tags: 0x82e92b0
+Tag = temp_amb
+Bad analog point: temp_amb
+Web Tag: temp_amb
+Tag = hum_rel
+Bad analog point: hum_rel
+Web Tag: hum_rel
+Tag = S100_FAN1
+Bad discrete point: S100_FAN1
+Web Tag: ventilador
+Reading discrete logger ........
+Line: silodlogger_1|My dlogger  |silo_dlogger|0|DI_02|B|DI_03|B|DI_04|B|DI_05|B|DI_06|B|DI_07|B|temp_lt_10|B|DO_15|B|
+argv[0]: silodlogger_1
+argv[1]: My dlogger  
+argv[2]: silo_dlogger
+argv[3]: 0
+argv[4]: DI_02
+argv[5]: B
+argv[6]: DI_03
+argv[7]: B
+argv[8]: DI_04
+argv[9]: B
+argv[10]: DI_05
+argv[11]: B
+argv[12]: DI_06
+argv[13]: B
+argv[14]: DI_07
+argv[15]: B
+argv[16]: temp_lt_10
+argv[17]: B
+argv[18]: DO_15
+argv[19]: B
+
+silodlogger_1|My dlogger  |silo_dlogger|0|DI_02|B|DI_03|B|DI_04|B|DI_05|B|DI_06|B|DI_07|B|temp_lt_10|B|DO_15|B|
+collection is on for silodlogger_1
+discrete point [0]: DI_02, both rising and falling
+discrete point [1]: DI_03, both rising and falling
+discrete point [2]: DI_04, both rising and falling
+discrete point [3]: DI_05, both rising and falling
+discrete point [4]: DI_06, both rising and falling
+discrete point [5]: DI_07, both rising and falling
+discrete point [6]: temp_lt_10, both rising and falling
+discrete point [7]: DO_15, both rising and falling
+Line: silodlogger_2|My dlogger|silo_dlogger2_|0|DOX_00|B|DOX_01|B|DOX_02|B|DOX_03|B|DOX_04|B|DOX_05|B|DOX_06|B|DOX_07|B|DOX_08|B|DOX_09|B|DOX_10|B|DOX_11|B|
+argv[0]: silodlogger_2
+argv[1]: My dlogger
+argv[2]: silo_dlogger2_
+argv[3]: 0
+argv[4]: DOX_00
+argv[5]: B
+argv[6]: DOX_01
+argv[7]: B
+argv[8]: DOX_02
+argv[9]: B
+argv[10]: DOX_03
+argv[11]: B
+argv[12]: DOX_04
+argv[13]: B
+argv[14]: DOX_05
+argv[15]: B
+argv[16]: DOX_06
+argv[17]: B
+argv[18]: DOX_07
+argv[19]: B
+argv[20]: DOX_08
+argv[21]: B
+argv[22]: DOX_09
+argv[23]: B
+argv[24]: DOX_10
+argv[25]: B
+argv[26]: DOX_11
+argv[27]: B
+
+silodlogger_2|My dlogger|silo_dlogger2_|0|DOX_00|B|DOX_01|B|DOX_02|B|DOX_03|B|DOX_04|B|DOX_05|B|DOX_06|B|DOX_07|B|DOX_08|B|DOX_09|B|DOX_10|B|DOX_11|B|
+collection is on for silodlogger_2
+discrete point [0]: DOX_00, both rising and falling
+discrete point [1]: DOX_01, both rising and falling
+discrete point [2]: DOX_02, both rising and falling
+discrete point [3]: DOX_03, both rising and falling
+discrete point [4]: DOX_04, both rising and falling
+discrete point [5]: DOX_05, both rising and falling
+discrete point [6]: DOX_06, both rising and falling
+discrete point [7]: DOX_07, both rising and falling
+discrete point [8]: DOX_08, both rising and falling
+discrete point [9]: DOX_09, both rising and falling
+discrete point [10]: DOX_10, both rising and falling
+discrete point [11]: DOX_11, both rising and falling
+Line: #    Tag
+Line: #    Description
+Line: #    Base File Name (actual name is base + YYYYMMDD) (can include path)
+Line: #    Tag 1
+Line: #    Tag 2
+Line: #    . . . .
+Line: #    Tag N
+Reading scan ........
+Reading web points ........
+siloweb|Silo Web Page|1.0|test_template.html|silo.html|
+RAW_TEMP)
+Args for AI = 1
+VTEMP)
+Args for AI = 1
+TEMP)
+Args for AI = 1
+RAW_HUM_1)
+Args for AI = 1
+VHUM_1)
+Args for AI = 1
+HUM_1)
+Args for AI = 1
+RAW_HUM_2)
+Args for AI = 1
+VHUM_2)
+Args for AI = 1
+HUM_2)
+Args for AI = 1
+Minutes)
+Args for AI = 1
+HUM_LO)
+Args for AI = 1
+HUM_HI)
+Args for AI = 1
+silotxt|Txt Web Page|1.0|test_template.txt|silo.txt|
+RAW_TEMP)
+Args for AI = 1
+VTEMP)
+Args for AI = 1
+TEMP)
+Args for AI = 1
+RAW_HUM_1)
+Args for AI = 1
+VHUM_1)
+Args for AI = 1
+HUM_1)
+Args for AI = 1
+RAW_HUM_2)
+Args for AI = 1
+VHUM_2)
+Args for AI = 1
+HUM_2)
+Args for AI = 1
+Minutes)
+Args for AI = 1
+HUM_LO)
+Args for AI = 1
+HUM_HI)
+Args for AI = 1
+Parsing 3 Analog Expressions ......
+VTemp Parsing "(RAW_TEMP / 1023) * 4.94"
+VHum_1 Parsing "(RAW_HUM_1 / 1023) * 4.94"
+VHum_2 Parsing "(RAW_HUM_2 / 1023) * 4.94"
+Parsing 1 Discrete Expressions ......
+-- Reading background scripts: .//dbfiles/background.dat
+bgx.txt
+Loading iodrivers from: .//dbfiles/drivers.dat
+../../drivers/sim_pump_low/libsimpumpdrv.so|new_simpumpdrv|||
+Loading iodriver from: ../../drivers/sim_pump_low/libsimpumpdrv.so
+Class factory function is: new_simpumpdrv
+Thu Dec 24 20:26:48 2009
+No foreground script executing, use "kill -1 5251" or <CTRL-C> to stop

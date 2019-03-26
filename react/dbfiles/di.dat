@@ -1,0 +1,26 @@
+#    Tag (string max 25)
+#    Description (string max 50)
+#    Driver Number (char max 25)
+#    Card (char max 25)
+#    Channel (char max 25)
+#    Low Description (string max 12)
+#    High Description (string max 12)
+#    Alarm State (drop down {high, low, none})
+#    Shutdown State  (drop down {high, low, none})
+LO_LEVEL|Nivel Bajo|0|0|0|BELOW|ABOVE|N|N|
+HI_LEVEL|Nivel Alto|0|0|1|BELOW|ABOVE|N|N|
+HI_HI_LEVEL|Nivel Muy Alto|0|0|2|BELOW|ABOVE|H|N|
+ULT_SON_ALM|Nivel Muy Alto|0|0|3|OK|ALARM|H|N|
+CFE_SUPPLY|Falla de alimentacion CFE|0|0|4|ALARM|OK|H|N|
+MIXER|Mescladora ON|0|0|5|ON|OFF|H|N|
+VPUMP2_ON|Bomba V2 ON|0|0|6|ON|OFF|H|N|
+VPUMP1_ON|Bomba V1 ON|0|0|7|ON|OFF|H|N|
+PUMP1_ON|Bomba 1 ON|0|0|8|ON|OFF|H|N|
+PUMP2_ON|Bomba 2 ON|0|0|9|ON|OFF|H|N|
+PUMP3_ON|Bomba 3 ON|0|0|10|ON|OFF|H|N|
+COM_FAILED|Communications Failed|0|0|16|ON|OFF|N|N|
+MOD_ID_1_OK|Mod error 1|0|0|81|OK|FAIL|N|N|
+MOD_ID_2_OK|Mod error 1|0|0|82|OK|FAIL|N|N|
+MOD_ID_3_OK|Mod error 1|0|0|83|OK|FAIL|N|N|
+MOD_ID_4_OK|Mod error 1|0|0|84|OK|FAIL|N|N|
+MOD_ID_5_OK|Mod error 1|0|0|85|OK|FAIL|N|N|

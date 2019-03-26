@@ -1,0 +1,12 @@
+2011-03-30	01:31:55	U2_S2_DISABLE	Disabled --> Enabled	177:20
+2011-03-30	01:32:15	U2_S2_DISABLE	Enabled --> Disabled	00:20
+2011-03-30	02:46:55	U2_S2_DISABLE	Disabled --> Enabled	74:40
+2011-03-30	02:47:15	U2_S2_DISABLE	Enabled --> Disabled	00:20
+2011-03-30	04:41:25	U2_S2_DISABLE	Disabled --> Enabled	114:10
+2011-03-30	04:41:45	U2_S2_DISABLE	Enabled --> Disabled	00:20
+2011-03-30	06:33:05	U2_S2_DISABLE	Disabled --> Enabled	111:20
+2011-03-30	06:33:35	U2_S2_DISABLE	Enabled --> Disabled	00:30
+2011-03-30	07:00:25	U2_S2_DISABLE	Disabled --> Enabled	26:50
+2011-03-30	07:00:55	U2_S2_DISABLE	Enabled --> Disabled	00:30
+2011-03-30	12:19:25	U2_S2_DISABLE	Disabled --> Enabled	318:30
+2011-03-30	12:19:55	U2_S2_DISABLE	Enabled --> Disabled	00:30

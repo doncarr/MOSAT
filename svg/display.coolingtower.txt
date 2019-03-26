@@ -1,0 +1,47 @@
+svg_header|Cooling Tower|0|0|300|150|
+background|thistle|
+link|5|145|5|firebrick|start|feed.svg|Feed Tanks|switch.svg|Main Switching|spray.svg|Spray|tina.svg|Tina|transfer.svg|Transfer|gauge.svg|Gauges|pipes.svg|Pipes|pipes2d.svg|Pipes 2D|
+imasa_logo|0|0|20|
+text|150|10|10|firebrick|middle|Cooling Tower|
+text|4|25|5|firebrick|start|Crystalizers|Cooling Circuit|To F1011B,|F1018B|
+cooling_tower|205|40|50|gray|CT-902|black|
+#simple_pipe|green|2|230|40|v|24|h|40|
+pipe2d|null|green|green|2|230|40|v|24|h|40|
+triangle|40|24|5|green|270|
+text|214|16|4|black|middle|COV 902-A|
+valve|PUMP1_ON|lime|gray|200|24|8|2|0|1|
+#simple_pipe|green|2|180|70|v|25|b|2|
+pipe2d|null|green|green|2|180|70|v|25|b|2|
+text|172|74|4|black|end|COV 902-B|
+valve|PUMP2_ON|magenta|gray|180|73|8|2|270|1|
+#simple_pipe|green|2|230|80|v|90|h|120|
+pipe2d|null|green|green|2|230|80|v|90|h|120|
+#simple_pipe|gray|2|180|77|v|89|b|2|
+pipe2d|null|gray|gray|2|180|77|v|89|b|2|
+text|120|84|4|black|middle|P 902-A|
+pump|PUMP3_ON|magenta|gray|120|90|8|2|270|1|
+#simple_pipe|green|2|130|105|h|160|v|91|b|2|
+pipe2d|null|green|green|2|130|105|h|160|v|91|b|2|
+text|130|99|4|black|middle|P 902-B|
+pump|PUMP3_ON|lime|gray|130|105|8|2|270|1|
+triangle|40|40|5|green|270|
+#simple_pipe|green|2|125|102|h|80|v|40|h|40|
+pipe2d|null|green|green|2|125|102|h|80|v|40|h|40|
+#simple_pipe|gray|2|115|87|h|81|b|2|
+pipe2d|null|gray|gray|2|115|87|h|81|b|2|
+
+#triangle|cx|cy|width|color|angle|
+
+
+#simple_tank|c|black|100|40|40|35|1.5|15|7|
+#simple_tank|p|black|30|40|20|50|1.5|
+
+#simple_tank|c|black|200|10|40|110|1.5|25|7|
+#simple_tank|p|black|260|20|35|100|8|
+
+#simple_pipe|black|7|220|120|v|144|h|247|v|4|h|190|v|25|h|72|v|12|h|45|v|0|
+#simple_pipe|black|7|0|145|h|70|v|130|h|216.5|b|7|
+#simple_pipe|black|6|180|0|v|21.5|b|7|
+#simple_pipe|yellow|12|85|150|v|133.5|b|7|
+#simple_pipe|black|6|300|135|h|250.5|b|7|
+

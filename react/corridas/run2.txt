@@ -1,0 +1,10 @@
+# Secuencia Analisis Cromatografico 
+Establizacion|1|10|T|F|F|F|T|F|F|F|
+Empezar Adquisicion de Datos|2|0|T|F|T|T|F|
+Solucion Basica|1|30|T|T|F|F|T|F|F|F|
+Poner Solucion Acido|1|50|T|T|F|T|F|F|F|F|
+Parar Adquisicion de Datos|3|0|T|T|T|F|F|
+Lavado la columna|1|11|T|F|T|F|F|F|F|F|
+Reposo|1|5|F|F|F|F|T|F|F|F|
+Reiniciar|1|0|F|F|F|F|F|F|F|F|
+

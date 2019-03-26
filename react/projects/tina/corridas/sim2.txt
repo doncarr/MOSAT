@@ -1,0 +1,7 @@
+sys.wait(10:20)
+changing_filter_2.tdo(10)
+sys.wait(9:55)
+changing_filter_2.tdo(10)
+sys.wait(9:20)
+changing_filter_2.tdo(10)
+sys.loop()

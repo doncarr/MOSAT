@@ -1,0 +1,4 @@
+U1_BLINK.send(not U1_BLINK)
+U2_BLINK.send(not U2_BLINK)
+sys.yield();
+sys.loop();

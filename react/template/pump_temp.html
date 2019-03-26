@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>Bombas Atemajac</title>
+  <meta http-equiv="refresh" content="1">
+  <meta http-equiv="pragma" content="no-cache">
+  $$$$DI(COM_FAILED|<embed src="redalert.wav" autostart="true" loop="true" hidden="true" volume="100" height="0" width="0">|)
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(128, 128, 128);"
+ link="#000099" vlink="#990099" alink="#000099">
+<h1></h1>
+
+
+<div style="position: absolute; top: 10px; left: 90px;"> 
+<!--<img src="encendido.png">-->
+<img src=$$$$DI(VPUMP1_ON|"apagado.png"|"encendido.png")>
+</div>
+
+<div style="position: absolute; top: 10px; left: 240px;"> 
+<!--<img src="apagado.png">-->
+<img src=$$$$DI(VPUMP2_ON|"apagado.png"|"encendido.png")>
+</div>
+
+<div style="position: absolute; top: 35px; left: 365px;"> 
+----- Verticales<br>
+(Emergentes)
+</div>
+
+<div style="position: absolute; top: 220px; left: 440px;"> 
+-- Sumergibles 
+</div>
+
+<div style="position: absolute; top: 155px; left: 40px;"> 
+Bomba 1
+</div>
+
+<div style="position: absolute; top: 180px; left: 20px;"> 
+<!--<img src="encendido.png">-->
+<img src=$$$$DI(PUMP1_ON|"apagado.png"|"encendido.png")>
+</div>
+
+<div style="position: absolute; top: 300px; left: 40px;"> 
+$$$$AI(PUMP1_AMP) amps
+</div>
+
+<div style="position: absolute; top: 155px; left: 190px;"> 
+Bomba 2
+</div>
+
+<div style="position: absolute; top: 180px; left: 170px;"> 
+<!--<img src="apagado.png">-->
+<img src=$$$$DI(PUMP2_ON|"apagado.png"|"encendido.png")>
+</div>
+
+<div style="position: absolute; top: 300px; left: 190px;"> 
+$$$$AI(PUMP2_AMP) amps
+</div>
+
+<div style="position: absolute; top: 155px; left: 340px;"> 
+Bomba 3
+</div>
+
+<div style="position: absolute; top: 180px; left: 320px;"> 
+<!--<img src="encendido.png">-->
+<img src=$$$$DI(PUMP3_ON|"apagado.png"|"encendido.png")>
+</div>
+
+<div style="position: absolute; top: 300px; left: 340px;"> 
+$$$$AI(PUMP3_AMP) amps
+</div>
+
+<div style="position: absolute; top: 50px; left: 585px;"> 
+Muy Alto
+</div>
+
+<div style="position: absolute; top: 53px; left: 678px;"> 
+<img src=$$$$DI(HI_HI_LEVEL|"level_on.png"|"level_off.png")>
+</div> 
+
+<div style="position: absolute; top: 172px; left: 630px;"> 
+Alto
+</div>
+
+<div style="position: absolute; top: 170px; left: 678px;"> 
+<img src=$$$$DI(HI_LEVEL|"level_on.png"|"level_off.png")>
+</div> 
+
+<div style="position: absolute; top: 355px; left: 630px;"> 
+Bajo
+</div>
+
+<div style="position: absolute; top: 355px; left: 678px;"> 
+<img src=$$$$DI(LO_LEVEL|"level_on.png"|"level_off.png")>
+</div>
+
+
+<div style="position: absolute; top: 450px; left: 685px;"> 
+$$$$AI(LEVEL) cm
+</div>
+$$$$AI(LEVEL|bar.png|half_off.png|half_on.png|30|710|400|0|500                                                                                                                                                  )
+
+<div style="position: absolute; top: 350px; left: 20px;"> 
+Nivel Muy Alto: $$$$DI(HI_HI_LEVEL|ALARMA|OK)<br>
+Falla Comunicaciones: $$$$DI(COM_FAILED|ALARMA|OK)<br>
+Nivel Ultrasonico: $$$$DI(ULT_SON_ALM|ALARMA|OK)<br>
+Alimentacion CFE: $$$$DI(CFE_SUPPLY|ALARMA|OK)<br>
+Mescladora: $$$$DI(MIXER|OFF|ON) <br> <br>
+<big><strong>Ultima Actualizaci&oacute;n: $$$$TIME(                                                                              )</big></strong>
+</div> 
+</body>
+</html>

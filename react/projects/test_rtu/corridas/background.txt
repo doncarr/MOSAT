@@ -1,0 +1,3 @@
+bomba1.send(level > 250)
+sys.wait(00:01)
+sys.loop()

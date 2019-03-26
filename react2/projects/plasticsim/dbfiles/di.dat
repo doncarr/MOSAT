@@ -1,0 +1,23 @@
+hydraulic_1a|hydraulic switch 1a|0|0|0|ON|OFF|N|N|0|
+hydraulic_1b|hydraulic switch 1b|0|0|1|ON|OFF|N|N|0|
+hydraulic_2a|hydraulic switch 2a|0|0|2|ON|OFF|N|N|0|
+hydraulic_2b|hydraulic switch 2b|0|0|3|ON|OFF|N|N|0|
+motor_on|Motor On|0|0|6|ON|OFF|N|N|0|
+use_5_min|Use 5 Minutes|0|0|7|ON|OFF|N|N|0|
+switch_1|Switch 1|0|0|7|ON|OFF|N|N|0|
+switch_2|Switch 2|0|0|10|ON|OFF|N|N|0|
+switch_3|Switch 3|0|0|11|ON|OFF|N|N|0|
+switch_4|Switch 4|0|0|12|ON|OFF|N|N|0|
+lo_level|Above low Level|0|0|8|ON|OFF|N|N|0|
+hi_level|Above high Level|0|0|9|ON|OFF|N|N|0|
+plastic_running|Plastic Running|0|0|8|ON|OFF|N|N|0|
+#    Tag (string max 25)
+#    Description (string max 50)
+#    Driver Number (char max 25)
+#    Card (char max 25)
+#    Channel (char max 25)
+#    Low Description (string max 12)
+#    High Description (string max 12)
+#    Alarm State (drop down {high, low, none})
+#    Shutdown State  (drop down {high, low, none})
+#    Invert PV 

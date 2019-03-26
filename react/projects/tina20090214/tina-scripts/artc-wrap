@@ -1,0 +1,65 @@
+#!/bin/sh
+# This wrap will create/clean a ramdisk 
+# and will be set to be used by cherokee web server
+#
+TODAY=$(date +%Y%m%d)
+if [ "$1" == "start" ]
+then
+    # starting creating the ramdisk
+    # Formats, mounts, and sets permissions on my 16MB ramdisk
+    echo "Creating the ramdisk..." 
+    /sbin/mke2fs -q -m 0 /dev/ram0
+    /bin/mount /dev/ram0 /mnt/rd
+    # Creating cherokee log directory 
+    echo "Creating cherokee log directory on ramdisk.."
+    mkdir /mnt/rd/cherokee 
+    # Creating tina tree
+    echo "Creating tina tree on ramdisk.."
+    mkdir /mnt/rd/tina
+    ln -s /home/artc/tina/images /mnt/rd/tina/images 
+    mkdir /mnt/rd/tina/html
+    mkdir /mnt/rd/tina/log
+    ln -s /home/artc/tina/log /mnt/rd/tina/log/old
+    # Copying existent log files for today
+    echo "Copying existent log files for today"
+    cp /home/artc/tina/log/*$TODAY*.txt /mnt/rd/tina/log/
+    # Creating the index.html 
+    echo "<h1>adpativeRTC Tina Index</h1>" > /mnt/rd/tina/index.html
+    echo "<img src=images/adaptivertc_logo.png>" >> /mnt/rd/tina/index.html
+    echo "<br>" >>/mnt/rd/tina/index.html
+    echo "<a href=html/tina_diagram.html>Tina diagram </a>" >> /mnt/rd/tina/index.html
+    echo "<br>" >>/mnt/rd/tina/index.html
+    echo "<a href=log>Tina logs </a>" >> /mnt/rd/tina/index.html
+    echo "<br>" >> /mnt/rd/tina/index.html
+    echo "<a href=log/old>Old logs</a>" >> /mnt/rd/tina/index.html
+    # Starting cherokee web server 
+    /etc/init.d/cherokee start
+    # Starting react
+    /etc/init.d/react start
+elif [ "$1" == "stop" ]
+then
+    # Stop react
+    /etc/init.d/react stop
+    echo "Backing up the log files to flashcard..."
+    cp /mnt/rd/tina/log/*$TODAY*.txt /home/artc/tina/log/
+    # Stop cherokee
+    /etc/init.d/cherokee stop
+    cherokee=$(pidof cherokee)
+    while [ ! -z "$cherokee" ]
+    do
+       sleep 1 
+       cherokee=$(pidof cherokee)
+    done
+    # Remove tina directory 
+    echo "Removing tina directory"
+    rm -rf /mnt/rd/tina
+    # Remove cherokee directory 
+    echo "Removing cherokee directory"
+    rm -rf /mnt/rd/cherokee
+elif [ "$1" == "restart" ]
+then
+    $0 stop
+    $0 start
+else
+    echo "Usage: $0 {start|stop|restart}"
+fi

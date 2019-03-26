@@ -1,0 +1,9 @@
+hi_temp|High Temperature|degC|1|57|0|100|
+lo_temp|Low Temperature|degC|1|53|0|100|
+#    tag
+#    description
+#    engineering units
+#    decimals
+#    initial_value 
+#    scale low 
+#    scale high 

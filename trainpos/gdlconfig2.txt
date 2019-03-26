@@ -1,0 +1,4 @@
+SECTIONS_FILE,line2_sections.txt
+TIMETABLE_FILE,laboral_l2.txt
+DISPLAY_FILE,gdl_display_info2.txt
+HTML_HOME,./

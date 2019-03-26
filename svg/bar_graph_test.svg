@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%" height="100%" viewBox="0 0 400 400" onload="load()">
+
+  <title>SVG Bar Graph Test</title>
+  <metadata>author: schepers, created: 18-01-2009</metadata>
+
+  <script type="text/ecmascript"><![CDATA[
+    var going_up = true;
+    var bar_fill = 50;
+    var bar_obj;
+    var text_obj;
+    var pv_text_obj;
+    var tcount=0;
+
+    function intervalHandler()
+    {
+      do_bar();
+    }
+
+    function load()
+    {
+      bar_obj = document.getElementById("my_rect");
+      text_obj = document.getElementById("my_text");
+      pv_text_obj = document.getElementById("pv_text");
+      var interval = setInterval("intervalHandler()", 100);
+    };
+
+    function do_bar()
+    {
+      if (going_up)
+      {
+        bar_fill = bar_fill + 1;
+        if (bar_fill > 100)
+        {
+          bar_fill = 100;
+          going_up = false;
+          text_obj.textContent="Hit Top";
+        }
+      } 
+      else
+      {
+        bar_fill = bar_fill - 1;
+        if (bar_fill < 0)
+        {
+          bar_fill = 0;
+          going_up = true;
+          text_obj.textContent="Hit Bottom";
+        }
+      }
+      bar_obj.setAttribute("height", bar_fill);
+      bar_obj.setAttribute("y", 100 + 10 - bar_fill);
+      
+      tcount++;
+      if (tcount > 5)
+      {
+        pv_text_obj.textContent=(bar_fill * 5) + " PSI";
+        tcount=0;
+      }
+    };
+  ]]></script>
+
+
+  
+ <text id="my_text" x="100" y="20" 
+        font-family="Verdana" font-size="20" fill="blue" >
+    starting 
+  </text>
+
+  <defs>
+    <linearGradient id="grLinearV" x1="0%" y1="0%" x2="100%" y2="0%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="darkblue" stop-opacity="1"/>
+      <stop offset="40%" stop-color="lightblue" stop-opacity="1"/>
+      <stop offset="100%" stop-color="darkblue" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+
+  <rect fill="url(#grLinearV)" id="my_rect" x="20" y="10" width="20" height="80" stroke="none" stroke-width="0"/>
+  <rect x="20" y="10" width="20" height="100" fill="none" stroke="#000000" stroke-width="1" />
+  <rect x="10" y="10" width="10" height="12" fill="red" stroke="none" stroke-width="0"/>
+  <rect x="10" y="22" width="10" height="15" fill="yellow" stroke="none" stroke-width="0"/>
+  <rect x="10" y="37" width="10" height="45" fill="lightgreen" stroke="none" stroke-width="0"/>
+  <rect x="10" y="82" width="10" height="13" fill="yellow" stroke="none" stroke-width="0"/>
+  <rect x="10" y="95" width="10" height="15" fill="red" stroke="none" stroke-width="0"/>
+
+  <line x1="40"  y1="10" x2="46"   y2="10" style="stroke:#006600;"/>
+  <text x="48" y="13" font-family="Verdana" font-size="10" fill="black">500</text>
+
+  <line x1="40"  y1="20" x2="43"   y2="20" style="stroke:#006600;"/>
+  <line x1="40"  y1="30" x2="43"   y2="30" style="stroke:#006600;"/>
+  <line x1="40"  y1="40" x2="43"   y2="40" style="stroke:#006600;"/>
+  <line x1="40"  y1="50" x2="43"   y2="50" style="stroke:#006600;"/>
+
+  <line x1="40"  y1="60" x2="46"   y2="60" style="stroke:#006600;"/>
+  <text x="48" y="63" font-family="Verdana" font-size="10" fill="black" >250</text>
+
+  <line x1="40"  y1="70" x2="43"   y2="70" style="stroke:#006600;"/>
+  <line x1="40"  y1="80" x2="43"   y2="80" style="stroke:#006600;"/>
+  <line x1="40"  y1="90" x2="43"   y2="90" style="stroke:#006600;"/>
+  <line x1="40"  y1="100" x2="43"   y2="100" style="stroke:#006600;"/>
+
+  <line x1="40"  y1="110" x2="46"   y2="110" style="stroke:#006600;"/>
+  <text x="48" y="113" font-family="Verdana" font-size="10" fill="black" >0</text>
+
+  <text id="pv_text" x="20" y="125" font-family="Verdana" font-size="10" fill="black" >258.3 PSI</text>
+
+</svg>

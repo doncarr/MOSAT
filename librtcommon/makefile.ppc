@@ -1,0 +1,29 @@
+
+export CPATH=../include
+
+DIR=ppc/
+
+OBJS=  $(DIR)arg.o $(DIR)common.o $(DIR)safestr.o $(DIR)utimer.o $(DIR)memfail.o $(DIR)numbered_file.o
+
+CC= powerpc-linux-g++ -I/usr/local/include
+
+AR=powerpc-linux-ar
+
+$(DIR)%.o:      %.cpp $(INCLUDES)
+	$(CC) -c -fpic -o $@ -Wall $<
+
+all: $(DIR)librtcommon.so $(DIR)librtcommon.a
+
+$(DIR)librtcommon.so: $(OBJS)
+	$(CC) -shared -o $(DIR)librtcommon.so  $(OBJS) 
+
+$(DIR)librtcommon.a:  $(OBJS) 
+	$(AR) r $(DIR)librtcommon.a  $(OBJS) 
+
+install:
+	cp $(DIR)librtcommon.so /opt/sixnet/lib/gcc-lib/powerpc-linux/2.95.3/
+
+clean:
+	rm -fv $(DIR)*.o $(DIR)*.so
+
+

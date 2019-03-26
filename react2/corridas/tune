@@ -1,0 +1,8 @@
+# sequence to test motor 
+sys.print("ready to start tune")
+sys.get_key()
+pid1.auto_tune(20.0, 40.0, 10);
+EV1.send(T)
+sys.mark()
+sys.wait(0:30)
+sys.print("----------- Fin ----------")

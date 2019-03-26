@@ -1,0 +1,3 @@
+svg_header|My Title|0|0|300|150|
+background|thistle|
+simple_panel|PUMP1_ON|gray|darkturquoise|86|109|8|

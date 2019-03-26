@@ -1,0 +1,9 @@
+# The idea of giving a tagname which could be different that the 
+# script name, is so you can instanciate the same script multiple 
+# times with different parameters.
+table|Background Scripts|background|
+separator|Basic Configuration|
+string|Tag|tag|25|
+string|Description|description|50|
+string|Script Name|name|25|
+string|Parameters|parameters|25|

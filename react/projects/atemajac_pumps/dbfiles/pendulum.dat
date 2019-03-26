@@ -1,0 +1,24 @@
+#pendulum1|My pendulum point|RPM|1|0.0|0.0|0.0|0.0|0.0|0.0|0.0|0.0|0.0|0.0|0.0|0.0|AI0|AO0|0.0|0.0|0.0|0|0|0|
+# tag
+# description
+# eu
+# decimal
+# setpoint_limit_hi
+# setpoint_limit_lo
+# param_1
+# param_2 
+# param_3 
+# param_4 
+# param_5 
+# param_6 
+# param_7 
+# param_8 
+# param_9 
+# ai_point
+# ao_point
+# deviation_alarm
+# deviation_caution
+# deviation_delay
+# dev_alarm_enable
+# dev_alarm_shutdown
+# dev_caution_enable

@@ -1,0 +1,16 @@
+  <defs>
+    <radialGradient id="blackRadial" cx="50%" cy="50%" r="50%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="darkgray" stop-opacity="1"/>
+      <stop offset="100%" stop-color="black" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="blackLinearV" x1="0%" y1="0%" x2="100%" y2="0%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="black" stop-opacity="1"/>
+      <stop offset="50%" stop-color="darkgray" stop-opacity="1"/>
+      <stop offset="100%" stop-color="black" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="blackLinearH" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="black" stop-opacity="1"/>
+      <stop offset="50%" stop-color="darkgray" stop-opacity="1"/>
+      <stop offset="100%" stop-color="black" stop-opacity="1"/>
+    </linearGradient>
+  </defs>

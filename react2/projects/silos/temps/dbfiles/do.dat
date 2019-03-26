@@ -1,0 +1,27 @@
+#PUMP1_DO|Bomba 1|0|0|0|Off|On|
+#PUMP2_DO|Bomba 2|0|0|2|Off|On|
+#PUMP3_DO|Bomba 3|0|0|4|Off|On|
+#VPUMP1_DO|VBomba 1|0|0|6|Off|On|
+#VPUMP2_DO|VBomba 2|0|0|8|Off|On|
+#XPUMP1_DO|Bomba 1|0|0|1|Off|On|
+#XPUMP2_DO|Bomba 2|0|0|3|Off|On|
+#XPUMP3_DO|Bomba 3|0|0|5|Off|On|
+#XVPUMP1_DO|VBomba 1|0|0|7|Off|On|
+#XVPUMP2_DO|VBomba 2|0|0|9|Off|On|
+#YPUMP1_DO|Bomba 1|0|0|12|Off|On|
+#YPUMP2_DO|Bomba 2|0|0|13|Off|On|
+#YPUMP3_DO|Bomba 3|0|0|14|Off|On|
+#YVPUMP1_DO|VBomba 1|0|0|15|Off|On|
+#EV1|Electrovalvula 1|0|0|0|Off|On|
+#EV2|Electrovalvula 2|0|0|1|Off|On|
+#EV3|Electrovalvula 3|0|0|2|Off|On|
+#HOLD|Hold Signal|0|0|5|Off|On|
+#DOSpare2|Spare 2|0|0|6|Off|On|
+#DOSpare3|Spare 3|0|0|7|Off|On|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description

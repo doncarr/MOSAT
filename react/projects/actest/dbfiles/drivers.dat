@@ -1,0 +1,14 @@
+#./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||
+#./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus|librtmodbus.so|
+#./drivers/sim_pump_low/libsimpumpdrv.so|new_simpumpdrv||
+../../drivers/sim_ac/libsimacdrv.so|new_sim_ac_drv||
+#./drivers/shmdrv/libreactshmdrv.so|new_reactshm||
+#./drivers/sim/libsimdriver.so|new_simdriver||
+#./drivers/sim_pump/libsimpumpdrv.so|new_simpumpdrv||
+#./drivers/pci9111/libpci9111.so|new_pci9111|libpci_dask.so|
+#./drivers/pci7248/libpci7248.so|new_pci7248|libpci_dask.so|
+#../../drivers/sim_ac/libsimacdrv.so|new_sim_ac_drv|||
+#../../drivers/simple_ascii/libsimple_ascii_drv.so|new_simple_ascii||/dev/ttyUSB0|
+#../../drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||127.0.0.1:502|
+#../../drivers/dallas_1wire/libdallas_1wire_drv.so|new_dallas_1wire||
+#../../drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||127.0.0.1:502|

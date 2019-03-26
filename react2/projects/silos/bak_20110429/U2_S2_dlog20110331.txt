@@ -1,0 +1,4 @@
+2011-03-31	01:11:15	U2_S2_DISABLE	Disabled --> Enabled	771:20
+2011-03-31	01:11:45	U2_S2_DISABLE	Enabled --> Disabled	00:30
+2011-03-31	01:24:35	U2_S2_DISABLE	Disabled --> Enabled	12:50
+2011-03-31	01:24:55	U2_S2_DISABLE	Enabled --> Disabled	00:20

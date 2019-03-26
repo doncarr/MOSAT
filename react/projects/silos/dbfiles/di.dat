@@ -1,0 +1,18 @@
+S100_FANS_ON_OFF|Fan on/off|0|0|2|ENABLED|DISABLED|N|N|
+S100_FANS_AUTO|Fan Disabled|0|0|3|ENABLED|DISABLED|N|N|
+S100_FAN1|Silo 100 Fan 1|0|0|4|OFF|ON|N|N|
+S100_FAN2|Silo 100 Fan 2|0|0|5|OFF|ON|N|N|
+S200_FAN1|Silo 200 Fan 1|0|0|6|OFF|ON|N|N|
+S200_FAN2|Silo 200 Fan 2|0|0|7|OFF|ON|N|N|
+S300_FAN1|Silo 300 Fan 1|0|0|8|OFF|ON|N|N|
+S300_FAN2|Silo 300 Fan 2|0|0|9|OFF|ON|N|N|
+FANS_DISABLED|Fan Disabled|0|0|10|ENABLED|DISABLED|N|N|
+#    Tag (string max 25)
+#    Description (string max 50)
+#    Driver Number (char max 25)
+#    Card (char max 25)
+#    Channel (char max 25)
+#    Low Description (string max 12)
+#    High Description (string max 12)
+#    Alarm State (drop down {high, low, none})
+#    Shutdown State  (drop down {high, low, none})

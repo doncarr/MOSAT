@@ -1,0 +1,38 @@
+sensores
+
+cable verde es el honeywell a pf1
+
+cable azul es el general, temperatura pf2
+
+cable blanco humedad general pf3
+
+
+
+HRH = (vout - .958) / .0307
+
+38 = (vout - .958) / .0307
+
+38 * .0307 = vout - .958
+
+(38 * .0307) + .958 = vout
+
+(38 * .0307) + .958 = 2.1246
+
+
+temp = (((vout - .5)/4) * 200) - 50 
+
+4 = (((vout - .5)/4) * 200) -50
+
+4 + 50 = ((vout - .5)/4) * 200
+
+(4 + 50)/ 200 = (vout - .5)/4
+
+((4 + 50) / 200) * 4 = vout - .5
+
+(((4 + 50) / 200) * 4) + .5 = vout
+
+((9 / 200) * 4) + .5 = vout
+
+(.045 * 4) + .5 = vout
+
+.68 = vout

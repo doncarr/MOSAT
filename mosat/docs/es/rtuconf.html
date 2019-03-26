@@ -1,0 +1,89 @@
+<html>
+   <title>CONFIGURANDO EL RTU</title>
+    <body>
+      <table width ="100%">
+        <tr>
+          <td>
+            <h1>CONFIGURANDO EL RTU</h1>
+          </td>
+          <td>
+            <h2><a href="../en/rtuconf.html"><div align="right">English</div></a></h2>
+          </td>
+        </tr>
+      </table>
+      <hr size="10" NOSHADE/>
+      <p align="justify"><font face="sans" size="4">Ahora describiremos como  configurar todo lo de un RTU</font></p>
+      <p align="justify"><font face="sans" size="4"> Estas instrucciones son especif&iacute;camente para el RTU de SIXNET, pero son muy similares a otras plataformas que utilicen Linux u otros sistemas UNIX como un sistema operativo empotrado. </font></p>
+      <p align="justify"><font face="sans" size="4">Todos los archivos deben ser copiados utilizando FTP.</font></p>
+      <ol type="i">
+        <li><font face="sans" size="4">Copia el archivo <font face="monospace" size="5">librtcommon.so</font> desde <font face="monospace" size="5">lib/ppc/</font> al directorio <font face="monospace" size="5">/usr/lib/</font> en el RTU.</font></li>
+        <li><font face="sans" size="4">Copia <font face="monospace" size="5">ppc_record</font>&#44; <font face="monospace" size="5">dump_events</font> y <font face="monospace" size="5">mosatsync</font> desde <font face="monospace" size="5">main/ppc</font> al directorio <font face="monospace" size="5">/usr/local/bin</font> en el RTU.</font></li>
+        <li><font face="sans" size="4">Cambie los atributos de los archivos para que sean ejecutables&#58; <font face="monospace" size="5">chmod &#43;x ppc_record</font>, <font face="monospace" size="5"> chmod &#43;x dump_events</font> y <font face="monospace" size="5">chmod &#43;x mosatsync</font>.</font></li>
+        <li><font face="sans" size="4">Puede ser necesario correr <font face="monospace" size="5">ldconfig</font> &#40;desde telnet&#41; para eliminar posibles problemas con las librer&iacute;as. Es recomendable utilizar la opci&oacute;n <font face="monospace" size="5">-v</font> para ver que esta pasando.</font></li>
+        <li><font face="sans" size="4">Crear el directorio <font face="monospace" size="5">/nvram/siteur</font> y el directorio <font face="monospace" size="5">/home/carr</font> en el RTU.</font></li>
+        <li><font face="sans" size="4">En el directorio  <font face="monospace" size="5">/home/carr</font> crear el archivo <font face="monospace" size="5">rtu_channel_config.txt</font>.<br />
+          Este archivo debe verse as&iacute;&#58;<br />
+          <font face="monospace" size="5">
+          X&#124;1&#124;7&#124;1&#124;<br />
+          X&#124;2&#124;9&#124;3&#124;<br />
+          E&#124;1&#124;2&#124;&#45;1&#124;7&#124;9&#124;&#45;1&#124; </font><br /><br />
+          Ahora explicaremos los contenidos.<br />
+          El primer car&aacute;cter es  <font face="monospace" size="5">X</font> entonces&#58;<br />
+          <ul>
+            <li>El primer numero de cada linea es el numero del sensor.</li>
+            <li>El segundo numero es el registro an&aacute;logo donde se lleva la cuenta.</li>
+            <li>El ultimo numero es el canal discreto donde se la entrada al&aacute;mbrica es desconectada  &#40; tendr&aacute; <font face="monospace" size="5">&#45;1</font> si no esta presente&#41;.</li>
+          </ul>
+          La <font face="monospace" size="5">X</font> se usa SOLO para grabar eventos de cruce, pero no se usa para identificar si es una llegada o una salida.<br />
+          El primer car&aacute;cter es <font face="monospace" size="5">E</font> por lo tanto&#58;<br />
+          <ul>
+            <li>El primer numero para el canal de salidas.</li>
+            <li>El segundo numero es para el canal del sensor de llegadas.</li>
+            <li>El tercer numero es para el canal del sensor de confirmaci&oacute;n &#40;tendr&aacute; <font face="monospace" size="5">&#45;1</font> si no estuvo presente&#41;.</li>
+            <li>El cuarto numero es para el ID del sensor de salidas.</li>
+            <li>El quinto numero es para el ID del sensor de llegadas.</li>
+            <li>El sexto numero es para el ID del sensor de confirmaci&oacute;n &#40;tendr&aacute; <font face="monospace" size="5">&#45;1</font> si no esta presente&#41;.</li>
+          </ul>
+          La <font face="monospace" size="5">E</font> es para detectar salidas o llegadas donde haya sensores dobles para detectar el sentido de la direcci&oacute;n del tren. Si el contador de llegadas cuenta primero, es una llegada. Si el contador de salidas cuenta primero, sera una salida.<br /><br />
+          As&iacute; es como los ID&#39;s son calculados&#58;<br />
+          <ul>
+            <li>Para salidas, ID &#61; 50 &#43; sensor ID.</li>
+            <li>Para llegadas, ID &#61; 60 &#43; sensor ID.</li>
+            <li>Para confirmaci&oacute;n ID &#61; 1001.</li>
+            <li>Para eventos comunes de cruce, ID &#61; sensor ID</li>
+          </ul></font></li>
+        <li><font face="sans" size="4">Para crear un script para empezar <font face="monospace" size="5">ppc_record</font> y <font face="monospace" size="5">mosatsync</font> cuando el RTU arranca. Vaya a <font face="monospace" size="5">/etc/usr.d/</font> y cree un archivo llamado  <font face="monospace" size="5">siteur.h</font> o copie lo desde el directorio <font face="monospace" size="5">script</font> usando  ftp.</font></li>
+        <li><font face="sans" size="4">Puede ser necesario correr el programa <font face="monospace" size="5">ppc_record</font> desde linea de comandos primero para ver los mensajes y asegurarnos de que corre correctamente. Si no se crearon correctamente los directorios y los archivos de configuraci&oacute;n se imprimir&aacute;n errores y el programa terminara.</font></li>
+        <li><font face="sans" size="4">En el servidor es necesario reiniciar el programa  <font face="monospace" size="5">remote_record</font> despu&eacute;s de cambiar el archivo de configuraci&oacute;n del RTU&#58; <font face="monospace" size="5">record_config.txt</font>. <br />
+        <ul>
+          <li>La primera entrada de cada linea es la direcci&oacute;n IP del RTU.</li>
+          <li>La segunda linea es el directorio local donde los archivos son guardados.<br />
+          Aqu&iacute; hay un ejemplo&#58;<br />
+          <font face="monospace" size="5">
+          172.16.115.31|../public_html/log/periferico_norte|<br />
+          172.16.115.30|../public_html/log/tetlan|</font></li>
+        </ul></font></li>
+        <li><font face="sans" size="4">Si es necesario instalar una versi&oacute;n mas nueva en un sistema mientras corre, primero debe terminar el proceso que esta corriendo, o no sera posible sobre escribir el archivo <font face="monospace" size="5">ppc_record</font>. No es posible sobreescribir un archivo de un programa que esta corriendo.<br />
+          CONSEJO&#58; Si tiene problemas, puede correr <font face="monospace" size="5">ppc_record</font> en una terminal en el RTU para ver el debug. <br /><br />
+           <font face="monospace" size="5">
+           ----------------
+           </font><br /><br/>
+           Este es el formato de los mensajes del RTU al host&#58;<br 7>
+           <font face="monospace" size="5">
+           numero secuencial&#58; &#60;integer 4 bytes&#62;<br />
+           identificador&#58; &#60;integer 4 bytes&#62;<br />
+           numero de pulsos&#58; &#60;integer 4 bytes&#62;<br/>
+           tiempo de inicio&#58; &#60;integer 4 bytes&#62; &#40;segundos desde enero 1 1970, UTC&#41;<br />
+           tiempo de fin&#58; &#60;integer 4 bytes&#62; &#40;segundos desde enero  1 1970, UTC&#41;<br />
+           </font></font></li>
+      </ol>
+      <table width="100%">
+        <tr>
+          <td><div align="left"><a href="instalando.html"><big>Atr&aacute;s</big></a></div></td>
+          <td><div align="right"><a href="../README.html"><big>Inicio</big></a></div></td>
+        </tr>
+      </table>
+      <hr />
+      <h4> Preguntas, comentarios y reportes de errores a <a href="mailto:ga.poncec@gmail.com">ga.poncec@gmail.com</a></h4>
+    </body>
+<html>

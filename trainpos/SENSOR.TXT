@@ -1,0 +1,33 @@
+Here, I will talk about sensor types.
+
+Trainpos will support a number of different sensor types, all of which give information on when a train crosses a certain point. 
+
+------------------------------
+1) Inductive sensor, or axle counter (crossing sensor)
+
+This type of sensor is mounted to the rail, very close to where the train wheel will pass over. It gives a pulse to every time a wheel passes over it, so, it can also be called an axle counter. Typically, there will be a device with a hardware counter to cound the pulses comming from each inductive sensor. When a minimum number of pulses is detected, we signal that a train has crossed a certain point.
+
+------------------------------
+2) Track circuit.
+
+This type of sensor give presense information. It detects that a train is present in a segment. For it to work, each segment much be somehow insulated from the rest. At one end of the segment is an audio frequency generator, at the other end, there is a reciever. When there is no train in the segment, the reciever detects the audio frequency, and indicates no train present. When a train IS present in the segment, the axles short circuit the rails, and the reciever does not detect the audio frequency, and indicates that there is a train present. 
+
+------------------------------
+3) Large metal object detector (presense at location, typically passenger station).
+
+This type of sensor is used to detect that a large metal object is present at a location, typically in a passenger station. A large coil is mounted on the side of the of the track, or buiried underneath the track. A large metal object close to the coil, changes the property of the coil. The sensor detects the changes in property of the coil, and indicates the presense of a train. This would typically be used to detect arrival and departure from a passenger station. It can thus generate an arrival event, and departure event, and can appear to the system as two sensors. It would have the same effect as an inductive sensor at the entrance to a station, and another inductive sensor at the exit of a station.
+
+-------------------------------
+Detecting that a train has entered service.
+
+There must be a sensor after all posible entrances / exits, areas of movement, etc, that a train can only cross after entering service.
+
+-------------------------------
+Detecting that a train is progressing through the system.
+
+As a train progresses through service, it will pass a crossing sensor, or a presense
+
+-------------------------------
+Detecting that a train has left service.
+
+

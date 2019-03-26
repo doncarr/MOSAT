@@ -1,0 +1,19 @@
+#./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||/dev/ttyUSB0:57600:2:2|
+#../../drivers/simple_ascii_new/libsimple_ascii_drv.so|new_simple_ascii||/dev/ttyUSB0|
+#./drivers/simple_ascii/libsimple_ascii_drv.so|new_simple_ascii||/dev/ttyUSB1|
+#./drivers/sim_ac/libsimacdrv.so|new_sim_ac_drv|||
+../../drivers/sim_pump_low/libsimpumpdrv.so|new_simpumpdrv|||
+#1;2R
+#./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus|librtmodbus.so|/dev/ttyUSB0|
+#./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||127.0.0.1:502|
+#./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||/dev/ttyUSB0:57600:2:1|
+#modbus1|First Modbus|T|./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||/dev/ttyUSB0:9600:1:55|
+#./drivers/process/libprocess_drv.so|new_process_drv|||
+#./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||
+#./drivers/shmdrv/libreactshmdrv.so|new_reactshm||
+#./drivers/sim/libsimdriver.so|new_simdriver||
+#sim1|A Sim Driver|T|./drivers/sim/libsimdriver.so|new_simdriver|||
+#./drivers/sim_pump/libsimpumpdrv.so|new_simpumpdrv||
+#./drivers/pci9111/libpci9111.so|new_pci9111|libpci_dask.so|
+#./drivers/pci7248/libpci7248.so|new_pci7248|libpci_dask.so|
+#./drivers/dallas_1wire/libdallas_1wire_drv.so|new_dallas_1wire||

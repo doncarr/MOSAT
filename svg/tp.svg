@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%" height="100%" viewBox="0 0 320 160" onload="load()">
+
+  <title>Text Alignment Test</title>
+  <metadata>author: Don Carr</metadata>
+
+  <line x1="10" y1="20" x2="150" y2="20"
+    style="stroke:red;stroke-width:1"/>
+<!-- upper left -->
+  <text id="eulabel_text" x="50" y="20" font-size="10"
+       baseline-shift="-66%" text-anchor="start">12g0</text>
+
+<!-- middle left -->
+  <text id="eulabel_text" x="80" y="20" font-size="10"
+       baseline-shift="-33%" text-anchor="start">12g0</text>
+
+<!-- lower left -->
+  <text id="eulabel_text" x="110" y="20" font-size="10"
+       baseline-shift="0%" text-anchor="start">12g0</text>
+
+<!-- ******************************************************** -->
+
+  <line x1="10" y1="40" x2="150" y2="40"
+    style="stroke:red;stroke-width:1"/>
+<!-- upper center -->
+  <text id="eulabel_text" x="50" y="40" font-size="10"
+       baseline-shift="-66%" text-anchor="middle">12g0</text>
+
+<!-- middle center -->
+  <text id="eulabel_text" x="80" y="40" font-size="10"
+       baseline-shift="-33%" text-anchor="middle">12g0</text>
+
+<!-- lower center -->
+  <text id="eulabel_text" x="110" y="40" font-size="10"
+       baseline-shift="0%" text-anchor="middle">12g0</text>
+
+<!-- ******************************************************** -->
+
+  <line x1="10" y1="60" x2="150" y2="60"
+    style="stroke:red;stroke-width:1"/>
+<!-- upper right -->
+  <text id="eulabel_text" x="50" y="60" font-size="10"
+       baseline-shift="-66%" text-anchor="end">12g0</text>
+
+<!-- middle right -->
+  <text id="eulabel_text" x="80" y="60" font-size="10"
+       baseline-shift="-33%" text-anchor="end">12g0</text>
+
+<!-- lower right -->
+  <text id="eulabel_text" x="110" y="60" font-size="10"
+       baseline-shift="0%" text-anchor="end">12g0</text>
+
+<!-- ******************************************************** -->
+
+  <line x1="50" y1="0" x2="50" y2="80"
+    style="stroke:red;stroke-width:1"/>
+  <line x1="80" y1="0" x2="80" y2="80"
+    style="stroke:red;stroke-width:1"/>
+  <line x1="110" y1="0" x2="110" y2="80"
+    style="stroke:red;stroke-width:1"/>
+
+
+<!--
+// From 45 to 80 degrees
+// Lower left corner alignment 
+// text-anchor: start | middle | end 
+// baseline-shift: 0-100%
+// alignment-baseline="middle"
+
+// From 80 100 degrees
+// Gradually move from lower left to upper left allignment.
+
+// From 100 to 170 degrees
+// Upper left corner alignment 
+
+// From 170 to 210
+// Gradually move from left of center to right of center alligntment
+
+// From 210 to 260
+// Upper right corner alignment
+
+// From 260 to 280
+// Gradually move from upper right to lower right allignment
+
+// 280-315
+// Lower right corner allignment 
+-->
+
+</svg>

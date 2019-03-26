@@ -1,0 +1,5 @@
+LogHome|./log/
+HtmlHome|./html/
+TemplateHome|./template/
+SampleRate|5|
+SMS_ENABLED|0|

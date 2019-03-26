@@ -1,0 +1,18 @@
+#changing_filter_1|Changing Filter 1|0|0|0|ON|OFF|N|N|
+#changing_filter_2|Changing Filter 2|0|0|1|ON|OFF|N|N|
+hydraulic_1a|hydraulic switch 1a|0|0|0|ON|OFF|N|N|
+hydraulic_1b|hydraulic switch 1b|0|0|1|ON|OFF|N|N|
+hydraulic_2a|hydraulic switch 2a|0|0|2|ON|OFF|N|N|
+hydraulic_2b|hydraulic switch 2b|0|0|3|ON|OFF|N|N|
+lo_level|Above low Level|0|0|6|ON|OFF|N|N|
+hi_level|Above high Level|0|0|7|ON|OFF|N|N|
+plastic_running|Plastic Running|0|0|8|ON|OFF|N|N|
+#    Tag (string max 25)
+#    Description (string max 50)
+#    Driver Number (char max 25)
+#    Card (char max 25)
+#    Channel (char max 25)
+#    Low Description (string max 12)
+#    High Description (string max 12)
+#    Alarm State (drop down {high, low, none})
+#    Shutdown State  (drop down {high, low, none})

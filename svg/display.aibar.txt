@@ -1,0 +1,5 @@
+svg_header|AI Faceplate|0|0|300|150|
+background|thistle|
+link_params|15|10|7|firebrick|start|airound.svg|Round|aineedle.svg|Needle|
+bar|$1|blue|20|15|115|
+attrs|$1|firebrick|100|10|7|

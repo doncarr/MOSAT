@@ -1,0 +1,14 @@
+U1_S1_KILL_FANS|U1 S1 Kill Fans|0|0|0|Enabled|Disabled|
+U1_BLINK|U1 Blink|0|0|31|OFF|ON|
+#
+U2_S1_KILL_FANS|U2 S1 Kill Fans|0|0|8|Enabled|Disabled|
+U2_S2_KILL_FANS|U2 S2 Kill Fans|0|0|9|Enabled|Disabled|
+U2_BLINK|U1 Blink|0|0|47|OFF|ON|
+#
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description

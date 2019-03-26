@@ -1,0 +1,64 @@
+Especificaciones:
+
+Se tendrán 4 regiones dentro del perfil de velocidad:
+
+La primer región sera para indicar que esta desplazándose a una velocidad por debajo del rango ideal.
+La segunda región corresponde al rango de velocidad ideal.
+La tercer región corresponde a un rango de velocidad un poco por arriba del deseado.
+La cuarta región corresponde a una velocidad demasiado grande.
+
+Acciones a tomar para cada región:
+
+Al estar dentro de la primer región se emitirá una advertencia para indicarle al conductor que esta por debajo de la velocidad ideal.
+En la segunda región se esta dentro de la velocidad deseada, no se emite ningún tipo de advertencia.
+Al entrar en la tercer región se emitirá inmediatamente una advertencia para indicarle al conductor que esta por encima de la velocidad deseada y que tiene un tiempo definido para reducirla, si no reduce la velocidad a la deseada en el tiempo definido se le quitara tracción al tren.
+Al entrar a la cuarta región se esta demasiado arriba de la velocidad deseada por lo que inmediatamente se le quitara tracción sin aviso previo e inmediatamente después se emitirá una alarma de emergencia.
+
+Parámetros que se pueden fijar:
+
+1.1.- Los limites para las regiones 1 a 4.
+1.2.- Los limites de las regiones serán definidas de manera lineal por puntos.
+
+2.- Definir el tiempo que se podrá mantener en la región 3 antes de quitar la tracción.
+
+
+Modos de operación:
+
+1.- Se tendrá un modo de operación de maniobras, que sera utilizado cuando el tren no esta en servicio.
+2.- Se tendrá un modo de operación normal que corresponde a cuando el tren esta en servicio dentro de las lineas.
+3.- Se tendrá un modo de operación libre, en el cual se manejara sin ninguna restricción previa identificación con un código de autorización.
+
+Uso de los modos de operación:
+
+1.- El modo de operación de maniobras sera el modo default ya que sera el utilizado cuando el tren arranca por primera vez para ser colocado en servicio, la velocidad esta restringida a 25 km/h.
+2.- Para entrar en servicio se debe cambiar al modo de operación normal, debiendo indicarse en que estación se encuentra el tren teniendo como opciones las estaciones Periférico norte, Periférico sur, Tetlan y Juarez.
+
+Despliegue de datos de rendimiento:
+
+1.- Al arribar a la estación mientras las puertas se encuentran abiertas se desplegará su rendimiento en el ultimo segmento y en el total del recorrido.
+
+
+Detalles técnicos:
+
+1.- Como se determina la ubicación actual del tren
+1.1.- Al estar en modo de operación libre o de maniobras no se puede determinar la ubicación del tren.
+1.2.- Al entrar al modo de operación normal el conductor debe indicar en que estación se encuentra el tren.
+1.2.1.- al estar en este modo de operación se pude determinar la ubicación a partir del punto de inicio del recorrido y de la distancia que se ha recorrido.
+
+2.- Como se determina la distancia recorrida
+2.1.- En cada tren se ubican 2 encoder, estando uno como respaldo, los cuales generan 110 pulsos cada vuelta de rueda.
+2.2.- La distancia se calcula de la siguiente manera: (Numero de pulsos contados/110) x (Pi x (diámetro de la rueda)).
+2.3.- Esto implica que dentro del hardware se cuente con un contador de alta velocidad suficiente para la velocidad máxima.
+
+3.- Como se determina la velocidad
+3.1.- Se leerá la distancia recorrida cada segundo calculada de la manera indicada en el punto anterior.
+3.2.- La velocidad en segundos se calcula de la siguiente manera (distancia2 - distancia 1) / 1segundo.
+3.3.- Para convertir la velocidad a kilómetros por hora a metros por segundo se multiplica por (3600/1000) o 3.6.
+3.4.- En el futuro se considera usar un FPGA o PLD para calcular la velocidad por medio de hardware.
+
+Notas de operación
+
+1.- Se necesitara un manera para que las personas de mantenimiento guarden en cada tren el diámetro de las ruedas después del mantenimiento.
+2.- Se necesita determinar cuan necesario es medir los diámetros de las llantas para mantener la exactitud del calculo de las distancias recorridas.
+3.- Se necesita una manera para cambiar los parámetros de operación, incluidos los perfiles de velocidad, de una manera mas sencilla.
+4.- Se contempla que al momento de estar en la estación y se abren las puertas se corrige la distancia

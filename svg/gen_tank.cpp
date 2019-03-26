@@ -1,0 +1,171 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/******************************************/
+
+void gen_cone_tank(FILE *fp, float x, float y, float width, float height, float cap_height, 
+              float cone_height, float cone_width)
+{
+  fprintf(fp, "  <defs>\n");
+  fprintf(fp, "    <radialGradient id=\"grRadial\" cx=\"50%%\" cy=\"50%%\" r=\"50%%\" spreadMethod=\"pad\" gradientUnits=\"objectBoundingBox\">\n");
+  fprintf(fp, "      <stop offset=\"0%%\" stop-color=\"#fafafa\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "      <stop offset=\"100%%\" stop-color=\"#808080\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "    </radialGradient>\n");
+  fprintf(fp, "    <linearGradient id=\"grLinearV\" x1=\"0%%\" y1=\"0%%\" x2=\"100%%\" y2=\"0%%\" spreadMethod=\"pad\" gradientUnits=\"objectBoundingBox\">\n");
+  fprintf(fp, "      <stop offset=\"0%%\" stop-color=\"#808080\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "  fprintf(fp, \"      <stop offset=\"50%%\" stop-color=\"#fafafa\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "      <stop offset=\"100%%\" stop-color=\"#808080\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "    </linearGradient>\n");
+  fprintf(fp, "  </defs>\n");
+  fprintf(fp, "  <g stroke=\"#000000\" stroke-width=\"0\">\n");
+  fprintf(fp, "    <rect fill=\"url(#grLinearV)\"\n");
+  fprintf(fp, "      x=\"%f\" y=\"%f\" width=\"%f\" height=\"%f\"/>\n", 
+                          x, y + cap_height, width, height - cone_height - cap_height);
+  fprintf(fp, "    <path fill=\"url(#grRadial)\"\n");
+  fprintf(fp, "      d=\"M%f,%f A%f,%f 0 1,1 %f,%f z M%f,%f L%f,%f\"/>\n",
+                     //d="M0,50 A125,50 0 1,1 250,50 M250,100 L250,100"/>
+                          x, y + cap_height, 
+                          width / 2.0, cap_height, 
+                          x + width, y + cap_height,
+                          x, y + (cap_height * 2.0),
+                          x, y + (cap_height * 2.0)); 
+  fprintf(fp, "    <path fill=\"url(#grRadial)\"\n");
+  fprintf(fp, "d=\"M%f,%f h%f l%f,%f h%f z m 0 %f h 0\"/>\n",
+                     //d="M0,400 h200 l-50,100 h-100 z "/>
+                          x, y + height - cone_height,
+                          width, 
+                          (width - cone_width)/-2.0, cone_height, 
+                          cone_width * -1.0,
+                          cone_height * -1.0);
+  fprintf(fp, "  </g>\n");
+}
+
+/******************************************/
+
+void gen_pressure_tank(FILE *fp, float x, float y, float width, float height, float top_height)
+{
+  fprintf(fp, "  <defs>\n");
+  fprintf(fp, "    <radialGradient id=\"grRadial\" cx=\"50%%\" cy=\"50%%\" r=\"50%%\" spreadMethod=\"pad\" gradientUnits=\"objectBoundingBox\">\n");
+  fprintf(fp, "      <stop offset=\"0%%\" stop-color=\"#fafafa\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "      <stop offset=\"100%%\" stop-color=\"#808080\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "    </radialGradient>\n");
+  fprintf(fp, "    <linearGradient id=\"grLinearV\" x1=\"0%%\" y1=\"0%%\" x2=\"100%%\" y2=\"0%%\" spreadMethod=\"pad\" gradientUnits=\"objectBoundingBox\">\n");
+  fprintf(fp, "      <stop offset=\"0%%\" stop-color=\"#808080\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "  fprintf(fp, \"      <stop offset=\"50%%\" stop-color=\"#fafafa\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "      <stop offset=\"100%%\" stop-color=\"#808080\" stop-opacity=\"1\"/>\n");
+  fprintf(fp, "    </linearGradient>\n");
+  fprintf(fp, "  </defs>\n");
+  fprintf(fp, "  <g stroke=\"#000000\" stroke-width=\"0\">\n");
+  fprintf(fp, "    <rect fill=\"url(#grLinearV)\"\n");
+  fprintf(fp, "      x=\"%f\" y=\"%f\" width=\"%f\" height=\"%f\"/>\n", 
+                          x, y + top_height, width, height - (2 * top_height));
+  fprintf(fp, "    <path fill=\"url(#grRadial)\"\n");
+  fprintf(fp, "      d=\"M%f,%f A%f,%f 0 1,1 %f,%f z M%f,%f L%f,%f\"/>\n",
+                     //d="M0,50 A125,50 0 1,1 250,50 M250,100 L250,100"/>
+                          x, y + top_height, 
+                          width / 2.0, top_height, 
+                          x + width, y + top_height,
+                          x, y + (top_height * 2.0),
+                          x, y + (top_height * 2.0)); 
+  fprintf(fp, "    <path fill=\"url(#grRadial)\"\n");
+  fprintf(fp, "      d=\"M%f,%f A%f,%f 0 1,0 %f,%f z M%f,%f L%f,%f\"/>\n",
+                      //d="M0,450 A125,50 0 1,0 250,450 M250,400 L250,400"/>
+                          x, y + height - (top_height), 
+                          (width / 2.0), (top_height), 
+                          x + width, y + height - (top_height),
+                          x, y + height - (top_height * 2.0),
+                          x, y + height - (top_height * 2.0)); 
+  fprintf(fp, "\n  </g>\n");
+}
+
+/******************************************/
+
+void gen_header(FILE *fp, float x, float y, float width, float height)
+{
+  fprintf(fp, "<!--\n");
+  fprintf(fp, "Auto generated file DO NOT EDIT\n");
+  fprintf(fp, "Generated by: %s\n", __FILE__);
+  fprintf(fp, "-->\n");
+
+  fprintf(fp, "<svg xmlns=\"http://www.w3.org/2000/svg\"\n");
+  fprintf(fp, "     xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n");
+  fprintf(fp, "     width=\"100%%\" height=\"100%%\" viewBox=\"%f %f %f %f\">\n",
+          0.0, 0.0, width + (2 * x), height + (2 * y));
+  fprintf(fp, "\n");
+  fprintf(fp, "  <title>Tank Example</title>\n");
+  fprintf(fp, "  <metadata>author: Don Carr</metadata>\n");
+  fprintf(fp, "  <rect fill=\"ivory\" x=\"0%%\" y=\"0%%\" width=\"100%%\" height=\"100%%\" stroke=\"none\" stroke-width=\"0\"/>\n");
+
+}
+
+/******************************************/
+
+void gen_svg_end(FILE *fp)
+{
+  fprintf(fp, "\n</svg>\n");
+}
+
+/******************************************/
+void usage(void)
+{
+  printf("Usage:\n");
+  printf("  gen_tank c <x> <y> <width> height> <cap_height> <cone_height> <cone_width>\n");
+  printf("  gen_tank p <x> <y> <width> height> <cap_height>\n");
+}
+
+/******************************************/
+
+int main(int argc, char *argv[])
+{
+  FILE *fp;
+  float x = 50;
+  float y = 50;
+  float width = 800;
+  float height = 600; 
+  float cap_height = 50;
+  float cone_height = 200;
+  float cone_width = 30;
+  
+  fp = stdout;
+  if (argc == 1) // default
+  {
+    gen_header(fp, x, y, width, height);
+    gen_cone_tank(fp, x, y, width, height, cap_height, cone_height, cone_width);
+    gen_svg_end(fp);
+  }
+  else if ((argc == 9) && (argv[1][0] == 'c'))
+  {
+    // /gen_tank c 0 0 300 400 20 50 20
+    x = atof(argv[2]);
+    y = atof(argv[3]);
+    width = atof(argv[4]);
+    height = atof(argv[5]);
+    cap_height = atof(argv[6]);
+    cone_height = atof(argv[7]);
+    cone_width = atof(argv[8]);
+    gen_header(fp, x, y, width, height);
+    gen_cone_tank(fp, x, y, width, height, cap_height, cone_height, cone_width);
+    gen_svg_end(fp);
+  }
+  else if ((argc == 7) && (argv[1][0] == 'p'))
+  {
+    // /gen_tank p 0 0 300 400 20 
+    x = atof(argv[2]);
+    y = atof(argv[3]);
+    width = atof(argv[4]);
+    height = atof(argv[5]);
+    cap_height = atof(argv[6]);
+    gen_header(fp, x, y, width, height);
+    gen_pressure_tank(fp, x, y, width, height, cap_height);
+    gen_svg_end(fp);
+  }
+  else
+  {
+    usage();
+  }
+  return 0;
+}
+
+/******************************************/
+

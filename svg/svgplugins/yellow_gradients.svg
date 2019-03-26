@@ -1,0 +1,16 @@
+  <defs>
+    <radialGradient id="yellowRadial" cx="50%" cy="50%" r="50%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="yellow" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#A0A000" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="yellowLinearV" x1="0%" y1="0%" x2="100%" y2="0%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#A0A000" stop-opacity="1"/>
+      <stop offset="50%" stop-color="yellow" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#A0A000" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="yellowLinearH" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#A0A000" stop-opacity="1"/>
+      <stop offset="50%" stop-color="yellow" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#A0A000" stop-opacity="1"/>
+    </linearGradient>
+  </defs>

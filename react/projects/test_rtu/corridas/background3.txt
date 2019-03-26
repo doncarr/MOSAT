@@ -1,0 +1,8 @@
+bomba3.send(T)
+bomba4.send(F)
+sys.wait(00:01)
+sys.wait_until("level > 200", 59:59)
+bomba3.send(F)
+bomba4.send(T)
+sys.wait_until("level < 100", 59:59)
+sys.loop()

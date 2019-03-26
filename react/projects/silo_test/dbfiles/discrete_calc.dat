@@ -1,0 +1,8 @@
+temp_lt_10|Discrete Calc 1|(TEMP < 10.0)|ok|bad|N|N|
+# Tag
+# Description
+# calc expression
+# Low Description
+# High Description
+# Alarm State (High, Low, None)
+# Shutdown State (High, Low, None)

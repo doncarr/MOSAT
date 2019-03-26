@@ -1,0 +1,11 @@
+cat display_header.svg >dtest.svg
+cat display.svg >>dtest.svg
+echo "" >>dtest.svg
+echo "<script type=\"text/ecmascript\"><![CDATA[" >>dtest.svg
+echo "" >>dtest.svg
+cat simple_rect.js >>dtest.svg
+cat simple_panel.js >>dtest.svg
+cat display.js >>dtest.svg
+echo  "]]></script>" >>dtest.svg
+echo "</svg>" >>dtest.svg
+sudo cp dtest.svg /var/www

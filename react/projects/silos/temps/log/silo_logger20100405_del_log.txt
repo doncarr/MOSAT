@@ -1,0 +1,62 @@
+Delete Log
+keeping 100 days of history
+Checking file: ./log//silo_logger20091224.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091224_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091223.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091223_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091222.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091222_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091221.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091221_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091220.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091220_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091219.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091219_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091218.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091218_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091217.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091217_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091216.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091216_hour.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091215.txt
+ DOES NOT EXIST
+
+Checking file: ./log//silo_logger20091215_hour.txt
+ DOES NOT EXIST
+

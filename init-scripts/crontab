@@ -1,0 +1,7 @@
+#This file only shows how crontab must be running 
+# To edit run crontab -e and copy these info to the sbc crontab
+# run five minutes after midnight, every day
+5 0 * * *   /home/artc/tina/tina-scripts/move-logs.sh  &> /dev/null
+# run every five minutes every day
+*/5 * * * * /home/artc/tina/tina-scripts/empty-cherokee-log.sh &> /dev/null 
+

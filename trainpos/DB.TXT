@@ -1,0 +1,116 @@
+
+create table line_def 
+(
+  line_id VARCHAR(10),
+  name VARCHAR(25), 
+  description VARCHAR(10),
+  PRIMARY KEY (line_id)
+);
+
+create table section_def 
+(
+  station INT, 
+  name VARCHAR(25), 
+  n INT,
+  S01 INT, 
+  S02 INT, 
+  S03 INT, 
+  S04 INT, 
+  S05 INT, 
+  S06 INT, 
+  S07 INT, 
+  S08 INT, 
+  S09 INT, 
+  S10 INT, 
+  CRC64 INT, 
+  PRIMARY KEY (station)
+);
+
+create table timetable_def 
+(
+  timetable_id INT,
+  name VARCHAR(10),
+  description VARCHAR(10),
+  PRIMARY KEY (timetable_id)
+);
+
+create table timetable_rows 
+(
+  timetable_id INT,
+  departure INT, 
+  departure_id VARCHAR(10), 
+  departure_time TIME,
+  CRC64 INT, 
+  PRIMARY KEY (timetable_id, departure)
+);
+
+create table sensor_def
+(
+  sensor_id INT,
+  sensor_name VARCHAR(10),
+  line_id VARCHAR(10),
+  section INT,  
+  senosor INT,  
+  CRC64 INT, 
+  PRIMARY KEY (sensor_id)
+);
+
+create table crossing_log 
+(
+  crossing_time TIMESTAMP,
+  section INT,
+  sensor INT,
+  service_id INT,
+  CRC64 INT, 
+  PRIMARY KEY (crossing_time)
+);
+
+create table service_log
+(
+  service_id INT,
+  dispatcher_id VARCHAR(10),
+  train_id VARCHAR(10),
+  entry_point VARCHAR(10),
+  exit_point VARCHAR(10),
+  scheduled_entry_time TIMESTAMP,
+  actual_entry_time TIMESTAMP,
+  exit_service_time TIMESTAMP,
+  in_service BOOLEAN,
+  waiting_service BOOLEAN,
+  waiting_exit BOOLEAN,
+  comments VARCHAR(10),
+  change_log VARCHAR(10),
+  PRIMARY KEY (service_id)
+);
+
+create table event_log 
+(
+  event_id INT,
+  dispatcher_id VARCHAR(10),
+  record_time TIMESTAMP,
+  event_time TIMESTAMP,
+  event_type VARCHAR(10),
+  event_description VARCHAR(10),
+  PRIMARY KEY (event_id)
+);
+
+create table display_def 
+(
+  display_id INT,
+  display_description VARCHAR(10),
+  background_file VARCHAR(10),
+  output_file VARCHAR(10),
+  square VARCHAR(10),
+  square_unexpected VARCHAR(10),
+  square_extra VARCHAR(10),
+  square_test VARCHAR(10),
+  x1 INT,
+  x2 INT,
+  y1 INT,
+  y2 INT,
+  text_offset_y1 INT,
+  text_offset_y2 INT,
+  n_sections INT,
+  PRIMARY KEY (display_id)
+);
+

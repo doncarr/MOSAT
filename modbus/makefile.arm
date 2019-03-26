@@ -1,0 +1,68 @@
+
+export CPATH=../include
+
+CC=arm-unknown-linux-gnu-gcc -mcpu=arm9 -Wall
+
+CPP=arm-unknown-linux-gnu-g++ -Wall
+
+AR=arm-unknown-linux-gnu-ar
+
+DIR=arm/
+
+RTCOMMON=../librtcommon/arm/librtcommon.a
+RTMODBUS=./arm/librtmodbus.a
+
+
+
+INCLUDES = hp2mod.h hprtu.h modio.h modsim.h mtype.h trace.h evlog.h
+
+%.o:	%.cpp $(INCLUDES)
+	$(CPP) -c -o $@ -Wall $<
+
+all:	 $(DIR)librtmodbus.so $(DIR)librtmodbus.a $(DIR)myconnect $(DIR)find_serial_ports
+
+$(DIR)%.o:    %.c $(INCLUDES)
+	$(CC) -c -o $@ $<
+
+$(DIR)%.o:    %.cpp $(INCLUDES)
+	$(CPP) -c -o $@ $<
+
+modsim:	$(DIR)myservice.o $(DIR)modsim.o trace.h 
+	$(CPP) -o modsim -lpthread  $(DIR)myservice.o $(RTMODBUS) $(RTCOMMON) 
+
+$(DIR)myconnect.o: myconnect.cpp $(INCLUDES)
+	$(CPP) -c -o $(DIR)myconnect.o myconnect.cpp
+
+$(DIR)myconnect: $(DIR)myconnect.o
+	$(CPP) -o $(DIR)myconnect $(DIR)myconnect.o  $(RTMODBUS) $(RTCOMMON) 
+
+$(DIR)find_serial_ports:  find_serial_ports.cpp $(INCLUDES)
+	$(CPP) -o $(DIR)find_serial_ports find_serial_ports.cpp -lrt $(RTMODBUS) 
+
+#librtmodbus.a: trace.o modsim.o trace.h swap.o modtcpip_client.o\
+#                modtcpip.o hexascii.o rtmodbus.o modio.o \
+#                evlog.o rt_serial.o rt_mod_serial_client.o rt_modbus_utility.o $(INCLUDES)
+#        ar r librtmodbus.a modsim.o trace.o swap.o \
+#                 modtcpip.o hexascii.o rtmodbus.o modio.o modtcpip_client.o \
+#                evlog.o rt_serial.o rt_mod_serial_client.o rt_modbus_utility.o
+
+
+$(DIR)librtmodbus.so:  $(DIR)trace.o  $(DIR)modsim.o  $(DIR)swap.o  $(DIR)modtcpip_client.o\
+                 $(DIR)modtcpip.o  $(DIR)hexascii.o  $(DIR)rtmodbus.o  $(DIR)modio.o \
+                 $(DIR)evlog.o  $(DIR)rt_serial.o  $(DIR)rt_mod_serial_client.o \
+		$(DIR)rt_modbus_utility.o $(INCLUDES)
+	$(CPP)g++ -o  $(DIR)librtmodbus.so -shared  $(DIR)modsim.o  $(DIR)trace.o  $(DIR)swap.o \
+		  $(DIR)modtcpip.o  $(DIR)hexascii.o  $(DIR)rtmodbus.o  $(DIR)modio.o  $(DIR)modtcpip_client.o \
+		 $(DIR)evlog.o $(DIR)rt_serial.o  $(DIR)rt_mod_serial_client.o  $(DIR)rt_modbus_utility.o
+
+$(DIR)librtmodbus.a: $(DIR)trace.o $(DIR)modsim.o trace.h $(DIR)swap.o $(DIR)modtcpip_client.o\
+                $(DIR)modtcpip.o $(DIR)hexascii.o $(DIR)rtmodbus.o $(DIR)modio.o \
+                $(DIR)evlog.o $(DIR)rt_serial.o $(DIR)rt_mod_serial_client.o  $(DIR)rt_modbus_utility.o $(INCLUDES)
+	$(AR) r $(DIR)librtmodbus.a $(DIR)modsim.o $(DIR)trace.o $(DIR)swap.o \
+		 $(DIR)modtcpip.o $(DIR)hexascii.o $(DIR)rtmodbus.o $(DIR)modio.o $(DIR)modtcpip_client.o \
+		$(DIR)evlog.o $(DIR)rt_serial.o $(DIR)rt_mod_serial_client.o  $(DIR)rt_modbus_utility.o 
+
+
+clean:	
+	rm -fv $(DIR)*.o $(DIR)modsim myconnect $(DIR)librtmodbus.so $(DIR)librtmodbus.a 
+

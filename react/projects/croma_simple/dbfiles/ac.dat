@@ -1,0 +1,8 @@
+#AC1|First AC Unit|TEMP_COLD_AC1|TEMP_HOT_AC1|ON_AC1|SHUTOFF_AC1|90|
+# tag
+# description
+# Cold Temperature (AI)
+# Hot Temperature (AI)
+# AC Unit is ON (DI)
+# Disable (shut off) AC Unit (DO) (because it does not work)
+# Response time before checking performance

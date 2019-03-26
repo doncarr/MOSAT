@@ -1,0 +1,6 @@
+DO_12.send(NOT DO_12)
+DO_13.send(NOT DO_13)
+DO_14.send(NOT DO_14)
+DO_15.send(DI_02)
+sys.yield()
+sys.loop()

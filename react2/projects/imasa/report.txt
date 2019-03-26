@@ -1,0 +1,46 @@
+IMA,SA
+Sistema de Fraccionamiento
+CONACYT-0156328: "Proceso 
+Innovador de Fraccionación 
+Continua de Aceite de Palmiste 
+(Kernel) de Alta Eficiencia"
+
+Modulos de Software para el Servidor Linux:
+
+Todos los módulos son de Software Libre y corren bajo la sistema operativo Linux. IMASA tiene derechos de copiar y modificar todo el Software, y usarlo en otras sistemas en la planta. Todo el software es basado en el concepto de Recetas que puede ser usados para crear un Lote. Cada Recete puede tener múltiples etapas, cada uno configurado con parámetros analógicos y booleanas. El interfaz con el PLC es para escribir los parámetros para la Receta a el PLC antes de empezar un Lote. Todo la comunicación con el PLC es por el protocol abierto MODBUS TCP/IP.
+
+1) Modulo para editar recetas, basado en el Zend Framework, que pueden entrar nombre, descripción, y los parámetros para cada etapa. Los parámetros para definir cada etapa pueden ser valores analógicas, y booleanas. Para cada parámetro, puede dar nombre, descripción, y, dirección escribirlo en el PLC, etc. Abajo solo las detallas:
+
+Parámetros de un receta:
+
+Name (text)
+IP Address of PLC (texto)
+Descripción general (text, multiple lines)
+
+Parámetros Analógicos
+
+Name: (text)
+Descripción (text, multiples lineas)
+Valor: (punto flotante)
+Pueden editar valor a tiempo de correr? (true/false)
+Engineering Units (text)
+Registro dónde escribirlo en el PLC (dirección MODBUS) (int) (0-65535)
+
+Parámetros Booleanas
+
+Name: (text)
+Descripción (text, multiple lines)
+Valor: (verdad/falso)
+Pueden editar valor a tiempo de correr? (true/false)
+Registro donde escribirlo en el PLC (dirección MODBUS) (int) (0-65535)
+
+2) Modulo para ver los lotes pasados, basado en el Zend Framework, con todo la información de trazabilidad, que pueden ver la receta usada, la historia de valores analógicas y discretas como: temperaturas, velocidades, cuando abren / cierran las válvulas, cuando encienden / apagan los motores, etc.
+
+3) Interfaz para correr un lote, basado en el Zend Framework, que pueden: seleccionar la receta, identificar la materia prima para trazabilidad, comentarios generales, análisis de laboratorio inicial, y, al final, escribir todos los parámetros para cada etapa a el PLC, y verificar. El sistema da la oportunidad de cambiar parámetros de la receta (que tienen permiso), antes de correrlo. Éste modulo también se escriba todo la información a el base de datos al final para crear archivo permanente del lote.
+
+4) Sistema SCADA hecho en C++ para monitorear los lotes cuando están en proceso, y, grabar todo la historia necesario para la trazabilidad del producto, que va a ser parte del archivo permanente. Incluye pantallas de tiempo real, pantalla de alarmas activas, y, historia de alarmas. Los displays de tiempo son de HTML5, basados en SVG animado con Javascript empotrado. El Javascript, puede leer valores de tiempo real en el servidor, via el XMLHttpRequest(). Que es HTML5, todos los pantallas de tiempo real se puede ver en cualquier dispotivo con navigador de red moderno como Google Chrome, Mozilla Firefox, o, Microsoft IE9. Con HTML5, no es necesario instalar software en cada computadora donde quieren visualizar el processo. Hay diagramas de tiempo real especiales para: tanques de alementación, alementación del producto, crisilización, filtro, seperación, tanques de alacenamiento, parámetros de operación, variables del proceso, plant layout, alarmas actuales, historia de alarmas. Cada tagname en el base de datos SCADA tiene su pantalla default de tiempo real (faceplate).
+
+5) Configuración de la sistema SCADA. Todo la configuración de la sistema de SCADA es para archivos de texto delimitado.
+
+6) Modo para el sistema SCADA para operarar en modo manual para poder ajustar ganancias de los PIDs, probar válvulas, probar motores, probar bombas, transferir producto de un tanque a otra, etc. Basicamente que permite operar manaulmente cualquier de los salidas, que tiene sentido, y no es peligroso operar manualmente. El modo manual es para tareas sencillas como mover producto, y pruebas.
+

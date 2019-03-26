@@ -1,0 +1,20 @@
+
+CPP=  arm-unknown-linux-gnu-g++ -mcpu=arm9
+
+export CPATH=../../../include:../../
+
+RTMODBUS=../../../modbus/arm/librtmodbus.a
+
+RTCOMMON=../../../librtcommon/arm/librtcommon.a
+
+
+libreactmodbusdrv.so: reactmodbusdrv.o 
+	$(CPP) -Wall -o libreactmodbusdrv.so -shared reactmodbusdrv.o -lrt $(RTMODBUS)
+
+reactmodbusdrv.o:	reactmodbusdrv.cpp reactmodbusdrv.h
+	$(CPP) -fpic -Wall -c reactmodbusdrv.cpp 
+
+clean:
+	rm -v *.o *.so
+
+

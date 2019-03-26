@@ -1,0 +1,15 @@
+silo_logger_1|My temp logger|silo_logger|300|5|1|1|0|0|0|HUM_1,HUM_2,TEMP,MINUTES|
+#    Tag
+#    Description
+#    Base File Name (actual name is base + YYYYMMDD) (can include path) 
+#    Seconds between logs
+#    Number of days of history 
+#    Instantaneous logging? (every X seconds as given above)
+#    Hour Averages? (base + YYYYMMDD + hours)
+#    Day Averages?  (base + YYYY_NNN + days)
+#    Week Averages? (base + YYYY_NN + weeks)
+#    Month Average? (base + YYYY_NN + months)
+#    Tag 1 
+#    Tag 2 
+#    . . . . 
+#    Tag N 

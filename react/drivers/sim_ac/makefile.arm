@@ -1,0 +1,29 @@
+
+
+CPP=  arm-unknown-linux-gnu-g++ -mcpu=arm9
+
+export CPATH=../../../include:../../
+
+RTMODBUS=../../../modbus/arm/librtmodbus.a
+
+RTCOMMON=../../../librtcommon/arm/librtcommon.a
+
+%.o:    %.cpp $(INCLUDES)
+	$(CPP) -c -Wall -o $@ $<
+
+
+libsimacdrv.so: sim_ac.o exp_sim.o ac_unit_sim.o random_tools.o sim_ac.h
+	$(CPP) -Wall -o libsimacdrv.so -shared sim_ac.o exp_sim.o ac_unit_sim.o random_tools.o
+
+simac.o: sim_ac.cpp
+	$(CPP) -Wall -c -fpic sim_ac.cpp
+
+exp_sim: exp_sim.cpp exp_sim.h
+	$(CPP) -Wall -o exp_sim exp_sim.cpp
+
+unit: ac_unit_sim.cpp exp_sim.cpp random_tools.cpp
+	$(CPP) -Wall -o unit ac_unit_sim.cpp exp_sim.cpp random_tools.cpp
+
+clean:
+	rm -v *.o *.so unit exp_sim
+

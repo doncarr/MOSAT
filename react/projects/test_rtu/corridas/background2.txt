@@ -1,0 +1,3 @@
+bomba2.send(not bomba2)
+sys.wait(00:02)
+sys.loop()

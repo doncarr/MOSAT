@@ -1,0 +1,15 @@
+#CALC1|Calculation 1|amps|pump1_amp + pump2_amp + pump3_amp|1|10|20|80|90|5|0|0|0|0|
+# tag
+# description
+# engineering units
+# calc expression
+# decimals
+# low alarm
+# low caution
+# high caution
+# high alarm
+# deadband
+# low alarm enable
+# low caution enable
+# high caution enable
+# high alarm enable

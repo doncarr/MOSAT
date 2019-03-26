@@ -1,0 +1,21 @@
+
+export CPATH=../../../include:../../
+
+all: sim_simple_ascii libsimple_ascii_drv.so
+
+simple_ascii.o:	simple_ascii.cpp simple_ascii.h
+	g++ -Wall -fPIC -c simple_ascii.cpp 
+
+simple_ascii_read.o:	simple_ascii_read.cpp simple_ascii.h
+	g++ -Wall -fPIC -c simple_ascii_read.cpp 
+
+libsimple_ascii_drv.so: simple_ascii.o simple_ascii_read.o
+	g++ -Wall -o libsimple_ascii_drv.so -shared simple_ascii.o simple_ascii_read.o -lrt ../../../modbus/librtmodbus.a 
+
+sim_simple_ascii: sim_simple_ascii.cpp  
+	g++ -Wall -o sim_simple_ascii sim_simple_ascii.cpp -lrt ../../../modbus/librtmodbus.a
+
+clean:
+	rm *.o *.so sim_simple_ascii
+
+

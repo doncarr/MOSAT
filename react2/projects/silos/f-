@@ -1,0 +1,11 @@
+--2010-05-10 14:37:38--  http://adaptivertc.pablasso.com/api/temperature_debug
+Resolving adaptivertc.pablasso.com... 64.79.194.86
+Connecting to adaptivertc.pablasso.com|64.79.194.86|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2341 (2.3K) [text/plain]
+Saving to: `temperature_debug.6'
+
+     0K ..                                                    100% 19.9M=0s
+
+2010-05-10 14:37:38 (19.9 MB/s) - `temperature_debug.6' saved [2341/2341]
+

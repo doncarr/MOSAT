@@ -1,0 +1,12 @@
+#dlogger_1|My dlogger|dlogger|PUMP1_ON|PUMP2_ON|LO_LEVEL|HI_HI_LEVEL|HI_LEVEL|
+#    Tag
+#    Description
+#    Base File Name (actual name is base + YYYYMMDD) (can include path) 
+#    Log Hour Totals? T/F
+#    Tag 1
+#    Obj 1 Log Rising, Falling, Both (L, R, or B)
+#    Tag 2
+#    Obj 2 Log Rising, Falling, Both (L, R, or B)
+#    . . . .
+#    Tag N
+#    Obj N Log Rising, Falling, Both (L, R, or B)

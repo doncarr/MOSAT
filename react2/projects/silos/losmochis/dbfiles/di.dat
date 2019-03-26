@@ -1,0 +1,31 @@
+#    Tag (string max 25)
+#    Description (string max 50)
+#    Driver Number (char max 25)
+#    Card (char max 25)
+#    Channel (char max 25)
+#    Low Description (string max 12)
+#    High Description (string max 12)
+#    Alarm State (drop down {high, low, none})
+#    Shutdown State  (drop down {high, low, none})
+U1_S1_FAN1_IS_ON|U1 S1 Fan1 On|0|0|0|OFF|ON|N|N|
+U1_S1_FAN2_IS_ON|U1 S1 Fan2 On|0|0|1|OFF|ON|N|N|
+U1_S1_AUTO_MAN|U1 S1 Auto/Man|0|0|2|MANUAL|AUTO|N|N|
+U1_S1_ON_OFF|U1 S1 On Off|0|0|3|OFF|ON|N|N|
+#
+U2_S1_FAN1_IS_ON|U2 S1 Fan1 On|0|0|16|OFF|ON|N|N|
+U2_S1_FAN2_IS_ON|U2 S1 Fan2 On|0|0|17|OFF|ON|N|N|
+U2_S1_AUTO_MAN|U2 S1 Auto/Man|0|0|18|MANUAL|AUTO|N|N|
+U2_S1_ON_OFF|U2 S1 On Off|0|0|19|OFF|ON|N|N|
+#
+U2_S2_FAN1_IS_ON|U2 S2 Fan1 On|0|0|20|OFF|ON|N|N|
+U2_S2_FAN2_IS_ON|U2 S2 Fan2 On|0|0|21|OFF|ON|N|N|
+U2_S2_AUTO_MAN|U2 S2 Auto/Man|0|22|10|MANUAL|AUTO|N|N|
+U2_S2_ON_OFF|U2 S2 On Off|0|0|23|OFF|ON|N|N|
+#
+MOD_ID_0_OK|Modbus ID 1 OK|0|0|48|YES|NO|N|N|
+MOD_ID_1_OK|Modbus ID 1 OK|0|0|49|YES|NO|N|N|
+MOD_ID_2_OK|Modbus ID 1 OK|0|0|50|YES|NO|N|N|
+MOD_ID_3_OK|Modbus ID 1 OK|0|0|51|YES|NO|N|N|
+MOD_ID_4_OK|Modbus ID 1 OK|0|0|52|YES|NO|N|N|
+MOD_ID_5_OK|Modbus ID 1 OK|0|0|53|YES|NO|N|N|
+#

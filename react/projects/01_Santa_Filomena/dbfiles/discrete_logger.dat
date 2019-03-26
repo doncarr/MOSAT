@@ -1,0 +1,8 @@
+dlogger_1|Door Logger|dlog|DOOR_OPEN|
+#    Tag
+#    Description
+#    Base File Name (actual name is base + YYYYMMDD) (can include path)
+#    Tag 1 
+#    Tag 2 
+#    . . . . 
+#    Tag N 

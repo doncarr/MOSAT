@@ -1,0 +1,10 @@
+SPRAY_PUMP_ON|Spray Pump On|0|0|0|off|on|0|
+PVALVE_ON|Spray 25/50|0|0|1|25|75|0|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description
+#    Invert PV?

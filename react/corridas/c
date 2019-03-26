@@ -1,0 +1,6 @@
+pid1.change_setpoint(50,0);
+sys.wait(0:03)
+AO0.send(10);
+sys.wait(0:03)
+sys.mark()
+sys.print("----------- Fin ----------")

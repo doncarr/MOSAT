@@ -1,0 +1,4 @@
+SECTIONS_FILE,mx/mx1_sections.txt
+TIMETABLE_FILE,mx/mx1_tt.txt
+DISPLAY_FILE,mx/mx1_display.txt
+HTML_HOME,./

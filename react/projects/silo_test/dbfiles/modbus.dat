@@ -1,0 +1,8 @@
+DI|2|16|0|0|
+AI|3|16|0|0|
+# io type (DI or AI>)
+# opcode 1=DO, 2=DI, 3=Register, 4=AI
+# number of io points
+# modbus offset
+# channel offset
+

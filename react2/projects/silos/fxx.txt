@@ -1,0 +1,10 @@
+ventilador:1,1261248678
+ventilador:0,1261248684
+ventilador:1,1261248692
+ventilador:0,1261248707
+ventilador:1,1261248755
+ventilador:0,1261248773
+ventilador:1,1261248820
+ventilador:0,1261248849
+ventilador:1,1261254242
+ventilador:0,1261254295

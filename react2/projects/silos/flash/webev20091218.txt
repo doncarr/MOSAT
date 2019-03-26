@@ -1,0 +1,5 @@
+MAN_AUTO,bool,1,1261197855,examplesilokey
+temp_amb,float,19.0,1261197900,examplesilokey
+hum_rel,float,35.0,1261197900,examplesilokey
+temp_amb,float,20.0,1261200600,examplesilokey
+hum_rel,float,35.5,1261200600,examplesilokey

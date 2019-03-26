@@ -1,0 +1,13 @@
+svg_header|My Title|0|0|300|150|
+background|thistle|
+imasa_logo|0|0|35|
+only_text|IMASA|blue|125|18|25|middle|
+simple_tank|c|black|200|10|40|110|1.5|25|7|
+simple_tank|p|black|260|20|35|100|8|
+simple_pipe|black|7|220|120|v|144|h|247|v|4|h|190|v|25|h|72|v|12|h|45|v|0|
+simple_pipe|black|7|0|145|h|70|v|130|h|216.5|b|7|
+simple_pipe|black|6|180|0|v|21.5|b|7|
+simple_pipe|black|12|85|150|v|133.5|b|7|
+simple_pipe|black|6|300|135|h|250.5|b|7|
+simple_tank|c|black|100|40|40|35|1.5|15|7|
+simple_tank|p|black|30|40|20|50|1.5|

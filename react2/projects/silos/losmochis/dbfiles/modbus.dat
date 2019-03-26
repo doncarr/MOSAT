@@ -1,0 +1,47 @@
+#
+2|AI|4|12|100|0|
+2|AI|4|12|200|12|
+2|AI|4|12|300|24|
+#
+4|AI|4|12|100|36|
+4|AI|4|12|200|48|
+4|AI|4|12|300|60|
+#
+5|AI|4|12|100|72|
+5|AI|4|12|200|84|
+5|AI|4|12|300|96|
+#
+1|AI|4|16|100|108|
+3|AI|4|16|100|124|
+#
+1|DI|2|16|0|0|
+3|DI|2|16|0|16|
+1|DI|2|8|100|32|
+3|DI|2|8|100|40|
+#
+1|DO|5|8|100|0|
+3|DO|5|8|100|8|
+1|DO|5|16|0|16|
+3|DO|5|16|0|32|
+#
+1|AO|6|16|100|0|
+3|AO|6|16|100|16|
+#
+0|ERROR_MAP|0|6|0|48|
+#
+# modbus id 
+# io type (DI or AI>)
+# opcode 1=readDO, 2=readDI, 3=readRegister, 4=readAI, 6=singleREG, 9=multipleREG, 5=singleDO, 8=multipleDO 
+# number of io points
+# modbus offset
+# channel offset
+#
+# ---- Listing of valid opcodes -----
+# Valid for DI: 1, 2, 3
+# Valid for AI: 3, 4
+# Valid for DO: 5, 8
+# Valid for AO: 6, 9
+# All of this is because some manufacturers only support certain opcodes.
+# Reading a DI as a DO seems strange, but, Phonix Contact did just that, they only supported Read DO, and it worked for reading both DI and DO
+# Also, Phoenix contact, on one device, only allowed reading the DIs as a register!
+# Further, Phoenix contact only allowed Send Multiple Register and Send Multiple Coils, single not implemented in either case.

@@ -1,0 +1,9 @@
+/usr/local/lib/libsixnet_rtu.so|new_sixnet_rtu|/usr/local/lib/libsx.so|
+#./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||
+#./drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus|librtmodbus.so|
+#./drivers/sim_pump_low/libsimpumpdrv.so|new_simpumpdrv||
+#./drivers/shmdrv/libreactshmdrv.so|new_reactshm||
+#./drivers/sim/libsimdriver.so|new_simdriver||
+#./drivers/sim_pump/libsimpumpdrv.so|new_simpumpdrv||
+#./drivers/pci9111/libpci9111.so|new_pci9111|libpci_dask.so|
+#./drivers/pci7248/libpci7248.so|new_pci7248|libpci_dask.so|

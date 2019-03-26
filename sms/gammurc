@@ -1,0 +1,6 @@
+[gammu]
+synchronizetime = no
+port=/dev/ttyACM0
+connection=at19200
+name=Sony Ericsson W200i/W200c
+

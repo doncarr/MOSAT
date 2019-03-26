@@ -1,0 +1,3 @@
+blinker.send(not blinker)
+sys.yield();
+sys.loop();

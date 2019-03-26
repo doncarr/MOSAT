@@ -1,0 +1,13 @@
+svg_header|Pipes Example|0|0|300|150|
+background|tan|
+pipe2d|null|brown|brown|9|0|20|h|260|v|150|
+pipe2d|null|black|black|9|0|32|h|240|v|150|
+pipe2d|null|gray|gray|9|0|44|h|220|v|150|
+pipe2d|null|white|white|9|0|56|h|200|v|150|
+pipe2d|null|blue|blue|9|0|68|h|180|v|150|
+pipe2d|null|red|red|9|0|80|h|160|v|150|
+pipe2d|null|orange|orange|9|0|92|h|140|v|150|
+pipe2d|null|yellow|yellow|9|300|104|h|120|v|150|
+pipe2d|null|green|green|10|300|120|h|100|v|150|
+link|5|5|5|firebrick|start|feed.svg|Feed|cool.svg|Cooling Tower|switch.svg|Main Switching|spray.svg|Spray|tina.svg|Tina|transfer.svg|Transfer|gauge.svg|Gauges|pipes.svg|Pipes|pipes2d.svg|Pipes 2D|
+

@@ -1,0 +1,31 @@
+# Secuencia Analisis Cromatografico 
+Print|6|----------- Establizacion ----------|
+SendDO|4|EV1|T|
+SendDO|4|BOMBA1|T|
+Wait|5|10:00|
+Print|6|----------- Solucion Basica ----------|
+Empezar Adquisicion de Datos|2|dataout.txt|FLM1|
+SendDO|4|BOMBA2|T|
+Wait|5|30:00|
+Print|6|----------- Poner Solucion Acido ----------|
+SendDO|4|EV1|F|
+SendDO|4|EV2|T|
+Wait|5|50:00|
+Parar Adquisicion de Datos|3|dataout.txt|
+Print|6|----------- Lavado la columna ----------|
+SendDO|4|BOMBA2|F|
+SendDO|4|EV1|T|
+Wait|5|11:00|
+Print|6|----------- Repaso ----------|
+SendDO|4|BOMBA1|F|
+SendDO|4|EV1|T|
+SendDO|4|EV2|F|
+SendDO|4|EV3|F|
+Wait|5|5:00|
+Print|6|----------- Reiniciar ----------|
+SendDO|4|BOMBA1|F|
+SendDO|4|BOMBA2|F|
+SendDO|4|EV1|F|
+SendDO|4|EV2|F|
+SendDO|4|EV3|F|
+Print|6|----------- Fin ----------|

@@ -1,0 +1,23 @@
+green_do_1|Green Light 1|0|0|0|ON|OFF|0|
+yellow_do_1|Yellow Light 1|0|0|1|ON|OFF|0|
+red_do_1|Red Light 1|0|0|2|ON|OFF|0|
+buzzer_1|First Buzzer|0|0|3|ON|OFF|0|
+green_do_2|Green Light 2|0|0|4|ON|OFF|0|
+yellow_do_2|Yellow Light 2|0|0|5|ON|OFF|0|
+red_do_2|Red Light 2|0|0|6|ON|OFF|0|
+buzzer_2|Second Buzzer|0|0|7|ON|OFF|0|
+valve_1|Valve 1|0|0|8|ON|OFF|0|
+valve_2|Valve 2|0|0|9|ON|OFF|0|
+waited_5|Waited 5|0|0|99|ON|OFF|0|
+#changing_filter_1|ch f1|0|0|10|ON|OFF|0|
+#changing_filter_2|ch f2|0|0|11|ON|OFF|0|
+#lo_level|Low Level|0|0|12|ON|OFF|0|
+#hi_level|High Level|0|0|13|ON|OFF|0|
+#    Tag
+#    Description
+#    Driver Number
+#    Card
+#    Channel
+#    Low Description
+#    High Description
+#    Invert PV

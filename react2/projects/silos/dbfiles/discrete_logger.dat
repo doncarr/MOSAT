@@ -1,0 +1,12 @@
+#switch_log|Log de Switches|switch_log|0|switch_1|B|switch_2|B|switch_3|B|switch_4|B|
+#    Tag
+#    Description
+#    Base File Name (actual name is base + YYYYMMDD) (can include path) 
+#    Log Hour Totals? T/F
+#    Tag 1 
+#    Obj 1 Log Rising, Falling, Both (L, R, or B)
+#    Tag 2 
+#    Obj 2 Log Rising, Falling, Both (L, R, or B)
+#    . . . . 
+#    Tag N 
+#    Obj N Log Rising, Falling, Both (L, R, or B)

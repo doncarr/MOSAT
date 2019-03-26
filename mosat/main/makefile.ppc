@@ -1,0 +1,47 @@
+
+export CPATH=../../include
+
+CC= powerpc-linux-g++ -I/usr/local/include
+DIR=ppc/
+
+all:	$(DIR)ppc_record $(DIR)dump_events $(DIR)mosatsync
+
+$(DIR)%.o:      %.cpp $(INCLUDES)
+	$(CC) -c -fpic -o $(DIR)$@ -Wall $<
+
+$(DIR)ppc_record.o: ppc_record.cpp $(INCLUDES)
+	$(CC) -c -o $(DIR)ppc_record.o ppc_record.cpp
+
+$(DIR)train_detect.o: train_detect.cpp $(INCLUDES)
+	$(CC) -c -o $(DIR)train_detect.o train_detect.cpp
+
+$(DIR)ppc_logger.o: ppc_logger.cpp $(INCLUDES)
+	$(CC) -c -o $(DIR)ppc_logger.o ppc_logger.cpp
+
+$(DIR)event_detect.o: event_detect.cpp $(INCLUDES)
+	$(CC) -c -o $(DIR)event_detect.o event_detect.cpp
+
+$(DIR)dump_events.o: dump_events.cpp $(INCLUDES)
+	$(CC) -c -o $(DIR)dump_events.o dump_events.cpp
+
+$(DIR)ppc_record: $(DIR)ppc_record.o  $(DIR)train_detect.o $(DIR)ppc_logger.o $(DIR)event_detect.o train_detect.h
+	$(CC) -o $(DIR)ppc_record -lpthread $(DIR)ppc_record.o $(DIR)event_detect.o \
+	$(DIR)train_detect.o $(DIR)ppc_logger.o -lrtcommon -lsxiodb -lsxio
+
+$(DIR)mosatsync: mosatsync.cpp
+	$(CC) -o $(DIR)mosatsync mosatsync.cpp
+
+#$(DIR)oem_iodb_cpp.o:	oem_iodb_cpp.cpp
+#	$(CC) -o $(DIR)oem_iodb_cpp.o -c -g -Wall oem_iodb_cpp.cpp
+
+#$(DIR)oem_iodb_cpp: $(DIR)oem_iodb_cpp.o 
+#	$(CC) -o $(DIR)oem_iodb_cpp  $(DIR)oem_iodb_cpp.o -lsxiodb -lsxio
+
+#$(DIR)ppc_thr:        thread.cpp
+#	$(CC) -lpthread -o $(DIR)ppc_thr thread.cpp 
+
+#$(DIR)dump_events:        $(DIR)dump_events.o
+#	$(CC) -lpthread -o $(DIR)dump_events $(DIR)dump_events.o
+
+clean: 
+	rm -fv $(DIR)*.o $(DIR)myconnect $(DIR)ppc_record $(DIR)dump_events $(DIR)mosatsync

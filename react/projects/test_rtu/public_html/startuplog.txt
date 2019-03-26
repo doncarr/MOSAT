@@ -1,0 +1,82 @@
+Sat Jul 25 09:18:36 2009
+React PID: 3384
+Loading db point factory from: /usr/local/lib/ai.so
+Reading AI ........
+LEVEL|NIVEL|cm|0|0|0|500.0|0.0|0|32767|1|-125.0|0|0|0|0|0|0|0|0|0|
+Count|Count|n|0|0|2|0.0|10.0|0|10|1|-125.0|0|0|0|0|0|0|0|0|0|
+Reading ao ........
+Reading di ........
+PUMP1_ON|Bomba 1 ON|0|0|0|OFF|ON|N|N|
+PUMP2_ON|Bomba 1 ON|0|0|1|OFF|ON|N|N|
+PUMP3_ON|Bomba 1 ON|0|0|2|OFF|ON|N|N|
+PUMP4_ON|Bomba 1 ON|0|0|3|OFF|ON|N|N|
+COM_FAILED|Communications Failed|0|0|16|ALARM|OK|N|N|
+Reading do ........
+BOMBA1|Bomba 1|0|0|0|Off|On|
+BOMBA2|Bomba 2|0|0|1|Off|On|
+BOMBA3|Bomba 3|0|0|2|Off|On|
+BOMBA4|Bomba 4|0|0|3|Off|On|
+Reading pci ........
+Reading calc ........
+Reading discrete calc ........
+.//dbfiles/discrete_calc.dat: No such file or directory
+Can't open .//dbfiles/discrete_calc.dat
+0 discrete calcs read
+Reading dcalc ........
+Reading timer ........
+.//dbfiles/timer.dat: No such file or directory
+Can't open file: .//dbfiles/timer.dat
+num_timer = 0
+Reading analog values ........
+.//dbfiles/analog_value.dat: No such file or directory
+Can't open file: .//dbfiles/analog_value.dat
+num analog values = 0
+Reading discrete values ........
+.//dbfiles/discrete_value.dat: No such file or directory
+Can't open file: .//dbfiles/discrete_value.dat
+num discrete values = 0
+Reading int ........
+Reading pid ........
+Reading pump ........
+Reading ac ........
+Reading level ........
+Reading data ........
+Reading file logger ........
+Reading discrete logger ........
+pump_log|Log de pumps|pump_log|F|PUMP1_ON|R|PUMP2_ON|F|PUMP3_ON|B|PUMP4_ON|B|
+collection is on for pump_log
+discrete point [0]: PUMP1_ON, rising only
+discrete point [1]: PUMP2_ON, falling only
+discrete point [2]: PUMP3_ON, both rising and falling
+discrete point [3]: PUMP4_ON, both rising and falling
+Reading scan ........
+Reading web points ........
+web1|Pump Web Page|1.0|pump_temp.html|pump_diagram.html|
+LEVEL)
+Args for AI = 1
+COUNT)
+Args for AI = 1
+LEVEL|../extra/bar.png|../extra/half_off.png|../extra/half_on.png                                                      Args for AI = 4
+-- 4 parameter bar
+Bar: ../extra/bar.png, ../extra/half_off.png, ../extra/half_on.png
+Parsing 0 Analog Expressions ......
+Parsing 0 Discrete Expressions ......
+-- Reading background scripts: .//dbfiles/background.dat
+background.txt
+background2.txt
+background3.txt
+Loading iodrivers from: .//dbfiles/drivers.dat
+../../drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||10.1.0.5:502|
+Loading iodriver from: ../../drivers/modbusdrv/libreactmodbusdrv.so
+Class factory function is: new_reactmodbus
+Creating new reactmodbus iodriver
+initializing modbus
+Using ip passed to driver: 10.1.0.5:502
+DONE initializing modbus
+Initializing semaphores
+DONE Initializing semaphores
+Done with modbus.dat
+Creating thread
+DONE Creating thread
+Sat Jul 25 09:18:36 2009
+No foreground script executing, use "kill -1 3384" or <CTRL-C> to stop

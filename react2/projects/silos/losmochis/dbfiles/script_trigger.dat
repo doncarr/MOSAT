@@ -1,0 +1,9 @@
+# Tag (string max 25)
+# Description (string max 50)
+# Discrete Trigger Point 
+# Script to run (low to high)  
+# Delay in seconds (after changes in DI) 
+# Script to run (high to low) 
+# Delay in seconds (after changes in DI) 
+Motor_on_off|Motor control on/off|motor_run|start_motor|15|stop_motor|0|
+

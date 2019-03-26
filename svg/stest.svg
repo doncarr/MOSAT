@@ -1,0 +1,729 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="100%" height="100%" viewBox="0 0 320 160" onload="load()">
+
+  <title>Atemajac Pumps</title>
+  <metadata>author: Don Carr</metadata>
+
+  <rect fill="tan" x="0%" y="0%" width="100%" height="100%" stroke="none" stroke-width="0"/>
+
+
+  <script type="text/ecmascript"><![CDATA[
+    var angle=45;
+    var level=100;
+    var lo_level=30;
+    var hi_level=160;
+    var hi_hi_level=205;
+    var pump_1_on=false;
+    var pump_2_on=false;
+    var pump_3_on=false;
+    var switch_1_on=false;
+    var switch_2_on=false;
+    var switch_3_on=false;
+    var pump_1_amps=0;
+    var pump_2_amps=0;
+    var pump_3_amps=0;
+    var needle_obj;
+    var bneedle_obj;
+    var bneedle2_obj;
+    var pump_1_obj;
+    var pump_2_obj;
+    var pump_3_obj;
+    var level_1_obj;
+    var level_2_obj;
+    var level_3_obj;
+    var bar_obj;
+    var pv_text_obj;
+    var bpv_text_obj;
+    var tcount=0;
+    var xReq;
+    var hrf;
+    var up=true;
+    var shape;
+    const svgNS = "http://www.w3.org/2000/svg";
+
+function TicData()
+{
+  this.screen_val=0.0;
+  this.eu_val=0.0;
+  this.is_major=false;
+}
+
+function ScaleInfo()
+{
+  this.max_val=0.0;
+  this.max_major=0.0;
+  this.major_inc=0.0;
+  this.minor_inc=0.0;
+  this.n_major=0;
+  this.n_minor=0;
+  this.n_dec=0;
+  this.screen_min=0.0;
+  this.screen_max=0.0;
+}
+
+function f_do_print(max)
+{
+  console.log("max_val = " + this.max_val);
+  console.log("max_major = " + this.max_major);
+  console.log("major_inc = " + this.major_inc);
+  console.log("minor_inc = " + this.minor_inc);
+  console.log("n_major = " + this.n_major);
+  console.log("n_minor = " + this.n_minor);
+  console.log("n_dec = " + this.n_dec);
+}
+
+ScaleInfo.prototype.print=f_do_print;
+
+
+function log10(a_val)
+{
+  console.log("In log10 a_val = " + a_val);
+  var the_log = Math.log(a_val) / 2.302585;
+  console.log("In log10 log = " + the_log);
+  return the_log;
+}
+
+function f_reset_tic()
+{
+  this.major_tic = 0;
+  this.minor_tic = 0;
+  return true;
+}
+ScaleInfo.prototype.reset_tic=f_reset_tic;
+
+function f_next_tic(tic_data)
+{
+  if (this.minor_tic >= this.n_minor)
+  {
+    this.major_tic++;
+    this.minor_tic=0;
+  }
+
+  var screen_span=(this.screen_max-this.screen_min) * (this.max_major / this.max_val);
+  var tic_span=screen_span / (this.n_major * this.n_minor);
+  var eu_span=this.max_major / (this.n_major * this.n_minor);   
+
+  tic_data.screen_val=this.screen_min + (screen_span * (this.major_tic / this.n_major));
+  tic_data.eu_val=this.max_major * (this.major_tic / this.n_major);
+  //console.log("next: " + screen_span + ", " + tic_span + ", " + eu_span);
+  //console.log(" : " + tic_data.screen_val + ", " + tic_data.eu_val);
+
+  //console.log("n_minor: " + this.n_minor + ", n: " + this.minor_tic);
+  //console.log("** tics: " + this.major_tic + ", " + this.minor_tic);
+
+  if (this.minor_tic==0)
+  {
+    this.minor_tic=1;
+    tic_data.is_major=true; 
+    if (tic_data.eu_val > this.max_val)
+    {
+      return false;
+    } 
+    else
+    {
+      return true;
+    }
+  }
+  else
+  {
+    //console.log("@@ " + tic_data.screen_val + "," + this.minor_tic + ", " + tic_span);
+    //console.log("@@ " + tic_data.eu_val + "," + this.minor_tic + ", " + eu_span);
+    tic_data.screen_val += this.minor_tic*tic_span;
+    tic_data.eu_val += this.minor_tic*eu_span;
+    tic_data.is_major=false;
+    //console.log("@@ " + tic_data.screen_val + "," + this.minor_tic + ", " + tic_span);
+    //console.log("@@ " + tic_data.eu_val + "," + this.minor_tic + ", " + eu_span);
+    if (tic_data.eu_val > this.max_val)
+    {
+      return false;
+    } 
+    else
+    {
+      this.minor_tic++;
+      return true;
+    }
+  }
+}
+ScaleInfo.prototype.next_tic=f_next_tic;
+
+function f_do_calcs(max, screen_min, screen_max)
+{
+  console.log("max = " + max);
+  var the_log = log10(max); 
+  var the_floor = Math.floor(the_log);
+  var z99 = max / Math.pow(10.0, (the_floor - 1)); 
+  var the_scale=0.0;
+  var top_major=0.0;
+
+  console.log("log = " + the_log);
+  console.log("floor = " + the_floor);
+  console.log("z99 = " + z99);
+
+  this.screen_min = screen_min;
+  this.screen_max = screen_max;
+  if (z99 >= 100.0) 
+  {
+    the_scale = 100;
+    top_major = 100;
+    this.n_major = 5;
+    this.n_minor = 4;
+  } 
+  else if (z99 >= 90.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 90;
+    this.n_major = 9;
+    this.n_minor = 2;
+  }
+  else if (z99 >= 80.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 80;
+    this.n_major = 4;
+    this.n_minor = 4;
+  }
+  else if (z99 >= 60.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 60;
+    this.n_major = 3;
+    this.n_minor = 4;
+  }
+  else if (z99 >= 50.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 50;
+    this.n_major = 5;
+    this.n_minor = 4;
+  }
+  else if (z99 >= 40.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 40;
+    this.n_major = 4;
+    this.n_minor = 4;
+  }
+  else if (z99 >= 35.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 35;
+    this.n_major = 7;
+    this.n_minor = 2;
+  }
+  else if (z99 >= 30.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 30;
+    this.n_major = 3;
+    this.n_minor = 4;
+  }
+  else if (z99 >= 25.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 25;
+    this.n_major = 5;
+    this.n_minor = 5;
+  }
+  else if (z99 >= 20.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 20;
+    this.n_major = 4;
+    this.n_minor = 5;
+  }
+  else if (z99 >= 18.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 18;
+    this.n_major = 6;
+    this.n_minor = 3;
+  }
+  else if (z99 >= 15.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 15;
+    this.n_major = 5;
+    this.n_minor = 3;
+  }
+  else if (z99 >= 14.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 14;
+    this.n_major = 7;
+    this.n_minor = 2;
+  }
+  else if (z99 >= 12.0) 
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 12;
+    this.n_major = 6;
+    this.n_minor = 2;
+  }
+  else
+  {
+    the_scale = Math.ceil(z99);
+    top_major = 10;
+    this.n_major = 5;
+    this.n_minor = 2;
+  }
+  console.log("top = " + the_scale);
+  console.log("top_major = " + top_major);
+  console.log("n_major = " + this.n_major);
+  console.log("n_minor = " + this.n_minor);
+  this.n_dec = 0; 
+  if (the_floor < 1)
+  {
+    this.n_dec = (-the_floor) + 1;
+  }
+
+  this.major_inc = ((top_major) /(this.n_major)) *  Math.pow(10.0, (the_floor - 1));
+  this.minor_inc = ((top_major) / (this.n_major * this.n_minor)) *  Math.pow(10.0, (the_floor - 1));
+  this.max_val = (the_scale) *  Math.pow(10.0, (the_floor - 1));
+  this.max_major = (top_major) *  Math.pow(10.0, (the_floor - 1));
+}
+
+ScaleInfo.prototype.calc=f_do_calcs;
+
+    function intervalHandler()
+    {
+      do_animate();
+    };
+
+    function pump_1_timeout()
+    {
+      pump_1_on=!pump_1_on; 
+    };
+
+    function pump_2_timeout()
+    {
+      pump_2_on=!pump_2_on; 
+    };
+
+    function pump_3_timeout()
+    {
+      pump_3_on=!pump_3_on; 
+    };
+
+    function create_text(val, angle, cx, cy, radius, font_size)
+    {
+      var rads;
+      var x;
+      var y;
+      var shape;
+
+      rads = (angle - 90.0) * ((2.0 * Math.PI) / 360.0);
+      x = cx - (radius * Math.cos(rads));
+      y = cy - (radius * Math.sin(rads));
+      console.log("vals- x:" + x + ", y:" + y + ", rads:" + rads);
+      shape = document.createElementNS(svgNS, "text");
+      shape.setAttribute("x", x);
+      shape.setAttribute("y", y);
+      shape.setAttribute("font-size", font_size);
+      shape.setAttribute("baseline-shift", "-33%");
+      shape.setAttribute("text-anchor", "middle");
+      shape.textContent=Math.round(val);
+      document.documentElement.appendChild(shape);
+    }
+
+
+    function load()
+    {
+
+      var sinfo = new ScaleInfo();
+      var tdata = new TicData();
+      sinfo.print();
+      sinfo.calc(400,45,315);
+      sinfo.print();
+      sinfo.reset_tic();
+      while(sinfo.next_tic(tdata))
+      {
+        var mystr;
+        if (tdata.is_major)
+        {
+          console.log("======== " + tdata.eu_val + ", " + tdata.screen_val);
+          shape = document.createElementNS(svgNS, "polygon");
+          shape.setAttribute("points", "75,140 72.5,145 77.5,145");
+          shape.setAttribute("style", "fill:black;stroke:none;stroke-width:0");
+          mystr= "rotate("+ tdata.screen_val + " 75 75)";
+          console.log(mystr);
+          shape.setAttribute("transform", mystr);
+          document.documentElement.appendChild(shape);
+          create_text(tdata.eu_val, tdata.screen_val, 75, 75, 52.5, 10)
+        }
+        else
+        {
+          console.log("- " + tdata.eu_val + ", " + tdata.screen_val);
+          shape = document.createElementNS(svgNS, "line");
+          shape.setAttribute("x1", 75);
+          shape.setAttribute("y1", 140);
+          shape.setAttribute("x2", 75);
+          shape.setAttribute("y2", 145);
+          shape.setAttribute("style", "stroke:black;stroke-width:1");
+          mystr= "rotate("+ tdata.screen_val + " 75 75)";
+          console.log(mystr);
+          shape.setAttribute("transform", mystr);
+          document.documentElement.appendChild(shape);
+        }
+      } 
+      needle_obj = document.getElementById("red_needle");
+      bneedle_obj = document.getElementById("blue_needle");
+      bneedle2_obj = document.getElementById("blue_needle2");
+      angle=hi_level+45.0;
+      bneedle_obj.setAttribute("transform", "rotate(" + angle + " 75 75)");
+      angle=lo_level+45.0;
+      bneedle2_obj.setAttribute("transform", "rotate(" + angle + " 75 75)");
+      pv_text_obj = document.getElementById("pv_text");
+      bpv_text_obj = document.getElementById("bpv_text");
+      bpv_text_obj.textContent=lo_level + "-" + hi_level;
+      pump_1_obj = document.getElementById("pump_1_obj");
+      pump_2_obj = document.getElementById("pump_2_obj");
+      pump_3_obj = document.getElementById("pump_3_obj");
+      level_1_obj = document.getElementById("level_1_obj");
+      level_2_obj = document.getElementById("level_2_obj");
+      level_3_obj = document.getElementById("level_3_obj");
+      var interval = setInterval("intervalHandler()", 200);
+      /****
+      shape = document.createElementNS(svgNS, "circle");
+      shape.setAttribute("cx", 180);
+      shape.setAttribute("cy", 140);
+      shape.setAttribute("r",  5);
+      shape.setAttribute("fill", "red");
+      document.documentElement.appendChild(shape);
+       ****/
+      //shape.setAttribute("visibility", "visibile");
+      //document.documentElement.forceRedraw();
+    };
+
+    function do_animate()
+    {
+      if (up)
+      {
+        if (level > (lo_level+2)) switch_1_on=true;
+        if (level > (hi_level+1))
+        { 
+          up=false;
+          switch_2_on=true;
+          setTimeout("pump_1_timeout()", 1000);
+          setTimeout("pump_2_timeout()", 4000);
+          setTimeout("pump_3_timeout()", 7000);
+        }
+        if (level > (hi_hi_level+2)) switch_3_on=true;
+      }
+      else
+      {
+        if (level < (lo_level-1)) 
+        {
+          up=true;
+          switch_1_on=false;
+          setTimeout("pump_3_timeout()", 1000);
+          setTimeout("pump_2_timeout()", 4000);
+          setTimeout("pump_1_timeout()", 7000);
+        }
+        if (level < (hi_level-3)) switch_2_on=false;
+        if (level < (hi_hi_level-3)) switch_3_on=false;
+      }
+      var rate=5.0;
+      if (pump_1_on) rate -= 3.0;
+      if (pump_2_on) rate -= 3.0;
+      if (pump_3_on) rate -= 3.0;
+      level+=rate*0.1;
+      level=level+((Math.random()-0.5)*0.8)
+      angle=level+45;
+      needle_obj.setAttribute("transform", "rotate(" + angle + " 75 75)");
+      pv_text_obj.textContent=Math.round(level);
+      if(pump_1_on) { pump_1_obj.setAttribute("fill", "lime"); }
+      else { pump_1_obj.setAttribute("fill", "gray"); }
+      if(pump_2_on) { pump_2_obj.setAttribute("fill", "lime"); }
+      else { pump_2_obj.setAttribute("fill", "gray"); }
+      if(pump_3_on) { pump_3_obj.setAttribute("fill", "lime"); }
+      else { pump_3_obj.setAttribute("fill", "gray"); }
+      if(switch_1_on) { level_1_obj.setAttribute("fill", "yellow"); }
+      else { level_1_obj.setAttribute("fill", "gray"); }
+      if(switch_2_on) { level_2_obj.setAttribute("fill", "yellow"); }
+      else { level_2_obj.setAttribute("fill", "gray"); }
+      if(switch_3_on) { level_3_obj.setAttribute("fill", "yellow"); }
+      else { level_3_obj.setAttribute("fill", "gray"); }
+    };
+
+    var functions = [do_animate, load, create_text];
+
+    function doit()
+    {
+      for(var i=0; i < functions.length; i++)
+      {
+        functions[i].update(10);
+      }
+    }
+
+  ]]></script>
+
+
+  <defs>
+
+    <radialGradient id="grayRadial" cx="50%" cy="50%" r="50%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#fafafa" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#808080" stop-opacity="1"/>
+    </radialGradient>
+
+    <linearGradient id="grLinearV" x1="0%" y1="0%" x2="100%" y2="0%" spreadMethod="pad" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#808080" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#fafafa" stop-opacity="1"/>
+    </linearGradient>
+
+  </defs>
+  <rect x="0" y="0" rx="20" ry="20" width="150" height="150"
+  style="fill:#2F4F4F;stroke:black;stroke-width:3;opacity:1.0"/>
+
+  <circle cx="75" cy="75" r="70" fill="white"/>
+
+  <!--
+  <path fill="none" stroke="yellow" stroke-width="5" 
+     d="M75,7.5 A67.5,67.5 0 0,1 142.5,75"/>
+  -->
+
+
+<path fill="none" stroke="yellow" stroke-width="5.000000"
+   d="M118.388164,23.292000 A67.500000,67.500000 0 0,1 141.474523,63.278748"/>
+
+<path fill="none" stroke="red" stroke-width="5.000000"
+   d="M141.474523,63.278748 A67.500000,67.500000 0 0,1 122.729708,122.729708"/>
+
+
+  <circle cx="75" cy="75" r="65" fill="cornsilk"
+         style="stroke:rgb(30,30,30);stroke-width:1"/>
+
+  <circle cx="15" cy="15" r="3" stroke="none" stroke-width="0" fill="black"/>
+  <line x1="13" y1="15" x2="17" y2="15" transform="rotate(20 15 15)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <line x1="13" y1="15" x2="17" y2="15" transform="rotate(110 15 15)"
+
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <circle cx="135" cy="15" r="3" stroke="none" stroke-width="0" fill="black"/>
+  <line x1="133" y1="15" x2="137" y2="15" transform="rotate(-10 135 15)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <line x1="133" y1="15" x2="137" y2="15" transform="rotate(80 135 15)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+
+  <circle cx="15" cy="135" r="3" stroke="none" stroke-width="0" fill="black"/>
+  <line x1="13" y1="135" x2="17" y2="135" transform="rotate(3 15 135)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <line x1="13" y1="135" x2="17" y2="135" transform="rotate(93 15 135)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+
+  <circle cx="135" cy="135" r="3" stroke="none" stroke-width="0" fill="black"/>
+  <line x1="133" y1="135" x2="137" y2="135" transform="rotate(17 135 135)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+  <line x1="133" y1="135" x2="137" y2="135" transform="rotate(107 135 135)"
+      style="stroke:rgb(64,65,65);stroke-width:1.2"/>
+
+
+<!--
+  <line id="red_needle" x1="75" y1="75" x2="75" y2="145"
+  style="stroke:rgb(255,0,0);stroke-width:2"/>
+-->
+
+<defs>
+<filter id='dropShadow' x='0%' y='-10%' height='140%'><feGaussianBlur in='SourceAlpha' stdDeviation='3' /><feOffset dx='5px' dy='5px' result='offsetBlur'/><feMerge><feMergeNode in='offsetBlur'/><feMergeNode in='SourceGraphic'/></feMerge></filter>
+</defs>
+
+
+  <path fill="blue" id="blue_needle" 
+      d="M69,75 A6,6 0 1,1 81,75 L75,140 Z" style="fill-opacity:0.3"
+         onmouseover="this.title='Testing, what will happen??';"/>
+  <path fill="blue" id="blue_needle2" 
+      d="M69,75 A6,6 0 1,1 81,75 L75,140 Z" style="fill-opacity:0.3"
+         onmouseover="this.style.cursor='crosshair';"/>
+
+<!-- With a tail
+  <path fill="green" id="red_needle" 
+      d="M69,75 A6,6 0 1,1 81,75 L75,140 Z M70,72 L75,64 L80,72 Z" />
+-->
+
+  <path fill="green" id="red_needle" 
+      d="M69,75 A6,6 0 1,1 81,75 L75,140 Z" />
+
+
+
+<!-- A125,50 0 1,1 250,50 -->
+
+
+
+<!-- Angle = 45 sin = -0.71, cos = 0.71-->
+<!-- 
+<text x="37.876894" y="112.123106" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle" style="filter:url(#dropShadow);">0</text>
+-->
+
+
+
+<!--
+<text x="75" y="127.5" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle" transform="rotate(45 75 75) rotate(-45 75 127.5) ">0</text>
+<text x="22.500000" y="75.000000" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">45</text>
+<text x="37.876894" y="37.876894" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">90</text>
+<text x="75.000000" y="22.500000" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">135</text>
+<text x="112.123106" y="37.876894" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">180</text>
+<text x="127.500000" y="75.000000" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">225</text>
+<text x="112.123106" y="112.123106" font-size="10.000000"
+   baseline-shift="-33%" text-anchor="middle">270</text>
+-->
+
+
+<!--
+  <path fill="black" transform="rotate(45 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(50 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(55 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(60 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(65 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(70 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(75 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(80 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(85 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(90 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(95 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(100 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(105 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(110 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(115 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(120 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(125 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(130 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(135 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(140 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(145 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(150 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(155 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(160 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(165 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(170 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(175 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(180 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(185 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(190 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(195 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(200 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(205 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(210 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(215 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(220 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(225 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(230 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(235 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(240 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(245 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(250 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(255 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(260 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(265 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(270 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(275 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(280 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(285 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(290 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(295 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(300 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(305 75 75)"
+  style="stroke:black;stroke-width:1"/>
+  <line x1="75" y1="140" x2="75" y2="145" transform="rotate(310 75 75)"
+  style="stroke:black;stroke-width:1"/>
+
+  <path fill="black" transform="rotate(315 75 75)"
+      d="M75,140 L72.5,145 L77.5,145 L75,140"/>
+-->
+
+  <circle cx="75" cy="75" r="4" stroke="none" stroke-width="0" fill="black"/>
+
+  <text id="pv_text" x="75" y="100" font-size="20" style="fill:green;" 
+       alignment-baseline="middle" text-anchor="middle">300</text>
+
+  <text id="bpv_text" x="75" y="120" font-size="15" style="fill:blue;" 
+       alignment-baseline="middle" text-anchor="middle">300</text>
+
+  <text id="eulabel_text" x="75" y="132" font-size="12" 
+       alignment-baseline="middle" text-anchor="middle">cm</text>
+
+  <circle id="pump_1_obj" cx="180" cy="30" r="15" fill="lime" stroke="black" stroke-width="1"/>
+  <text x="180" y="50" font-size="10"
+       baseline-shift="-66%" text-anchor="middle">Pump 1</text>
+  <circle id="pump_2_obj" cx="220" cy="30" r="15" fill="lime" stroke="black" stroke-width="1"/>
+  <text x="220" y="50" font-size="10"
+       baseline-shift="-66%" text-anchor="middle">Pump 2</text>
+  <circle id="pump_3_obj" cx="260" cy="30" r="15" fill="lime" stroke="black" stroke-width="1"/>
+  <text x="260" y="50" font-size="10"
+       baseline-shift="-66%" text-anchor="middle">Pump 3</text>
+
+  <circle id="level_3_obj" cx="180" cy="80" r="5" fill="yellow" stroke="black" stroke-width="1"/>
+  <text x="190" y="80" font-size="8"
+       baseline-shift="-33%" text-anchor="start">VERY High Level Switch</text>
+  <circle id="level_2_obj" cx="180" cy="100" r="5" fill="yellow" stroke="black" stroke-width="1"/>
+  <text x="190" y="100" font-size="8"
+       baseline-shift="-33%" text-anchor="start">High Level Switch</text>
+  <circle id="level_1_obj" cx="180" cy="120" r="5" fill="yellow" stroke="black" stroke-width="1"/>
+  <text x="190" y="120" font-size="8"
+       baseline-shift="-33%" text-anchor="start">Low Level Switch</text>
+
+</svg>

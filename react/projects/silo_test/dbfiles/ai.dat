@@ -1,0 +1,30 @@
+RAW_HUM_1|Relative Humidity 1|%|0|0|0|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+HUM_1|Relative Humidity 1|%|0|0|1|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+RAW_HUM_2|Relative Humidity 2|%|0|0|2|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+HUM_2|Relative Humidity 2|%|0|0|3|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+RAW_Temp|Temperature|%|0|0|4|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Temp|Temperature|%|0|0|5|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+minutes|Minutes from Midnight|min|0|0|12|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+HUM_LO|Minimum Humidity for fans|%|0|0|8|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+HUM_HI|Maximum Humidity for fans|%|0|0|9|0.0|100.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+#    Tag
+#    Description
+#    Engineering Units Label
+#    Driver Number
+#    Card
+#    Channel
+#    Engineering Units Low
+#    Engineering Units High
+#    Raw Value Low
+#    Raw Value High
+#    Decimal Places
+#    Zero Cutoff
+#    Alarm Low
+#    Caution Low
+#    Caution High
+#    Alarm High
+#    Alarm Deadband
+#    Alarm Low Enable
+#    Caution Low Enable
+#    Caution High Enable
+#    Alarm High Enable

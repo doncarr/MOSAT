@@ -1,0 +1,6 @@
+svg_header|My Title|0|0|300|150|
+background|thistle|
+imasa_logo|0|0|35|
+trasladar|LEVEL|mediumslateblue|20|20|280|75
+trasladar|PUMP1_AMP|pink|10|20|280|40
+trasladar|PUMP2_AMP|green|10|20|280|100

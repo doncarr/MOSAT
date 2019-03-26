@@ -1,0 +1,15 @@
+
+export CPATH=../../../include:../../
+
+
+CPP=arm-unknown-linux-gnu-g++ -mcpu=arm9
+
+libsimpumpdrv.so: simpumpdrv.o simpumpdrv.h
+	$(CPP) -o libsimpumpdrv.so -shared simpumpdrv.o 
+
+simpumpdrv.o: simpumpdrv.cpp
+	$(CPP) -c -fpic simpumpdrv.cpp
+
+clean:
+	rm *.o *.so
+

@@ -1,0 +1,1800 @@
+Reading config file: .//dbfiles/config.dat
+key: LogHome, val: ./log/
+key: HtmlHome, val: ./html/
+key: TemplateHome, val: ./template/
+key: SampleRate, val: 0.2
+key: SMS_ENABLED, val: F
+key: SMS_SO, val: ./librtsms.so
+key: zero_outputs_on_exit, val: F
+Creating startup logfile . . . 
+Fri Jul  9 19:53:47 2010
+React PID: 14862
+SampleRate set to: 0.200000
+Loading db point factory from: ../../../ai.so
+Reading AI ........
+U1_S1_C1_Temp_1|Temperature|degC|0|0|0|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_2|Temperature|degC|0|0|1|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_3|Temperature|degC|0|0|2|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_4|Temperature|degC|0|0|3|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_5|Temperature|degC|0|0|4|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_6|Temperature|degC|0|0|5|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_7|Temperature|degC|0|0|6|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_8|Temperature|degC|0|0|7|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_9|Temperature|degC|0|0|8|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_10|Temperature|degC|0|0|9|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_11|Temperature|degC|0|0|10|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C1_Temp_12|Temperature|degC|0|0|11|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_1|Temperature|degC|0|0|12|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_2|Temperature|degC|0|0|13|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_3|Temperature|degC|0|0|14|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_4|Temperature|degC|0|0|15|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_5|Temperature|degC|0|0|16|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_6|Temperature|degC|0|0|17|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_7|Temperature|degC|0|0|18|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_8|Temperature|degC|0|0|19|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_9|Temperature|degC|0|0|20|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_10|Temperature|degC|0|0|21|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_11|Temperature|degC|0|0|22|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C2_Temp_12|Temperature|degC|0|0|23|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_1|Temperature|degC|0|0|24|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_2|Temperature|degC|0|0|25|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_3|Temperature|degC|0|0|26|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_4|Temperature|degC|0|0|27|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_5|Temperature|degC|0|0|28|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_6|Temperature|degC|0|0|29|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_7|Temperature|degC|0|0|30|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_8|Temperature|degC|0|0|31|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_9|Temperature|degC|0|0|32|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_10|Temperature|degC|0|0|33|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_11|Temperature|degC|0|0|34|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_S1_C3_Temp_12|Temperature|degC|0|0|35|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_1|Temperature|degC|0|0|36|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_2|Temperature|degC|0|0|37|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_3|Temperature|degC|0|0|38|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_4|Temperature|degC|0|0|39|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_5|Temperature|degC|0|0|40|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_6|Temperature|degC|0|0|41|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_7|Temperature|degC|0|0|42|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_8|Temperature|degC|0|0|43|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_9|Temperature|degC|0|0|44|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_10|Temperature|degC|0|0|45|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_11|Temperature|degC|0|0|46|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C1_Temp_12|Temperature|degC|0|0|47|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_1|Temperature|degC|0|0|48|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_2|Temperature|degC|0|0|49|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_3|Temperature|degC|0|0|50|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_4|Temperature|degC|0|0|51|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_5|Temperature|degC|0|0|52|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_6|Temperature|degC|0|0|53|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_7|Temperature|degC|0|0|54|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_8|Temperature|degC|0|0|55|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_9|Temperature|degC|0|0|56|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_10|Temperature|degC|0|0|57|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_11|Temperature|degC|0|0|58|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C2_Temp_12|Temperature|degC|0|0|59|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_1|Temperature|degC|0|0|60|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_2|Temperature|degC|0|0|61|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_3|Temperature|degC|0|0|62|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_4|Temperature|degC|0|0|63|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_5|Temperature|degC|0|0|64|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_6|Temperature|degC|0|0|65|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_7|Temperature|degC|0|0|66|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_8|Temperature|degC|0|0|67|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_9|Temperature|degC|0|0|68|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_10|Temperature|degC|0|0|69|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_11|Temperature|degC|0|0|70|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S1_C3_Temp_12|Temperature|degC|0|0|71|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_1|Temperature|degC|0|0|72|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_2|Temperature|degC|0|0|73|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_3|Temperature|degC|0|0|74|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_4|Temperature|degC|0|0|75|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_5|Temperature|degC|0|0|76|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_6|Temperature|degC|0|0|77|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_7|Temperature|degC|0|0|78|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_8|Temperature|degC|0|0|79|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_9|Temperature|degC|0|0|80|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_10|Temperature|degC|0|0|81|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_11|Temperature|degC|0|0|82|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C1_Temp_12|Temperature|degC|0|0|83|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_1|Temperature|degC|0|0|84|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_2|Temperature|degC|0|0|85|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_3|Temperature|degC|0|0|86|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_4|Temperature|degC|0|0|87|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_5|Temperature|degC|0|0|88|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_6|Temperature|degC|0|0|89|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_7|Temperature|degC|0|0|90|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_8|Temperature|degC|0|0|91|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_9|Temperature|degC|0|0|92|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_10|Temperature|degC|0|0|93|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_11|Temperature|degC|0|0|94|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C2_Temp_12|Temperature|degC|0|0|95|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_1|Temperature|degC|0|0|96|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_2|Temperature|degC|0|0|97|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_3|Temperature|degC|0|0|98|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_4|Temperature|degC|0|0|99|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_5|Temperature|degC|0|0|100|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_6|Temperature|degC|0|0|101|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_7|Temperature|degC|0|0|102|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_8|Temperature|degC|0|0|103|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_9|Temperature|degC|0|0|104|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_10|Temperature|degC|0|0|105|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_11|Temperature|degC|0|0|106|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_S2_C3_Temp_12|Temperature|degC|0|0|107|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_temp_amb|Temperature amb|degC|0|0|108|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U1_hum_rel|Humedad rel|%|0|0|109|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_temp_amb|Temperature amb|degC|0|0|124|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+U2_hum_rel|Humedad rel|%|0|0|125|0.0|10.0|0.0|100.0|1|0.0|0|0|0|0|0|0|0|0|0|
+Reading ao ........
+U1_SECS_AFTER_MID|Motor Control|%|0|0|2|0|10|0|10|1|0|500|
+U1_SECS_VENT|Motor Control|%|0|0|3|0|10|0|10|1|0|500|
+U1_YEAR|Year|year|0|0|4|0|10|0|10|0|0|9999|
+U1_MONTH|MONTH|month|0|0|5|0|10|0|10|0|1|12|
+U1_DAY|DAY|day|0|0|6|0|10|0|10|0|1|31|
+U1_HOUR|HOUR|hour|0|0|7|0|10|0|10|0|0|23|
+U1_MINUTE|MINUTE|minute|0|0|8|0|10|0|10|0|0|59|
+U1_SECOND|SECOND|second|0|0|9|0|10|0|10|0|0|59|
+U1_S1_HUM_REL_LO|U1 S1 Hum Rel Low|%|0|0|10|0|10|0|10|1|0|100|
+U1_S1_HUM_REL_HI|U1 S1 Hum Rel Hi|%|0|0|11|0|10|0|10|1|0|100|
+U2_SECS_AFTER_MID|Motor Control|%|0|0|18|0|10|0|10|1|0|500|
+Reallocating: new size = 80
+U2_SECS_VENT|Motor Control|%|0|0|19|0|10|0|10|1|0|500|
+U2_YEAR|Year|year|0|0|20|0|10|0|10|0|0|9999|
+U2_MONTH|MONTH|month|0|0|21|0|10|0|10|0|1|12|
+U2_DAY|DAY|day|0|0|22|0|10|0|10|0|1|31|
+U2_HOUR|HOUR|hour|0|0|23|0|10|0|10|0|0|23|
+U2_MINUTE|MINUTE|minute|0|0|24|0|10|0|10|0|0|59|
+U2_SECOND|SECOND|second|0|0|25|0|10|0|10|0|0|59|
+U2_S1_HUM_REL_LO|U2 S1 Hum Rel Low|%|0|0|26|0|10|0|10|1|0|100|
+U2_S1_HUM_REL_HI|U2 S1 Hum Rel Hi|%|0|0|27|0|10|0|10|1|0|100|
+U2_S2_HUM_REL_LO|U2 S2 Hum Rel Low|%|0|0|28|0|10|0|10|1|0|100|
+Reallocating: new size = 120
+U2_S2_HUM_REL_HI|U2 S2 Hum Rel Hi|%|0|0|29|0|10|0|10|1|0|100|
+Reading di ........
+U1_S1_FAN1_IS_ON|U1 S1 Fan1 On|0|0|0|OFF|ON|N|N|
+U1_S1_FAN2_IS_ON|U1 S1 Fan2 On|0|0|1|OFF|ON|N|N|
+U1_S1_AUTO_MAN|U1 S1 Auto/Man|0|0|2|MANUAL|AUTO|N|N|
+U1_S1_ON_OFF|U1 S1 On Off|0|0|3|OFF|ON|N|N|
+U2_S1_FAN1_IS_ON|U2 S1 Fan1 On|0|0|16|OFF|ON|N|N|
+U2_S1_FAN2_IS_ON|U2 S1 Fan2 On|0|0|17|OFF|ON|N|N|
+U2_S1_AUTO_MAN|U2 S1 Auto/Man|0|0|18|MANUAL|AUTO|N|N|
+U2_S1_ON_OFF|U2 S1 On Off|0|0|19|OFF|ON|N|N|
+U2_S2_FAN1_IS_ON|U2 S2 Fan1 On|0|0|20|OFF|ON|N|N|
+U2_S2_FAN2_IS_ON|U2 S2 Fan2 On|0|0|21|OFF|ON|N|N|
+U2_S2_AUTO_MAN|U2 S2 Auto/Man|0|22|10|MANUAL|AUTO|N|N|
+U2_S2_ON_OFF|U2 S2 On Off|0|0|23|OFF|ON|N|N|
+MOD_ID_0_OK|Modbus ID 1 OK|0|0|48|YES|NO|N|N|
+MOD_ID_1_OK|Modbus ID 1 OK|0|0|49|YES|NO|N|N|
+MOD_ID_2_OK|Modbus ID 1 OK|0|0|50|YES|NO|N|N|
+MOD_ID_3_OK|Modbus ID 1 OK|0|0|51|YES|NO|N|N|
+MOD_ID_4_OK|Modbus ID 1 OK|0|0|52|YES|NO|N|N|
+MOD_ID_5_OK|Modbus ID 1 OK|0|0|53|YES|NO|N|N|
+Reading do ........
+U1_S1_KILL_FANS|U1 S1 Kill Fans|0|0|0|Enabled|Disabled|
+U1_BLINK|U1 Blink|0|0|31|OFF|ON|
+U2_S1_KILL_FANS|U2 S1 Kill Fans|0|0|8|Enabled|Disabled|
+U2_S2_KILL_FANS|U2 S2 Kill Fans|0|0|9|Enabled|Disabled|
+U2_BLINK|U1 Blink|0|0|47|OFF|ON|
+Reading pci ........
+Reading calc ........
+Reading discrete calc ........
+0 discrete calcs read
+Reading dcalc ........
+Reading timer ........
+num_timer = 0
+Reading analog values ........
+num analog values = 0
+Reading discrete values ........
+num discrete values = 0
+Reading int ........
+Reading pid ........
+Reading pump ........
+Reading ac ........
+Reading level ........
+Reading data ........
+Reading file logger ........
+silo_logger_1|My silo logger|silo_logger|300|100|1|1|1|0|0|Temp_1|Temp_2|Temp_3|Temp_4|Temp_5|Temp_6|Temp_7|Temp_8|
+collection is on for silo_logger_1
+Tag = Temp_1
+Bad analog point: Temp_1
+analog point 0: Temp_1
+Tag = Temp_2
+Bad analog point: Temp_2
+analog point 1: Temp_2
+Tag = Temp_3
+Bad analog point: Temp_3
+analog point 2: Temp_3
+Tag = Temp_4
+Bad analog point: Temp_4
+analog point 3: Temp_4
+Tag = Temp_5
+Bad analog point: Temp_5
+analog point 4: Temp_5
+Tag = Temp_6
+Bad analog point: Temp_6
+analog point 5: Temp_6
+Tag = Temp_7
+Bad analog point: Temp_7
+analog point 6: Temp_7
+Tag = Temp_8
+Bad analog point: Temp_8
+analog point 7: Temp_8
+Reading web logger ........
+Reading discrete logger ........
+Line: #dlogger_1|My dlogger|dlogger|1|PUMP1_ON|B|PUMP2_ON|B|LO_LEVEL|F|HI_HI_LEVEL|R|HI_LEVEL|B|
+Line: #dlogger_1|My dlogger|silo_d_logger|1|PUMP1_ON|B|PUMP2_ON|B|LO_LEVEL|F|HI_HI_LEVEL|R|HI_LEVEL|B|
+Line: #    Tag
+Line: #    Description
+Line: #    Base File Name (actual name is base + YYYYMMDD) (can include path)
+Line: #    Tag 1
+Line: #    Tag 2
+Line: #    . . . .
+Line: #    Tag N
+Reading scan ........
+Reading web points ........
+.//dbfiles/web.dat: wrong number of args for web point: line 6
+web_U1_S1_C1|web_U1_S1_C1|1|temp_U1_S1_C1.html|temp_U1_S1_C1.html|
+U1_S1_C1_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+U1_S1_C1_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+U1_S1_C1_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+U1_S1_C1_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+U1_S1_C1_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+U1_S1_C1_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+U1_S1_C1_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+U1_S1_C1_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+U1_S1_C1_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_9|bar_small.png|small_half_off.png|small_half_on.png|100|650|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 650, 200, 0, 50
+U1_S1_C1_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_10|bar_small.png|small_half_off.png|small_half_on.png|100|700|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 700, 200, 0, 50
+U1_S1_C1_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_11|bar_small.png|small_half_off.png|small_half_on.png|100|750|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 750, 200, 0, 50
+U1_S1_C1_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C1_TEMP_12|bar_small.png|small_half_off.png|small_half_on.png|100|800|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 800, 200, 0, 50
+U1_S1_C1_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+web_U1_S1_C2|web_U1_S1_C2|1|temp_U1_S1_C2.html|temp_U1_S1_C2.html|
+U1_S1_C2_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+U1_S1_C2_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+U1_S1_C2_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+U1_S1_C2_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+U1_S1_C2_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+U1_S1_C2_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+U1_S1_C2_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+U1_S1_C2_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+U1_S1_C2_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_9|bar_small.png|small_half_off.png|small_half_on.png|100|650|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 650, 200, 0, 50
+U1_S1_C2_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_10|bar_small.png|small_half_off.png|small_half_on.png|100|700|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 700, 200, 0, 50
+U1_S1_C2_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_11|bar_small.png|small_half_off.png|small_half_on.png|100|750|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 750, 200, 0, 50
+U1_S1_C2_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C2_TEMP_12|bar_small.png|small_half_off.png|small_half_on.png|100|800|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 800, 200, 0, 50
+U1_S1_C2_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+web_U1_S1_C3|web_U1_S1_C3|1|temp_U1_S1_C3.html|temp_U1_S1_C3.html|
+U1_S1_C3_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+U1_S1_C3_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+U1_S1_C3_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+U1_S1_C3_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+U1_S1_C3_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+U1_S1_C3_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+U1_S1_C3_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+U1_S1_C3_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+U1_S1_C3_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_9|bar_small.png|small_half_off.png|small_half_on.png|100|650|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 650, 200, 0, 50
+U1_S1_C3_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_10|bar_small.png|small_half_off.png|small_half_on.png|100|700|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 700, 200, 0, 50
+U1_S1_C3_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_11|bar_small.png|small_half_off.png|small_half_on.png|100|750|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 750, 200, 0, 50
+U1_S1_C3_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U1_S1_C3_TEMP_12|bar_small.png|small_half_off.png|small_half_on.png|100|800|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 800, 200, 0, 50
+U1_S1_C3_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+web_U2_S1_C1|web_U2_S1_C1|1|temp_U2_S1_C1.html|temp_U2_S1_C1.html|
+U2_S1_C1_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+U2_S1_C1_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+U2_S1_C1_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+U2_S1_C1_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+U2_S1_C1_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+U2_S1_C1_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+U2_S1_C1_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+U2_S1_C1_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+U2_S1_C1_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_9|bar_small.png|small_half_off.png|small_half_on.png|100|650|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 650, 200, 0, 50
+U2_S1_C1_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_10|bar_small.png|small_half_off.png|small_half_on.png|100|700|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 700, 200, 0, 50
+U2_S1_C1_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_11|bar_small.png|small_half_off.png|small_half_on.png|100|750|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 750, 200, 0, 50
+U2_S1_C1_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C1_TEMP_12|bar_small.png|small_half_off.png|small_half_on.png|100|800|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 800, 200, 0, 50
+U2_S1_C1_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+web_U2_S1_C2|web_U2_S1_C2|1|temp_U2_S1_C2.html|temp_U2_S1_C2.html|
+U2_S1_C2_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+U2_S1_C2_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+U2_S1_C2_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+U2_S1_C2_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+U2_S1_C2_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+U2_S1_C2_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+U2_S1_C2_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+U2_S1_C2_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+U2_S1_C2_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_9|bar_small.png|small_half_off.png|small_half_on.png|100|650|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 650, 200, 0, 50
+U2_S1_C2_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_10|bar_small.png|small_half_off.png|small_half_on.png|100|700|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 700, 200, 0, 50
+U2_S1_C2_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_11|bar_small.png|small_half_off.png|small_half_on.png|100|750|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 750, 200, 0, 50
+U2_S1_C2_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C2_TEMP_12|bar_small.png|small_half_off.png|small_half_on.png|100|800|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 800, 200, 0, 50
+U2_S1_C2_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+web_U2_S1_C3|web_U2_S1_C3|1|temp_U2_S1_C3.html|temp_U2_S1_C3.html|
+U2_S1_C3_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+U2_S1_C3_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+U2_S1_C3_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+U2_S1_C3_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+U2_S1_C3_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+U2_S1_C3_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+U2_S1_C3_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+U2_S1_C3_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+U2_S1_C3_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_9|bar_small.png|small_half_off.png|small_half_on.png|100|650|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 650, 200, 0, 50
+U2_S1_C3_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_10|bar_small.png|small_half_off.png|small_half_on.png|100|700|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 700, 200, 0, 50
+U2_S1_C3_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_11|bar_small.png|small_half_off.png|small_half_on.png|100|750|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 750, 200, 0, 50
+U2_S1_C3_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S1_C3_TEMP_12|bar_small.png|small_half_off.png|small_half_on.png|100|800|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 800, 200, 0, 50
+U2_S1_C3_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+web_U2_S2_C1|web_U2_S2_C1|1|temp_U2_S2_C1.html|temp_U2_S2_C1.html|
+U2_S2_C1_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+U2_S2_C1_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+U2_S2_C1_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+U2_S2_C1_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+U2_S2_C1_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+U2_S2_C1_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+U2_S2_C1_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+U2_S2_C1_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+U2_S2_C1_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_9|bar_small.png|small_half_off.png|small_half_on.png|100|650|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 650, 200, 0, 50
+U2_S2_C1_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_10|bar_small.png|small_half_off.png|small_half_on.png|100|700|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 700, 200, 0, 50
+U2_S2_C1_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_11|bar_small.png|small_half_off.png|small_half_on.png|100|750|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 750, 200, 0, 50
+U2_S2_C1_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C1_TEMP_12|bar_small.png|small_half_off.png|small_half_on.png|100|800|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 800, 200, 0, 50
+U2_S2_C1_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+web_U2_S2_C2|web_U2_S2_C2|1|temp_U2_S2_C2.html|temp_U2_S2_C2.html|
+U2_S2_C2_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+U2_S2_C2_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+U2_S2_C2_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+U2_S2_C2_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+U2_S2_C2_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+U2_S2_C2_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+U2_S2_C2_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+U2_S2_C2_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+U2_S2_C2_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_9|bar_small.png|small_half_off.png|small_half_on.png|100|650|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 650, 200, 0, 50
+U2_S2_C2_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_10|bar_small.png|small_half_off.png|small_half_on.png|100|700|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 700, 200, 0, 50
+U2_S2_C2_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_11|bar_small.png|small_half_off.png|small_half_on.png|100|750|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 750, 200, 0, 50
+U2_S2_C2_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C2_TEMP_12|bar_small.png|small_half_off.png|small_half_on.png|100|800|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 800, 200, 0, 50
+U2_S2_C2_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+web_U2_S2_C3|web_U2_S2_C3|1|temp_U2_S2_C3.html|temp_U2_S2_C3.html|
+U2_S2_C3_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_1|bar_small.png|small_half_off.png|small_half_on.png|100|250|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 250, 200, 0, 50
+U2_S2_C3_TEMP_1)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_2|bar_small.png|small_half_off.png|small_half_on.png|100|300|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 300, 200, 0, 50
+U2_S2_C3_TEMP_2)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_3|bar_small.png|small_half_off.png|small_half_on.png|100|350|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 350, 200, 0, 50
+U2_S2_C3_TEMP_3)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_4|bar_small.png|small_half_off.png|small_half_on.png|100|400|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 400, 200, 0, 50
+U2_S2_C3_TEMP_4)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_5|bar_small.png|small_half_off.png|small_half_on.png|100|450|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 450, 200, 0, 50
+U2_S2_C3_TEMP_5)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_6|bar_small.png|small_half_off.png|small_half_on.png|100|500|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 500, 200, 0, 50
+U2_S2_C3_TEMP_6)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_7|bar_small.png|small_half_off.png|small_half_on.png|100|550|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 550, 200, 0, 50
+U2_S2_C3_TEMP_7)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_8|bar_small.png|small_half_off.png|small_half_on.png|100|600|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 600, 200, 0, 50
+U2_S2_C3_TEMP_8)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_9|bar_small.png|small_half_off.png|small_half_on.png|100|650|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 650, 200, 0, 50
+U2_S2_C3_TEMP_9)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_10|bar_small.png|small_half_off.png|small_half_on.png|100|700|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 700, 200, 0, 50
+U2_S2_C3_TEMP_10)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_11|bar_small.png|small_half_off.png|small_half_on.png|100|750|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 750, 200, 0, 50
+U2_S2_C3_TEMP_11)
+Args for AI = 1
+pv type is ANALOG_VALUE
+U2_S2_C3_TEMP_12|bar_small.png|small_half_off.png|small_half_on.png|100|800|200|0|50                                                                                                                                                                                )
+Args for AI = 9
+pv type is ANALOG_VALUE
+-- 9 parameter bar
+Bar: bar_small.png, small_half_off.png, small_half_on.png, 100, 800, 200, 0, 50
+U2_S2_C3_TEMP_12)
+Args for AI = 1
+pv type is ANALOG_VALUE
+Parsing 0 Analog Expressions ......
+Parsing 0 Discrete Expressions ......
+SMS is not Enabled - skipping initialization
+-- Reading background scripts: .//dbfiles/background.dat
+bg1.txt
+----- reading .//corridas//bg1.txt -----
+U1_BLINK.send(not U1_BLINK)
+U1_BLINK.send(not U1_BLINK)
+
+pv type is ANALOG_VALUE
+Ref created: good discrete tag for expression: U1_BLINK
+U2_BLINK.send(not U2_BLINK)
+U2_BLINK.send(not U2_BLINK)
+
+pv type is ANALOG_VALUE
+Ref created: good discrete tag for expression: U2_BLINK
+sys.yield();
+sys.yield();
+
+sys.loop();
+sys.loop();
+
+----- done reading .//corridas//bg1.txt -----
+Loading iodrivers from: .//dbfiles/drivers.dat
+/home/carr/trunk/react/drivers/modbusdrv/libreactmodbusdrv.so|new_reactmodbus||/dev/ttyUSB0:57600:2:1|
+Loading iodriver from: /home/carr/trunk/react/drivers/modbusdrv/libreactmodbusdrv.so
+Class factory function is: new_reactmodbus
+Creating new reactmodbus iodriver
+---- initializing modbus /dev/ttyUSB0:57600:2:1 ---------------------------
+Using ip passed to driver: /dev/ttyUSB0:57600:2:1
+sdev = /dev/ttyUSB0
+baudrate = 57600
+timeout = 2.000000
+unit id = 1
+Opening device /dev/ttyUSB0, 57600, 2.0. . . This is a tty device
+serial port ok:
+device name   /dev/ttyUSB0
+speed         57600
+data bits     8
+stop bits     1
+parity        0
+timeout:      2.000000
+Device opened: 31 
+setting address to 1
+DONE initializing modbus
+Default modbus address is: 1
+Initializing semaphores
+DONE Initializing semaphores
+'2', 'AI', '4', '12', '100', '0', 
+Adding I/O
+Type AI, unit id: 2, opcode: 4, n: 12, mod off: 100, ch off: 0
+Will read AIs using read_ai()
+'2', 'AI', '4', '12', '200', '12', 
+Adding I/O
+Type AI, unit id: 2, opcode: 4, n: 12, mod off: 200, ch off: 12
+Will read AIs using read_ai()
+'2', 'AI', '4', '12', '300', '24', 
+Adding I/O
+Type AI, unit id: 2, opcode: 4, n: 12, mod off: 300, ch off: 24
+Will read AIs using read_ai()
+'4', 'AI', '4', '12', '100', '36', 
+Adding I/O
+Type AI, unit id: 4, opcode: 4, n: 12, mod off: 100, ch off: 36
+Will read AIs using read_ai()
+'4', 'AI', '4', '12', '200', '48', 
+Adding I/O
+Type AI, unit id: 4, opcode: 4, n: 12, mod off: 200, ch off: 48
+Will read AIs using read_ai()
+'4', 'AI', '4', '12', '300', '60', 
+Adding I/O
+Type AI, unit id: 4, opcode: 4, n: 12, mod off: 300, ch off: 60
+Will read AIs using read_ai()
+'5', 'AI', '4', '12', '100', '72', 
+Adding I/O
+Type AI, unit id: 5, opcode: 4, n: 12, mod off: 100, ch off: 72
+Will read AIs using read_ai()
+'5', 'AI', '4', '12', '200', '84', 
+Adding I/O
+Type AI, unit id: 5, opcode: 4, n: 12, mod off: 200, ch off: 84
+Will read AIs using read_ai()
+'5', 'AI', '4', '12', '300', '96', 
+Adding I/O
+Type AI, unit id: 5, opcode: 4, n: 12, mod off: 300, ch off: 96
+Will read AIs using read_ai()
+'1', 'AI', '4', '16', '100', '108', 
+Adding I/O
+Type AI, unit id: 1, opcode: 4, n: 16, mod off: 100, ch off: 108
+Will read AIs using read_ai()
+'3', 'AI', '4', '16', '100', '124', 
+Adding I/O
+******* can not map past 128e for AI definitions, chan offset: 124, n: 16, total: 140
+'1', 'DI', '2', '16', '0', '0', 
+Adding I/O
+Type DI, unit id: 1, opcode: 2, n: 16, mod off: 0, ch off: 0
+Will read DIs using read_di()
+'3', 'DI', '2', '16', '0', '16', 
+Adding I/O
+Type DI, unit id: 3, opcode: 2, n: 16, mod off: 0, ch off: 16
+Will read DIs using read_di()
+'1', 'DI', '2', '8', '100', '32', 
+Adding I/O
+Type DI, unit id: 1, opcode: 2, n: 8, mod off: 100, ch off: 32
+Will read DIs using read_di()
+'3', 'DI', '2', '8', '100', '40', 
+Adding I/O
+Type DI, unit id: 3, opcode: 2, n: 8, mod off: 100, ch off: 40
+Will read DIs using read_di()
+'1', 'DO', '5', '8', '100', '0', 
+Adding I/O
+Type DO/home/carr/trunk/react/projects/silos/losmochis
+, unit id: 1, opcode: 5, n: 8, mod off: 100, ch off: 0
+Will send DOs using send_do()
+'3', 'DO', '5', '8', '100', '8', 
+Adding I/O
+Type DO, unit id: 3, opcode: 5, n: 8, mod off: 100, ch off: 8
+Will send DOs using send_do()
+'1', 'DO', '5', '16', '0', '16', 
+Adding I/O
+Type DO, unit id: 1, opcode: 5, n: 16, mod off: 0, ch off: 16
+Will send DOs using send_do()
+'3', 'DO', '5', '16', '0', '32', 
+Adding I/O
+Type DO, unit id: 3, opcode: 5, n: 16, mod off: 0, ch off: 32
+Will send DOs using send_do()
+'1', 'AO', '6', '16', '100', '0', 
+Adding I/O
+Type AO, unit id: 1, opcode: 6, n: 16, mod off: 100, ch off: 0
+Will send AOs using write_reg()
+'3', 'AO', '6', '16', '100', '16', 
+Adding I/O
+Type AO, unit id: 3, opcode: 6, n: 16, mod off: 100, ch off: 16
+Will send AOs using write_reg()
+'0', 'ERROR_MAP', '0', '6', '0', '48', 
+Adding I/O
+Modbus Error Map, unit id: 0, opcode: 0, n: 6, mod off: 0, ch off: 48
+Mapping errors starting at 48, n = 6
+Done with modbus.dat
+Creating thread
+Calling read_thread method
+DONE Creating thread
+---- DONE initializing modbus ---------------------------
+Num tests = 0
+Fri Jul  9 19:53:47 2010
+No foreground script executing, use "kill -1 14862" or <CTRL-C> to stop
+setting address to 2
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 29 bytes
+--------------- reading 26 more bytes
+waiting for rest(4, 872550442)
+RecGot
+Re================================================ READ AI, n = 27 ======================
+setting address to 2
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+waiting for rest(4, 868548321)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 29 bytes
+--------------- reading 26 more bytes
+waiting for rest(4, 712692465)
+RecGot
+Re================================================ READ AI, n = 27 ======================
+setting address to 2
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+waiting for rest(4, 708699772)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 29 bytes
+--------------- reading 26 more bytes
+waiting for rest(4, 632807297)
+RecGot
+Re================================================ READ AI, n = 27 ======================
+setting address to 4
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+waiting for rest(4, 628818236)
+--------------- Read 0 bytes
+rea--------------- min size: 3 bytes
+uni***Got***
+Re================================================ READ AI, n = 27 ======================
+setting address to 4
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+waiting for rest(0, 628792457)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 29 bytes
+--------------- reading 26 more bytes
+waiting for rest(0, 553011035)
+RecGot
+Re================================================ READ AI, n = 27 ======================
+setting address to 4
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+waiting for rest(0, 549017434)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 29 bytes
+--------------- reading 26 more bytes
+waiting for rest(0, 473130203)
+RecGot
+Re================================================ READ AI, n = 27 ======================
+setting address to 5
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+waiting for rest(0, 469101681)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 29 bytes
+--------------- reading 26 more bytes
+waiting for rest(0, 393259003)
+RecGot
+Re================================================ READ AI, n = 27 ======================
+setting address to 5
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+waiting for rest(0, 389265961)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 29 bytes
+--------------- reading 26 more bytes
+waiting for rest(0, 313369017)
+RecGot
+Re================================================ READ AI, n = 27 ======================
+setting address to 5
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+waiting for rest(0, 309380654)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 29 bytes
+--------------- reading 26 more bytes
+waiting for rest(0, 232943202)
+RecGot
+Re================================================ READ AI, n = 27 ======================
+setting address to 1
+ReaOpcStan =
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+================================================ READ AI ======================
+WaiWai--------------- Waiting message . . .
+waiting for rest(0, 229495550)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 37 bytes
+--------------- reading 34 more bytes
+waiting for rest(0, 153624797)
+waiting for rest(0, 149709559)
+RecGot
+Re================================================ READ AI, n = 35 ======================
+setting address to 1
+
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+WaiWai--------------- Waiting message . . .
+waiting for rest(0, 145695146)
+waiting for rest(0, 114134426)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 7 bytes
+--------------- reading 4 more bytes
+RecGot
+Resetting address to 3
+
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+WaiWai--------------- Waiting message . . .
+waiting for rest(0, 109815923)
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U1_S1_FAN1_IS_ON, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U1_S1_FAN2_IS_ON, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U1_S1_AUTO_MAN, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U1_S1_ON_OFF, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U2_S1_FAN1_IS_ON, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U2_S1_FAN2_IS_ON, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U2_S1_AUTO_MAN, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U2_S1_ON_OFF, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U2_S2_FAN1_IS_ON, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U2_S2_FAN2_IS_ON, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U2_S2_AUTO_MAN, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: U2_S2_ON_OFF, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: MOD_ID_0_OK, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: MOD_ID_1_OK, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: MOD_ID_2_OK, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: MOD_ID_3_OK, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: MOD_ID_4_OK, value: F
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ tag: MOD_ID_5_OK, value: F
+U1_BLINK.send(T)
+U2_BLINK.send(T)
+sys.yield()
+waiting for rest(4, 956499039)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 7 bytes
+--------------- reading 4 more bytes
+RecGot
+Resetting address to 1
+
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+WaiWai--------------- Waiting message . . .
+waiting for rest(4, 952334886)
+waiting for rest(4, 916707723)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 6 bytes
+--------------- reading 3 more bytes
+RecGot
+Resetting address to 3
+
+Se
+Se++++++++++++ sending: 8 bytes
+++++++++++++ sent: 8 bytes
+WaiWai--------------- Waiting message . . .
+waiting for rest(4, 912734795)
+waiting for rest(4, 716830621)
+--------------- Read 2 bytes
+--------------- min size: 3 bytes
+uni--------------- total size: 6 bytes
+--------------- reading 3 more bytes
+RecGot
+Rewaiting for rest(4, 712882417)
+Got a signal: 2
+Zero outputs on exit is DISABLED
+conio_restore called . . 
+End of program. Hit <enter> to exit . . .Got a signal: 2

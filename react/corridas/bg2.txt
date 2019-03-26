@@ -1,0 +1,5 @@
+sys.print("*** This is back ground script 2")
+sys.wait(00:10)
+sys.print("### bg2 step 2")
+sys.wait(00:08)
+sys.loop()

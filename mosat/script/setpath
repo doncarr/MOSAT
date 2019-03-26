@@ -1,0 +1,1 @@
+export PATH=/opt/ppc/lib/gcc-lib/powerpc-linux/2.95.3/:/opt/ppc/bin/:$PATH

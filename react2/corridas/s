@@ -1,0 +1,4 @@
+sys.print("--- you called s ----")
+sys.wait($1)
+run.t($2)
+sys.print("-- end of s --")

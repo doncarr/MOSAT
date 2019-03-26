@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><!-- InstanceBegin template="/Templates/new-generic2.dwt" codeOutsideHTMLIsLocked="false" --><!-- InstanceBeginEditable name="doctitle" --><title>TS-7260 XDIO Port Features</title>
+
+
+<meta name="description" content="Technologic Systems offers complete PC/104 embedded hardware and software solutions. COTS SBCs (ARM and x86), peripherals, custom designs. Linux, Dos."><!-- InstanceEndEditable -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script><!-- InstanceBeginEditable name="head" -->
+
+<style type="text/css">
+   div#main {text-align: justify}
+ </style><!-- InstanceEndEditable -->
+
+<link href="xdio_files/technologic.css" rel="stylesheet" type="text/css"></head>
+
+<body onload="MM_preloadImages('../images/web/home_over.jpg','../images/web/products_over.jpg','../images/web/software_over.jpg','../images/web/support_over.jpg','../images/web/about_over.jpg')">
+<div id="top"><!-- #BeginLibraryItem "/Library/header-for-pdf.lbi" -->
+  <table id="header" border="0" cellpadding="0" cellspacing="0" height="100" width="750">
+    <tbody><tr>
+      <td rowspan="2" align="right" valign="bottom"><a href="http://www.embeddedarm.com/index.html"><img src="xdio_files/logo.jpg" alt="Home Page" border="0" height="86" width="231"></a></td>
+      <td class="paragraph-sm" align="right" height="70" valign="top" width="495"><h6>16610 East Laser Drive #10<br>
+        Fountain Hills, AZ 85268<br>
+        <b>Phone</b> (480) 837-5200<br>
+        <b>Fax</b> (480) 837-5300<br>
+        <b>Email</b> <a href="mailto:info@embeddedARM.com">info@embeddedARM.com</a> </h6></td>
+    </tr>
+    <tr>
+      <td align="left" height="45" valign="bottom"><table border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td><a href="http://www.embeddedarm.com/index.html" target="_top" onclick="MM_nbGroup('down','group1','home','',1)" onmouseover="MM_nbGroup('over','home','../images/web/home_over.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="xdio_files/home.jpg" alt="Home" name="home" id="home" onload="" border="0" height="26" width="87"></a></td>
+            <td><a href="http://www.embeddedarm.com/epc/prod_main.htm" target="_top" onclick="MM_nbGroup('down','group1','products','',1)" onmouseover="MM_nbGroup('over','products','../images/web/products_over.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="xdio_files/products.jpg" alt="Products" name="products" id="products" onload="" border="0" height="26" width="78"></a></td>
+            <td><a href="http://www.embeddedarm.com/software/software_main.htm" target="_top" onclick="MM_nbGroup('down','group1','software','',1)" onmouseover="MM_nbGroup('over','software','../images/web/software_over.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="xdio_files/software.jpg" alt="Software" name="software" id="software" onload="" border="0" height="26" width="79"></a></td>
+            <td><a href="http://www.embeddedarm.com/support/support_main.htm" target="_top" onclick="MM_nbGroup('down','group1','support','',1)" onmouseover="MM_nbGroup('over','support','../images/web/support_over.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="xdio_files/support.jpg" alt="Support" name="support" id="support" onload="" border="0" height="26" width="79"></a></td>
+            <td><a href="http://www.embeddedarm.com/about/index.php" target="_top" onclick="MM_nbGroup('down','group1','about','',1)" onmouseover="MM_nbGroup('over','about','../images/web/about_over.jpg','',1)" onmouseout="MM_nbGroup('out')"><img src="xdio_files/about.jpg" alt="About" name="about" id="about" onload="" border="0" height="26" width="154"></a></td>
+          </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody></table>
+<!-- #EndLibraryItem -->
+</div>
+
+<!-- InstanceBeginEditable name="body" -->
+<div id="main">
+<div style="margin: 0px auto; width: 500px;">
+  <h1 class="home-title">TS-XDIO datasheet for TS-7260<br>
+  12/13/2005
+  </h1>
+  <p>The following is a description of the TS-XDIO port on the
+    <a href="http://www.embeddedarm.com/epc/ts7260-spec-h.htm">TS-7260 Ultra-low Power ARM9
+    Embedded SBC</a>. This core
+    is designed to implement common controller tasks that are
+    difficult, costly (CPU intensive), or impossible to accomplish
+    in software with regular DIO / GPIO hardware and the facilities
+    of the 200Mhz ARM processor. The TS-XDIO core appears at
+    0x12c00000-0x12c00003 physical address on the TS-7260 boards
+    and uses ARM IRQ 32.</p>
+  <h2 class="left">TS-7260 XDIO port features:</h2>
+<ul>
+<li>8-pins, individually programmable
+as schmitt-trigger inputs, outputs,
+or special functions (3.3V levels)</li>
+<li>glitch-detector (all pins) to
+catch edges/pulses as short as
+67nS </li>
+without continuous software polling
+<li>edge-counter/frequency meter
+(pin 7) with max incoming frequency
+of 7.3728Mhz</li>
+<li>quadrature counter (pins 6,7)
+with max increment/decrement rate
+of 3.6864Mhz</li>
+<li>PWM/frequency output (pin 5)
+with period between 134nS to 125mS
+and up to 0.02% duty cycle precision</li>
+<li>Oneshot programmable high or
+low output pulse (pin 5) of duration
+134nS to 125mS</li>
+<li>pulse/period timer (all pins)
+can measure high/low pulse time
+or full period length at 67nS precision</li>
+</ul>
+<h2 class="left">Register Map
+</h2>
+<h2 class="left"> Register 0</h2>
+<p> bits 7-6 : MODE (selects what registers 1-3 are)<br>
+  0 - pin direction,
+  data register, and IRQ / DRQ control<br>
+  1 - edge / quadrature counter
+    and glitch monitor<br>
+    2 - input pulse timer and pin select<br>
+    3 - PWM / pulse high
+    / low-time set<br>
+    bits 5-4 : pulse timer mode and polarity<br>
+    0 - negedge to posedge
+    (low pulse time)<br>
+    1 - posedge to negedge (high pulse time)<br>
+    2 - negedge to negedge
+    (period time)<br>
+    3 - posedge to posedge (period time)<br>
+    bit 3 : pulse timer reset
+    (W) or waiting for trailing edge (R)<br>
+    bit 2 : quadrature enable
+    / edge counter disable<br>
+    bit 1 : PWM enable / pulse start<br>
+    bit 0 : clock select (1 -
+    32.768Khz, 0 - 14.7456Mhz)</p>
+<h2 class="left"> Registers 1-3 depend on MODE</h2>
+<p><strong> MODE 0:</strong></p>
+<p> Register 1: DIO direction register (1 - output, 0 - input)<br>
+  Register
+  2: DIO data register<br>
+  Register 3: <br>
+  bit 0: irq/drq on quadrature change direction<br>
+  bit 1: irq/drq
+  on quadrature / edge overflow / underflow<br>
+  bit 2: irq/drq on
+  pin glitch (pins 0-3)<br>
+  bit 3: irq/drq on pin glitch (pins 4-7)<br>
+  bit 4: irq/drq on pulse
+  timer trailing edge<br>
+  bit 5: irq/drq on quadrature / edge counter
+  index pulse (if enabled)<br>
+  bit 6: reserved (may be used in customer
+  specific TS-XDIO cores) <br>
+  bit 7: drq select (1 - drq, 0 - irq)</p>
+<p><strong> MODE 1:</strong></p>
+<p> Register 1: Glitch monitor, read or write resets all to 0<br>
+  bit
+  7: enable index pulse on pin 5<br>
+  bits 6-0: 1 - glitch detected
+    on pin, 0 - inactive since last read<br>
+    Register 2: bits 7-0
+  of edge / quadrature counter <br>
+  Register 3: bits 15-8 of edge
+    / quadrature counter </p>
+<p><strong> MODE 2:</strong></p>
+<p> Register 1: Pin select / timer<br>
+  bit 7: pulse time accumulate
+  - keeps on running adding pulse times<br>
+  bits 6-4: input pin number
+    (0-7)<br>
+    bits 3-0: bits 19-16 of pulse timer<br>
+    Register 2: bits 7-0 of
+    pulse timer<br>
+    Register 3: bits 15-8 of pulse timer</p>
+<p><strong> MODE 3:</strong></p>
+<p> Register 1: <br>
+  bits 7-4: bits 11-8 of high time<br>
+  bits 3-0: bits 11-8 of low
+    time<br>
+    Register 2: bits 7-0 of high time<br>
+    Register 3: bits 7-0 of
+    low time, oneshot mode enabled if all zeroes </p>
+<ul class="space">
+  <li>* If quadrature index pulse is enabled, counter is reset
+    on positive edge of index pulse if DIO data register bit
+    5 is set 0, negative edge if set 1</li>
+  <li>* Pulse width modulation (PWM) time is 2 + high / low time
+  clock periods of 14.7456Mhz or 32Khz</li>
+  <li>* If using pulse width modulation (PWM) in oneshot mode
+    (single pulse) type is high pulse (low-high-low) if DIO data
+    register bit 4 is set 0, low pulse (high-low-high) if set
+    1.</li>
+  <li>* Can use 20-bit pulse timer as free-running timer by setting
+      accumulate bit and setting pin select to PWM (pulse width
+    modulation) output (pin 5). 14.7456Mhz counter can be enabled
+    by watching periods, slower free running counters can be
+    had by clever use of high-time and low-time PWM and accumulating
+    pulse times. (e.g. high-time 1, low-time 224 creates a 65.536Khz
+    free-running timer that overflows once every 16 seconds)</li>
+  <li>* Edge counter counts *both* edges of waveform, divide
+    by 2 for number of periods / frequency. To count X edges
+    and then interrupt, preload counter value with 2^16 - X and
+    enable IRQ on overflow.</li>
+  <li>* Max / min quadrature count can be gotten by enabling
+    IRQ / DRQ on quadrature change of direction. Max / Min is
+    value -/+ 1 as long as IRQ / DRQ latency is less than 1 quadrature
+    cycle time.</li>
+  <li>* Core does not reset-- registers and state remain if board
+      undergoes reset. On powerup DIO data direction register
+    is all 0's (inputs), but other register contents are undefined. </li>
+</ul>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceEnd --></body></html>

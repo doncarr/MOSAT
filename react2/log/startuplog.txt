@@ -1,0 +1,201 @@
+Fri Sep 14 17:19:31 2012
+React PID: 14275
+SampleRate set to: 0.200000
+sqlite start hook: ./ ./sqlite/react_def.db
+sqlite open return value: 0
+sqlite read apconfig
+Can not execute query: select * from 'config';, error = 1
+errmsg: no such table: config
+sqlite start hook: SUCCESS
+Reading ai ........
+sqlite read from table: ai
+PUMP3_AMP|BOMBA 3|amps|0|0|3|0.0|50.0|6400.0|32000.0|3|-12.5|0.0|0.0|0.0|0.0|0.0|0|0|0|0|0.0|50.0|
+PUMP2_AMP|BOMBA 2|amps|0|0|4|0.0|50.0|6400.0|32000.0|3|-12.5|0.0|0.0|0.0|0.0|0.0|0|0|0|0|0.0|50.0|
+PUMP1_AMP|BOMBA 1|amps|0|0|5|0.0|50.0|6400.0|32000.0|3|-12.5|0.0|0.0|0.0|0.0|0.0|0|0|0|0|0.0|50.0|
+LEVEL|NIVEL|cm|0|0|2|500.0|0.0|6400.0|32000.0|1|-5000.0|0.0|0.0|0.0|0.0|0.0|0|0|0|0|0.0|500.0|
+HUM_1|Relative Humidity 1|%|0|0|1|0.0|100.0|0.0|100.0|1|0.0|0.0|0.0|0.0|0.0|0.0|0|0|0|0|0.0|100.0|
+HUM_2|Relative Humidity 2|%|0|0|3|0.0|100.0|0.0|100.0|1|0.0|0.0|0.0|0.0|0.0|0.0|0|0|0|0|0.0|100.0|
+Temp|Temperature|%|0|0|5|0.0|100.0|0.0|100.0|1|0.0|0.0|0.0|0.0|0.0|0.0|0|0|0|0|0.0|50.0|
+minutes|Minutes from Midnight|min|0|0|12|0.0|100.0|0.0|100.0|1|0.0|0.0|0.0|0.0|0.0|0.0|0|0|0|0|0.0|1000.0|
+Reading ao ........
+sqlite read from table: ao
+AO_0|Motor Control|%|0|0|0|0.0|10.0|0.0|10.0|1|0.0|500.0|0.0|100.0|
+AO_8|Motor Control|%|0|0|8|0.0|10.0|0.0|10.0|1|0.0|500.0|0.0|100.0|
+AO_16|Motor Control|%|0|0|16|0.0|10.0|0.0|10.0|1|0.0|500.0|0.0|100.0|
+AO_24|Motor Control|%|0|0|24|0.0|10.0|0.0|10.0|1|0.0|500.0|0.0|100.0|
+AO_32|Motor Control|%|0|0|32|0.0|10.0|0.0|10.0|1|0.0|500.0|0.0|100.0|
+Reading di ........
+sqlite read from table: di
+LO_LEVEL|Nivel Bajo|0|0|0|BELOW|ABOVE|H|N|0|
+HI_LEVEL|Nivel Alto|0|0|1|BELOW|ABOVE|H|N|0|
+HI_HI_LEVEL|Nivel Muy Alto|0|0|2|BELOW|ABOVE|H|N|0|
+ULT_SON_ALM|Nivel Muy Alto|0|0|3|OK|ALARM|H|N|1|
+CFE_SUPPLY|Falla de alimentacion CFE|0|0|4|ALARM|OK|H|N|0|
+MIXER|Mescladora ON|0|0|5|ON|OFF|H|N|1|
+VPUMP2_ON|Bomba V2 ON|0|0|6|ON|OFF|H|N|0|
+VPUMP1_ON|Bomba V1 ON|0|0|7|ON|OFF|H|N|0|
+PUMP1_ON|Bomba 1 ON|0|0|8|ON|OFF|H|N|1|
+PUMP2_ON|Bomba 2 ON|0|0|9|ON|OFF|H|N|1|
+PUMP3_ON|Bomba 3 ON|0|0|10|ON|OFF|H|N|0|
+COM_FAILED|Communications Failed|0|0|16|ON|OFF|N|N|1|
+MOD_ID_1_OK|Mod error 1|0|0|81|OK|FAIL|N|N|1|
+MOD_ID_2_OK|Mod error 1|0|0|82|OK|FAIL|N|N|0|
+MOD_ID_3_OK|Mod error 1|0|0|83|OK|FAIL|N|N|0|
+MOD_ID_4_OK|Mod error 1|0|0|84|OK|FAIL|N|N|0|
+MOD_ID_5_OK|Mod error 1|0|0|85|OK|FAIL|N|N|0|
+Reading do ........
+sqlite read from table: do
+DO_0|Bomba 1|0|0|0|Off|On|0|
+DO_8|Bomba 2|0|0|8|Off|On|0|
+DO_16|Bomba 3|0|0|16|Off|On|0|
+DO_24|Bomba 3|0|0|24|Off|On|0|
+DO_32|VBomba 1|0|0|32|Off|On|0|
+DO|VBomba 2|0|0|8|Off|On|0|
+XPUMP1_DO|Bomba 1|0|0|1|Off|On|0|
+XPUMP2_DO|Bomba 2|0|0|3|Off|On|0|
+XPUMP3_DO|Bomba 3|0|0|5|Off|On|0|
+XVPUMP1_DO|VBomba 1|0|0|7|Off|On|0|
+XVPUMP2_DO|VBomba 2|0|0|9|Off|On|0|
+YPUMP1_DO|Bomba 1|0|0|12|Off|On|0|
+YPUMP2_DO|Bomba 2|0|0|13|Off|On|0|
+YPUMP3_DO|Bomba 3|0|0|14|Off|On|0|
+YVPUMP1_DO|VBomba 1|0|0|15|Off|On|0|
+Reading pci ........
+sqlite read from table: pci
+PCI|Pulse Count 1|RPM|0|0|0|0.0083333333|20|65535|60.0|5|0.0|10.0|20.0|80.0|90.0|5.0|1|1|1|1|0.0|200.0|
+Reading calc ........
+sqlite read from table: calc
+CALC1|Calculation 1|Dogs|TEMP_COLD_AC1 + (2.0 * exp(1.0))|1|10.0|20.0|80.0|90.0|5.0|0|0|0|0|0.0|100.0|
+Reading discrete calc ........
+sqlite read from table: discrete_calc
+Dcalc1|Discrete Calc 1|(TEMP_COLD_AC1 < 0.0) or (TEMP_HOT_AC1 > 200)|Alarm|ok|N|N|
+1 discrete calcs read
+Reading timer ........
+sqlite read from table: timer
+Timer1|My Timer|sec|1|1|0.0|100.0|
+num_timer = 1
+Reading analog values ........
+sqlite read from table: analog_value
+aval1|analog val 1|dogs|1|0.0|0.0|100.0|
+aval2|analog val 2|cats|1|0.0|0.0|100.0|
+num analog values = 2
+Reading discrete values ........
+sqlite read from table: discrete_value
+dval1|discrete val 1|Lo|Hi|1|
+dval2|discrete val 2|Lo|Hi|1|
+num discrete values = 2
+Reading int ........
+STATE1|State of inputs|LO_LEVEL|HI_LEVEL|HI_HI_LEVEL|
+Discrete points: LO_LEVEL HI_LEVEL HI_HI_LEVEL 
+tag: STATE1
+Reading pid ........
+sqlite read from table: pid
+pid1|My PID point|RPM|1|500.0|0.0|0.2|0.8|0.05|AI0|AO0|0.0|0.0|0.0|0|0|0|0.0|100.0|
+  pid1 - bad TAGNAME: AI0
+  pid1 - bad TAGNAME: AO0
+Reading remote pid ........
+sqlite read from table: remote_pid
+remote_pid|Remote PID|degC|1|100.0|0.0|0.5|0.5|0.5|test_ai|test_ao|test_ao|test_do|test_ao|test_ao|test_ao|0.0|0.0|0.0|0|0|0|0.0|100.0|
+  remote_pid - PV analog input, NOT a valid tagname: test_ai
+  remote_pid - MV analog output, NOT a valid tagname: test_ao
+     - open loop output is NOT possible
+  remote_pid - SP analog output, NOT a valid tagname: test_ao
+     - setting of control setpoint is NOT possible
+  remote_pid - enable control, NOT a valid tagname: test_do
+     - remote enable is NOT possible
+  remote_pid - P gain, NOT a valid tagname : test_ao
+     - remote setting of P gain not possible
+  remote_pid - I time, NOT a valid tagname: test_ao
+     - remote setting of I time not possible
+  remote_pid - D time, NOT a valid tagname: test_ao
+     - remote setting of D time not possible
+Reading pump ........
+sqlite read from table: pump
+PUMP1|First Pump|PUMP1_ON|PUMP1_AMP|LEVEL|10.0|30.0|1.0|
+PUMP1: Min: 10.000000, Max 30.000000, Delay 1.000000
+PUMP2|Second Pump|PUMP2_ON|PUMP2_AMP|LEVEL|10.0|30.0|1.0|
+PUMP2: Min: 10.000000, Max 30.000000, Delay 1.000000
+PUMP3|Third Pump|PUMP3_ON|PUMP3_AMP|LEVEL|10.0|30.0|1.0|
+PUMP3: Min: 10.000000, Max 30.000000, Delay 1.000000
+Reading ac ........
+sqlite read from table: ac
+AC1|First AC Unit|TEMP_COLD_AC1|TEMP_HOT_AC1|ON_AC1|SHUTOFF_AC1|90.0|
+AC1 - bad analog input point: TEMP_COLD_AC1
+AC1 - bad analog input point: TEMP_HOT_AC1
+AC1 - bad discrete input point: ON_AC1
+AC1 - bad discrete output point: SHUTOFF_AC1
+Reading level ........
+sqlite read from table: level
+LEVEL1|Level Point Atemajac|LO_LEVEL|HI_LEVEL|LEVEL|3.0|
+Reading data ........
+sqlite read from table: data
+Data1|My Data|dout1|25|PUMP1_AMP,PUMP2_AMP,PUMP3_AMP,LEVEL|
+  MaxSamples = 5 MaxTime = 25
+  Data1 - allocating space for  5 samples for tag PUMP1_AMP
+  Data1 - allocating space for  5 samples for tag PUMP2_AMP
+  Data1 - allocating space for  5 samples for tag PUMP3_AMP
+  Data1 - allocating space for  5 samples for tag LEVEL
+Reading file logger ........
+sqlite read from table: file_logger
+silo_logger_1|My temp logger|silo_logger|300|5|1|1|0|0|0|HUM_1,HUM_2,TEMP,MINUTES|
+  collection is on for silo_logger_1
+  Tag = HUM_1
+  analog point[0]: HUM_1
+  Tag = HUM_2
+  analog point[1]: HUM_2
+  Tag = TEMP
+  analog point[2]: TEMP
+  Tag = MINUTES
+  analog point[3]: MINUTES
+Reading web logger ........
+.//dbfiles/web_logger.dat: No such file or directory
+Can't open: .//dbfiles/web_logger.dat
+Reading discrete logger ........
+sqlite read from table: discrete_logger
+dlogger_1|My dlogger|silo_d_logger|1|PUMP1_ON,B,PUMP2_ON,B,LO_LEVEL,F,HI_HI_LEVEL,R,HI_LEVEL,B|
+  Logging hour totals
+  Collection is on for dlogger_1
+  Tags: PUMP1_ON,B,PUMP2_ON,B,LO_LEVEL,F,HI_HI_LEVEL,R,HI_LEVEL,B
+  tag[0]: PUMP1_ON
+  type[0]: B
+  discrete point [0]: PUMP1_ON,   both rising and falling
+  tag[1]: PUMP2_ON
+  type[1]: B
+  discrete point [1]: PUMP2_ON,   both rising and falling
+  tag[2]: LO_LEVEL
+  type[2]: F
+  discrete point [2]: LO_LEVEL,   falling only
+  tag[3]: HI_HI_LEVEL
+  type[3]: R
+  discrete point [3]: HI_HI_LEVEL,   rising only
+  tag[4]: HI_LEVEL
+  type[4]: B
+  discrete point [4]: HI_LEVEL,   both rising and falling
+Reading scan ........
+sqlite read from table: scan
+scan1|My Scan|sout1|10|AO0,AI0,AI1|
+Reading web points ........
+sqlite read from table: web
+general_web|general|1.0|general.html|general.html|
+    Adding Discrete value: MOD_ID_1_OK,  strings: NO Yes!!
+    Adding Discrete value: MOD_ID_2_OK,  strings: NO Yes!!
+    Adding Discrete value: MOD_ID_3_OK,  strings: NO Yes!!
+    Adding Discrete value: MOD_ID_4_OK,  strings: NO Yes!!
+    Adding Discrete value: MOD_ID_5_OK,  strings: NO Yes!!
+Parsing 1 Analog Expressions ......
+CALC1 Parsing "TEMP_COLD_AC1 + (2.0 * exp(1.0))"
+  Analog Calc CALC1: Bad Expression: "TEMP_COLD_AC1 + (2.0 * exp(1.0))", Point does not exist: TEMP_COLD_AC1
+Parsing 1 Discrete Expressions ......
+Dcalc1 Parsing Expression: (TEMP_COLD_AC1 < 0.0) or (TEMP_HOT_AC1 > 200)
+  Discrete calc Dcalc1: Bad Expression: (TEMP_COLD_AC1 < 0.0) or (TEMP_HOT_AC1 > 200)
+sqlite end hook ...
+Creating thread to wait on connections . . . 
+-- Reading background scripts: .//dbfiles/background.dat
+In react_t::wait_connections()
+Loading iodrivers from: .//dbfiles/drivers.dat
+react_t::wait_connections(), All OK, waiting for connections
+./drivers/sim_pump_low/libsimpumpdrv.so|new_simpumpdrv|||
+Loading iodriver from: ./drivers/sim_pump_low/libsimpumpdrv.so
+Class factory function is: new_simpumpdrv
+Fri Sep 14 17:19:31 2012
+No foreground script executing, use "kill -1 14275" or <CTRL-C> to stop

@@ -1,0 +1,3 @@
+#libreactmodbusdrv.so|new_reactmodbus|librtmodbus.so|
+#../../drivers/sim_pump/libsimpumpdrv.so|new_simpumpdrv|||
+../../drivers/sim_pump_low/libsimpumpdrv.so|new_simpumpdrv|||

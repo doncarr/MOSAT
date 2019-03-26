@@ -1,0 +1,7 @@
+valve_2.send(F)
+sys.wait(00:15)
+sys.wait_until("hi_level", 03:00)
+valve_2.send(T)
+sys.wait(00:15)
+sys.wait_until("not lo_level", 03:00)
+sys.loop()

@@ -1,0 +1,58 @@
+"#"						
+"# Rest. Type"	"Desc."	"Start (mts)"	"End (mts)"	"PNP (mts)"	"Max. Speed (Km/Hr)"	"Comments (date, other extra info., etc)"
+"Station"	"Periférico Sur"	-60.0	0.0	0.0	15	
+"Other"	"1. Switch Zone."	0.0	181.0		15	
+"Crossing"	"Cruc. Tesoro"	741.9	783.2		20	
+"AccelDecelControl"	"Cruc. Tesoro"	790.0	875.0		35	
+"Station"	"Tesoro"	839.3	899.5	899.5		
+"Section"		860.0				
+"Crossing"	"Cruc. España"	1,840.4	1,867.6		20	
+"AccelDecelControl"	"Cruc. Espana"	1875.0	1950.0		30	
+"Station"	"España"	1,915.8	1,974.2	1,974.2		
+"Station"	"Patria Sur"	2,663.8	2,723.9	2,723.9		
+"Section"		3239	3,267.7			
+"Crossing"	"Cruc. Patria"	3,382.7	3,415.9		20	
+"Station"	"Isla Raza"	3,472.6	3,532.6	3,532.6		
+"Station"	"18 de Marzo"	4,167.4	4,226.7	4,226.7		
+"ModNext"	"Modifier"	4,235.0	-1.0		-1.0	"Eliminate Spike"
+"Crossing"	"Cruc. 18 de Marzo 01"	4,256.2	4,298.2		20	
+"Crossing"	"Cruc. 18 de Marzo 02"	4,807.7	4,845.3		20	
+"AccelDecelControl"	"Cruc. 19 de Marzo 02"	4852.0	4905.0		30	
+"Station"	"Urdaneta"	4,870.2	4,929.0	4,929.0		
+"Section"		5,178.7	5,208.5			
+"Station"	"Unidad Deportiva"	5,464.4	5,524.4	5,524.4		
+"ModNext"	"Modifier"	-1.0	6,455.0		-1.0	"Eliminate Spike"
+"Crossing"	"Cruc. Pino"	6,394.4	6,421.4		20	
+"Station"	"Santa Filomena"	6,421.4	6,480.7	6,480.7		
+"ModNext"	"Modifier"	6,490.0	-1.0		-1.0	"Eliminate Spike"
+"Crossing"	"Cruc. Fresno"	6,505.5	6,531.2		20	
+"Other"	"2. Curve."	6,839.5	7,489.6		50	
+"Station"	"Washington"	7,429.8	7,489.6	7,489.6		
+"Section"		7,429.8	7,461.0			
+"Station"	"Mexicaltzingo"	8,124.4	8,183.1	8,183.1		
+"Section"		8,984.6	9,016.3			
+"Station"	"Juárez"	9,006.6	9,066.1	9,066.1		
+"ModNext"	"Modifier"	9,150.0	-1.0		-1.0	"Eliminate Spike"
+"Other"	"3. Curve."	9,210.0	9,835.9		50	"This was split"
+"Station"	"El Refugio"	9,835.9	9,895.5	9,895.5		
+"Other"	"3. Curve."	9,895.5	10,209.5		50	"Split the curve into two"
+"Station"	"Mezquitan"	10,850.5	10,909.7	10,909.7		
+"Section"		10,973.9	11,003.3			
+"Station"	"Avila Camacho"	11,654.9	11,715.2	11,715.2		
+"Other"	"4. Curve."	12,234.3	13,704.9		50	
+"Station"	"División del Norte"	12,709.9	12,769.6	12,769.6		
+"Section"		12,854.5	12,882.0			
+"Crossing"	"Cruc. Atemajac"	13,571.5	13,626.8		20	
+"AccelDecelControl"	"Cruc. Atemajac"	13,630.0	13,688.0		25	
+"Station"	"Atemajac"	13,645.0	13,704.9	13,704.9		
+"AccelDecelControl"	"Peak after Atemajac"	13,800.0	13,950.0		60	
+"Crossing"	"Cruc. Derma. 1"	14,024.8	14,040.3		20	
+"AccelDecelControl"	"Cruc. Derma. 1"	14,045.0	14,080.0		25	
+"Crossing"	"Cruc. Derma. 2"	14,089.4	14,107.2		20	
+"AccelDecelControl"	"Cruc. Derma. 2"	14,130.0	14,180.0		35	
+"Section"		14,099.9	14,128.2			
+"Station"	"Dermatológico"	14,197.6	14,256.9	14,256.9		
+"AccelDecelControl"	"Cruc. Occidental"	14,275.0	14,400.0		35	
+"Crossing"	"Cruc. Occidental"	14,409.8	14,425.0		20	
+"Other"	"5. Switch Zone."	15,150.6	15,326.9		15	
+"Station"	"Periférico Norte"	15,236.9	15,326.9	15,296.9	15	

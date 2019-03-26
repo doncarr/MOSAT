@@ -1,0 +1,36 @@
+
+export CPATH=../include:/usr/include/mysql
+
+#export PATH=/opt/crosstool/gcc-4.0.1-glibc-2.3.5/arm-unknown-linux-gnu/bin/
+
+RTCOMMON=../librtcommon/arm/librtcommon.a
+
+#CC=arm-linux-gcc -mcpu=arm9 -Wall 
+
+CC=arm-unknown-linux-gnu-gcc -mcpu=arm9 -Wall
+
+#CPP=arm-linux-g++ -mcpu=arm9  -mcpu=arm9-Wall
+
+CPP=arm-unknown-linux-gnu-g++ -Wall -mcpu=arm9
+
+DIR=arm/
+
+$(DIR)%.o:	%.c $(INCLUDES)
+	$(CC) -c -DARM -o $@ $<
+
+$(DIR)%.o:	%.cpp $(INCLUDES)
+	$(CPP) -c -DARM -o $@ $<
+
+all:	$(DIR)librtsms.so $(DIR)testsms_so
+
+$(DIR)librtsms.so:	$(DIR)sms.o ../include/sms.h sms_implement.h
+	$(CPP) -shared -o $(DIR)librtsms.so $(DIR)sms.o $(RTCOMMON) $(DIR)libmysqlclient.so $(DIR)libz.so.1 
+	
+$(DIR)testsms_so: testsms_so.cpp ../include/sms.h
+	$(CPP) -o $(DIR)testsms_so testsms_so.cpp -ldl $(RTCOMMON) $(DIR)libmysqlclient.a $(DIR)libz.a
+		
+clean:
+	rm -fv $(DIR)*.o
+	rm -fv $(DIR)sms
+
+

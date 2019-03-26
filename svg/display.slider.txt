@@ -1,0 +1,7 @@
+svg_header|Slider Demo|0|0|300|150|
+background|thistle|
+slider|SLIDER|yellow|20|30|200|
+slider|SLIDER|blue|20|60|200|
+#slider|tag|green|20|90|200|
+#slider|tag|red|20|120|200|
+

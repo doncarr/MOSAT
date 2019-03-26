@@ -1,0 +1,32 @@
+Chennai Beach	226	4	222
+Chennai Fort	138	4	134
+Park Town	125	4	121
+Chintadripet	108	4	104
+Chepauk	130	4	126
+Tiruvallikkeni	108	4	104
+Light House	163	4	159
+Tirumayilai	135	4	131
+Mandaiveli	120	4	116
+Greenways Road	132	4	128
+Kotturpuram	106	4	102
+Kasturibai Nagar	122	4	118
+Indra Nagar	127	4	123
+Tiruvanmiyur	116	4	112
+Taramani	127	4	123
+Perungudi	118	4	114
+Velachery	157	4	153
+Perungudi	137	4	133
+Taramani	110	4	106
+Tiruvanmiyur	126	4	122
+Indra Nagar	132	4	128
+Kasturibai Nagar	126	4	122
+Kotturpuram	122	4	118
+Greenways Road	97	4	93
+Mandaiveli	128	4	124
+Tirumayilai	151	4	147
+Light House	131	4	127
+Tiruvallikkeni	125	4	121
+Chepauk	130	4	126
+Chintadripet	127	4	123
+Park Town	109	4	105
+Chennai Fort	229	4	225

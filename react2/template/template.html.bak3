@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>Subestaciones</title>
+<META HTTP-EQUIV="refresh" CONTENT="15">
+<meta http-equiv="pragma" content="no-cache">
+<!--
+<BGSOUND SRC="redalert.wav" LOOP="10">
+<embed src="redalert.wav" autostart="true" loop="true" hidden="true" volume="100" height="0" width="0">
+-->
+<script language="javascript">
+function openWin(url) 
+{
+  newWin = window.open(url,'newWin','height=400,width=400,resizable=yes,scrollbars=yes,status=no,dependent=yes');
+  newWin.focus();
+}
+  </script>
+<br>
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(204, 204, 204);"
+ link="#000099" vlink="#990099" alink="#000099">
+<table cellpadding="2" cellspacing="2" border="1"
+ style="width: 1000px; height: 250px; text-align: left; margin-left: auto; margin-right: auto;">
+  <caption><big><big><big>Subestaci&oacute;n
+Juarez</big></big></big><br>
+  </small></small></small></caption><tbody>
+    <tr>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI01|255,255,153|192,192,192)
+			);"><big>
+Disparo <br>
+Interuptor <br>
+Automatico</small><br>
+      </big></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI02|255,255,153|192,192,192)
+			);"><big>Disparo<br>
+Interuptor 23KV<br>
+Por Falla DIODO<br>
+En Rectificador<br>
+      </big></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI03|255,255,153|192,192,192)
+			);"><big>Sobretension<br>
+Entre Tierras<br>
+De Proteccion<br>
+y de Traccion<br>
+      </big></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI04|255,255,153|192,192,192)
+			);"><big>
+Cortocircuito<br>
+Permanente<br>
+Celda +/-NC22<br>
+      </big></td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI05|255,255,153|192,192,192)
+			);"><big>Disparo<br>
+Interruptor 23KV<br>
+Por Sobrecorriente<br>
+o Cortocircuito<br>
+      </big></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI06|255,255,153|192,192,192)
+			);"><big>Alimentacion<br>
+120 V Desde<br>
+Acometida Exterior<br> (CFE)<br>
+      </big></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI07|255,255,153|192,192,192)
+			);"><big><br>
+Falla A<br>
+Estructura<br>
+      </big></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI08|255,255,153|192,192,192)
+			);"><big><br>
+Falta Tension<br>
+Auxiliar 48 V, CC<br>
+      </big></td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI09|255,255,153|192,192,192)
+			);"><big>Disparo<br>
+Interruptor 23 KV<br>
+Por Falla En<br>
+Transformador<br>
+      </big></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI10|255,255,153|192,192,192)
+			);"><big><br>
+Falta Tension<br>
+Auxiliar 120V<br>
+      </big></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI11|255,255,153|192,192,192)
+			);"><big>
+Cortocircuito<br>
+Permanente<br>
+Celda&nbsp; -/+NC21<br>
+      </big></td>
+      <td
+ style="vertical-align: top; text-align: center; height: 80px; width: 200px; background-color: 
+			rgb(
+			$$$$DI(DI12|255,255,153|192,192,192)
+			);"><big>
+Falta Tension<br>
+Senalizacion<br>
+de Emergencias<br>
+      </big></td>
+    </tr>
+  </tbody>
+</table>
+<br><br>
+<table cellpadding="2" cellspacing="2" border="1"
+ style="text-align: left; width: 100%; background-color: rgb(192, 192, 192);">
+  <tbody>
+    <tr align="center">
+      <td style="vertical-align: top;" colspan="2">Preferente 23KV (J21)<br>
+      </td>
+      <td style="vertical-align: top;" colspan="2">Emergente 23KV (J11)<br>
+      </td>
+      <td style="vertical-align: top;" colspan="2">Alimentador de catenaria<br>(NC21)<br>
+      </td>
+      <td style="vertical-align: top;" colspan="2">Alimentador de catenaria<br>(NC22)<br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; text-align: center; background-color: rgb(
+			$$$$DI(DI13|255,255,153|192,192,192)
+			);">Conectado<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; background-color: rgb(
+			$$$$DI(DI13|192,192,192|255,255,153)
+			);">Desconectado<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; background-color: rgb(
+			$$$$DI(DI14|255,255,153|192,192,192)
+			);">Conectado<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; background-color: rgb(
+			$$$$DI(DI14|192,192,192|255,255,153)
+			);">Desconectado<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; background-color: rgb(
+			$$$$DI(DI15|255,255,153|192,192,192)
+			);">Conectado<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; background-color: rgb(
+			$$$$DI(DI15|192,192,192|255,255,153)
+			);">Desconectado<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; background-color: rgb(
+			$$$$DI(DI16|255,255,153|192,192,192)
+			);">Conectado<br>
+      </td>
+      <td
+ style="vertical-align: top; text-align: center; background-color: rgb(
+			$$$$DI(DI16|192,192,192|255,255,153)
+			);">Desconectado<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: center;">
+      <a href="#"
+      onclick="openWin('/cgi-bin/reactcgi?do01.tdo%281.0%29');return false;"
+      class="menu8">[Conectar]</a> <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <a href="#"
+      onclick="openWin('/cgi-bin/reactcgi?do02.tdo%281.0%29');return false;"
+      class="menu8">[Desconectar]</a> <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <a href="#"
+      onclick="openWin('/cgi-bin/reactcgi?do03.tdo%281.0%29');return false;"
+      class="menu8">[Conectar]</a> <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <a href="#"
+      onclick="openWin('/cgi-bin/reactcgi?do04.tdo%281.0%29');return false;"
+      class="menu8">[Desconectar]</a> <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <a href="#"
+      onclick="openWin('/cgi-bin/reactcgi?do05.tdo%281.0%29');return false;"
+      class="menu8">[Conectar]</a> <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <a href="#"
+      onclick="openWin('/cgi-bin/reactcgi?do06.tdo%281.0%29');return false;"
+      class="menu8">[Desconectar]</a> <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <a href="#"
+      onclick="openWin('/cgi-bin/reactcgi?do07.tdo%281.0%29');return false;"
+      class="menu8">[Conectar]</a> <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">
+      <a href="#"
+      onclick="openWin('/cgi-bin/reactcgi?do08.tdo%281.0%29');return false;"
+      class="menu8">[Desconectar]</a> <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+</body>
+</html>

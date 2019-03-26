@@ -1,0 +1,42 @@
+#    Tag (string max 25)
+#    Description (string max 50)
+#    Driver Number (char max 25)
+#    Card (char max 25)
+#    Channel (char max 25)
+#    Low Description (string max 12)
+#    High Description (string max 12)
+#    Alarm State (drop down {high, low, none})
+#    Shutdown State  (drop down {high, low, none})
+DI_00|Discrete Input 00|0|0|0|OFF|ON|N|N|
+DI_01|Discrete Input 01|0|0|1|OFF|ON|N|N|
+DI_02|Discrete Input 02|0|0|2|OFF|ON|N|N|
+DI_03|Discrete Input 03|0|0|3|OFF|ON|N|N|
+DI_04|Discrete Input 04|0|0|4|OFF|ON|N|N|
+DI_05|Discrete Input 05|0|0|5|OFF|ON|N|N|
+DI_06|Discrete Input 06|0|0|6|OFF|ON|N|N|
+DI_07|Discrete Input 07|0|0|7|OFF|ON|N|N|
+DI_08|Discrete Input 08|0|0|8|OFF|ON|N|N|
+DI_09|Discrete Input 09|0|0|9|OFF|ON|N|N|
+DI_10|Discrete Input 10|0|0|10|OFF|ON|N|N|
+DI_11|Discrete Input 11|0|0|11|OFF|ON|N|N|
+DI_12|Discrete Input 12|0|0|12|OFF|ON|N|N|
+DI_13|Discrete Input 13|0|0|13|OFF|ON|N|N|
+DI_14|Discrete Input 14|0|0|14|OFF|ON|N|N|
+DI_15|Discrete Input 15|0|0|15|OFF|ON|N|N|
+# Outputs mapped starting at 32
+DOX_00|Discrete Output 00|0|0|32|OFF|ON|N|N|
+DOX_01|Discrete Output 01|0|0|33|OFF|ON|N|N|
+DOX_02|Discrete Output 02|0|0|34|OFF|ON|N|N|
+DOX_03|Discrete Output 03|0|0|35|OFF|ON|N|N|
+DOX_04|Discrete Output 04|0|0|36|OFF|ON|N|N|
+DOX_05|Discrete Output 05|0|0|37|OFF|ON|N|N|
+DOX_06|Discrete Output 06|0|0|38|OFF|ON|N|N|
+DOX_07|Discrete Output 07|0|0|39|OFF|ON|N|N|
+DOX_08|Discrete Output 08|0|0|40|OFF|ON|N|N|
+DOX_09|Discrete Output 09|0|0|41|OFF|ON|N|N|
+DOX_10|Discrete Output 10|0|0|42|OFF|ON|N|N|
+DOX_11|Discrete Output 11|0|0|43|OFF|ON|N|N|
+DOX_12|Discrete Output 12|0|0|44|OFF|ON|N|N|
+DOX_13|Discrete Output 13|0|0|45|OFF|ON|N|N|
+DOX_14|Discrete Output 14|0|0|46|OFF|ON|N|N|
+DOX_15|Discrete Output 15|0|0|47|OFF|ON|N|N|

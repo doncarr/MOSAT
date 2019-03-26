@@ -1,0 +1,19 @@
+svg_header|Spray Demo|0|0|300|150|
+background|thistle|
+simple_tank|c|black|30|10|40|110|1.5|25|3|
+simple_pipe|gray|3|50|120|v|130|h|65|
+simple_pipe|gray|3|70|126|h|88|
+pump|SPRAY_PUMP_ON|lime|gray|65|130|12|1|90|
+bar|PRESSURE|orange|110|45|70|
+#simple_rect|PRESSURE|mediumslateblue|110|45|70|
+simple_pipe|gray|3|90|126|v|13.5|h|70|
+simple_pipe|gray|3|92|126|h|140|v|10|h|280|
+pvalve3way|PVALVE|magenta|gray|90|126|12|1|180|
+analog_pv|PVALVE|firebrick|90|138|5|
+simple_pipe|gray|3|180|15|v|11.5|b|3|
+simple_pipe|gray|3|250|15|v|11.5|b|3|
+spray|PRESSURE|180|15|7|1|4|70|90|
+spray|PRESSURE|250|15|7|1|4|70|90|
+text|20|113|7|black|middle|Pump|
+switch|SPRAY_PUMP_ON|lime|red|5|115|30|
+slider|PVALVE|blue|110|135.5|180|

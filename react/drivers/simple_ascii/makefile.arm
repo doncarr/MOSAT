@@ -1,0 +1,32 @@
+
+CPP=  arm-unknown-linux-gnu-g++ -mcpu=arm9
+
+export CPATH=../../../include:../../
+
+RTMODBUS=../../../modbus/arm/librtmodbus.a 
+
+RTCOMMON=../../../librtcommon/arm/librtcommon.a
+
+%.o:    %.cpp $(INCLUDES)
+	$(CPP) -c -Wall -o $@ $<
+
+all: sim_simple_ascii libsimple_ascii_drv.so
+
+libsimple_ascii_drv.so: simple_ascii.o simple_ascii_read.o  
+	$(CPP) -Wall -o libsimple_ascii_drv.so -shared simple_ascii.o simple_ascii_read.o -lrt
+
+
+
+simple_ascii.o:	simple_ascii.cpp simple_ascii.h
+	$(CPP) -fpic -c simple_ascii.cpp 
+
+sim_simple_ascii: sim_simple_ascii.cpp simple_ascii_read.cpp 
+	$(CPP) -o sim_simple_ascii sim_simple_ascii.cpp simple_ascii_read.cpp -lrt $(RTCOMMON) $(RTMODBUS)
+
+temps: temps.o
+	$(CPP) -g -Wall -lrt -o temps temps.o $(RTMODBUS) $(RTCOMMON)
+
+clean:
+	rm *.o *.so sim_simple_ascii
+
+

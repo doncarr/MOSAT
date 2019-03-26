@@ -1,0 +1,22 @@
+REF_VOLTAGE|Reference Voltage|volts|0|0|0|0.0|10.0|0|32767|2|0.0|0|0|0|0|0|0|0|0|0|
+#    Tag
+#    Description
+#    Engineering Units Label
+#    Driver Number
+#    Card
+#    Channel
+#    Engineering Units Low
+#    Engineering Units High
+#    Raw Value Low
+#    Raw Value High
+#    Decimal Places
+#    Zero Cutoff
+#    Alarm Low
+#    Caution Low
+#    Caution High
+#    Alarm High
+#    Alarm Deadband
+#    Alarm Low Enable
+#    Caution Low Enable
+#    Caution High Enable
+#    Alarm High Enable

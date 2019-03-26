@@ -1,0 +1,13 @@
+#    Tag (string max 25)
+#    Description (string max 50)
+#    Driver Number (char max 25)
+#    Card (char max 25)
+#    Channel (char max 25)
+#    Low Description (string max 12)
+#    High Description (string max 12)
+#    Alarm State (drop down {high, low, none})
+#    Shutdown State  (drop down {high, low, none})
+ON_AC1|AC unit one is on|0|0|0|ON|OFF|N|N|
+ON_AC1|AC unit two is on|0|0|1|ON|OFF|N|N|
+DRIP_PAN_AC1|AC unit one drip pan is full|0|0|3|ON|OFF|N|N|
+DRIP_PAN_AC2|AC unit two drip pan is full|0|0|4|ON|OFF|N|N|

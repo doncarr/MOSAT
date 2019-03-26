@@ -1,0 +1,93 @@
+
+This document is to describe the general way that trainpos works and what information comes in and goes out.
+
+First, a little bit about the type of train system we are monitoring and how we measure things. This project is really only for light rail systems where all tracks are one-way during normal service. We assume that trains enter service at some point, travel a length of track (usually one extreme to the other), crossing sensors that send "crossing events" back to central control, and also stopping at stations to pick up and drop off passengers. For our purposes, all of our segments begin at passenger stations, and end at the next. Trains enter service at a passenger station, and then leave service at a passenger station. This is only natural, since you go into service by picking up your first passengers, and you can only pick them up at a passenger station. Before leaving service, you must drop off all passengers that you have.
+
+So to start, I will give a simple text diagram to illustrate this. Here, the '=' will be the symbol for a passenger station, and an 'x' is a crossing sensor or track circuit division. Here we have 7 stations labeled A through G, with each segment having 3 sensors. Please notice that the number of sensors in each segment is variable, and most systems will have a variable number. 
+
+A    S1    S2    S3   B    S1    S2    S3   C    S1    S2    S3   D    S1    S2    S3   E    S1    S2    S3   F    S1    S2    S3   G
+=----x-----x-----x----=----x-----x-----x----=----x-----x-----x----=----x-----x-----x----=----x-----x-----x----=----x-----x-----x----=
+
+We will further assume that trains enter service at station 'A'. Thus, we will detect that a train has entered service when is crosses sensor A-S1. Thus, a train entering service MUST sequentially cross A-S1, A-S2, A-S3, B-S1, B-S2, B-S3, . . . F-S1, F-S2, F-S3. When the train crosses F-S3, we assume that the train is about to arrive at the final station and will drop off all remaining passengers at station G. Please notice that this scheme works for a circular track (or virtual circle where the train goes up and back on parallel tracks), and in this case, A and G are the same station, and the passengers do not necessarily have to get off, and the train might immediately go back into service. More on this later. 
+
+So, given this information, when the sensor A-S1 is crossed, we have an indication that a train has just entered service. When sensor F-S3 is crossed, a train has just left service. Since we know that trains are first in, first out (trains can not pass each other in this model), we could use the information from just these two sensors to determine how many trains are in service, and keep a table of them. Of course this would be very limited information and not very useful. But, for a minute, assume we have just started our program, and we only have a list of the trains in service, and their sequential order. The people in operations are NOT very happy and they want more information.
+
+So, next, we tell the people in operations that we can at least let them know between which two sensors a train is. To do this, every time a sensor is crossed, and a crossing event is generated, we must determine which train caused the crossing event, and then increment the location of that train to show that it is now between the next two sensors. Here, we will introduce another assumption of our system. We assume that all sensors are close enough together, such that two trains can NEVER be between the same two sensors. This is for practical reasons and also safety reasons, more on that later. So, with this assumption, our job is now very easy!! Anytime we receive an event, we just see what train was between the sensor that caused the event, and the one before, and now mark that train as being between the next two sensors. Now, we are very happy. Since trains can not skip sensors, and can not pass each other (or even get close to each other for that matter), We will now know more or less where each train is. Of course life is never quite so simple. In real life, sensors might stop working, or worse yet, give spurious signals (or was that a kid with a metal bar waving it over the inductive sensor and laughing about our problems). Well, we will talk more about missing crossing events and extra crossing events, and reporting alarms, and trying to figure out the difference between a sensor not working and a train that stopped.
+
+Now, back to those pesky people in operations that are still not happy. They have reports that some trains are late and some are early, and passengers are complaining. They are also worried that trains might get too close together and there would be safety problems. The operations people are very demanding and want to know a lot of things. Operations wants to know as exactly as possible how many minutes and seconds there are between each pair of trains. Operations wants to know as exactly as possible how many seconds early or late each train is. Operations wants to have AT LEAST an estimate of where each train SHOULD be when they are between sensors. Operations wants to know when trains are very late to cross a sensor and may have stopped. Operations wants to know if trains entered service when they were supposed to enter service. These operations guys are very demanding, but, they want to improve service and safety, and we want to help them.
+
+So, now we have a lot more work, and we need a lot more more information. To start, we are going to need to know when trains are scheduled to enter service (we call this the service timetable). Next, we are told that the distance between passenger stations is variable, some have curves, some have crossings, and the time to get from one station to the next is VERY variable. We realize that we will need to know how long it takes to get from each station to the next one, and exactly how much time it takes to get to each sensor after leaving each station. So, now, with all this information, we can calculate a lot of VERY interesting things. We can calculate exactly how long it SHOULD take to get to each station after entering service, and even how long it SHOULD take to cross each sensor after entering service. Wow, with this, knowing how long it should take a train to reach each sensor, we can calculate how many seconds early or late the train is when it crosses EACH sensor. With this, we can get extra information on each train every time they cross a sensor. Ok, so now we should talk about the files that give us the information we need.
+
+First is the timetable file showing when trains SHOULD enter service, starting early in the morning. here is an example from India, the first 20 departures in the morning:
+
+BVL1    6:05:00
+BVL3    6:20:00
+BVL5    6:40:00
+BVL7    6:55:00
+BVL9    7:10:00
+BVL11   7:20:00
+BVL13   7:35:00
+BVL15   7:50:00
+BVL17   8:00:00
+BVL19   8:10:00
+BVL21   8:20:00
+BVL23   8:30:00
+BVL25   8:45:00
+BVL27   9:00:00
+BVL29   9:10:00
+BVL31   9:25:00
+BVL33   9:40:00
+BVL35   9:50:00
+BVL37   10:00:00
+BVL39   10:20:00
+
+This is a tab delimited file. The first column is the identifier assigned to each train as it enters service. As you will see, people are different all over the world (or even within the same country), and each one has different ideas of how things should be labeled. So, we will let them assign their labels how they want. The next column is the scheduled departure time to the nearest second. We can use this information to put labels on trains when they enter service, and also to determine if they were early or late entering service. Ok, this is only useful to know if they entered service at the right time. Now we need another file to know how they should progress through the system.
+
+The next file we will call the sections file, also tab delimited. We will use an example from India again. Following are the first 10 lines:
+
+Chennai Beach   226     4       222
+Chennai Fort    138     4       134
+Park Town       125     4       121
+Chintadripet    108     4       104
+Chepauk 130     4       126
+Tiruvallikkeni  108     4       104
+Light House     163     4       159
+Tirumayilai     135     4       131
+Mandaiveli      120     4       116
+Greenways Road  132     4       128
+
+In this file, the first column is the name of the Station. The next column is how many seconds it takes to travel from this station to the next, and finally, there are a variable number of columns, one column for each sensor that you will cross before arriving at the next station. For each sensor, we give the expected time in seconds that it takes to reach that sensor after leaving the station. 
+
+Measuring position. Before we can go any farther, we need to talk about the measurement we use to talk about the location of the train, or how close one train is to the next. I will start talking about how close one train is to the next. Here, we are NOT interested in knowing how many meters separate trains. The actual distance between two successive trains is constantly changing. For instance, when one train is stopped at a station, the other will be at full speed, and thus getting about 18 meters closer every second at 70 kmh. And, in any case what we are interested in knowing is the TIME between the trains. Assuming two drivers driving perfectly, the TIME between trains is a constant, while the distance between them is constantly changing. From a timetable perspective, this is what we want: exact time between train arrivals and departures. So, measuring time between trains in minutes and seconds is very natural. What is not as natural is to measure the location of a train in minutes and seconds rather than in meters. But, that is what we will be doing with this program. After you think about it for a while, it becomes more natural. When a train crosses a sensor, the exact location of the sensor is really irrelevant. What we want to know when a train crosses a sensor, are things like "how early or late is this train", "how close in minutes and seconds is it to the train ahead, and the train behind. With this information we can verify train spacing, and the performance (seconds early or late) of each train. So, for the "location" of each sensor, we will use a measure of how many minutes and seconds does it takes for a "perfect" driver under "perfect" conditions to reach this sensor after leaving the starting station. Of course any location on the track can be identified by the number of minutes and seconds it take to reach it from the starting point. 
+
+Hopefully, you will be beginning to see that with this view of position measured in minutes and seconds measured from the start, it is actually quite easy to calculate all of the things we need to calculate. From here on out, when we talk about location in minutes and seconds, we mean for a "perfect" driver under "perfect" conditions. 
+
+Calculations. Now lets start making some calculations. Let's pretend that we just received a crossing event for sensor X. We can look up sensor X and see it's position in minutes and seconds from the start, so now we know where the train is in our system of measurement. Next, we can search our list of trains in service, and find the train that last crossed the sensor before X or sensor X-1.  There had better be such a train, or this is a spurious event or software error. For now, let us assume that all is perfect, and no sensors ever fail, and there are no spurious events. So, we have now identified the train, and we know when it was scheduled to enter service and when it actually entered service. Adding the location of the sensor in minutes and seconds to the time it should have entered service, we can calculate when the train SHOULD have crossed this sensor if everything in the world were perfect. Now, since computers have clocks, we know what time the train ACTUALLY crossed this sensor, and we can now calculate how many seconds early or late this train is. At the same time, we can correct the running total of the position of this train right now in minutes and seconds. Well, only thing is I have not mentioned YET, that we are keeping a running total of the location of each train in minutes and seconds. Next we will discuss how that is done.
+
+Estimating train position after crossing one sensor and before reaching the next. For each train, we always want to keep a running estimate of where each train is. Since our "position" measurement is in minutes and seconds, estimating where the train is AFTER crossing a sensor is quite easy. If we update our estimate every second, we just have to increment the position of the train by one every second. That is it. So, we keep a pretty good estimate of where a train is by just incrementing the "position" by one each and every second, then correcting the "position" every time a new sensor is crossed.
+
+Calculating an estimate of the time between trains. Now that we have the "position" of each train in minutes and seconds, if we want to know the time between two trains it is actually quite easy, it is just a simple subtraction. You subtract their positions and that is the time between them. If you want to know the percent of travel (in time) from one station to the next, you just subtract the position of the train from the location of the last station, and then divide this by the time to travel to the next station from the last station. You should now be seeing that our decision to to measure "position" in minutes and seconds, although not very intuitive, has greatly simplified calculating everything we need to know, and made estimating position very simple. Next we will talk about how to know exactly where a train is in meters, just for reference, though we will probably not care.
+
+Calculating position in meters. Now, to calculate position in meters, everything gets a whole lot more complicated. To calculate position in minutes and seconds, we just need to know the expected/desired time to travel each segment and reach each sensor. It does not matter where there are curves, crossings, or any other place where the speed of the train is restricted. We do not have to know rate of acceleration and deceleration. To calculate the position of the train in meters, we need to know all of these things and deal with a lot of nasty equations. I will refer you to my derivation of equations at:
+
+http://docs.google.com/Doc?id=dfqhr2t2_16c7wjfr
+
+As you can see in our world of measuring distances everything gets very complicated. But, for our other related project, "onboard", we can not avoid all of these complications and must confront them head on, though I have saved the worst for these details for offline processing. For now, I will just leave you with the knowledge, that we can also calculate locations in meters, but need to know the location of all curves, crossings, maximum speeds, acceleration and deceleration rates, etc, etc, and through some complicated equations, come up with velocity profiles, and then use this to calculate position. I should note at this point, we could just instrument a train, and put our best driver behind the wheel, and record the velocity profiles for a round trip. Ok, well, if you are interested in all of this, you can go and look at the "onboard" project.
+
+Ok, now that we have all of this behind us, we are ready to talk about "trainpos" actually works.
+
+How trainpos works.
+------------------
+
+Trainpos is basically divided into two parts that talk to each other via Unix message queues. The first part that we will describe is the communications manager module that knows how to communicate with all of the remote devices that actually are connected to the sensors. This module will be responsible for communicating with how many ever remote device there are and passing all of the events on to the 
+process that processes all of the events.
+
+Communications manager
+----------------------
+
+As we started describing above, the communications manager must communicate with all of the devices connected directly to sensors. When I say "sensors", I am using the word a little loose. There are many different ways to determine when a train has crossed a certain point on the tracks. You can use RFID sensors, inductive sensors, track circuits, and more possibilities than we can mention here. The idea is that some way, some how, you can detect when a train passes a certain point on the tracks. With track circuits, you also get "presence" information, which can be helpful, but still gives you the same basic information that a train has crossed a certain point.
+
+I should say that our first communications manager is not really a communications manager at all, but a simulator that generates the same information as a real running system. The simulator reads the timetable and the sections file, and then randomly assigns slightly slow drivers or slightly fast drivers when a train enters the system, and also add a random time to travel each segment. The simulator adds a train to the system when one is scheduled to enter, and then starts generating the crossing events for that train. Trainpos can not tell the difference between a real running system and the simulator. In fact, you can replace the simulator with a real systems and do NOT need to recompile trainpos. You can use the simulator to train new employees, check new schedules before going live, and, of course, most importantly, test changes to the software before going live. The great thing about the simulator, is that you can run faster than real-time. The simulator in fact runs at 10x real-time by default, since real-time is rather boring. The simulator can also simulate all kinds of possible errors that might occur in a real running system such as failed sensors, flaky sensors, spurious events, etc, to make sure that the software responds correctly to the errors, and can recover correctly from errors.
+
+
+
