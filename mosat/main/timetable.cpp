@@ -1104,9 +1104,11 @@ int main(int argc, char *argv[])
     char buf1[30];
     localtime_r(&programmed[i], &mytm);
     strftime(buf1, sizeof(buf1), "%T, %F", &mytm);
+    /**
     int dif = 5;
     if (i == 5) dif = 10;
     if (i == 10) dif = 20;
+    **/
     actual[i] = 0; 
   }
 

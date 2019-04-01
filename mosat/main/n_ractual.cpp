@@ -24,7 +24,8 @@ int n_read_actual(char *fname, time_t times[], int max,
   }
 
   int n_lines = 0;
-  time_t this_time, last_time;
+  time_t this_time;
+  //time_t last_time;
   for (int i=0; NULL != fgets(line, sizeof(line), fp); i++)
   {
     char tmp[300];
@@ -49,7 +50,7 @@ int n_read_actual(char *fname, time_t times[], int max,
       printf("Can't convert date: %s\n", argv[2]);
       exit(0);
     }
-    last_time = this_time;
+    //last_time = this_time;
     this_time = mktime(&mytm);
     //if (sensor != exit_event)
     if ((sensor < 51 || sensor > 59)) 

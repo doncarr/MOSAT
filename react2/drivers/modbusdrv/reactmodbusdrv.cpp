@@ -549,11 +549,13 @@ void reactmodbus_driver_t::set_mod_error(int retval, int unit_id)
            (retval < 0) ? "YES" : "NO", unit_id, ch, retval, 
               is_err? "ERROR": "OK", ch); 
   }
+  /***
   for (int i=0; i < modbus_error_map_n; i++)
   {
     int ach = modbus_error_map_start + i;
-    //fprintf(dfp, "tmp_di_vals[%d] = %s\n", ach, tmp_di_vals[ach] ? "TRUE":"FALSE");
+    fprintf(dfp, "tmp_di_vals[%d] = %s\n", ach, tmp_di_vals[ach] ? "TRUE":"FALSE");
   }
+  ***/
   fflush(dfp);
 }
 
