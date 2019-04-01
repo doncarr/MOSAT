@@ -164,7 +164,7 @@ gen_php:	gen_php.cpp
 	$(CPP) -g  -o gen_php gen_php.cpp $(RTCOMMON)
 
 clean:
-	rm -fv *.o *.so react2 rconsole rdisplay reactcgi gen utest integrate
+	rm -fv *.o *.so react2 rconsole rdisplay reactcgi gen utest integrate dbfiles/sock_log.txt
 	rm -fv rtshmmain gen_case.cpp gen_script.cpp gen_script.h gen_php
 	for i in $(DRIVERDIRS);  do make -C $$i clean; done
 	for i in $(DRIVERDIRS2); do  make -C $$i clean; done
