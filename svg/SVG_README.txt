@@ -89,5 +89,8 @@ Tips
 See this definition of a drop shadow:
 
 http://oskamp.dyndns.org/SiemensClock/SVG/
+That site is no longer active, but, you can find a modified
+version of that drop shado here: svgplugins/pipeshadow.svg
+Though, it is used for more than just pipe shadows . . .
 
 
