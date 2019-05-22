@@ -1,7 +1,6 @@
 This will be a complete re-write of REACT.
 
-
-First, this version will talk native http so that you will not need an Apache module or Node.js instance to redirect data requests to REACT. We will also support listening on a Unix socket so that for instance, NGINX could readirect data urls locally for instance. The payloads will all be JSON, but, we will consider adding other formats at a later date.
+First, this version will talk native http so that you will not need an Apache module or Node.js instance to redirect data requests to REACT. We will also support listening on a Unix socket so that for instance, NGINX could readirect data urls locally. The payloads will all be JSON, but, we will consider adding other formats at a later date.
 
 All of the point types will now become plugins so that no re-compile is needed to add a point type. We will also allow both C and C++ plugins, and, likely other languages at some point.
 
@@ -13,30 +12,67 @@ We need to consider if we should continue to support the main program directly s
 
 And, this gets us into the how much we should support "light-weight" applications vs "heavy back-end" applications.
 
+------------------
+scripting
+
+How should we support a scripting language? Should we support remote scripts that send one line at a time to system?
+
+Each point type should expose functions that can be executed as part of a script.
+
+We could create object types to facilitate complex control sequences rather than trying to do it all in a script. In this case, a script could kick send a message to an object to start the process.
+
+Could we even create an object on the fly to do an operation?
+
+Scripts for bach processing or testing applications?
+------------------
+
+We will require testing for all point types and in general all changes to REACT.
+
+-------------------
+Modes of operation
 We also need to decide if we still support two different modes that we have supported before: 
 
 1) Back-end continuous running applications.
-2) Time limited applications such as a test or single batches.
+2) Time limited applications such as a test or batches.
 
-How should we do user security. Should we have compartments, or, only levels?
+Though, there might be a system that runs 24 hours a day that needs to kick off a bach in part of the sysystem, so, there are mixes of things.
+---------------------
+
+--------------
+History
+How should we do user security. Should we have compartments, or, only levels? Compartments based on AOR?
+
+In any case, users will be authenticated and we will be able to determine the currently logged in user from the http headers, so this to a certain extent implies an external system to authenticate users.
+--------------
 
 Another issue is how much we support run-time re-configuration. Before we did NOT support adding a new point type at run time, but, each point type could support changing configuration at runtime through a script. For instance, a PID control point could support changing a setpoint at runtime. If we DO support this, should we support letting a point type decide to save his state.
 
 How do we support storing the configuration of a system. Before we only supported flat delimited text files. The initial plan is to switch to sqlite and support automatic translation between a database row and a C structure. But, this raises the question of supporting arbitrary data types like with JSON with arrays of structures and structures that contain structures.  
 
-What support should there be for history? How should individual point types be required to support history? My initial thought is to have plugable history so that others can support different history, but, the history interface to individual database points should be defined.
+What support should there be for history? How should individual point types be required to support history? My initial thought is to have plugable history so that others can support different history, but, the history interface to individual database points should be defined. 
 
-How should we support an alarm manager? Previously, there was no alarm manager, it was up to individual database points to have fields to indicate alarms, and then a display could show alarms. Should we support the concept of "active", "acknowledged", severity ("alarm", "caution", "normal"). Should it be 100% the responsibility of individual point types to determine alarm states, or, should we allow the configuration in an alarm manager? I am leaning to a combination, where we can configure a new alarm on an attribure of an existing point type. 
+What about real-time history where you have a small window of history into the past that can be immmediately accessed when an event is detected. The even could be a sudden pressure change in a pipeline, or, a transmission shifting. When an even occurs, you might want to go into the past and the future. So, keep say 15 seconds into the past, and 15 seconds into the future. For a transmission shift, this might be more like 500 miliseconds into the past and 500 miliseconds into the future.
+
+-------------------
+Alarms
+
+How should we support an alarm manager? Previously, there was no alarm manager, it was up to individual database points to have fields to indicate alarms, and then a display could show alarms. Should we support the concept of "active", "acknowledged", severity ("alarm", "caution", "normal"). Should it be 100% the responsibility of individual point types to determine alarm states, or, should we allow the configuration in an alarm manager? I am leaning to a combination, where we can configure a new alarm on an attribure of an existing point dype. 
+
+Alarm manager design issues: Under high alarm load, how do we limit the number of messages to clients? There has to be a tradeoff between immediately dispaching alarms and the total number of messages sent. One algorithm would be to send out an alarm immediately if there has been no message sent in the last 5 seconds, otherwise, queue the current alarm for up to 5 seconds total from the last time an alarm was sent waiting for more alarms to send along at the same time. Thus, there would be a maximum of one message every 5 seconds to each client, keeping the system from overloading when something happens. Also the alarm manager should incorporate AOR (area of responsibility), to filter the alarms sent to each client. Could we use Redis to cache alarms?
+
+How should the alarms be cached for the current users? There could be hundreds of alarms that are active (more than can be displayed to the user), such that he must scroll through them. So, should they be cached locally, or, on the server. I would go for on the server, as, the local copy could become stale, even after a minute or so, and when you page down, you should ask the server for the next group to display. and, this is standard web services practice to limit the number of items requested in a single call, to that you can then do a "next" with the last one returned in the previous call. Obviously, if the user were to change the sort order, it would require another request to the server.
+---------------
 
 This brings up the need to define standard attribute names and whether or not they should be case sensitive. 
 
+How should we allow inheritance? Should we have an interface concept like Java? Should we have both inheritance and interfaces? Should we allow multiple inheritance?
+
 All
-  tag (text)
+  tag (tag) // tag is a string that identifies a point
   description (text)
   aor_read (bits 64) // this is area of responsibility, to support compartmentalized security
   aor_write (bits 64) // for write operations 
-  location_tag (text)  
-
+  location_tag (tag)
 
 Analog
   pv (float)
@@ -54,15 +90,40 @@ Analog
   decimal_points (int)
   min_scale (float)
   max_scale (float)
+  --
+  set_pv(float pv)
 
 Discrete
   pv (boolean)
   pv_string (text)
   low_description (text)
   high_description (text)
-  alarm_state (enum - high,low,none)
+  caution_state (enum - high,low,none) If there is an alarm_state, then this should be "none"
+  alarm_state (enum - high,low,none) If there is a caution_state, then this should be "none"
+  --
+  set_pv(bool pv)
+
+Int
+  pv (int)
+  pv_string (text)
+  --
+  set_pv(int pv)
+
+Enum
+  pv (int) 
+  pv_string (text)
+  pv_values (array of {int, text}) We need to specify all possible states and the value for each.
+  caution_state (text)  blank for none.
+  alarm_state (text) blank for none. 
+  --
+  --
+  set_pv(int pv) // must be one of the integer values or will fail
+  set_pv_string(text pv) // must be one of the strings or will fail
 
 Analog Input (extra attributes)
+  driver (text) // tag of the driver
+  channel (text) // channel specification is unique to each driver.
+                 // how to control editing and verifying the channel?
   raw_low (float)
   raw_high (float)
   eu_lo (float)
@@ -72,7 +133,31 @@ Analog Input (extra attributes)
   //How should we support calibration?
 
 Discrete Input (extra attributes)
+  driver (tag) // tag of the driver
+  channel (text) // channel specification is unique to each driver.
   invert_input (boolean)
+
+Analog Control
+  ai_point (tag)
+  ao_point (tag)
+  setpoint_limit_hi (float)
+  setpoint_limit_lo (float)
+  setpoint (float)
+  deviation_alarm (float)
+  deviation_alarm_enable (bool)
+  deviation_caution (float)
+  deviation_caution_enable (bool)
+  scale_low (float)
+  scale_high (float)
+  --
+  change_setpoint(float new_setpoint, float ramp_time)
+  start_control()
+  stop_control()
+
+PID Control
+  p_gain (float)
+  i_time (float)
+  d_time (float)
 
 Location
   name (text) // short name that can be displayed, can contain spaces, puncutation.
@@ -82,9 +167,20 @@ Location
   // Should we support any real-time attributes here such as "door-open", "intrusion-detected"?
   // We could reference other discrete points for the attributes.
 
+Redis? Can we leverage Redis to support possibly hundreds of clients reading real-time data? Thus, react would feed Redis with real-time values, and then, a cluster of Redis servers could support clients. How would we batch updates in real-time to a remote server.
+
 Driver
   name (text) // short name that can be displayed, can contain spaces, puncutation.
   // should we support the card/channel concept? 
 
 How should we handle concurrency, and, where does the responsibility lie? Should the system only allow one request at a time for each point type, or should each point type be required to administer concurrency? Should we even allow general concurrency?
 
+------------
+Blockchain interface.
+
+So, the "control system" should have a signing key such that, when certain operations are performed, the system will log that operation onto a blockchain, with the user ID of the person that triggered it. You could possibly use a "smart bage" system so that you would have to hold your bage close to a scanner to authorize the operation. Thus, the item put on the block chain would be signed by the control system, AND the employee.
+
+This system would NOT be or include a blockchain, rather, it would interface to blockchains.
+
+Alternatively, for less critical things, it could be set up to just log to a file all operations and the employeee that initiated them.
+--------------
