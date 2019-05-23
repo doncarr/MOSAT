@@ -1,5 +1,5 @@
 
-DIRS= librtcommon modbus mosat react2 svg trainpos onboard classic_tcontrol
+DIRS= librtcommon modbus mosat react2 react3 svg trainpos onboard classic_tcontrol
 
 PPCDIRS= librtcommon mosat react 
 
