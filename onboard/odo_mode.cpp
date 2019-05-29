@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
   utimer.set_start_time();
   int sample_n = 1;
   bool q_hit = false;
-  bool q_count = 0;
+  int q_count = 0;
   for (int i=0; true; i++)
   {
     get_actual_speed_dist(0, 0, &dist, &speed, &discretes);
