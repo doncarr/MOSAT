@@ -51,30 +51,51 @@ How do we support storing the configuration of a system. Before we only supporte
 
 What support should there be for history? How should individual point types be required to support history? My initial thought is to have plugable history so that others can support different history, but, the history interface to individual database points should be defined. 
 
+--------------
+History
 What about real-time history where you have a small window of history into the past that can be immmediately accessed when an event is detected. The even could be a sudden pressure change in a pipeline, or, a transmission shifting. When an even occurs, you might want to go into the past and the future. So, keep say 15 seconds into the past, and 15 seconds into the future. For a transmission shift, this might be more like 500 miliseconds into the past and 500 miliseconds into the future.
 
+Typical history types:
+
+1) instantaneous: An array of recent values over the last hour or minutes. The time interval between these scans depends on the scan rate. On a "fast" system, you would have less time to avoid using too much memory. On a "slow" system, you might have enough memory for more time. A slower running SCADA system might keep a running window of the last hour of readings for each point.
+2) Hour averages / totals
+3) Day averages / totals
+4) Week averages / totals
+5) Month averages / totals
+6) Yearly averages / totals
+
+History storage.
+We typically get a scan of values multiple inputs that we store together, but, to retrieve, we want to read history by columns, in other words, an array of values for a single input so that we can graph it. So, how to we both make storage and retrieval of history efficieant?
+
+Errors in totalization and averageing of history. For some inputs like gas flow, we want to know how much total gas flows past a certain point, thus you multiply flow rate by elapsed time to get total cubic feet for a period of time. The problem is the limited sampling rate from the server will result in some error in performing this integration. To solve this, the local device can sample at a much higher rate to get a much better total, then, transmit the total at the end of the hour for instance. The trick is to allow an interface to correct the total at the end of each hour. You can also return the hour total so far on each read so that you have a more accurate up to the minute total, and, so that the total does not jump a little bit at the end of the hour.
 -------------------
 Alarms
 
-How should we support an alarm manager? Previously, there was no alarm manager, it was up to individual database points to have fields to indicate alarms, and then a display could show alarms. Should we support the concept of "active", "acknowledged", severity ("alarm", "caution", "normal"). Should it be 100% the responsibility of individual point types to determine alarm states, or, should we allow the configuration in an alarm manager? I am leaning to a combination, where we can configure a new alarm on an attribure of an existing point dype. 
+How should we support an alarm manager? Previously, there was no alarm manager, it was up to individual database points to have fields to indicate alarms, and then a display could show alarms. Should we support the concept of "active", "acknowledged", severity ("alarm", "caution", "normal"). Should it be 100% the responsibility of individual point types to determine alarm states, or, should we allow the configuration in an alarm manager? I am leaning to a combination, where we can configure a new alarm on an attribure of an existing point type, but, also let point types detect their own alarms. 
 
-Alarm manager design issues: Under high alarm load, how do we limit the number of messages to clients? There has to be a tradeoff between immediately dispaching alarms and the total number of messages sent. One algorithm would be to send out an alarm immediately if there has been no message sent in the last 5 seconds, otherwise, queue the current alarm for up to 5 seconds total from the last time an alarm was sent waiting for more alarms to send along at the same time. Thus, there would be a maximum of one message every 5 seconds to each client, keeping the system from overloading when something happens. Also the alarm manager should incorporate AOR (area of responsibility), to filter the alarms sent to each client. Could we use Redis to cache alarms?
+Alarm manager design issues: Under high alarm load, how do we limit the number of messages to clients? There has to be a tradeoff between immediately dispaching alarms and the total number of messages sent. One algorithm would be to send out an alarm immediately if there has been no message sent in the last 5 seconds, otherwise, queue the current alarm for up to 5 seconds total from the last time an alarm was sent waiting for more alarms to send along at the same time. Thus, there would be a maximum of one message every 5 seconds to each client, keeping the system and network from overloading when something happens to trigger a lot of alarms. Also the alarm manager should incorporate AOR (area of responsibility), to filter the alarms sent to each client. Could we use Redis to cache alarms?
 
 How should the alarms be cached for the current users? There could be hundreds of alarms that are active (more than can be displayed to the user), such that he must scroll through them. So, should they be cached locally, or, on the server. I would go for on the server, as, the local copy could become stale, even after a minute or so, and when you page down, you should ask the server for the next group to display. and, this is standard web services practice to limit the number of items requested in a single call, to that you can then do a "next" with the last one returned in the previous call. Obviously, if the user were to change the sort order, it would require another request to the server.
+
+Alarm display Types
+1) Active
+2) Unacknowledged
+3) Acknowledged
+
 ---------------
 
 This brings up the need to define standard attribute names and whether or not they should be case sensitive. 
 
 How should we allow inheritance? Should we have an interface concept like Java? Should we have both inheritance and interfaces? Should we allow multiple inheritance?
 
-All
+Attributes for ALL points
   tag (tag) // tag is a string that identifies a point
   description (text)
   aor_read (bits 64) // this is area of responsibility, to support compartmentalized security
   aor_write (bits 64) // for write operations 
   location_tag (tag)
 
-Analog
+Attributes for Analog
   pv (float)
   pv_string (text)
   high_alarm (float)
@@ -184,3 +205,36 @@ This system would NOT be or include a blockchain, rather, it would interface to 
 
 Alternatively, for less critical things, it could be set up to just log to a file all operations and the employeee that initiated them.
 --------------
+How to reference values, and write values.
+
+There are a number of different ways for a point type to reference other point types or values that a driver reads from the real world.
+
+Publish/Subscribe
+Values are pushed
+Values are pulled
+
+We could let individual point types ask for a reference and maintain those references privately, use them to read values on demand, but, then, we do not know what each point is depending on.   
+
+
+There is also a desire to be able to draw a dependency graph.
+
+There is also the issue of overloading the system with updates. A point that references multiple values should be updated ONLY once when that group of values updates, NOT once for every referenced value that changes. I was personally involved with a system where the user that had a widget that would turn red when there are any alarms, so you could click on it, and jump to a map with regions, and each region would be either red or green depending on if there was an alarm in that region. Finally, you could click on a region and see the sub-regions, and so on. So, we really ONLY want to update after each scan, and, then ONLY if something changed. On a "fast" system, you could run these kinds of updates once after ALL points have been scanned. On a "slow" system, you would want to run after each group was scanned. But, then, you only want to propegate calculations if something changed. 
+-----------------
+Types of I/O
+
+The typical way to read values from the real-world would be to periodically ask remove devices to "give me your values", and then receive those values and update the points that depend on those values.
+
+Another way is to let the devices "call in" with new values every once it a while, and, possibly just send a "no values changed" or "I'm OK"  message if nothing changed. With this method, the system will need to trigger a "device down" if messages do not arrive as expected. 
+---------------
+Remote processing vs local processing.
+
+-----------------
+Default Panels for each point type.
+
+We should build a default panel for each point type, so, you can enter a tagname, and, pop a panel to see the real-time values and configuration for a point. The panel can also have a way to edit those configurations that it makes sense to edited at run-time.
+
+If the creator does not have the time to create a default panel then we should create a basic one automatically. Thus we will require the creator of a point type to AT LEAST list parameters that are for configuration, and those that are run-time, and finally, those that it would make sense to let a user edit at runtime. 
+
+Thus, for different UIs / Widget sets, we could at least auto-create a default panel.
+
+-----------------
