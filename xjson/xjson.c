@@ -64,11 +64,7 @@ void xjson_print_value(xjson_value_t *vv)
 
 /**************************************************************/
 
-int xjson_get_value(xjson_parse_t *xjp);
-
-/**************************************************************/
-
-char xjson_next_char(xjson_parse_t *xjp)
+static char xjson_next_char(xjson_parse_t *xjp)
 {
   // return the next character, without advancing.
   //char next = *(xjp->json_position);
@@ -79,7 +75,7 @@ char xjson_next_char(xjson_parse_t *xjp)
 
 /**************************************************************/
 
-void xjson_skip_char(xjson_parse_t *xjp)
+static void xjson_skip_char(xjson_parse_t *xjp)
 {
   // Skip just one character before end of string.
   if ((*(xjp->json_position)) != '\0')
@@ -94,7 +90,7 @@ void xjson_skip_char(xjson_parse_t *xjp)
 
 /**************************************************************/
 
-void xjson_skip_space(xjson_parse_t *xjp)
+static void xjson_skip_space(xjson_parse_t *xjp)
 {
   // Skip all white space.
   while (isspace(*(xjp->json_position)))
@@ -111,7 +107,7 @@ void xjson_skip_space(xjson_parse_t *xjp)
 
 /**************************************************************/
 
-int xjson_get_string(xjson_parse_t *xjp)
+static int xjson_get_string(xjson_parse_t *xjp)
 {
   xjson_value_t *vv = &(xjp->values[xjp->current_value]);
   vv->type = XJSON_STRING;
@@ -189,7 +185,7 @@ int xjson_get_string(xjson_parse_t *xjp)
 
 /**************************************************************/
 
-int xjson_get_number(xjson_parse_t *xjp)
+static int xjson_get_number(xjson_parse_t *xjp)
 {
   // See http://json.org for a listing of valid numbers.
   // For instance these are allowed: 1e-0 1e+0 1e0
@@ -290,7 +286,7 @@ int xjson_get_number(xjson_parse_t *xjp)
 
 /**************************************************************/
 
-int xjson_get_bool(xjson_parse_t *xjp)
+static int xjson_get_bool(xjson_parse_t *xjp)
 {
   xjson_value_t *vv = &(xjp->values[xjp->current_value]);
   vv->start =  xjp->json_position;
@@ -323,7 +319,7 @@ int xjson_get_bool(xjson_parse_t *xjp)
 
 /**************************************************************/
 
-int xjson_get_null(xjson_parse_t *xjp)
+static int xjson_get_null(xjson_parse_t *xjp)
 {
   xjson_value_t *vv = &(xjp->values[xjp->current_value]);
   vv->start = xjp->json_position;
@@ -349,7 +345,7 @@ int xjson_get_null(xjson_parse_t *xjp)
 
 /**************************************************************/
 
-int xjson_get_object(xjson_parse_t *xjp)
+static int xjson_get_object(xjson_parse_t *xjp)
 {
   int done = false;
   xjson_value_t *vv = &(xjp->values[xjp->current_value]);
@@ -423,7 +419,7 @@ int xjson_get_object(xjson_parse_t *xjp)
 
 /**************************************************************/
 
-int xjson_get_array(xjson_parse_t *xjp)
+static int xjson_get_array(xjson_parse_t *xjp)
 {
   xjson_value_t *vv = &xjp->values[xjp->current_value];
   vv->start =  xjp->json_position;
