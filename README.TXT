@@ -48,6 +48,9 @@ We have the following function calls to replace strncat and strncpy:
 char *safe_strcpy(char *dest, const char *src, int size_dest);
 char *safe_strcat(char *dest, const char *src, int size_dest);
 
+Consider using the function snprintf_cat that we create instaed of safe_strcat
+Consider using the standard function snprintf instaed of safe_strcpy
+
 For the others, you should use the version with an 'n' in the name.
 
 Also, do not use any of the older system calls that are not thread safe.

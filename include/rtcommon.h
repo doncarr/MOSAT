@@ -70,6 +70,13 @@ char *get_bgi_dir(void);
 char *safe_strcpy(char *dest, const char *src, int size_dest);
 char *safe_strcat(char *dest, const char *src, int size_dest);
 
+int snprintf_cat(char *buf, int size, const char *fmt, ...)
+#ifdef __GNUC__
+   __attribute__ (( format( printf, 3, 4 ) ));
+#else
+;
+#endif
+
 //#define file_exists(fn) (0 == access(fn, 0))
 //bool file_exists(char *filename);
 

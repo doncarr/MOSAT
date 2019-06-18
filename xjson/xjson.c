@@ -2,6 +2,7 @@
 #define _POSIX_C_SOURCE 199309L
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <string.h>
 #include <ctype.h>
 #include <time.h>
@@ -161,11 +162,23 @@ static int xjson_get_string(xjson_parse_t *xjp)
     }
     else
     {
-      //
-      // Should we allow actual \n, \r, \t, \f, \b in the string??
-      //
-      // Should we really allow almost anything in a string?
-      pp++;
+      switch (*pp)
+      {
+        case '\b':
+        case '\f':
+        case '\n':
+        case '\r':
+        case '\t':
+          xjp->json_position = pp;
+          snprintf(xjp->error_string, sizeof(xjp->error_string), "Control characters must be escaped in a string, found: 0x%02x", *pp);
+          xjp->error_offset = (xjp->json_position - xjp->json_string);
+          return -1;
+          break;
+        default:
+          //
+          // Should we really allow almost anything else in a string?
+          pp++;
+      }
     }
   }
   if (*pp == '\0')
@@ -348,7 +361,8 @@ static int xjson_get_null(xjson_parse_t *xjp)
 static int xjson_get_object(xjson_parse_t *xjp)
 {
   int done = false;
-  xjson_value_t *vv = &(xjp->values[xjp->current_value]);
+  int save_current_value = (xjp->current_value); 
+  xjson_value_t *vv = &(xjp->values[save_current_value]);
   vv->start =  xjp->json_position;
   //printf("vv->start: %s\n", vv->start);
   vv->type = XJSON_OBJECT;
@@ -390,6 +404,8 @@ static int xjson_get_object(xjson_parse_t *xjp)
     if ((xjson_next_char(xjp)) == ',')
     {
       xjson_skip_char(xjp);
+      // Important! Memory could have moved due to realloc()!!
+      vv = &(xjp->values[save_current_value]);
       vv->count++;
       xjson_skip_space(xjp);
       if (((xjson_next_char(xjp)) == '}') && ALLOW_OBJECT_TRAILING_COMMA)
@@ -402,6 +418,8 @@ static int xjson_get_object(xjson_parse_t *xjp)
     }
     else if ((xjson_next_char(xjp)) == '}')
     {
+      // Important! Memory could have moved due to realloc()!!
+      vv = &(xjp->values[save_current_value]);
       vv->count++;
       xjson_skip_char(xjp);
       break;
@@ -413,6 +431,8 @@ static int xjson_get_object(xjson_parse_t *xjp)
       return -1;
     }
   }
+  // Important! Memory could have moved due to realloc()!!
+  vv = &(xjp->values[save_current_value]);
   vv->n_chars = xjp->json_position - vv->start;
   return 0;
 }
@@ -421,7 +441,8 @@ static int xjson_get_object(xjson_parse_t *xjp)
 
 static int xjson_get_array(xjson_parse_t *xjp)
 {
-  xjson_value_t *vv = &xjp->values[xjp->current_value];
+  int save_current_value = (xjp->current_value); 
+  xjson_value_t *vv = &xjp->values[save_current_value];
   vv->start =  xjp->json_position;
   //printf("vv->start: %s\n", vv->start);
   vv->type = XJSON_ARRAY;
@@ -448,6 +469,8 @@ static int xjson_get_array(xjson_parse_t *xjp)
     {
       //printf("   - array found comma\n");
       xjson_skip_char(xjp); // Skip the  ','
+      // Important! Memory could have moved due to realloc()!!
+      vv = &(xjp->values[save_current_value]);
       vv->count++;
       xjson_skip_space(xjp);
       if ( (xjson_next_char(xjp) == ']') && ALLOW_ARRAY_TRAILING_COMMA)
@@ -460,6 +483,8 @@ static int xjson_get_array(xjson_parse_t *xjp)
     }
     else if ((xjson_next_char(xjp)) == ']')
     {
+      // Important! Memory could have moved due to realloc()!!
+      vv = &(xjp->values[save_current_value]);
       vv->count++;
      // printf("   - array end foound ]\n");
       // Skip the ']'
@@ -474,6 +499,8 @@ static int xjson_get_array(xjson_parse_t *xjp)
       return -1;
     }
   }
+  // Important! Memory could have moved due to realloc()!!
+  vv = &(xjp->values[save_current_value]);
   vv->n_chars = xjp->json_position - vv->start;
   return 0;
 }
@@ -577,9 +604,8 @@ int xjson_reset(xjson_parse_t *xjp, char *the_json)
 int xjson_init(xjson_parse_t *xjp, char *the_json)
 {
   // This is for the first initialization and will also allocate space for the values.
-  //xjp->max_values = 4;
-  xjp->max_values = 512000;
-  xjp->values = (xjson_value_t *) malloc(sizeof(xjson_value_t) * xjp->max_values);
+  xjp->max_values = 16;
+  xjp->values = (xjson_value_t *) malloc(sizeof(xjson_value_t) * (xjp->max_values + 1));
   if (xjp->values == NULL)
   {
     return -1;

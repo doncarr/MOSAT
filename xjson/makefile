@@ -2,7 +2,7 @@
 
 all: xjson_test
 
-CC=gcc -Wall -std=c99
+CC=gcc -g -Wall -std=c99
 
 xjson_test: xjson.c xjson.h xjson_test.c
 	$(CC) -o xjson_test xjson_test.c xjson.c

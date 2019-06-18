@@ -1,5 +1,5 @@
 
-#define _POSIX_C_SOURCE 199309L
+#define _POSIX_C_SOURCE 200112L 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -76,7 +76,8 @@ void xjson_print_indented(xjson_parse_t *xjp)
 {
   int n = 0;
   do_xjson_print_indented(xjp, 0, &n, 0, 1);
-  printf("%d values printed\n", xjp->current_value);
+  printf("%d values allocated\n", xjp->max_values);
+  printf("%d values parsed\n", xjp->current_value);
 }
 
 /**************************************************************/
@@ -85,6 +86,7 @@ int main(int argc, char *argv[])
 {
   size_t json_size;
   char *jj;
+  setenv("M_CHECK_ACTION","3", 1);
   FILE *fp = fopen(argv[1], "r");
   if (fp == NULL)
   {
@@ -130,7 +132,6 @@ struct timespec
 
 
 
-  //printf("time: %ju\n", time(NULL));
   printf("json length: %zu\n", strlen(jj));
   //printf("json: %s\n", jj);
 
@@ -174,6 +175,7 @@ struct timespec
   double parse_time = ((double)((end_time.tv_sec - start_time.tv_sec) * 1000)) + 
                       (((double)(end_time.tv_nsec - start_time.tv_nsec))/1000000.0);
 
+  printf("time: %jd\n", time(NULL));
   printf("It took %0.3lf milliseconds to parse %lf megabytes\n",
       parse_time, ((double)(json_size)) / 1000000.0);
   return 0;

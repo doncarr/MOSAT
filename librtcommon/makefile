@@ -1,7 +1,7 @@
 
 export CPATH=../include
 
-OBJS=  arg.o common.o safestr.o utimer.o memfail.o  numbered_file.o ap_config.o separator.o rt_system_log.o log_functions.o split_array.o random_tools.o
+OBJS=  arg.o common.o safestr.o utimer.o memfail.o  numbered_file.o ap_config.o separator.o rt_system_log.o log_functions.o split_array.o random_tools.o snprintf_cat.o
 
 CPP=g++ -fPIC -Wall -Werror
 
