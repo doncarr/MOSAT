@@ -146,6 +146,7 @@ static int xjson_get_string(xjson_parse_t *xjp)
               snprintf(xjp->error_string, sizeof(xjp->error_string),
                             "Must have 4 hex digits after '\\u' in a string, invalid: '%c'", pp[i]);
               xjp->error_offset = (xjp->json_position - xjp->json_string);
+              xjp->error = XJSON_FOUR_DIGITS_AFTER_U;
               return -1;
             }
           }
@@ -156,6 +157,7 @@ static int xjson_get_string(xjson_parse_t *xjp)
           xjp->json_position = pp;
           snprintf(xjp->error_string, sizeof(xjp->error_string), "Invalid character after '\\' in a string: %c", *pp);
           xjp->error_offset = (xjp->json_position - xjp->json_string);
+          xjp->error = XJSON_INVALID_AFTER_ESCAPE;
           return -1;
           break;
       }
@@ -171,6 +173,7 @@ static int xjson_get_string(xjson_parse_t *xjp)
         case '\t':
           xjp->json_position = pp;
           snprintf(xjp->error_string, sizeof(xjp->error_string), "Control characters must be escaped in a string, found: 0x%02x", *pp);
+          xjp->error = XJSON_ESCAPE_CONTROL;
           xjp->error_offset = (xjp->json_position - xjp->json_string);
           return -1;
           break;
@@ -187,6 +190,7 @@ static int xjson_get_string(xjson_parse_t *xjp)
     xjp->json_position = pp;
     snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "No ending quote for string");
     xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_NO_END_QUOTE;
     return -1;
   }
   pp++;
@@ -223,6 +227,7 @@ static int xjson_get_number(xjson_parse_t *xjp)
       snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "leading 0 followed by digit now allowed");
       xjp->json_position = pp;
       xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_DIGIT_AFTER_LEAD_ZERO;
       return -1;
     }
   }
@@ -243,6 +248,7 @@ static int xjson_get_number(xjson_parse_t *xjp)
       snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Must have at leaset one digit after decimal point");
       xjp->json_position = pp;
       xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_EXPECT_DIGIT_AFTER_E;
       return -1;
     }
     while(isdigit(*pp))
@@ -266,6 +272,7 @@ static int xjson_get_number(xjson_parse_t *xjp)
       snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Must have at leaset one digit after 'e' or 'E'");
       xjp->json_position = pp;
       xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_EXPECT_DIGIT_AFTER_E;
       return -1;
     }
     while(isdigit(*pp))
@@ -285,9 +292,10 @@ static int xjson_get_number(xjson_parse_t *xjp)
     default:
       if (!isspace(*pp))
       {
-        snprintf(xjp->error_string, sizeof(xjp->error_string), "Invalid character in number: '%c'", *pp);
+        snprintf(xjp->error_string, sizeof(xjp->error_string), "Invalid character after number: '%c'", *pp);
         xjp->json_position = pp;
         xjp->error_offset = (xjp->json_position - xjp->json_string);
+        xjp->error = XJSON_INVALID_AFTER_NUMBER;
         return -1;
       }
       break;
@@ -323,8 +331,17 @@ static int xjson_get_bool(xjson_parse_t *xjp)
     vv->type = XJSON_UNDEFINED;
     vv->count = 0;
     vv->n_chars = 0;
-    snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Expected 'true' or 'false'");
     xjp->error_offset = (xjp->json_position - xjp->json_string);
+    if (*vv->start == 't')
+    {
+      snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Expected 'true'");
+      xjp->error = XJSON_EXPECT_TRUE;
+    }
+    else if (*vv->start == 'f')
+    {
+      snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Expected 'false'");
+      xjp->error = XJSON_EXPECT_FALSE;
+    }
     return -1;
   }
   return 0;
@@ -351,6 +368,7 @@ static int xjson_get_null(xjson_parse_t *xjp)
     vv->n_chars = 0;
     snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Expected 'null'\n");
     xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_EXPECT_NULL;
     return -1;
   }
   return 0;
@@ -385,6 +403,7 @@ static int xjson_get_object(xjson_parse_t *xjp)
     {
       snprintf(xjp->error_string, sizeof(xjp->error_string), "Key must be a String, but is of type %s\n", xjson_get_type_string(key->type));
       xjp->error_offset = (vv->start - xjp->json_string);
+      xjp->error = XJSON_EXPECT_COLON;
       return -1;
     }
     xjson_skip_space(xjp);
@@ -396,6 +415,7 @@ static int xjson_get_object(xjson_parse_t *xjp)
     {
       snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Expected ':'");
       xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_EXPECT_COLON;
       return -1;
     }
     xjp->current_value += 1;
@@ -428,6 +448,7 @@ static int xjson_get_object(xjson_parse_t *xjp)
     {
       snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Expected ',' or '}'");
       xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_EXPECT_COMMA_CURLY;
       return -1;
     }
   }
@@ -495,6 +516,7 @@ static int xjson_get_array(xjson_parse_t *xjp)
     {
       snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Expected ',' or ']'");
       xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_EXPECT_COMMA_BRACKET;
       //printf("Array returning -1\n");
       return -1;
     }
@@ -513,12 +535,13 @@ int xjson_get_value(xjson_parse_t *xjp)
   if (xjp->current_value >= xjp->max_values)
   {
     xjp->max_values *= 2;        
-    xjp->values = (xjson_value_t *) realloc(xjp->values, sizeof(xjson_value_t) * (xjp->max_values + 1));
+    xjp->values = (xjson_value_t *) realloc(xjp->values, sizeof(xjson_value_t) * (xjp->max_values));
     printf("realloc %d\n", xjp->max_values);
     if (xjp->values == NULL)
     {
-      snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "Maximum values exceeded.\n");
+      snprintf(xjp->error_string, sizeof(xjp->error_string), "%s", "realloc() failed.\n");
       xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_REALLOC_FAIL;
       return -1;
     }
   }
@@ -567,6 +590,7 @@ int xjson_get_value(xjson_parse_t *xjp)
       snprintf(xjp->error_string, sizeof(xjp->error_string), "%s",
                  "End of string reached looking for value\n");
       xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_END_OF_STRING;
       return -1;
       break;
     default:
@@ -577,6 +601,7 @@ int xjson_get_value(xjson_parse_t *xjp)
       snprintf(xjp->error_string, sizeof(xjp->error_string),
                "Invalid starting character looking for value: '%c'\n", xjson_next_char(xjp));
       xjp->error_offset = (xjp->json_position - xjp->json_string);
+      xjp->error = XJSON_INVALID_START;
       return -1;
       break;
   }
@@ -604,13 +629,18 @@ int xjson_reset(xjson_parse_t *xjp, char *the_json)
 int xjson_init(xjson_parse_t *xjp, char *the_json)
 {
   // This is for the first initialization and will also allocate space for the values.
-  xjp->max_values = 16;
-  xjp->values = (xjson_value_t *) malloc(sizeof(xjson_value_t) * (xjp->max_values + 1));
+  xjp->max_values = 1;
+  xjson_reset(xjp, the_json);
+  xjp->values = (xjson_value_t *) malloc(sizeof(xjson_value_t) * (xjp->max_values));
   if (xjp->values == NULL)
   {
+      snprintf(xjp->error_string, sizeof(xjp->error_string),
+               "malloc() failed");
+      xjp->error_offset = 0;
+      xjp->error = XJSON_MALLOC_FAIL;
     return -1;
   }
-  return xjson_reset(xjp, the_json);
+  return 0;
 }
 
 /**************************************************************/
@@ -623,12 +653,7 @@ void xjson_free(xjson_parse_t *xjp)
     free(xjp->values);
     xjp->values = NULL;
   }
-  xjp->current_value = 0;
-  xjp->json_string = NULL;
-  xjp->json_position = NULL;
-  xjp->error = XJSON_OK;
-  xjp->error_string[0] = '\0';
-  xjp->error_offset = 0;
+  xjson_reset(xjp, NULL);
 }
 
 /**************************************************************/
