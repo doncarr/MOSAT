@@ -17,6 +17,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 ***********************************************************************/
 
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -1162,7 +1163,7 @@ int main(int argc, char *argv[])
   crear_objeto_t cofn;
   int i;
 
-  char sofile[100];
+  char sofile[500];
 
   const char *dir_name = "./plugins/";
   const char *config_name = "display.txt"; 

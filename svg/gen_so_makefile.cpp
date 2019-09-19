@@ -1,6 +1,13 @@
+#define _GNU_SOURCE 1
+#define __GNU_VISIBLE 1
+#define __POSIX_VISIBLE  200809
+#define _XOPEN_SOURCE 700
+#define POSIX_C_SOURCE 200809L
+#define _SVID_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <strings.h>
 #include <sys/types.h>
 #include <dirent.h>
 
@@ -56,7 +63,7 @@ int main(int argc, char *argv[])
       continue;
     }
     //printf("Processing: %s\n", dent->d_name);
-    char temp[100];
+    char temp[500];
     snprintf(temp, sizeof(temp), "%s", dent->d_name);
     temp[len-4] = '\0';
     printf("Adding to makefile: base name: %s\n", temp);
