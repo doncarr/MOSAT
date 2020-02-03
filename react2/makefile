@@ -32,8 +32,9 @@ PROJECTDIRS = projects/silos
 
 CDEBUG = 
 
-CFLAGS = -std=c++0x -Wall -Wformat=2 -Werror -Wshadow 
+#CFLAGS = -std=c++0x -Wall -Wformat=2  -Wshadow 
 
+#CFLAGS = -std=c++0x -Wall -Wformat=2 -Werror -Wshadow 
 #CFLAGS = -Wall -Wformat=2 -Werror -Weffc++ 
 #CFLAGS = -Wall -Wformat=2 -Werror -Wshadow
 #CFLAGS = -Wall -Wextra -Wold-style-cast

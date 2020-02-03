@@ -22,12 +22,12 @@ DEALINGS IN THE SOFTWARE.
 //#include <assert.h>
 #define MAX_CAD 255
 #define RANGECHECK(fase)    if(section>=getSize() || section<0 ){\
-                            sprintf(msg,"In "fase"There were an attempt to access an\
+                            sprintf(msg,"In \"fase\"There were an attempt to access an\
                             invalid section%d",section);\
                             throw msg;\
                             }
 #define LIMCHECK(fase)  if(section>getSize() || section<0 ){\
-                            sprintf(msg,"In "fase"The pretended limit [%d] is bigger\
+                            sprintf(msg,"In \"fase\"The pretended limit [%d] is bigger\
                              (or lower) than the allowd",section);\
                             throw msg;\
                             }

@@ -17,7 +17,9 @@ GENMODE=-sim
 TINAMODE=-sim_file sim_tina.js
 #TINAMODE=-react
 
-CPP=g++ -Wall -Werror -Wformat=2 -std=c++0x
+#CPP=g++ -Wall -Werror -Wformat=2 -std=c++0x
+
+CPP=g++ -Wall  -Wformat=2 -std=c++0x
 
 all: so_files gen_points gen_bar gen_tank gen_display svgs doc
 

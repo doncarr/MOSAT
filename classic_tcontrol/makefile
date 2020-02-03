@@ -1,7 +1,9 @@
 
 export CPATH=../include
 
-CPP=g++ -Wall -Werror
+#CPP=g++ -Wall -Werror
+
+CPP=g++ -Wall 
 
 INCLUDES = alg.h controlalg.h dc_alg.h event.h jg_alg.h section.h sim.h xx_alg.h startup_alg.h
 

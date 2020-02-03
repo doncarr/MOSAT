@@ -85,7 +85,7 @@ bool checkint(char *param, char *error, int esize)
   {
     p++;
   }
-  for ( ; p != '\0'; p++)
+  for ( ; *p != '\0'; p++)
   {
     if (!isdigit(*p))
     {

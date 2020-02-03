@@ -527,7 +527,7 @@ int mainxx(int argc, char *argv[])
       {
         buf[i] &= 0x7F;
         printf("%d 0x%02x\t", (int) buf[i], (int) buf[i]);
-        if (buf[i] == 0x16) spd_endwin(); exit(0);
+        if (buf[i] == 0x16) {spd_endwin(); exit(0);}
       }
       printf("\n");
       buf[n] = '\0';
