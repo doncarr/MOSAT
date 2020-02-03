@@ -11,14 +11,18 @@ apt-get install glibc-doc
 
 apt-get install subversion
 
+Use GIT to get the source code
 
-To checkout the latest version of the source code on another computer, use the following command:
+https://github.com/doncarr/mosat
 
+HTTPS
+git clone https://github.com/doncarr/mosat.git
+
+SSH
+git clone git@github.com:doncarr/mosat.git
+
+SVN on source forge is no longer active :-(
 svn co https://mosat.svn.sourceforge.net/svnroot/mosat/trunk/
-
-The new command after the updates to sourceforge :-(
-
-svn co svn+ssh://USERNAME@svn.code.sf.net/p/mosat/code/
 
 There are basically six important projects here:
 
